@@ -1,0 +1,581 @@
+"HOLIDAY_CLOSING_DATE","HOLIDAY_CLOSING_DESCRIPTION","HOLIDAY_CLOSING_TYPE","WAREHOUSE_LOAD_DATE"
+19-JUN-23,"MIT Juneteenth","Standard Holiday",28-OCT-24
+19-JUN-24,"MIT Juneteenth","Standard Holiday",28-OCT-24
+19-JUN-25,"MIT Juneteenth","Standard Holiday",28-OCT-24
+19-JUN-26,"MIT Juneteenth","Standard Holiday",28-OCT-24
+18-JUN-27,"MIT Juneteenth","Standard Holiday",28-OCT-24
+19-JUN-27,"MIT Juneteenth","Standard Holiday",28-OCT-24
+31-DEC-27,"MIT New Year's Day","Standard Holiday",28-OCT-24
+01-JAN-28,"MIT New Year's Day","Standard Holiday",28-OCT-24
+17-JAN-28,"MIT Martin Luther King Day","Standard Holiday",28-OCT-24
+21-FEB-28,"MIT Presidents' Day","Standard Holiday",28-OCT-24
+17-APR-28,"MIT Patriots' Day","Standard Holiday",28-OCT-24
+29-MAY-28,"MIT Memorial Day","Standard Holiday",28-OCT-24
+19-JUN-28,"MIT Juneteenth","Standard Holiday",28-OCT-24
+04-JUL-28,"MIT Independence Day","Standard Holiday",28-OCT-24
+04-SEP-28,"MIT Labor Day","Standard Holiday",28-OCT-24
+09-OCT-28,"MIT Indigenous Peoples' Day","Standard Holiday",28-OCT-24
+10-NOV-28,"MIT Veterans' Day","Standard Holiday",28-OCT-24
+11-NOV-28,"MIT Veterans' Day","Standard Holiday",28-OCT-24
+23-NOV-28,"MIT Thanksgiving Day","Standard Holiday",28-OCT-24
+24-NOV-28,"MIT Day After Thanksgiving","Standard Holiday",28-OCT-24
+25-DEC-28,"MIT Christmas Day","Standard Holiday",28-OCT-24
+01-JAN-29,"MIT New Year's Day","Standard Holiday",28-OCT-24
+15-JAN-29,"MIT Martin Luther King Day","Standard Holiday",28-OCT-24
+19-FEB-29,"MIT Presidents' Day","Standard Holiday",28-OCT-24
+16-APR-29,"MIT Patriots' Day","Standard Holiday",28-OCT-24
+28-MAY-29,"MIT Memorial Day","Standard Holiday",28-OCT-24
+19-JUN-29,"MIT Juneteenth","Standard Holiday",28-OCT-24
+04-JUL-29,"MIT Independence Day","Standard Holiday",28-OCT-24
+03-SEP-29,"MIT Labor Day","Standard Holiday",28-OCT-24
+08-OCT-29,"MIT Indigenous Peoples' Day","Standard Holiday",28-OCT-24
+11-NOV-29,"MIT Veterans' Day","Standard Holiday",28-OCT-24
+12-NOV-29,"MIT Veterans' Day","Standard Holiday",28-OCT-24
+22-NOV-29,"MIT Thanksgiving Day","Standard Holiday",28-OCT-24
+23-NOV-29,"MIT Day After Thanksgiving","Standard Holiday",28-OCT-24
+25-DEC-29,"MIT Christmas Day","Standard Holiday",28-OCT-24
+01-JAN-30,"MIT New Year's Day","Standard Holiday",28-OCT-24
+21-JAN-30,"MIT Martin Luther King Day","Standard Holiday",28-OCT-24
+18-FEB-30,"MIT Presidents' Day","Standard Holiday",28-OCT-24
+15-APR-30,"MIT Patriots' Day","Standard Holiday",28-OCT-24
+27-MAY-30,"MIT Memorial Day","Standard Holiday",28-OCT-24
+19-JUN-30,"MIT Juneteenth","Standard Holiday",28-OCT-24
+04-JUL-30,"MIT Independence Day","Standard Holiday",28-OCT-24
+02-SEP-30,"MIT Labor Day","Standard Holiday",28-OCT-24
+14-OCT-30,"MIT Indigenous Peoples' Day","Standard Holiday",28-OCT-24
+11-NOV-30,"MIT Veterans' Day","Standard Holiday",28-OCT-24
+28-NOV-30,"MIT Thanksgiving Day","Standard Holiday",28-OCT-24
+29-NOV-30,"MIT Day After Thanksgiving","Standard Holiday",28-OCT-24
+25-DEC-30,"MIT Christmas Day","Standard Holiday",28-OCT-24
+01-JAN-31,"MIT New Year's Day","Standard Holiday",28-OCT-24
+20-JAN-31,"MIT Martin Luther King Day","Standard Holiday",28-OCT-24
+17-FEB-31,"MIT Presidents' Day","Standard Holiday",28-OCT-24
+21-APR-31,"MIT Patriots' Day","Standard Holiday",28-OCT-24
+26-MAY-31,"MIT Memorial Day","Standard Holiday",28-OCT-24
+19-JUN-31,"MIT Juneteenth","Standard Holiday",28-OCT-24
+04-JUL-31,"MIT Independence Day","Standard Holiday",28-OCT-24
+01-SEP-31,"MIT Labor Day","Standard Holiday",28-OCT-24
+13-OCT-31,"MIT Indigenous Peoples' Day","Standard Holiday",28-OCT-24
+11-NOV-31,"MIT Veterans' Day","Standard Holiday",28-OCT-24
+27-NOV-31,"MIT Thanksgiving Day","Standard Holiday",28-OCT-24
+28-NOV-31,"MIT Day After Thanksgiving","Standard Holiday",28-OCT-24
+25-DEC-31,"MIT Christmas Day","Standard Holiday",28-OCT-24
+26-DEC-10,"EMER","Emergency Closing",28-OCT-24
+27-DEC-10,"EMER","Emergency Closing",28-OCT-24
+20-APR-13,"EMER","Emergency Closing",28-OCT-24
+05-FEB-14,"EMER","Emergency Closing",28-OCT-24
+28-AUG-11,"EMER","Emergency Closing",28-OCT-24
+29-AUG-11,"EMER","Emergency Closing",28-OCT-24
+24-DEC-12,"SHOL","Special Holiday/Closing",28-OCT-24
+31-DEC-12,"SHOL","Special Holiday/Closing",28-OCT-24
+26-DEC-13,"SHOL","Special Holiday/Closing",28-OCT-24
+02-JAN-14,"SHOL","Special Holiday/Closing",28-OCT-24
+02-JAN-15,"SHOL","Special Holiday/Closing",28-OCT-24
+11-FEB-15,"EMER","Emergency Closing",28-OCT-24
+23-DEC-10,"SHOL","Special Holiday/Closing",28-OCT-24
+30-DEC-10,"SHOL","Special Holiday/Closing",28-OCT-24
+19-APR-13,"EMER","Emergency Closing",28-OCT-24
+12-JAN-11,"EMER","Emergency Closing",28-OCT-24
+30-OCT-12,"EMER","Emergency Closing",28-OCT-24
+08-FEB-13,"EMER","Emergency Closing",28-OCT-24
+09-FEB-13,"EMER","Emergency Closing",28-OCT-24
+10-FEB-13,"EMER","Emergency Closing",28-OCT-24
+03-JAN-14,"EMER","Emergency Closing",28-OCT-24
+13-FEB-14,"EMER","Emergency Closing",28-OCT-24
+26-DEC-14,"SHOL","Special Holiday/Closing",28-OCT-24
+28-JAN-15,"EMER","Emergency Closing",28-OCT-24
+15-FEB-15,"EMER","Emergency Closing",28-OCT-24
+24-DEC-15,"SHOL","Special Holiday/Closing",28-OCT-24
+31-DEC-15,"SHOL","Special Holiday/Closing",28-OCT-24
+23-DEC-11,"SHOL","Special Holiday/Closing",28-OCT-24
+30-DEC-11,"SHOL","Special Holiday/Closing",28-OCT-24
+29-OCT-12,"EMER","Emergency Closing",28-OCT-24
+03-JUL-14,"EMER","Emergency Closing",28-OCT-24
+26-JAN-15,"EMER","Emergency Closing",28-OCT-24
+27-JAN-15,"EMER","Emergency Closing",28-OCT-24
+02-FEB-15,"EMER","Emergency Closing",28-OCT-24
+09-FEB-15,"EMER","Emergency Closing",28-OCT-24
+10-FEB-15,"EMER","Emergency Closing",28-OCT-24
+25-JUL-06,"EMER","Emergency Closing",28-OCT-24
+26-JUL-06,"EMER","Emergency Closing",28-OCT-24
+27-JUL-06,"EMER","Emergency Closing",28-OCT-24
+28-JUL-06,"EMER","Emergency Closing",28-OCT-24
+31-JUL-06,"EMER","Emergency Closing",28-OCT-24
+01-AUG-06,"EMER","Emergency Closing",28-OCT-24
+02-AUG-06,"EMER","Emergency Closing",28-OCT-24
+03-AUG-06,"EMER","Emergency Closing",28-OCT-24
+04-AUG-06,"EMER","Emergency Closing",28-OCT-24
+26-OCT-06,"EMER","Emergency Closing",28-OCT-24
+08-DEC-06,"EMER","Emergency Closing",28-OCT-24
+11-DEC-06,"EMER","Emergency Closing",28-OCT-24
+12-DEC-06,"EMER","Emergency Closing",28-OCT-24
+13-DEC-06,"EMER","Emergency Closing",28-OCT-24
+14-DEC-06,"EMER","Emergency Closing",28-OCT-24
+15-DEC-06,"EMER","Emergency Closing",28-OCT-24
+13-DEC-07,"EMER","Emergency Closing",28-OCT-24
+14-DEC-07,"EMER","Emergency Closing",28-OCT-24
+24-DEC-07,"SHOL","Special Holiday/Closing",28-OCT-24
+31-DEC-07,"SHOL","Special Holiday/Closing",28-OCT-24
+18-JUN-08,"EMER","Emergency Closing",28-OCT-24
+19-DEC-08,"EMER","Emergency Closing",28-OCT-24
+26-DEC-08,"SHOL","Special Holiday/Closing",28-OCT-24
+31-DEC-08,"EMER","Emergency Closing",28-OCT-24
+02-JAN-09,"SHOL","Special Holiday/Closing",28-OCT-24
+23-OCT-09,"EMER","Emergency Closing",28-OCT-24
+24-DEC-09,"SHOL","Special Holiday/Closing",28-OCT-24
+31-DEC-09,"SHOL","Special Holiday/Closing",28-OCT-24
+25-JAN-16,"EMER","Emergency Closing",28-OCT-24
+26-JAN-16,"EMER","Emergency Closing",28-OCT-24
+23-DEC-16,"SHOL","Special Holiday/Closing",28-OCT-24
+30-DEC-16,"SHOL","Special Holiday/Closing",28-OCT-24
+09-FEB-17,"EMER","Emergency Closing",28-OCT-24
+13-FEB-17,"EMER","Emergency Closing",28-OCT-24
+10-FEB-17,"EMER","Emergency Closing",28-OCT-24
+14-MAR-17,"EMER","Emergency Closing",28-OCT-24
+13-MAR-17,"EMER","Emergency Closing",28-OCT-24
+15-MAR-17,"EMER","Emergency Closing",28-OCT-24
+26-DEC-17,"SHOL","Special Holiday/Closing",28-OCT-24
+02-JAN-18,"SHOL","Special Holiday/Closing",28-OCT-24
+04-JAN-18,"EMER","Emergency Closing",28-OCT-24
+05-JAN-18,"EMER","Emergency Closing",28-OCT-24
+07-MAR-18,"EMER","Emergency Closing",28-OCT-24
+08-MAR-18,"EMER","Emergency Closing",28-OCT-24
+09-MAR-18,"EMER","Emergency Closing",28-OCT-24
+10-MAR-18,"EMER","Emergency Closing",28-OCT-24
+12-MAR-18,"EMER","Emergency Closing",28-OCT-24
+13-MAR-18,"EMER","Emergency Closing",28-OCT-24
+14-MAR-18,"EMER","Emergency Closing",28-OCT-24
+22-MAR-18,"EMER","Emergency Closing",28-OCT-24
+21-MAR-18,"EMER","Emergency Closing",28-OCT-24
+24-DEC-18,"SHOL","Special Holiday/Closing",28-OCT-24
+31-DEC-18,"SHOL","Special Holiday/Closing",28-OCT-24
+24-OCT-18,"EMER","Emergency Closing",28-OCT-24
+12-FEB-19,"EMER","Emergency Closing",28-OCT-24
+03-MAR-19,"EMER","Emergency Closing",28-OCT-24
+04-MAR-19,"EMER","Emergency Closing",28-OCT-24
+02-DEC-19,"EMER","Emergency Closing",28-OCT-24
+03-DEC-19,"EMER","Emergency Closing",28-OCT-24
+24-DEC-19,"SHOL","Special Holiday/Closing",28-OCT-24
+31-DEC-19,"SHOL","Special Holiday/Closing",28-OCT-24
+06-JUL-20,"SHOL","Special Holiday/Closing",28-OCT-24
+24-DEC-20,"SHOL","Special Holiday/Closing",28-OCT-24
+28-DEC-20,"SHOL","Special Holiday/Closing",28-OCT-24
+29-DEC-20,"SHOL","Special Holiday/Closing",28-OCT-24
+30-DEC-20,"SHOL","Special Holiday/Closing",28-OCT-24
+31-DEC-20,"SHOL","Special Holiday/Closing",28-OCT-24
+16-DEC-20,"EMER","Emergency Closing",28-OCT-24
+17-DEC-20,"EMER","Emergency Closing",28-OCT-24
+18-DEC-20,"EMER","Emergency Closing",28-OCT-24
+02-FEB-21,"EMER","Emergency Closing",28-OCT-24
+01-FEB-21,"EMER","Emergency Closing",28-OCT-24
+02-JUL-21,"SHOL","Special Holiday/Closing",28-OCT-24
+27-DEC-21,"SHOL","Special Holiday/Closing",28-OCT-24
+28-DEC-21,"SHOL","Special Holiday/Closing",28-OCT-24
+29-DEC-21,"SHOL","Special Holiday/Closing",28-OCT-24
+30-DEC-21,"SHOL","Special Holiday/Closing",28-OCT-24
+07-JAN-22,"EMER","Emergency Closing",28-OCT-24
+25-DEC-21,"SHOL","Special Holiday/Closing",28-OCT-24
+26-DEC-21,"SHOL","Special Holiday/Closing",28-OCT-24
+06-JAN-22,"EMER","Emergency Closing",28-OCT-24
+28-JAN-22,"EMER","Emergency Closing",28-OCT-24
+29-JAN-22,"EMER","Emergency Closing",28-OCT-24
+30-JAN-22,"EMER","Emergency Closing",28-OCT-24
+04-FEB-22,"EMER","Emergency Closing",28-OCT-24
+25-FEB-22,"EMER","Emergency Closing",28-OCT-24
+01-JUL-22,"SHOL","Special Holiday/Closing",28-OCT-24
+05-JUL-22,"SHOL","Special Holiday/Closing",28-OCT-24
+27-DEC-22,"SHOL","Special Holiday/Closing",28-OCT-24
+28-DEC-22,"SHOL","Special Holiday/Closing",28-OCT-24
+29-DEC-22,"SHOL","Special Holiday/Closing",28-OCT-24
+30-DEC-22,"SHOL","Special Holiday/Closing",28-OCT-24
+31-DEC-22,"SHOL","Special Holiday/Closing",28-OCT-24
+25-DEC-22,"SHOL","Special Holiday/Closing",28-OCT-24
+01-JAN-23,"SHOL","Special Holiday/Closing",28-OCT-24
+14-MAR-23,"EMER","Emergency Closing",28-OCT-24
+15-MAR-23,"EMER","Emergency Closing",28-OCT-24
+03-JUL-23,"SHOL","Special Holiday/Closing",28-OCT-24
+26-DEC-23,"SHOL","Special Holiday/Closing",28-OCT-24
+27-DEC-23,"SHOL","Special Holiday/Closing",28-OCT-24
+28-DEC-23,"SHOL","Special Holiday/Closing",28-OCT-24
+29-DEC-23,"SHOL","Special Holiday/Closing",28-OCT-24
+30-DEC-23,"SHOL","Special Holiday/Closing",28-OCT-24
+31-DEC-23,"SHOL","Special Holiday/Closing",28-OCT-24
+26-DEC-24,"SHOL","Special Holiday/Closing",28-OCT-24
+27-DEC-24,"SHOL","Special Holiday/Closing",28-OCT-24
+28-DEC-24,"SHOL","Special Holiday/Closing",28-OCT-24
+29-DEC-24,"SHOL","Special Holiday/Closing",28-OCT-24
+30-DEC-24,"SHOL","Special Holiday/Closing",28-OCT-24
+31-DEC-24,"SHOL","Special Holiday/Closing",28-OCT-24
+13-FEB-24,"EMER","Emergency Closing",28-OCT-24
+05-JUL-24,"SHOL","Special Holiday/Closing",28-OCT-24
+04-JUL-17,"MIT Independence Day","Standard Holiday",28-OCT-24
+04-JUL-21,"MIT Independence Day","Standard Holiday",28-OCT-24
+04-JUL-22,"MIT Independence Day","Standard Holiday",28-OCT-24
+04-JUL-08,"MIT Independence Day","Standard Holiday",28-OCT-24
+04-JUL-09,"MIT Independence Day","Standard Holiday",28-OCT-24
+04-JUL-10,"MIT Independence Day","Standard Holiday",28-OCT-24
+04-JUL-15,"MIT Independence Day","Standard Holiday",28-OCT-24
+04-JUL-16,"MIT Independence Day","Standard Holiday",28-OCT-24
+01-JAN-17,"MIT New Year's Day","Standard Holiday",28-OCT-24
+16-JAN-17,"MIT Martin Luther King Day","Standard Holiday",28-OCT-24
+20-FEB-17,"MIT Presidents' Day","Standard Holiday",28-OCT-24
+17-APR-17,"MIT Patriots' Day","Standard Holiday",28-OCT-24
+29-MAY-17,"MIT Memorial Day","Standard Holiday",28-OCT-24
+04-SEP-17,"MIT Labor Day","Standard Holiday",28-OCT-24
+09-OCT-17,"MIT Indigenous Peoples' Day","Standard Holiday",28-OCT-24
+11-NOV-17,"MIT Veterans' Day","Standard Holiday",28-OCT-24
+23-NOV-17,"MIT Thanksgiving Day","Standard Holiday",28-OCT-24
+24-NOV-17,"MIT Day After Thanksgiving","Standard Holiday",28-OCT-24
+25-DEC-17,"MIT Christmas Day","Standard Holiday",28-OCT-24
+01-JAN-18,"MIT New Year's Day","Standard Holiday",28-OCT-24
+15-JAN-18,"MIT Martin Luther King Day","Standard Holiday",28-OCT-24
+19-FEB-18,"MIT Presidents' Day","Standard Holiday",28-OCT-24
+16-APR-18,"MIT Patriots' Day","Standard Holiday",28-OCT-24
+28-MAY-18,"MIT Memorial Day","Standard Holiday",28-OCT-24
+04-JUL-18,"MIT Independence Day","Standard Holiday",28-OCT-24
+03-SEP-18,"MIT Labor Day","Standard Holiday",28-OCT-24
+08-OCT-18,"MIT Indigenous Peoples' Day","Standard Holiday",28-OCT-24
+11-NOV-18,"MIT Veterans' Day","Standard Holiday",28-OCT-24
+22-NOV-18,"MIT Thanksgiving Day","Standard Holiday",28-OCT-24
+23-NOV-18,"MIT Day After Thanksgiving","Standard Holiday",28-OCT-24
+25-DEC-18,"MIT Christmas Day","Standard Holiday",28-OCT-24
+01-JAN-19,"MIT New Year's Day","Standard Holiday",28-OCT-24
+21-JAN-19,"MIT Martin Luther King Day","Standard Holiday",28-OCT-24
+18-FEB-19,"MIT Presidents' Day","Standard Holiday",28-OCT-24
+15-APR-19,"MIT Patriots' Day","Standard Holiday",28-OCT-24
+27-MAY-19,"MIT Memorial Day","Standard Holiday",28-OCT-24
+04-JUL-19,"MIT Independence Day","Standard Holiday",28-OCT-24
+02-SEP-19,"MIT Labor Day","Standard Holiday",28-OCT-24
+14-OCT-19,"MIT Indigenous Peoples' Day","Standard Holiday",28-OCT-24
+11-NOV-19,"MIT Veterans' Day","Standard Holiday",28-OCT-24
+28-NOV-19,"MIT Thanksgiving Day","Standard Holiday",28-OCT-24
+29-NOV-19,"MIT Day After Thanksgiving","Standard Holiday",28-OCT-24
+25-DEC-19,"MIT Christmas Day","Standard Holiday",28-OCT-24
+01-JAN-20,"MIT New Year's Day","Standard Holiday",28-OCT-24
+20-JAN-20,"MIT Martin Luther King Day","Standard Holiday",28-OCT-24
+17-FEB-20,"MIT Presidents' Day","Standard Holiday",28-OCT-24
+20-APR-20,"MIT Patriots' Day","Standard Holiday",28-OCT-24
+25-MAY-20,"MIT Memorial Day","Standard Holiday",28-OCT-24
+04-JUL-20,"MIT Independence Day","Standard Holiday",28-OCT-24
+07-SEP-20,"MIT Labor Day","Standard Holiday",28-OCT-24
+12-OCT-20,"MIT Indigenous Peoples' Day","Standard Holiday",28-OCT-24
+11-NOV-20,"MIT Veterans' Day","Standard Holiday",28-OCT-24
+26-NOV-20,"MIT Thanksgiving Day","Standard Holiday",28-OCT-24
+27-NOV-20,"MIT Day After Thanksgiving","Standard Holiday",28-OCT-24
+25-DEC-20,"MIT Christmas Day","Standard Holiday",28-OCT-24
+01-JAN-21,"MIT New Year's Day","Standard Holiday",28-OCT-24
+18-JAN-21,"MIT Martin Luther King Day","Standard Holiday",28-OCT-24
+15-FEB-21,"MIT Presidents' Day","Standard Holiday",28-OCT-24
+19-APR-21,"MIT Patriots' Day","Standard Holiday",28-OCT-24
+31-MAY-21,"MIT Memorial Day","Standard Holiday",28-OCT-24
+06-SEP-21,"MIT Labor Day","Standard Holiday",28-OCT-24
+11-OCT-21,"MIT Indigenous Peoples' Day","Standard Holiday",28-OCT-24
+11-NOV-21,"MIT Veterans' Day","Standard Holiday",28-OCT-24
+25-NOV-21,"MIT Thanksgiving Day","Standard Holiday",28-OCT-24
+26-NOV-21,"MIT Day After Thanksgiving","Standard Holiday",28-OCT-24
+25-DEC-21,"MIT Christmas Day","Standard Holiday",28-OCT-24
+01-JAN-22,"MIT New Year's Day","Standard Holiday",28-OCT-24
+17-JAN-22,"MIT Martin Luther King Day","Standard Holiday",28-OCT-24
+21-FEB-22,"MIT Presidents' Day","Standard Holiday",28-OCT-24
+18-APR-22,"MIT Patriots' Day","Standard Holiday",28-OCT-24
+30-MAY-22,"MIT Memorial Day","Standard Holiday",28-OCT-24
+05-SEP-22,"MIT Labor Day","Standard Holiday",28-OCT-24
+10-OCT-22,"MIT Indigenous Peoples' Day","Standard Holiday",28-OCT-24
+11-NOV-22,"MIT Veterans' Day","Standard Holiday",28-OCT-24
+24-NOV-22,"MIT Thanksgiving Day","Standard Holiday",28-OCT-24
+25-NOV-22,"MIT Day After Thanksgiving","Standard Holiday",28-OCT-24
+25-DEC-22,"MIT Christmas Day","Standard Holiday",28-OCT-24
+01-JAN-00,"MIT New Year's Day","Standard Holiday",28-OCT-24
+17-JAN-00,"MIT Martin Luther King Day","Standard Holiday",28-OCT-24
+21-FEB-00,"MIT Presidents' Day","Standard Holiday",28-OCT-24
+17-APR-00,"MIT Patriots' Day","Standard Holiday",28-OCT-24
+29-MAY-00,"MIT Memorial Day","Standard Holiday",28-OCT-24
+04-JUL-00,"MIT Independence Day","Standard Holiday",28-OCT-24
+04-SEP-00,"MIT Labor Day","Standard Holiday",28-OCT-24
+09-OCT-00,"MIT Indigenous Peoples' Day","Standard Holiday",28-OCT-24
+11-NOV-00,"MIT Veterans' Day","Standard Holiday",28-OCT-24
+23-NOV-00,"MIT Thanksgiving Day","Standard Holiday",28-OCT-24
+24-NOV-00,"MIT Day After Thanksgiving","Standard Holiday",28-OCT-24
+25-DEC-00,"MIT Christmas Day","Standard Holiday",28-OCT-24
+01-JAN-01,"MIT New Year's Day","Standard Holiday",28-OCT-24
+15-JAN-01,"MIT Martin Luther King Day","Standard Holiday",28-OCT-24
+19-FEB-01,"MIT Presidents' Day","Standard Holiday",28-OCT-24
+16-APR-01,"MIT Patriots' Day","Standard Holiday",28-OCT-24
+28-MAY-01,"MIT Memorial Day","Standard Holiday",28-OCT-24
+04-JUL-01,"MIT Independence Day","Standard Holiday",28-OCT-24
+03-SEP-01,"MIT Labor Day","Standard Holiday",28-OCT-24
+08-OCT-01,"MIT Indigenous Peoples' Day","Standard Holiday",28-OCT-24
+11-NOV-01,"MIT Veterans' Day","Standard Holiday",28-OCT-24
+22-NOV-01,"MIT Thanksgiving Day","Standard Holiday",28-OCT-24
+23-NOV-01,"MIT Day After Thanksgiving","Standard Holiday",28-OCT-24
+25-DEC-01,"MIT Christmas Day","Standard Holiday",28-OCT-24
+01-JAN-02,"MIT New Year's Day","Standard Holiday",28-OCT-24
+21-JAN-02,"MIT Martin Luther King Day","Standard Holiday",28-OCT-24
+18-FEB-02,"MIT Presidents' Day","Standard Holiday",28-OCT-24
+15-APR-02,"MIT Patriots' Day","Standard Holiday",28-OCT-24
+27-MAY-02,"MIT Memorial Day","Standard Holiday",28-OCT-24
+04-JUL-02,"MIT Independence Day","Standard Holiday",28-OCT-24
+02-SEP-02,"MIT Labor Day","Standard Holiday",28-OCT-24
+14-OCT-02,"MIT Indigenous Peoples' Day","Standard Holiday",28-OCT-24
+11-NOV-02,"MIT Veterans' Day","Standard Holiday",28-OCT-24
+28-NOV-02,"MIT Thanksgiving Day","Standard Holiday",28-OCT-24
+29-NOV-02,"MIT Day After Thanksgiving","Standard Holiday",28-OCT-24
+25-DEC-02,"MIT Christmas Day","Standard Holiday",28-OCT-24
+01-JAN-03,"MIT New Year's Day","Standard Holiday",28-OCT-24
+20-JAN-03,"MIT Martin Luther King Day","Standard Holiday",28-OCT-24
+17-FEB-03,"MIT Presidents' Day","Standard Holiday",28-OCT-24
+21-APR-03,"MIT Patriots' Day","Standard Holiday",28-OCT-24
+26-MAY-03,"MIT Memorial Day","Standard Holiday",28-OCT-24
+04-JUL-03,"MIT Independence Day","Standard Holiday",28-OCT-24
+01-SEP-03,"MIT Labor Day","Standard Holiday",28-OCT-24
+13-OCT-03,"MIT Indigenous Peoples' Day","Standard Holiday",28-OCT-24
+11-NOV-03,"MIT Veterans' Day","Standard Holiday",28-OCT-24
+27-NOV-03,"MIT Thanksgiving Day","Standard Holiday",28-OCT-24
+28-NOV-03,"MIT Day After Thanksgiving","Standard Holiday",28-OCT-24
+25-DEC-03,"MIT Christmas Day","Standard Holiday",28-OCT-24
+01-JAN-04,"MIT New Year's Day","Standard Holiday",28-OCT-24
+19-JAN-04,"MIT Martin Luther King Day","Standard Holiday",28-OCT-24
+16-FEB-04,"MIT Presidents' Day","Standard Holiday",28-OCT-24
+19-APR-04,"MIT Patriots' Day","Standard Holiday",28-OCT-24
+31-MAY-04,"MIT Memorial Day","Standard Holiday",28-OCT-24
+04-JUL-04,"MIT Independence Day","Standard Holiday",28-OCT-24
+06-SEP-04,"MIT Labor Day","Standard Holiday",28-OCT-24
+11-OCT-04,"MIT Indigenous Peoples' Day","Standard Holiday",28-OCT-24
+11-NOV-04,"MIT Veterans' Day","Standard Holiday",28-OCT-24
+25-NOV-04,"MIT Thanksgiving Day","Standard Holiday",28-OCT-24
+26-NOV-04,"MIT Day After Thanksgiving","Standard Holiday",28-OCT-24
+25-DEC-04,"MIT Christmas Day","Standard Holiday",28-OCT-24
+01-JAN-05,"MIT New Year's Day","Standard Holiday",28-OCT-24
+17-JAN-05,"MIT Martin Luther King Day","Standard Holiday",28-OCT-24
+21-FEB-05,"MIT Presidents' Day","Standard Holiday",28-OCT-24
+18-APR-05,"MIT Patriots' Day","Standard Holiday",28-OCT-24
+30-MAY-05,"MIT Memorial Day","Standard Holiday",28-OCT-24
+04-JUL-05,"MIT Independence Day","Standard Holiday",28-OCT-24
+05-SEP-05,"MIT Labor Day","Standard Holiday",28-OCT-24
+10-OCT-05,"MIT Indigenous Peoples' Day","Standard Holiday",28-OCT-24
+11-NOV-05,"MIT Veterans' Day","Standard Holiday",28-OCT-24
+24-NOV-05,"MIT Thanksgiving Day","Standard Holiday",28-OCT-24
+25-NOV-05,"MIT Day After Thanksgiving","Standard Holiday",28-OCT-24
+25-DEC-05,"MIT Christmas Day","Standard Holiday",28-OCT-24
+01-JAN-06,"MIT New Year's Day","Standard Holiday",28-OCT-24
+16-JAN-06,"MIT Martin Luther King Day","Standard Holiday",28-OCT-24
+20-FEB-06,"MIT Presidents' Day","Standard Holiday",28-OCT-24
+17-APR-06,"MIT Patriots' Day","Standard Holiday",28-OCT-24
+29-MAY-06,"MIT Memorial Day","Standard Holiday",28-OCT-24
+04-JUL-06,"MIT Independence Day","Standard Holiday",28-OCT-24
+04-SEP-06,"MIT Labor Day","Standard Holiday",28-OCT-24
+09-OCT-06,"MIT Indigenous Peoples' Day","Standard Holiday",28-OCT-24
+11-NOV-06,"MIT Veterans' Day","Standard Holiday",28-OCT-24
+23-NOV-06,"MIT Thanksgiving Day","Standard Holiday",28-OCT-24
+24-NOV-06,"MIT Day After Thanksgiving","Standard Holiday",28-OCT-24
+25-DEC-06,"MIT Christmas Day","Standard Holiday",28-OCT-24
+01-JAN-07,"MIT New Year's Day","Standard Holiday",28-OCT-24
+15-JAN-07,"MIT Martin Luther King Day","Standard Holiday",28-OCT-24
+19-FEB-07,"MIT Presidents' Day","Standard Holiday",28-OCT-24
+16-APR-07,"MIT Patriots' Day","Standard Holiday",28-OCT-24
+28-MAY-07,"MIT Memorial Day","Standard Holiday",28-OCT-24
+04-JUL-07,"MIT Independence Day","Standard Holiday",28-OCT-24
+03-SEP-07,"MIT Labor Day","Standard Holiday",28-OCT-24
+08-OCT-07,"MIT Indigenous Peoples' Day","Standard Holiday",28-OCT-24
+11-NOV-07,"MIT Veterans' Day","Standard Holiday",28-OCT-24
+22-NOV-07,"MIT Thanksgiving Day","Standard Holiday",28-OCT-24
+23-NOV-07,"MIT Day After Thanksgiving","Standard Holiday",28-OCT-24
+25-DEC-07,"MIT Christmas Day","Standard Holiday",28-OCT-24
+01-JAN-08,"MIT New Year's Day","Standard Holiday",28-OCT-24
+21-JAN-08,"MIT Martin Luther King Day","Standard Holiday",28-OCT-24
+18-FEB-08,"MIT Presidents' Day","Standard Holiday",28-OCT-24
+21-APR-08,"MIT Patriots' Day","Standard Holiday",28-OCT-24
+26-MAY-08,"MIT Memorial Day","Standard Holiday",28-OCT-24
+01-SEP-08,"MIT Labor Day","Standard Holiday",28-OCT-24
+13-OCT-08,"MIT Indigenous Peoples' Day","Standard Holiday",28-OCT-24
+11-NOV-08,"MIT Veterans' Day","Standard Holiday",28-OCT-24
+27-NOV-08,"MIT Thanksgiving Day","Standard Holiday",28-OCT-24
+28-NOV-08,"MIT Day After Thanksgiving","Standard Holiday",28-OCT-24
+25-DEC-08,"MIT Christmas Day","Standard Holiday",28-OCT-24
+01-JAN-09,"MIT New Year's Day","Standard Holiday",28-OCT-24
+19-JAN-09,"MIT Martin Luther King Day","Standard Holiday",28-OCT-24
+16-FEB-09,"MIT Presidents' Day","Standard Holiday",28-OCT-24
+20-APR-09,"MIT Patriots' Day","Standard Holiday",28-OCT-24
+25-MAY-09,"MIT Memorial Day","Standard Holiday",28-OCT-24
+07-SEP-09,"MIT Labor Day","Standard Holiday",28-OCT-24
+12-OCT-09,"MIT Indigenous Peoples' Day","Standard Holiday",28-OCT-24
+11-NOV-09,"MIT Veterans' Day","Standard Holiday",28-OCT-24
+26-NOV-09,"MIT Thanksgiving Day","Standard Holiday",28-OCT-24
+27-NOV-09,"MIT Day After Thanksgiving","Standard Holiday",28-OCT-24
+25-DEC-09,"MIT Christmas Day","Standard Holiday",28-OCT-24
+01-JAN-10,"MIT New Year's Day","Standard Holiday",28-OCT-24
+18-JAN-10,"MIT Martin Luther King Day","Standard Holiday",28-OCT-24
+15-FEB-10,"MIT Presidents' Day","Standard Holiday",28-OCT-24
+19-APR-10,"MIT Patriots' Day","Standard Holiday",28-OCT-24
+31-MAY-10,"MIT Memorial Day","Standard Holiday",28-OCT-24
+06-SEP-10,"MIT Labor Day","Standard Holiday",28-OCT-24
+11-OCT-10,"MIT Indigenous Peoples' Day","Standard Holiday",28-OCT-24
+11-NOV-10,"MIT Veterans' Day","Standard Holiday",28-OCT-24
+25-NOV-10,"MIT Thanksgiving Day","Standard Holiday",28-OCT-24
+26-NOV-10,"MIT Day After Thanksgiving","Standard Holiday",28-OCT-24
+25-DEC-10,"MIT Christmas Day","Standard Holiday",28-OCT-24
+01-JAN-11,"MIT New Year's Day","Standard Holiday",28-OCT-24
+17-JAN-11,"MIT Martin Luther King Day","Standard Holiday",28-OCT-24
+21-FEB-11,"MIT Presidents' Day","Standard Holiday",28-OCT-24
+18-APR-11,"MIT Patriots' Day","Standard Holiday",28-OCT-24
+30-MAY-11,"MIT Memorial Day","Standard Holiday",28-OCT-24
+04-JUL-11,"MIT Independence Day","Standard Holiday",28-OCT-24
+05-SEP-11,"MIT Labor Day","Standard Holiday",28-OCT-24
+10-OCT-11,"MIT Indigenous Peoples' Day","Standard Holiday",28-OCT-24
+11-NOV-11,"MIT Veterans' Day","Standard Holiday",28-OCT-24
+24-NOV-11,"MIT Thanksgiving Day","Standard Holiday",28-OCT-24
+25-NOV-11,"MIT Day After Thanksgiving","Standard Holiday",28-OCT-24
+25-DEC-11,"MIT Christmas Day","Standard Holiday",28-OCT-24
+01-JAN-12,"MIT New Year's Day","Standard Holiday",28-OCT-24
+16-JAN-12,"MIT Martin Luther King Day","Standard Holiday",28-OCT-24
+20-FEB-12,"MIT Presidents' Day","Standard Holiday",28-OCT-24
+16-APR-12,"MIT Patriots' Day","Standard Holiday",28-OCT-24
+28-MAY-12,"MIT Memorial Day","Standard Holiday",28-OCT-24
+04-JUL-12,"MIT Independence Day","Standard Holiday",28-OCT-24
+03-SEP-12,"MIT Labor Day","Standard Holiday",28-OCT-24
+08-OCT-12,"MIT Indigenous Peoples' Day","Standard Holiday",28-OCT-24
+11-NOV-12,"MIT Veterans' Day","Standard Holiday",28-OCT-24
+22-NOV-12,"MIT Thanksgiving Day","Standard Holiday",28-OCT-24
+23-NOV-12,"MIT Day After Thanksgiving","Standard Holiday",28-OCT-24
+25-DEC-12,"MIT Christmas Day","Standard Holiday",28-OCT-24
+01-JAN-13,"MIT New Year's Day","Standard Holiday",28-OCT-24
+21-JAN-13,"MIT Martin Luther King Day","Standard Holiday",28-OCT-24
+18-FEB-13,"MIT Presidents' Day","Standard Holiday",28-OCT-24
+15-APR-13,"MIT Patriots' Day","Standard Holiday",28-OCT-24
+27-MAY-13,"MIT Memorial Day","Standard Holiday",28-OCT-24
+04-JUL-13,"MIT Independence Day","Standard Holiday",28-OCT-24
+02-SEP-13,"MIT Labor Day","Standard Holiday",28-OCT-24
+14-OCT-13,"MIT Indigenous Peoples' Day","Standard Holiday",28-OCT-24
+11-NOV-13,"MIT Veterans' Day","Standard Holiday",28-OCT-24
+28-NOV-13,"MIT Thanksgiving Day","Standard Holiday",28-OCT-24
+29-NOV-13,"MIT Day After Thanksgiving","Standard Holiday",28-OCT-24
+25-DEC-13,"MIT Christmas Day","Standard Holiday",28-OCT-24
+01-JAN-14,"MIT New Year's Day","Standard Holiday",28-OCT-24
+20-JAN-14,"MIT Martin Luther King Day","Standard Holiday",28-OCT-24
+17-FEB-14,"MIT Presidents' Day","Standard Holiday",28-OCT-24
+21-APR-14,"MIT Patriots' Day","Standard Holiday",28-OCT-24
+26-MAY-14,"MIT Memorial Day","Standard Holiday",28-OCT-24
+04-JUL-14,"MIT Independence Day","Standard Holiday",28-OCT-24
+01-SEP-14,"MIT Labor Day","Standard Holiday",28-OCT-24
+13-OCT-14,"MIT Indigenous Peoples' Day","Standard Holiday",28-OCT-24
+11-NOV-14,"MIT Veterans' Day","Standard Holiday",28-OCT-24
+27-NOV-14,"MIT Thanksgiving Day","Standard Holiday",28-OCT-24
+28-NOV-14,"MIT Day After Thanksgiving","Standard Holiday",28-OCT-24
+25-DEC-14,"MIT Christmas Day","Standard Holiday",28-OCT-24
+01-JAN-15,"MIT New Year's Day","Standard Holiday",28-OCT-24
+19-JAN-15,"MIT Martin Luther King Day","Standard Holiday",28-OCT-24
+16-FEB-15,"MIT Presidents' Day","Standard Holiday",28-OCT-24
+20-APR-15,"MIT Patriots' Day","Standard Holiday",28-OCT-24
+25-MAY-15,"MIT Memorial Day","Standard Holiday",28-OCT-24
+07-SEP-15,"MIT Labor Day","Standard Holiday",28-OCT-24
+12-OCT-15,"MIT Indigenous Peoples' Day","Standard Holiday",28-OCT-24
+11-NOV-15,"MIT Veterans' Day","Standard Holiday",28-OCT-24
+26-NOV-15,"MIT Thanksgiving Day","Standard Holiday",28-OCT-24
+27-NOV-15,"MIT Day After Thanksgiving","Standard Holiday",28-OCT-24
+25-DEC-15,"MIT Christmas Day","Standard Holiday",28-OCT-24
+01-JAN-16,"MIT New Year's Day","Standard Holiday",28-OCT-24
+18-JAN-16,"MIT Martin Luther King Day","Standard Holiday",28-OCT-24
+15-FEB-16,"MIT Presidents' Day","Standard Holiday",28-OCT-24
+18-APR-16,"MIT Patriots' Day","Standard Holiday",28-OCT-24
+30-MAY-16,"MIT Memorial Day","Standard Holiday",28-OCT-24
+05-SEP-16,"MIT Labor Day","Standard Holiday",28-OCT-24
+10-OCT-16,"MIT Indigenous Peoples' Day","Standard Holiday",28-OCT-24
+11-NOV-16,"MIT Veterans' Day","Standard Holiday",28-OCT-24
+24-NOV-16,"MIT Thanksgiving Day","Standard Holiday",28-OCT-24
+25-NOV-16,"MIT Day After Thanksgiving","Standard Holiday",28-OCT-24
+25-DEC-16,"MIT Christmas Day","Standard Holiday",28-OCT-24
+02-JAN-17,"MIT New Year's Day","Standard Holiday",28-OCT-24
+10-NOV-17,"MIT Veterans' Day","Standard Holiday",28-OCT-24
+12-NOV-18,"MIT Veterans' Day","Standard Holiday",28-OCT-24
+03-JUL-20,"MIT Independence Day","Standard Holiday",28-OCT-24
+05-JUL-21,"MIT Independence Day","Standard Holiday",28-OCT-24
+24-DEC-21,"MIT Christmas Day","Standard Holiday",28-OCT-24
+31-DEC-21,"MIT New Year's Day","Standard Holiday",28-OCT-24
+26-DEC-22,"MIT Christmas Day","Standard Holiday",28-OCT-24
+10-NOV-00,"MIT Veterans' Day","Standard Holiday",28-OCT-24
+12-NOV-01,"MIT Veterans' Day","Standard Holiday",28-OCT-24
+05-JUL-04,"MIT Independence Day","Standard Holiday",28-OCT-24
+24-DEC-04,"MIT Christmas Day","Standard Holiday",28-OCT-24
+31-DEC-04,"MIT New Year's Day","Standard Holiday",28-OCT-24
+26-DEC-05,"MIT Christmas Day","Standard Holiday",28-OCT-24
+02-JAN-06,"MIT New Year's Day","Standard Holiday",28-OCT-24
+10-NOV-06,"MIT Veterans' Day","Standard Holiday",28-OCT-24
+12-NOV-07,"MIT Veterans' Day","Standard Holiday",28-OCT-24
+03-JUL-09,"MIT Independence Day","Standard Holiday",28-OCT-24
+05-JUL-10,"MIT Independence Day","Standard Holiday",28-OCT-24
+24-DEC-10,"MIT Christmas Day","Standard Holiday",28-OCT-24
+31-DEC-10,"MIT New Year's Day","Standard Holiday",28-OCT-24
+26-DEC-11,"MIT Christmas Day","Standard Holiday",28-OCT-24
+02-JAN-12,"MIT New Year's Day","Standard Holiday",28-OCT-24
+12-NOV-12,"MIT Veterans' Day","Standard Holiday",28-OCT-24
+03-JUL-15,"MIT Independence Day","Standard Holiday",28-OCT-24
+26-DEC-16,"MIT Christmas Day","Standard Holiday",28-OCT-24
+01-JAN-23,"MIT New Year's Day","Standard Holiday",28-OCT-24
+02-JAN-23,"MIT New Year's Day","Standard Holiday",28-OCT-24
+16-JAN-23,"MIT Martin Luther King Day","Standard Holiday",28-OCT-24
+20-FEB-23,"MIT Presidents' Day","Standard Holiday",28-OCT-24
+17-APR-23,"MIT Patriots' Day","Standard Holiday",28-OCT-24
+29-MAY-23,"MIT Memorial Day","Standard Holiday",28-OCT-24
+04-JUL-23,"MIT Independence Day","Standard Holiday",28-OCT-24
+04-SEP-23,"MIT Labor Day","Standard Holiday",28-OCT-24
+09-OCT-23,"MIT Indigenous Peoples' Day","Standard Holiday",28-OCT-24
+10-NOV-23,"MIT Veterans' Day","Standard Holiday",28-OCT-24
+11-NOV-23,"MIT Veterans' Day","Standard Holiday",28-OCT-24
+23-NOV-23,"MIT Thanksgiving Day","Standard Holiday",28-OCT-24
+24-NOV-23,"MIT Day After Thanksgiving","Standard Holiday",28-OCT-24
+25-DEC-23,"MIT Christmas Day","Standard Holiday",28-OCT-24
+01-JAN-24,"MIT New Year's Day","Standard Holiday",28-OCT-24
+15-JAN-24,"MIT Martin Luther King Day","Standard Holiday",28-OCT-24
+19-FEB-24,"MIT Presidents' Day","Standard Holiday",28-OCT-24
+15-APR-24,"MIT Patriots' Day","Standard Holiday",28-OCT-24
+27-MAY-24,"MIT Memorial Day","Standard Holiday",28-OCT-24
+04-JUL-24,"MIT Independence Day","Standard Holiday",28-OCT-24
+02-SEP-24,"MIT Labor Day","Standard Holiday",28-OCT-24
+14-OCT-24,"MIT Indigenous Peoples' Day","Standard Holiday",28-OCT-24
+11-NOV-24,"MIT Veterans' Day","Standard Holiday",28-OCT-24
+28-NOV-24,"MIT Thanksgiving Day","Standard Holiday",28-OCT-24
+29-NOV-24,"MIT Day After Thanksgiving","Standard Holiday",28-OCT-24
+25-DEC-24,"MIT Christmas Day","Standard Holiday",28-OCT-24
+01-JAN-25,"MIT New Year's Day","Standard Holiday",28-OCT-24
+20-JAN-25,"MIT Martin Luther King Day","Standard Holiday",28-OCT-24
+17-FEB-25,"MIT Presidents' Day","Standard Holiday",28-OCT-24
+21-APR-25,"MIT Patriots' Day","Standard Holiday",28-OCT-24
+26-MAY-25,"MIT Memorial Day","Standard Holiday",28-OCT-24
+04-JUL-25,"MIT Independence Day","Standard Holiday",28-OCT-24
+01-SEP-25,"MIT Labor Day","Standard Holiday",28-OCT-24
+13-OCT-25,"MIT Indigenous Peoples' Day","Standard Holiday",28-OCT-24
+11-NOV-25,"MIT Veterans' Day","Standard Holiday",28-OCT-24
+27-NOV-25,"MIT Thanksgiving Day","Standard Holiday",28-OCT-24
+28-NOV-25,"MIT Day After Thanksgiving","Standard Holiday",28-OCT-24
+25-DEC-25,"MIT Christmas Day","Standard Holiday",28-OCT-24
+01-JAN-26,"MIT New Year's Day","Standard Holiday",28-OCT-24
+19-JAN-26,"MIT Martin Luther King Day","Standard Holiday",28-OCT-24
+16-FEB-26,"MIT Presidents' Day","Standard Holiday",28-OCT-24
+20-APR-26,"MIT Patriots' Day","Standard Holiday",28-OCT-24
+25-MAY-26,"MIT Memorial Day","Standard Holiday",28-OCT-24
+03-JUL-26,"MIT Independence Day","Standard Holiday",28-OCT-24
+04-JUL-26,"MIT Independence Day","Standard Holiday",28-OCT-24
+07-SEP-26,"MIT Labor Day","Standard Holiday",28-OCT-24
+12-OCT-26,"MIT Indigenous Peoples' Day","Standard Holiday",28-OCT-24
+11-NOV-26,"MIT Veterans' Day","Standard Holiday",28-OCT-24
+26-NOV-26,"MIT Thanksgiving Day","Standard Holiday",28-OCT-24
+27-NOV-26,"MIT Day After Thanksgiving","Standard Holiday",28-OCT-24
+25-DEC-26,"MIT Christmas Day","Standard Holiday",28-OCT-24
+01-JAN-27,"MIT New Year's Day","Standard Holiday",28-OCT-24
+18-JAN-27,"MIT Martin Luther King Day","Standard Holiday",28-OCT-24
+15-FEB-27,"MIT Presidents' Day","Standard Holiday",28-OCT-24
+19-APR-27,"MIT Patriots' Day","Standard Holiday",28-OCT-24
+31-MAY-27,"MIT Memorial Day","Standard Holiday",28-OCT-24
+04-JUL-27,"MIT Independence Day","Standard Holiday",28-OCT-24
+05-JUL-27,"MIT Independence Day","Standard Holiday",28-OCT-24
+06-SEP-27,"MIT Labor Day","Standard Holiday",28-OCT-24
+11-OCT-27,"MIT Indigenous Peoples' Day","Standard Holiday",28-OCT-24
+11-NOV-27,"MIT Veterans' Day","Standard Holiday",28-OCT-24
+25-NOV-27,"MIT Thanksgiving Day","Standard Holiday",28-OCT-24
+26-NOV-27,"MIT Day After Thanksgiving","Standard Holiday",28-OCT-24
+24-DEC-27,"MIT Christmas Day","Standard Holiday",28-OCT-24
+25-DEC-27,"MIT Christmas Day","Standard Holiday",28-OCT-24
+18-JUN-21,"MIT Juneteenth","Standard Holiday",28-OCT-24
+19-JUN-21,"MIT Juneteenth","Standard Holiday",28-OCT-24
+19-JUN-22,"MIT Juneteenth","Standard Holiday",28-OCT-24
+20-JUN-22,"MIT Juneteenth","Standard Holiday",28-OCT-24

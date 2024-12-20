@@ -1,0 +1,1001 @@
+"FIRST_NAME","MIDDLE_NAME","LAST_NAME","FULL_NAME","OFFICE_LOCATION","OFFICE_PHONE","EMAIL_ADDRESS","DEPARTMENT","DEPARTMENT_NAME","STUDENT_YEAR","FULL_NAME_UPPERCASE","WAREHOUSE_LOAD_DATE"
+"Lilly","K.","Edwards","Edwards, Lilly K.","","","lillyk@MIT.EDU","6","Electrical Eng & Computer Sci","G","EDWARDS, LILLY K.",28-OCT-24
+"Dominic","","Sudnik","Sudnik, Dominic","","","dsudnik@MIT.EDU","15","Management","G","SUDNIK, DOMINIC",28-OCT-24
+"Lilymoon","","Whalen","Whalen, Lilymoon","","","lilymoon@MIT.EDU","NIW","Wellesley Cross-Enrollment Pro","2","WHALEN, LILYMOON",28-OCT-24
+"Paul","","Meisenbichler","Meisenbichler, Paul","","","paulm420@MIT.EDU","24","Linguistics and Philosophy","G","MEISENBICHLER, PAUL",28-OCT-24
+"Mehdi","","Kaaniche","Kaaniche, Mehdi","","","mehdik@MIT.EDU","15","Management","G","KAANICHE, MEHDI",28-OCT-24
+"Hanyang","","Tang","Tang, Hanyang","","","hytangs@MIT.EDU","11","Urban Studies and Planning","G","TANG, HANYANG",28-OCT-24
+"Aaron","M.","Becker","Becker, Aaron M.","","","ambecker@MIT.EDU","2","Mechanical Engineering","4","BECKER, AARON M.",28-OCT-24
+"Eze","","Somarriba","Somarriba, Eze","","","eze_s@MIT.EDU","6","Electrical Eng & Computer Sci","2","SOMARRIBA, EZE",28-OCT-24
+"Allison","","Park","Park, Allison","","","aspark7@MIT.EDU","6","Electrical Eng & Computer Sci","2","PARK, ALLISON",28-OCT-24
+"Eric","D.","Nguyen","Nguyen, Eric D.","","","ericn123@MIT.EDU","NONE","Freshmen","1","NGUYEN, ERIC D.",28-OCT-24
+"Christopher","Jon","Hicks","Hicks, Christopher Jon","","","hicksch@MIT.EDU","EM","Engineering Management","G","HICKS, CHRISTOPHER JON",28-OCT-24
+"Jiahao","","Lyu","Lyu, Jiahao","","","jhlyu@MIT.EDU","8","Physics","G","LYU, JIAHAO",28-OCT-24
+"Margarita","","Carranza","Carranza, Margarita","","","margs64@MIT.EDU","NONE","Freshmen","1","CARRANZA, MARGARITA",28-OCT-24
+"Sabah","K.","Geresu","Geresu, Sabah K.","","","sgeresu@MIT.EDU","NONE","Freshmen","1","GERESU, SABAH K.",28-OCT-24
+"Damon","","Petersen","Petersen, Damon","","","damonp@MIT.EDU","15","Management","G","PETERSEN, DAMON",28-OCT-24
+"Katie","Elaine","Traynelis","Traynelis, Katie Elaine","","","ktraynel@MIT.EDU","10","Chemical Engineering","G","TRAYNELIS, KATIE ELAINE",28-OCT-24
+"Rosen","","Yu","Yu, Rosen","","","rosenyu@MIT.EDU","CSE","Computational Sci and Eng","G","YU, ROSEN",28-OCT-24
+"Sreela","","Srinivasan","Srinivasan, Sreela","","","sreelasr@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","SRINIVASAN, SREELA",28-OCT-24
+"Atharva","Ajay","Navaratne","Navaratne, Atharva Ajay","","","atn95@MIT.EDU","15","Management","G","NAVARATNE, ATHARVA AJAY",28-OCT-24
+"Margaret","S.","Feng","Feng, Margaret S.","","","maggief@MIT.EDU","NONE","Freshmen","1","FENG, MARGARET S.",28-OCT-24
+"Seohyun","","Hwang","Hwang, Seohyun","","","shhwang@MIT.EDU","NIW","Wellesley Cross-Enrollment Pro","4","HWANG, SEOHYUN",28-OCT-24
+"Peter","William","Hoffman","Hoffman, Peter William","","","hoffmanp@MIT.EDU","OR","Operations Research","G","HOFFMAN, PETER WILLIAM",28-OCT-24
+"Elijah","H.","Young","Young, Elijah H.","","","ehyoung@MIT.EDU","2","Mechanical Engineering","2","YOUNG, ELIJAH H.",28-OCT-24
+"Omar","Nazmi","Mohd","Mohd, Omar Nazmi","E18-520","","omarmohd@MIT.EDU","6","Electrical Eng & Computer Sci","G","MOHD, OMAR NAZMI",28-OCT-24
+"Mingze","","Zhu","Zhu, Mingze","","","mingzezh@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","ZHU, MINGZE",28-OCT-24
+"Wei","","Fang","Fang, Wei","","","weifang@MIT.EDU","6","Electrical Eng & Computer Sci","G","FANG, WEI",28-OCT-24
+"Joyce","B.","Kang","Kang, Joyce B.","","","jbkang@MIT.EDU","HST","Health Sciences & Technology","G","KANG, JOYCE B.",28-OCT-24
+"Jennifer","","Kim","Kim, Jennifer","","","jennkim@MIT.EDU","6","Electrical Eng & Computer Sci","3","KIM, JENNIFER",28-OCT-24
+"Felix","Yanwei","Wang","Wang, Felix Yanwei","","","felixw@MIT.EDU","6","Electrical Eng & Computer Sci","G","WANG, FELIX YANWEI",28-OCT-24
+"Linzixuan Rhoda","","Zhang","Zhang, Linzixuan Rhoda","","","zlzx@MIT.EDU","10","Chemical Engineering","G","ZHANG, LINZIXUAN RHODA",28-OCT-24
+"Basil","","Liu","Liu, Basil","","","byliu@MIT.EDU","18","Mathematics","2","LIU, BASIL",28-OCT-24
+"Paulo","","Souza Chade","Souza Chade, Paulo","","","paulocha@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","4","SOUZA CHADE, PAULO",28-OCT-24
+"Merci","Y","Mukasafari","Mukasafari, Merci Y","","","mercim@MIT.EDU","NIW","Wellesley Cross-Enrollment Pro","3","MUKASAFARI, MERCI Y",28-OCT-24
+"Zoe","S.","Kim","Kim, Zoe S.","","","","NIH","Harvard Cross-Enrollment Prog","3","KIM, ZOE S.",28-OCT-24
+"Sophia","","Woodbury","Woodbury, Sophia","","","wsophia@MIT.EDU","NONE","Freshmen","1","WOODBURY, SOPHIA",28-OCT-24
+"Rileigh","J.","Olson","Olson, Rileigh J.","","","rolson@MIT.EDU","NONE","Freshmen","1","OLSON, RILEIGH J.",28-OCT-24
+"Maeve","I.","Zimmer","Zimmer, Maeve I.","","","maevezim@MIT.EDU","6","Electrical Eng & Computer Sci","2","ZIMMER, MAEVE I.",28-OCT-24
+"Michael","Joseph","Arnold","Arnold, Michael Joseph","","","mjarnold@MIT.EDU","2","Mechanical Engineering","G","ARNOLD, MICHAEL JOSEPH",28-OCT-24
+"Marco","","Machado","Machado, Marco","","","marcoafm@MIT.EDU","10","Chemical Engineering","G","MACHADO, MARCO",28-OCT-24
+"Luzia","","Knoedler","Knoedler, Luzia","","","luziakn@MIT.EDU","16","Aeronautics and Astronautics","G","KNOEDLER, LUZIA",28-OCT-24
+"Amy","E.","Stoddard","Stoddard, Amy E.","","","aestod@MIT.EDU","HST","Health Sciences & Technology","G","STODDARD, AMY E.",28-OCT-24
+"Trevor","V.","Long","Long, Trevor V.","","","longt@MIT.EDU","16","Aeronautics and Astronautics","G","LONG, TREVOR V.",28-OCT-24
+"Natanon","","Therdpraisan","Therdpraisan, Natanon","","","noteth25@MIT.EDU","18","Mathematics","4","THERDPRAISAN, NATANON",28-OCT-24
+"Emily","","Wu","Wu, Emily","5-008","","emwu@MIT.EDU","2","Mechanical Engineering","G","WU, EMILY",28-OCT-24
+"Ali","A.","Saffarini","Saffarini, Ali A.","","","safarini@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","2","SAFFARINI, ALI A.",28-OCT-24
+"Gianluca","","Torsoli","Torsoli, Gianluca","","","gianlu97@MIT.EDU","16","Aeronautics and Astronautics","G","TORSOLI, GIANLUCA",28-OCT-24
+"James","","Chen","Chen, James","","","jamesyc@MIT.EDU","6","Electrical Eng & Computer Sci","G","CHEN, JAMES",28-OCT-24
+"Henrik","Jorgen","Heelweg","Heelweg, Henrik Jorgen","","","hheelweg@MIT.EDU","5","Chemistry","G","HEELWEG, HENRIK JORGEN",28-OCT-24
+"Charlotte","L.","Michaluk","Michaluk, Charlotte L.","","","lenorka9@MIT.EDU","NONE","Freshmen","1","MICHALUK, CHARLOTTE L.",28-OCT-24
+"Catherine","A","Fong","Fong, Catherine A","","","cafong@MIT.EDU","NIW","Wellesley Cross-Enrollment Pro","4","FONG, CATHERINE A",28-OCT-24
+"April","","Lee","Lee, April","","","aprillee@MIT.EDU","7","Biology","G","LEE, APRIL",28-OCT-24
+"Damien","Vaughn","Green","Green, Damien Vaughn","","","dvgreen@MIT.EDU","15","Management","G","GREEN, DAMIEN VAUGHN",28-OCT-24
+"John","Prakash","Niroula","Niroula, John Prakash","","","jniroula@MIT.EDU","6","Electrical Eng & Computer Sci","G","NIROULA, JOHN PRAKASH",28-OCT-24
+"Ash","S.","Hong","Hong, Ash S.","","","ashhong@MIT.EDU","6","Electrical Eng & Computer Sci","3","HONG, ASH S.",28-OCT-24
+"Agustin","G.","Valdes Martinez","Valdes Martinez, Agustin G.","","","avaldesm@MIT.EDU","8","Physics","4","VALDES MARTINEZ, AGUSTIN G.",28-OCT-24
+"Maureen","","Thyne","Thyne, Maureen","","","mthyne@MIT.EDU","15","Management","G","THYNE, MAUREEN",28-OCT-24
+"Karim","","Shalash","Shalash, Karim","","","shalash@MIT.EDU","EM","Engineering Management","G","SHALASH, KARIM",28-OCT-24
+"Siqi","","Wu","Wu, Siqi","","","siqiw003@MIT.EDU","18","Mathematics","G","WU, SIQI",28-OCT-24
+"Mallory","M.","Whalen","Whalen, Mallory M.","","","malw@MIT.EDU","2","Mechanical Engineering","G","WHALEN, MALLORY M.",28-OCT-24
+"Kirti","","Nath","Nath, Kirti","","","knath@MIT.EDU","HST","Health Sciences & Technology","G","NATH, KIRTI",28-OCT-24
+"Monika","","Farsang","Farsang, Monika","","","mfarsang@MIT.EDU","6","Electrical Eng & Computer Sci","G","FARSANG, MONIKA",28-OCT-24
+"Erin","","Chen","Chen, Erin","","","qc8@MIT.EDU","11","Urban Studies and Planning","G","CHEN, ERIN",28-OCT-24
+"Andrew","Z.","Yuan","Yuan, Andrew Z.","","","azyuan@MIT.EDU","6","Electrical Eng & Computer Sci","2","YUAN, ANDREW Z.",28-OCT-24
+"Teimurazi","","Toloraia","Toloraia, Teimurazi","","","toloraia@MIT.EDU","6","Electrical Eng & Computer Sci","3","TOLORAIA, TEIMURAZI",28-OCT-24
+"Vandell","","Vatel","Vatel, Vandell","","","v_vatel@MIT.EDU","6","Electrical Eng & Computer Sci","3","VATEL, VANDELL",28-OCT-24
+"Raji","Ashenafi","Mamade","Mamade, Raji Ashenafi","","","raji@MIT.EDU","8","Physics","G","MAMADE, RAJI ASHENAFI",28-OCT-24
+"Samuel","Marcus","Heath","Heath, Samuel Marcus","","","sheath@MIT.EDU","2","Mechanical Engineering","G","HEATH, SAMUEL MARCUS",28-OCT-24
+"Matthias","","Weigand","Weigand, Matthias","","","mweigand@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","WEIGAND, MATTHIAS",28-OCT-24
+"Fadime","Renee","Stemmer","Stemmer, Fadime Renee","","","fstemmer@MIT.EDU","12","Earth, Atmos & Planetary Sci","G","STEMMER, FADIME RENEE",28-OCT-24
+"Jessica","","Wang","Wang, Jessica","","","jessyw22@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","WANG, JESSICA",28-OCT-24
+"Lukas","","Manske","Manske, Lukas","","","lukasman@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","MANSKE, LUKAS",28-OCT-24
+"Eleanor","Gladding","Freund","Freund, Eleanor Gladding","","","freund@MIT.EDU","17","Political Science","G","FREUND, ELEANOR GLADDING",28-OCT-24
+"Amar","","Boparai","Boparai, Amar","","","amarboparai@college.harvard.edu","NIH","Harvard Cross-Enrollment Prog","4","BOPARAI, AMAR",28-OCT-24
+"Osman","","Monla","Monla, Osman","","","osmonla@MIT.EDU","15","Management","G","MONLA, OSMAN",28-OCT-24
+"Will","Wolfe","Crockett","Crockett, Will Wolfe","","","will_wc@MIT.EDU","7","Biology","G","CROCKETT, WILL WOLFE",28-OCT-24
+"Olivia","T.","Alabi","Alabi, Olivia T.","","","otalabi@MIT.EDU","16","Aeronautics and Astronautics","2","ALABI, OLIVIA T.",28-OCT-24
+"Ashim","","Sitoula","Sitoula, Ashim","","","ashim@MIT.EDU","6","Electrical Eng & Computer Sci","4","SITOULA, ASHIM",28-OCT-24
+"Ananya","","Kulshrestha","Kulshrestha, Ananya","","","ananya_k@MIT.EDU","6","Electrical Eng & Computer Sci","3","KULSHRESTHA, ANANYA",28-OCT-24
+"Joseph","","Ye","Ye, Joseph","","","justdoye@MIT.EDU","6","Electrical Eng & Computer Sci","4","YE, JOSEPH",28-OCT-24
+"Faisal","","Mbutu","Mbutu, Faisal","","","faisalmb@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","MBUTU, FAISAL",28-OCT-24
+"Anthony","","Lin","Lin, Anthony","","","lin_a@MIT.EDU","NONE","Freshmen","1","LIN, ANTHONY",28-OCT-24
+"Ellie","Q.","Montemayor","Montemayor, Ellie Q.","","","aelyana@MIT.EDU","8","Physics","3","MONTEMAYOR, ELLIE Q.",28-OCT-24
+"Bodie","Jett","Ziertman","Ziertman, Bodie Jett","","","ziert001@MIT.EDU","16","Aeronautics and Astronautics","G","ZIERTMAN, BODIE JETT",28-OCT-24
+"Aishwarya","","Singh","Singh, Aishwarya","","","aishw849@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","SINGH, AISHWARYA",28-OCT-24
+"Mohammed","","Karamathulla","Karamathulla, Mohammed","","","mkaramat@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","KARAMATHULLA, MOHAMMED",28-OCT-24
+"Donghang","","Li","Li, Donghang","","","donghang@MIT.EDU","11","Urban Studies and Planning","G","LI, DONGHANG",28-OCT-24
+"Amina","A.","Abdalla","Abdalla, Amina A.","","","aminaa@MIT.EDU","20","Biological Engineering","4","ABDALLA, AMINA A.",28-OCT-24
+"Gege","","Han","Han, Gege","","","gegehan@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","HAN, GEGE",28-OCT-24
+"Drew","C.","Carlson","Carlson, Drew C.","","","dccarlso@MIT.EDU","EM","Engineering Management","G","CARLSON, DREW C.",28-OCT-24
+"So-Yoon","","Yang","Yang, So-Yoon","","","syang0@MIT.EDU","6","Electrical Eng & Computer Sci","G","YANG, SO-YOON",28-OCT-24
+"Darek","","Kalynczak","Kalynczak, Darek","","","darek@MIT.EDU","15","Management","G","KALYNCZAK, DAREK",28-OCT-24
+"Mikaela","P.","Finlay","Finlay, Mikaela P.","","","mpfinlay@MIT.EDU","18","Mathematics","3","FINLAY, MIKAELA P.",28-OCT-24
+"Shrey","","Aryan","Aryan, Shrey","","","shrey183@MIT.EDU","18","Mathematics","G","ARYAN, SHREY",28-OCT-24
+"Skandaprasad","Valliyur","Rao","Rao, Skandaprasad Valliyur","13-2009","","srao2722@MIT.EDU","8","Physics","G","RAO, SKANDAPRASAD VALLIYUR",28-OCT-24
+"Gavin","","Xia","Xia, Gavin","","","gxia@college.harvard.edu","NIH","Harvard Cross-Enrollment Prog","4","XIA, GAVIN",28-OCT-24
+"Ian","","Sabula","Sabula, Ian","","","isabula@MIT.EDU","7","Biology","G","SABULA, IAN",28-OCT-24
+"Yuki","","Murota","Murota, Yuki","","","yumur210@MIT.EDU","EM","Engineering Management","G","MUROTA, YUKI",28-OCT-24
+"Larry","","Deng","Deng, Larry","","","larryd88@MIT.EDU","RED","Center for Real Estate Develop","G","DENG, LARRY",28-OCT-24
+"Heidi","A.","Durresi","Durresi, Heidi A.","","","durresi@MIT.EDU","24","Linguistics and Philosophy","G","DURRESI, HEIDI A.",28-OCT-24
+"Jesus","A.","Galarza Rondinel","Galarza Rondinel, Jesus A.","","","jesusgal@MIT.EDU","8","Physics","2","GALARZA RONDINEL, JESUS A.",28-OCT-24
+"Aishwarya","","Singh","Singh, Aishwarya","","","AISHWARYASINGH@HKS.HARVARD.EDU","NIH","Harvard Cross-Enrollment Prog","G","SINGH, AISHWARYA",28-OCT-24
+"Ju Young","","Lee","Lee, Ju Young","","","juylee24@MIT.EDU","6","Electrical Eng & Computer Sci","G","LEE, JU YOUNG",28-OCT-24
+"Jonathan","","Muniz","Muniz, Jonathan","","","jonmuniz@MIT.EDU","EM","Engineering Management","G","MUNIZ, JONATHAN",28-OCT-24
+"Tishara","","Garg","Garg, Tishara","","","tishara@MIT.EDU","14","Economics","G","GARG, TISHARA",28-OCT-24
+"Derek","C.","Schaffer","Schaffer, Derek C.","","","dschaff@MIT.EDU","NONE","Freshmen","1","SCHAFFER, DEREK C.",28-OCT-24
+"Janet","Z","Wang","Wang, Janet Z","13-3061","4522326","janetzw@MIT.EDU","6","Electrical Eng & Computer Sci","G","WANG, JANET Z",28-OCT-24
+"Yiqiao","","Sun","Sun, Yiqiao","","","ys711@MIT.EDU","15","Management","G","SUN, YIQIAO",28-OCT-24
+"Eric","Le","Wang","Wang, Eric Le","","","elwang10@MIT.EDU","15","Management","G","WANG, ERIC LE",28-OCT-24
+"Paola","","Martinez","Martinez, Paola","","","paola016@MIT.EDU","15","Management","G","MARTINEZ, PAOLA",28-OCT-24
+"Donald","E.","Schneider","Schneider, Donald E.","","","don1171@MIT.EDU","EM","Engineering Management","G","SCHNEIDER, DONALD E.",28-OCT-24
+"Takuya","","Suzuki","Suzuki, Takuya","","","takuya22@MIT.EDU","EM","Engineering Management","G","SUZUKI, TAKUYA",28-OCT-24
+"Jinger","S.","Chong","Chong, Jinger S.","","","jinger@MIT.EDU","2","Mechanical Engineering","G","CHONG, JINGER S.",28-OCT-24
+"Mateo","","Morales Jaramillo","Morales Jaramillo, Mateo","","","matmoral@MIT.EDU","15","Management","G","MORALES JARAMILLO, MATEO",28-OCT-24
+"Claire","F.","Zhang","Zhang, Claire F.","","","clairefz@MIT.EDU","6","Electrical Eng & Computer Sci","3","ZHANG, CLAIRE F.",28-OCT-24
+"Sampada","","Nepal","Nepal, Sampada","","","sampada@MIT.EDU","NONE","Freshmen","1","NEPAL, SAMPADA",28-OCT-24
+"Lisa","","Mathew","Mathew, Lisa","","","lisamath@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","4","MATHEW, LISA",28-OCT-24
+"Jack","Henry","Bolster","Bolster, Jack Henry","","","jbolster@MIT.EDU","8","Physics","G","BOLSTER, JACK HENRY",28-OCT-24
+"Lester","A.","Heredia Gopar","Heredia Gopar, Lester A.","","","lesterhg@MIT.EDU","6","Electrical Eng & Computer Sci","2","HEREDIA GOPAR, LESTER A.",28-OCT-24
+"Christine","L.","Keedy Brown","Keedy Brown, Christine L.","","","keedy@MIT.EDU","NONE","Freshmen","1","KEEDY BROWN, CHRISTINE L.",28-OCT-24
+"Tyler","Kevin","Carey","Carey, Tyler Kevin","","","tcarey4@MIT.EDU","EM","Engineering Management","G","CAREY, TYLER KEVIN",28-OCT-24
+"Zhaofeng","","Wu","Wu, Zhaofeng","","","zfw@MIT.EDU","6","Electrical Eng & Computer Sci","G","WU, ZHAOFENG",28-OCT-24
+"Julia","","Chae","Chae, Julia","","","chaenayo@MIT.EDU","6","Electrical Eng & Computer Sci","G","CHAE, JULIA",28-OCT-24
+"Cameron","","Diao","Diao, Cameron","","","diaoc@MIT.EDU","6","Electrical Eng & Computer Sci","G","DIAO, CAMERON",28-OCT-24
+"Chelsy","L.","Goodwill","Goodwill, Chelsy L.","","","chelsy27@MIT.EDU","10","Chemical Engineering","2","GOODWILL, CHELSY L.",28-OCT-24
+"Ava","E.","Hartman","Hartman, Ava E.","","","hartmana@MIT.EDU","NONE","Freshmen","1","HARTMAN, AVA E.",28-OCT-24
+"Shion","","Murakawa","Murakawa, Shion","","","shionmu@MIT.EDU","8","Physics","4","MURAKAWA, SHION",28-OCT-24
+"Edgar","Enrique","Barua","Barua, Edgar Enrique","","","ebarua@MIT.EDU","15","Management","G","BARUA, EDGAR ENRIQUE",28-OCT-24
+"FNU","","Sanna","Sanna, FNU","","","sana98@MIT.EDU","NIA","Non-Institute-MFA/MCA","G","SANNA, FNU",28-OCT-24
+"Joy","","Liu","Liu, Joy","","","joyliu@MIT.EDU","2","Mechanical Engineering","G","LIU, JOY",28-OCT-24
+"Tobe","M.","Obochi","Obochi, Tobe M.","","","tobe@MIT.EDU","6","Electrical Eng & Computer Sci","G","OBOCHI, TOBE M.",28-OCT-24
+"Isabel","","Diersen","Diersen, Isabel","","","idiersen@MIT.EDU","3","Materials Science and Eng","G","DIERSEN, ISABEL",28-OCT-24
+"Thomas","Brendan","Cohn","Cohn, Thomas Brendan","32-380","","tcohn@MIT.EDU","6","Electrical Eng & Computer Sci","G","COHN, THOMAS BRENDAN",28-OCT-24
+"Carolina","","Vilchis","Vilchis, Carolina","","","cvilchis@MIT.EDU","15","Management","G","VILCHIS, CAROLINA",28-OCT-24
+"Gary","T.","Nguyen","Nguyen, Gary T.","","","nguyeng@MIT.EDU","6","Electrical Eng & Computer Sci","G","NGUYEN, GARY T.",28-OCT-24
+"Sayandeep","","Biswas","Biswas, Sayandeep","E18-509","","biswas00@MIT.EDU","10","Chemical Engineering","G","BISWAS, SAYANDEEP",28-OCT-24
+"Claire","M.","Zheng","Zheng, Claire M.","","","cmzheng@MIT.EDU","6","Electrical Eng & Computer Sci","3","ZHENG, CLAIRE M.",28-OCT-24
+"Yishi","","Wang","Wang, Yishi","","","yishi@MIT.EDU","NIA","Non-Institute-MFA/MCA","G","WANG, YISHI",28-OCT-24
+"Raechel","Dionne","Walker","Walker, Raechel Dionne","","","raechelw@MIT.EDU","MAS","Prog in Media Arts Sciences","G","WALKER, RAECHEL DIONNE",28-OCT-24
+"June","","Stenzel","Stenzel, June","","","jstenzel@MIT.EDU","16","Aeronautics and Astronautics","G","STENZEL, JUNE",28-OCT-24
+"Yongrui","","Jin","Jin, Yongrui","","","yongruij@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","JIN, YONGRUI",28-OCT-24
+"Sizhe Lester","","Li","Li, Sizhe Lester","","","sizheli@MIT.EDU","6","Electrical Eng & Computer Sci","G","LI, SIZHE LESTER",28-OCT-24
+"Marco","","Dalla Rosa","Dalla Rosa, Marco","","","marco406@MIT.EDU","22","Nuclear Engineering","G","DALLA ROSA, MARCO",28-OCT-24
+"Georgy","D.","Guryev","Guryev, Georgy D.","36-732","","georgy@MIT.EDU","6","Electrical Eng & Computer Sci","G","GURYEV, GEORGY D.",28-OCT-24
+"Alex","","Oort Alonso","Oort Alonso, Alex","","","alexoort@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","3","OORT ALONSO, ALEX",28-OCT-24
+"Harrison","M","McCann","McCann, Harrison M","","","mccannh@MIT.EDU","5","Chemistry","G","MCCANN, HARRISON M",28-OCT-24
+"Eli","","Kirtley","Kirtley, Eli","","","elikirtl@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","4","KIRTLEY, ELI",28-OCT-24
+"Yiting","","Zhang","Zhang, Yiting","","","yitingzh@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","ZHANG, YITING",28-OCT-24
+"Sophia","","Chen","Chen, Sophia","","","sophc@MIT.EDU","6","Electrical Eng & Computer Sci","3","CHEN, SOPHIA",28-OCT-24
+"Yin Min","","Goh","Goh, Yin Min","36-517","","gohymin@MIT.EDU","6","Electrical Eng & Computer Sci","G","GOH, YIN MIN",28-OCT-24
+"Gabriela","Sofia","Rincon de Alba","Rincon de Alba, Gabriela Sofia","","","grincon@MIT.EDU","15","Management","G","RINCON DE ALBA, GABRIELA SOFIA",28-OCT-24
+"Zichao","","Xiang","Xiang, Zichao","","","xiang28@MIT.EDU","15","Management","G","XIANG, ZICHAO",28-OCT-24
+"Allison","","Tian","Tian, Allison","","","altian01@MIT.EDU","15","Management","G","TIAN, ALLISON",28-OCT-24
+"Jorge","L.","Cazares","Cazares, Jorge L.","","","jorge_lc@MIT.EDU","6","Electrical Eng & Computer Sci","2","CAZARES, JORGE L.",28-OCT-24
+"Phillyscia","G","Stanley","Stanley, Phillyscia G","","","pstanley@MIT.EDU","NIW","Wellesley Cross-Enrollment Pro","3","STANLEY, PHILLYSCIA G",28-OCT-24
+"Victoria","Fransisca","Gomerdinger","Gomerdinger, Victoria Fransisca","76-573","","vgomer@MIT.EDU","10","Chemical Engineering","G","GOMERDINGER, VICTORIA FRANSISCA",28-OCT-24
+"Risheng","","Jiang","Jiang, Risheng","","","rishengj@MIT.EDU","15","Management","G","JIANG, RISHENG",28-OCT-24
+"Janine","A.","Medrano","Medrano, Janine A.","","","jmedra@MIT.EDU","6","Electrical Eng & Computer Sci","3","MEDRANO, JANINE A.",28-OCT-24
+"Raphael Dylan","T.","Dalida","Dalida, Raphael Dylan T.","","","rddalida@MIT.EDU","6","Electrical Eng & Computer Sci","2","DALIDA, RAPHAEL DYLAN T.",28-OCT-24
+"Merey","","Temirzinova","Temirzinova, Merey","","","merey@MIT.EDU","6","Electrical Eng & Computer Sci","2","TEMIRZINOVA, MEREY",28-OCT-24
+"Zhiquan","","Sun","Sun, Zhiquan","","","zqsun@MIT.EDU","8","Physics","G","SUN, ZHIQUAN",28-OCT-24
+"Man","","Wang","Wang, Man","","","manwang@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","WANG, MAN",28-OCT-24
+"Lucky","","Patel","Patel, Lucky","","","patluck6@MIT.EDU","NONE","Freshmen","1","PATEL, LUCKY",28-OCT-24
+"Prashanth","","Krotha","Krotha, Prashanth","","","pkrotha@MIT.EDU","15","Management","G","KROTHA, PRASHANTH",28-OCT-24
+"Arsam","","Aryandoust","Aryandoust, Arsam","","","arsam@MIT.EDU","ASP","Advanced Study Program","G","ARYANDOUST, ARSAM",28-OCT-24
+"Matthew","H.","Ho","Ho, Matthew H.","","","mattho@MIT.EDU","18","Mathematics","4","HO, MATTHEW H.",28-OCT-24
+"George","","Cazenavette","Cazenavette, George","","","gcaz@MIT.EDU","6","Electrical Eng & Computer Sci","G","CAZENAVETTE, GEORGE",28-OCT-24
+"Michael","","Vuong","Vuong, Michael","","","vuongm@MIT.EDU","NONE","Freshmen","1","VUONG, MICHAEL",28-OCT-24
+"Linlu","","Qiu","Qiu, Linlu","32-386","","linluqiu@MIT.EDU","6","Electrical Eng & Computer Sci","G","QIU, LINLU",28-OCT-24
+"Prabhav","","Kumar","Kumar, Prabhav","","","pkumar10@MIT.EDU","15","Management","G","KUMAR, PRABHAV",28-OCT-24
+"Frank","","Qin","Qin, Frank","","","frank102@MIT.EDU","15","Management","G","QIN, FRANK",28-OCT-24
+"Favio","","Lesnjak","Lesnjak, Favio","","","flesnjak@MIT.EDU","6","Electrical Eng & Computer Sci","3","LESNJAK, FAVIO",28-OCT-24
+"Jordan","","Abi Nader","Abi Nader, Jordan","","","jordancn@MIT.EDU","15","Management","G","ABI NADER, JORDAN",28-OCT-24
+"Grace","J.","Liu","Liu, Grace J.","","","gjliu@MIT.EDU","18","Mathematics","3","LIU, GRACE J.",28-OCT-24
+"Beverly","","Ma","Ma, Beverly","","","beverlym@MIT.EDU","16","Aeronautics and Astronautics","3","MA, BEVERLY",28-OCT-24
+"Koti","","Vanga","Vanga, Koti","","","koti@MIT.EDU","15","Management","G","VANGA, KOTI",28-OCT-24
+"Markos","","Markakis","Markakis, Markos","32-G904","","markakis@MIT.EDU","6","Electrical Eng & Computer Sci","G","MARKAKIS, MARKOS",28-OCT-24
+"Genny","","Hsieh","Hsieh, Genny","","","gennyh@MIT.EDU","SCM","Supply Chain Management Progra","G","HSIEH, GENNY",28-OCT-24
+"Alexander","","Shen","Shen, Alexander","","","alexshen@MIT.EDU","NONE","Freshmen","1","SHEN, ALEXANDER",28-OCT-24
+"Luke","D.","Rupert","Rupert, Luke D.","","","ldrupert@MIT.EDU","NONE","Freshmen","1","RUPERT, LUKE D.",28-OCT-24
+"Nicole","","Ye","Ye, Nicole","","","nicoleye@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","YE, NICOLE",28-OCT-24
+"Taras","M.","Yushchenko","Yushchenko, Taras M.","","","tmy@MIT.EDU","16","Aeronautics and Astronautics","3","YUSHCHENKO, TARAS M.",28-OCT-24
+"Sophie","Y.","Fan","Fan, Sophie Y.","","","sophi120@MIT.EDU","2","Mechanical Engineering","3","FAN, SOPHIE Y.",28-OCT-24
+"Alvaro","","Delgado","Delgado, Alvaro","","","alvarode@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","DELGADO, ALVARO",28-OCT-24
+"Kejian","","Yan","Yan, Kejian","","","kejianya@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","YAN, KEJIAN",28-OCT-24
+"Kristina","M.","Correa","Correa, Kristina M.","","","kmcorrea@MIT.EDU","HST","Health Sciences & Technology","G","CORREA, KRISTINA M.",28-OCT-24
+"Shuo","","Wang","Wang, Shuo","","","shuow@MIT.EDU","18","Mathematics","G","WANG, SHUO",28-OCT-24
+"Lauren","","Futami","Futami, Lauren","","","lfutami@MIT.EDU","2","Mechanical Engineering","G","FUTAMI, LAUREN",28-OCT-24
+"Arashdeep","","Singh","Singh, Arashdeep","","","asingh02@MIT.EDU","6","Electrical Eng & Computer Sci","3","SINGH, ARASHDEEP",28-OCT-24
+"Meshal","Abdulrahman S","Alharbi","Alharbi, Meshal Abdulrahman S","","","meshal@MIT.EDU","6","Electrical Eng & Computer Sci","G","ALHARBI, MESHAL ABDULRAHMAN S",28-OCT-24
+"Laura","","Brennan","Brennan, Laura","","","laurabre@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","BRENNAN, LAURA",28-OCT-24
+"Jay","Hageboeck","Goettman","Goettman, Jay Hageboeck","","","goettman@MIT.EDU","15","Management","G","GOETTMAN, JAY HAGEBOECK",28-OCT-24
+"Mark","Harry","Goldwater","Goldwater, Mark Harry","","","mgoldwat@MIT.EDU","6","Electrical Eng & Computer Sci","G","GOLDWATER, MARK HARRY",28-OCT-24
+"Angela","G.","Lin","Lin, Angela G.","","","aglin@MIT.EDU","OR","Operations Research","G","LIN, ANGELA G.",28-OCT-24
+"Brynn","Lindsey","Dickman","Dickman, Brynn Lindsey","","","brynn@MIT.EDU","NIW","Wellesley Cross-Enrollment Pro","4","DICKMAN, BRYNN LINDSEY",28-OCT-24
+"Jason","","Chen","Chen, Jason","","","cjason@MIT.EDU","NONE","Freshmen","1","CHEN, JASON",28-OCT-24
+"Yu","","Yao","Yao, Yu","","","yu_yao@MIT.EDU","22","Nuclear Engineering","G","YAO, YU",28-OCT-24
+"Sean-Luc","","Shanahan","Shanahan, Sean-Luc","","","seanlucs@MIT.EDU","7","Biology","G","SHANAHAN, SEAN-LUC",28-OCT-24
+"Katana","R.","Finlason","Finlason, Katana R.","","","katanaf@MIT.EDU","2","Mechanical Engineering","G","FINLASON, KATANA R.",28-OCT-24
+"Adrian","","Martin Sanabria","Martin Sanabria, Adrian","","","amsanabr@MIT.EDU","22","Nuclear Engineering","G","MARTIN SANABRIA, ADRIAN",28-OCT-24
+"Wyatt","F.","Alford","Alford, Wyatt F.","","","walford@MIT.EDU","NONE","Freshmen","1","ALFORD, WYATT F.",28-OCT-24
+"George","W.","Tang","Tang, George W.","","","gtangg12@MIT.EDU","6","Electrical Eng & Computer Sci","G","TANG, GEORGE W.",28-OCT-24
+"Liva","","Olina","Olina, Liva","","","lolina@MIT.EDU","18","Mathematics","4","OLINA, LIVA",28-OCT-24
+"Taichi","","Shimokobe","Shimokobe, Taichi","","","shimoko@MIT.EDU","NONE","Freshmen","1","SHIMOKOBE, TAICHI",28-OCT-24
+"Keegan","M.","Doody","Doody, Keegan M.","","","keegs16@MIT.EDU","15","Management","2","DOODY, KEEGAN M.",28-OCT-24
+"Sophie","N.","Xuan","Xuan, Sophie N.","","","sopnxuan@MIT.EDU","6","Electrical Eng & Computer Sci","2","XUAN, SOPHIE N.",28-OCT-24
+"Lydia","Mae","Whipple","Whipple, Lydia Mae","","","whipple1@MIT.EDU","SCM","Supply Chain Management Progra","G","WHIPPLE, LYDIA MAE",28-OCT-24
+"Chenyu","","Zhang","Zhang, Chenyu","","","chenyuzh@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","ZHANG, CHENYU",28-OCT-24
+"Victor","Ikpemikhovoye","Momoh","Momoh, Victor Ikpemikhovoye","","","vicmomoh@MIT.EDU","EM","Engineering Management","G","MOMOH, VICTOR IKPEMIKHOVOYE",28-OCT-24
+"Ryan","C.","Welch","Welch, Ryan C.","","","rcwelch@MIT.EDU","6","Electrical Eng & Computer Sci","G","WELCH, RYAN C.",28-OCT-24
+"Matthew","Angel","Mosqueda","Mosqueda, Matthew Angel","","","mattmosq@MIT.EDU","16","Aeronautics and Astronautics","3","MOSQUEDA, MATTHEW ANGEL",28-OCT-24
+"Tim","Michael","Powell","Powell, Tim Michael","","","timp729@MIT.EDU","2","Mechanical Engineering","G","POWELL, TIM MICHAEL",28-OCT-24
+"Marcin","","Kopanski","Kopanski, Marcin","","","kopan@MIT.EDU","8","Physics","G","KOPANSKI, MARCIN",28-OCT-24
+"Youngjin","","Shin","Shin, Youngjin","39-657","","ys18@MIT.EDU","6","Electrical Eng & Computer Sci","G","SHIN, YOUNGJIN",28-OCT-24
+"Sophie","C.","Coppieters T Wallant","Coppieters T Wallant, Sophie C.","","","scoppiet@MIT.EDU","3","Materials Science and Eng","G","COPPIETERS T WALLANT, SOPHIE C.",28-OCT-24
+"Peyton","D.","Brown","Brown, Peyton D.","","","pbrown14@MIT.EDU","9","Brain and Cognitive Sciences","2","BROWN, PEYTON D.",28-OCT-24
+"George","","Cheng","Cheng, George","","","gjcheng@MIT.EDU","NONE","Freshmen","1","CHENG, GEORGE",28-OCT-24
+"Maddy","E.","Laws","Laws, Maddy E.","","","melaws@MIT.EDU","10","Chemical Engineering","2","LAWS, MADDY E.",28-OCT-24
+"Joseph","","Zhang","Zhang, Joseph","","","jzha@MIT.EDU","6","Electrical Eng & Computer Sci","3","ZHANG, JOSEPH",28-OCT-24
+"Karima","","Ma","Ma, Karima","","","karima@MIT.EDU","6","Electrical Eng & Computer Sci","G","MA, KARIMA",28-OCT-24
+"Tabish","","Sangrar","Sangrar, Tabish","","","tabishs@MIT.EDU","15","Management","G","SANGRAR, TABISH",28-OCT-24
+"Pragya","","Neupane","Neupane, Pragya","","","pneupane@MIT.EDU","IDS","Inst for Data, Syst, & Soc","G","NEUPANE, PRAGYA",28-OCT-24
+"Hayel","Mohamed Mohamed","Elnaggar","Elnaggar, Hayel Mohamed Mohamed","","","hayel@MIT.EDU","1","Civil and Environmental Eng","G","ELNAGGAR, HAYEL MOHAMED MOHAMED",28-OCT-24
+"Jonas","","Kaare-Rasmussen","Kaare-Rasmussen, Jonas","","","jkaaras@MIT.EDU","12","Earth, Atmos & Planetary Sci","G","KAARE-RASMUSSEN, JONAS",28-OCT-24
+"Juan","","Nassar","Nassar, Juan","","","jsnassar@MIT.EDU","15","Management","G","NASSAR, JUAN",28-OCT-24
+"Daniel","George","O'Connor","O'Connor, Daniel George","","","doconn@MIT.EDU","14","Economics","G","O'CONNOR, DANIEL GEORGE",28-OCT-24
+"Michel","Pierre Lucien","Leroy de Larre de la Dorie","Leroy de Larre de la Dorie, Michel Pierre Lucien","","","mleroy@MIT.EDU","15","Management","G","LEROY DE LARRE DE LA DORIE, MICHEL PIERRE LUCIEN",28-OCT-24
+"Chris","Nicholas","Battista","Battista, Chris Nicholas","","","battista@MIT.EDU","15","Management","G","BATTISTA, CHRIS NICHOLAS",28-OCT-24
+"Kyla","","Gabriel","Gabriel, Kyla","","","kylagabr@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","GABRIEL, KYLA",28-OCT-24
+"Marco","A.","Pena Barrientos","Pena Barrientos, Marco A.","","","marcop@MIT.EDU","6","Electrical Eng & Computer Sci","2","PENA BARRIENTOS, MARCO A.",28-OCT-24
+"Kareem","H.","El-Sisi","El-Sisi, Kareem H.","","","elsisi@MIT.EDU","11","Urban Studies and Planning","G","EL-SISI, KAREEM H.",28-OCT-24
+"Sydney","S.","Chun","Chun, Sydney S.","","","schun@MIT.EDU","6","Electrical Eng & Computer Sci","G","CHUN, SYDNEY S.",28-OCT-24
+"Selina","","Liang","Liang, Selina","","","mliang03@MIT.EDU","15","Management","G","LIANG, SELINA",28-OCT-24
+"Gianmarco","","Terrones","Terrones, Gianmarco","","","gterrone@MIT.EDU","10","Chemical Engineering","G","TERRONES, GIANMARCO",28-OCT-24
+"Ronak","","Saluja","Saluja, Ronak","","","rsaluja@MIT.EDU","6","Electrical Eng & Computer Sci","3","SALUJA, RONAK",28-OCT-24
+"Ilaisaane","R.","Summers","Summers, Ilaisaane R.","","","isummers@MIT.EDU","6","Electrical Eng & Computer Sci","4","SUMMERS, ILAISAANE R.",28-OCT-24
+"Junhui","","Zhang","Zhang, Junhui","","","junhuiz@MIT.EDU","OR","Operations Research","G","ZHANG, JUNHUI",28-OCT-24
+"Victoria","","Henley","Henley, Victoria","","","vhenley@MIT.EDU","17","Political Science","G","HENLEY, VICTORIA",28-OCT-24
+"Catherine","E.","Haley","Haley, Catherine E.","","","chaley5@MIT.EDU","NONE","Freshmen","1","HALEY, CATHERINE E.",28-OCT-24
+"Graham","Jordan","Ray","Ray, Graham Jordan","","","gjray@MIT.EDU","7","Biology","G","RAY, GRAHAM JORDAN",28-OCT-24
+"Eunseok","","Lee","Lee, Eunseok","38-107","2588102","eunseok@MIT.EDU","6","Electrical Eng & Computer Sci","G","LEE, EUNSEOK",28-OCT-24
+"Carrie","Lynn","Rodriguez","Rodriguez, Carrie Lynn","","","crodri@MIT.EDU","7","Biology","G","RODRIGUEZ, CARRIE LYNN",28-OCT-24
+"Max","","Zhu","Zhu, Max","","","mzhu2027@MIT.EDU","4","Architecture","2","ZHU, MAX",28-OCT-24
+"Seungyeon","","Yi","Yi, Seungyeon","","","agnessy@MIT.EDU","5","Chemistry","G","YI, SEUNGYEON",28-OCT-24
+"Yoonsik","","Kwon","Kwon, Yoonsik","","","kwon9516@MIT.EDU","2","Mechanical Engineering","G","KWON, YOONSIK",28-OCT-24
+"Huanyu","","Ren","Ren, Huanyu","","","hyren@MIT.EDU","5","Chemistry","G","REN, HUANYU",28-OCT-24
+"John","","Ghosn","Ghosn, John","","","jghosn@MIT.EDU","15","Management","G","GHOSN, JOHN",28-OCT-24
+"Aleks","R.","Ivanov","Ivanov, Aleks R.","","","arivanov@MIT.EDU","15","Management","2","IVANOV, ALEKS R.",28-OCT-24
+"Nicholas","","Wong","Wong, Nicholas","","","nicwjh@MIT.EDU","15","Management","G","WONG, NICHOLAS",28-OCT-24
+"Yifei","","Zhang","Zhang, Yifei","","","yifeizha@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","ZHANG, YIFEI",28-OCT-24
+"Ian","P.","Go","Go, Ian P.","","","ianpgo@MIT.EDU","15","Management","G","GO, IAN P.",28-OCT-24
+"Michael","","Leung","Leung, Michael","","","swleung@MIT.EDU","ASP","Advanced Study Program","G","LEUNG, MICHAEL",28-OCT-24
+"Thomas","","Varnish","Varnish, Thomas","","","tvarnish@MIT.EDU","22","Nuclear Engineering","G","VARNISH, THOMAS",28-OCT-24
+"Kanglin","","Kong","Kong, Kanglin","","","kk1130@MIT.EDU","2","Mechanical Engineering","G","KONG, KANGLIN",28-OCT-24
+"Frank","","Liu","Liu, Frank","","","fr4nk@MIT.EDU","6","Electrical Eng & Computer Sci","3","LIU, FRANK",28-OCT-24
+"Isabella","M.","Pace","Pace, Isabella M.","","","epace06@MIT.EDU","NONE","Freshmen","1","PACE, ISABELLA M.",28-OCT-24
+"Sydney","A.","Baller","Baller, Sydney A.","","","sballer@MIT.EDU","2","Mechanical Engineering","2","BALLER, SYDNEY A.",28-OCT-24
+"James","","Park","Park, James","","","parkhjjp@MIT.EDU","15","Management","G","PARK, JAMES",28-OCT-24
+"Benjamin","Drew","Senzer","Senzer, Benjamin Drew","","","bsenzer@MIT.EDU","5","Chemistry","G","SENZER, BENJAMIN DREW",28-OCT-24
+"Billy","","Kline","Kline, Billy","","","wkline@MIT.EDU","16","Aeronautics and Astronautics","G","KLINE, BILLY",28-OCT-24
+"Louis","","Marquis","Marquis, Louis","","","flavius@MIT.EDU","6","Electrical Eng & Computer Sci","G","MARQUIS, LOUIS",28-OCT-24
+"Christopher","Chandler","Shallal","Shallal, Christopher Chandler","","","cshallal@MIT.EDU","HST","Health Sciences & Technology","G","SHALLAL, CHRISTOPHER CHANDLER",28-OCT-24
+"Johnson","","Lin","Lin, Johnson","","","jlin1366@MIT.EDU","15","Management","4","LIN, JOHNSON",28-OCT-24
+"Ishaq","O.","Balogun","Balogun, Ishaq O.","","","iobal@MIT.EDU","6","Electrical Eng & Computer Sci","G","BALOGUN, ISHAQ O.",28-OCT-24
+"Marco","R.","Arevalo","Arevalo, Marco R.","","","marcoa54@MIT.EDU","NONE","Freshmen","1","AREVALO, MARCO R.",28-OCT-24
+"Taieba","","Tawakoli","Tawakoli, Taieba","","","tawakoli@MIT.EDU","24","Linguistics and Philosophy","G","TAWAKOLI, TAIEBA",28-OCT-24
+"Nic","Taylor","Holwerda","Holwerda, Nic Taylor","","","hn2324@MIT.EDU","SCM","Supply Chain Management Progra","G","HOLWERDA, NIC TAYLOR",28-OCT-24
+"Haihui","","Lan","Lan, Haihui","","","lanhh@MIT.EDU","5","Chemistry","G","LAN, HAIHUI",28-OCT-24
+"Eric","","Chiang","Chiang, Eric","","","echiang3@MIT.EDU","15","Management","G","CHIANG, ERIC",28-OCT-24
+"Shaylee","","Xie","Xie, Shaylee","","","shaylee@MIT.EDU","NIW","Wellesley Cross-Enrollment Pro","4","XIE, SHAYLEE",28-OCT-24
+"Hailey","","Pan","Pan, Hailey","","","hpan27@MIT.EDU","6","Electrical Eng & Computer Sci","2","PAN, HAILEY",28-OCT-24
+"Richard","","Chen","Chen, Richard","","","richen@MIT.EDU","6","Electrical Eng & Computer Sci","3","CHEN, RICHARD",28-OCT-24
+"Greg","Charles","Knutson","Knutson, Greg Charles","","","gknutson@MIT.EDU","15","Management","G","KNUTSON, GREG CHARLES",28-OCT-24
+"Sydney","","Slazak","Slazak, Sydney","","","sslazak@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","3","SLAZAK, SYDNEY",28-OCT-24
+"Gabriel","Ildefonso","Andrade","Andrade, Gabriel Ildefonso","","","gica@MIT.EDU","4","Architecture","G","ANDRADE, GABRIEL ILDEFONSO",28-OCT-24
+"Grace","C.","Mao","Mao, Grace C.","","","gmao@MIT.EDU","16","Aeronautics and Astronautics","G","MAO, GRACE C.",28-OCT-24
+"Victoria","Jiayi","Yuan","Yuan, Victoria Jiayi","","","vyuan11@MIT.EDU","15","Management","G","YUAN, VICTORIA JIAYI",28-OCT-24
+"Luis","G.","Turino","Turino, Luis G.","","","turino14@MIT.EDU","6","Electrical Eng & Computer Sci","3","TURINO, LUIS G.",28-OCT-24
+"Sebastian","S.","Prasanna","Prasanna, Sebastian S.","","","spra@MIT.EDU","NONE","Freshmen","1","PRASANNA, SEBASTIAN S.",28-OCT-24
+"Wyatt","S.","Vick","Vick, Wyatt S.","","","wsvick@MIT.EDU","NONE","Freshmen","1","VICK, WYATT S.",28-OCT-24
+"Anurag","","Sodhi","Sodhi, Anurag","","","asodhi@MIT.EDU","NONE","Freshmen","1","SODHI, ANURAG",28-OCT-24
+"Shashank","","Swaminathan","Swaminathan, Shashank","","","shswami@MIT.EDU","16","Aeronautics and Astronautics","G","SWAMINATHAN, SHASHANK",28-OCT-24
+"Chris","J.","Ge","Ge, Chris J.","","","cge7@MIT.EDU","6","Electrical Eng & Computer Sci","2","GE, CHRIS J.",28-OCT-24
+"Abigail","M","Jackson","Jackson, Abigail M","","","abigaimj@MIT.EDU","HST","Health Sciences & Technology","G","JACKSON, ABIGAIL M",28-OCT-24
+"Hong Yi","","Tu Ye","Tu Ye, Hong Yi","62-443","","hytuye@MIT.EDU","15","Management","G","TU YE, HONG YI",28-OCT-24
+"Mohamed","","AbdelGaleel","AbdelGaleel, Mohamed","","","mabdelga@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","ABDELGALEEL, MOHAMED",28-OCT-24
+"Lisa","","Lin","Lin, Lisa","","","lisalin1@MIT.EDU","NONE","Freshmen","1","LIN, LISA",28-OCT-24
+"Catherine","A.","Taboada","Taboada, Catherine A.","","","taboada@MIT.EDU","6","Electrical Eng & Computer Sci","3","TABOADA, CATHERINE A.",28-OCT-24
+"Tye","P.","Phoenix","Phoenix, Tye P.","","","tphoenix@MIT.EDU","6","Electrical Eng & Computer Sci","2","PHOENIX, TYE P.",28-OCT-24
+"Richard","W.","Lin","Lin, Richard W.","","","rwlny@MIT.EDU","6","Electrical Eng & Computer Sci","4","LIN, RICHARD W.",28-OCT-24
+"Teddy","Ray","Sun","Sun, Teddy Ray","","","tsun2026@MIT.EDU","15","Management","G","SUN, TEDDY RAY",28-OCT-24
+"Jose","D.","Lomelin","Lomelin, Jose D.","","","jlomelin@MIT.EDU","NONE","Freshmen","1","LOMELIN, JOSE D.",28-OCT-24
+"Matija","","Delic","Delic, Matija","","","mdelic@MIT.EDU","18","Mathematics","4","DELIC, MATIJA",28-OCT-24
+"Yongyi","","Zhao","Zhao, Yongyi","","","yongyizh@MIT.EDU","6","Electrical Eng & Computer Sci","G","ZHAO, YONGYI",28-OCT-24
+"Sakinah Nadiah","","Johan Abdullah Munday","Johan Abdullah Munday, Sakinah Nadiah","","","sakimund@MIT.EDU","24","Linguistics and Philosophy","G","JOHAN ABDULLAH MUNDAY, SAKINAH NADIAH",28-OCT-24
+"Josh","","Souza","Souza, Josh","","","jsouza97@MIT.EDU","EM","Engineering Management","G","SOUZA, JOSH",28-OCT-24
+"Lara","Catherine","Booth","Booth, Lara Catherine","","","lcbooth@MIT.EDU","6","Electrical Eng & Computer Sci","G","BOOTH, LARA CATHERINE",28-OCT-24
+"Varun","Chandrashekhar","Gohil","Gohil, Varun Chandrashekhar","","","varuncg@MIT.EDU","6","Electrical Eng & Computer Sci","G","GOHIL, VARUN CHANDRASHEKHAR",28-OCT-24
+"Judy","","Xia","Xia, Judy","","","zjxia@MIT.EDU","HST","Health Sciences & Technology","G","XIA, JUDY",28-OCT-24
+"Yu-Ting","","Huang","Huang, Yu-Ting","","","ythuang@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","HUANG, YU-TING",28-OCT-24
+"Jianqiao Leslie","","Cui","Cui, Jianqiao Leslie","","","jqcui@MIT.EDU","10","Chemical Engineering","G","CUI, JIANQIAO LESLIE",28-OCT-24
+"Carrie","Belle","Deline","Deline, Carrie Belle","","","cbdeline@MIT.EDU","EM","Engineering Management","G","DELINE, CARRIE BELLE",28-OCT-24
+"Robaire","","Galliath","Galliath, Robaire","","","robaire@MIT.EDU","EM","Engineering Management","G","GALLIATH, ROBAIRE",28-OCT-24
+"Audrey","Jane","DeVault","DeVault, Audrey Jane","","","devault@MIT.EDU","22","Nuclear Engineering","G","DEVAULT, AUDREY JANE",28-OCT-24
+"Hang","","Jiang","Jiang, Hang","","","hjian42@MIT.EDU","MAS","Prog in Media Arts Sciences","G","JIANG, HANG",28-OCT-24
+"Luis","Fernando","Muro","Muro, Luis Fernando","","","luismuro@MIT.EDU","RED","Center for Real Estate Develop","G","MURO, LUIS FERNANDO",28-OCT-24
+"Alicia","","Yang","Yang, Alicia","","","aliyang@MIT.EDU","6","Electrical Eng & Computer Sci","G","YANG, ALICIA",28-OCT-24
+"Sheldon","","Zheng","Zheng, Sheldon","","","xudongz@MIT.EDU","6","Electrical Eng & Computer Sci","G","ZHENG, SHELDON",28-OCT-24
+"Dasom","","Shin","Shin, Dasom","","","dasomshin@hks.harvard.edu","NIH","Harvard Cross-Enrollment Prog","G","SHIN, DASOM",28-OCT-24
+"Samir","M.","Amin","Amin, Samir M.","","","aminsam@MIT.EDU","6","Electrical Eng & Computer Sci","4","AMIN, SAMIR M.",28-OCT-24
+"Sayed Saad","","Afzal","Afzal, Sayed Saad","","","afzals@MIT.EDU","6","Electrical Eng & Computer Sci","G","AFZAL, SAYED SAAD",28-OCT-24
+"Christian","K.","Fletcher","Fletcher, Christian K.","","","ckf@MIT.EDU","18","Mathematics","4","FLETCHER, CHRISTIAN K.",28-OCT-24
+"Gulnara","","Kilybayeva","Kilybayeva, Gulnara","","","gkilyb1@MIT.EDU","15","Management","G","KILYBAYEVA, GULNARA",28-OCT-24
+"Raashid","","Naik","Naik, Raashid","","","rxnaik@MIT.EDU","15","Management","G","NAIK, RAASHID",28-OCT-24
+"Hao","","Zhu","Zhu, Hao","","","haozh@MIT.EDU","6","Electrical Eng & Computer Sci","4","ZHU, HAO",28-OCT-24
+"Zack","Evan","Berger","Berger, Zack Evan","","","zberger@MIT.EDU","6","Electrical Eng & Computer Sci","G","BERGER, ZACK EVAN",28-OCT-24
+"Chris","","Shallue","Shallue, Chris","","","chrissha@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","SHALLUE, CHRIS",28-OCT-24
+"Deniz Umut","","Yildirim","Yildirim, Deniz Umut","","","ydeniz@MIT.EDU","6","Electrical Eng & Computer Sci","G","YILDIRIM, DENIZ UMUT",28-OCT-24
+"Anika","","Puri","Puri, Anika","","","anpuri@MIT.EDU","6","Electrical Eng & Computer Sci","3","PURI, ANIKA",28-OCT-24
+"Emma","Lindsay","Peterman","Peterman, Emma Lindsay","","","emmap@MIT.EDU","10","Chemical Engineering","G","PETERMAN, EMMA LINDSAY",28-OCT-24
+"Wenhao","","He","He, Wenhao","","","wenhaohe@MIT.EDU","CSE","Computational Sci and Eng","G","HE, WENHAO",28-OCT-24
+"Kyle","Joseph","White","White, Kyle Joseph","","","kwhite53@MIT.EDU","7","Biology","G","WHITE, KYLE JOSEPH",28-OCT-24
+"Rohan","M.","Wagh","Wagh, Rohan M.","","","rwagh@MIT.EDU","6","Electrical Eng & Computer Sci","4","WAGH, ROHAN M.",28-OCT-24
+"Jun","","Du","Du, Jun","","","kendu@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","DU, JUN",28-OCT-24
+"Wilson","","Ho","Ho, Wilson","","","wilsonh@MIT.EDU","6","Electrical Eng & Computer Sci","4","HO, WILSON",28-OCT-24
+"Zhiyi","","Li","Li, Zhiyi","","","zhiyi24@MIT.EDU","6","Electrical Eng & Computer Sci","G","LI, ZHIYI",28-OCT-24
+"Yulia","","Ossipovich","Ossipovich, Yulia","","","yuliaoss@MIT.EDU","15","Management","G","OSSIPOVICH, YULIA",28-OCT-24
+"Junior","Chinomso","Okoroafor","Okoroafor, Junior Chinomso","","","junioro@MIT.EDU","9","Brain and Cognitive Sciences","G","OKOROAFOR, JUNIOR CHINOMSO",28-OCT-24
+"Aimee","","Wang","Wang, Aimee","","","aimeew@MIT.EDU","6","Electrical Eng & Computer Sci","3","WANG, AIMEE",28-OCT-24
+"Adeline","G.","Perkins","Perkins, Adeline G.","","","aperk@MIT.EDU","NONE","Freshmen","1","PERKINS, ADELINE G.",28-OCT-24
+"Hana","","Shinzawa","Shinzawa, Hana","","","hanashin@MIT.EDU","NONE","Freshmen","1","SHINZAWA, HANA",28-OCT-24
+"Leila","","Freitag","Freitag, Leila","","","lfreitag@MIT.EDU","2","Mechanical Engineering","G","FREITAG, LEILA",28-OCT-24
+"Joyce","","Zhu","Zhu, Joyce","","","joyce124@MIT.EDU","15","Management","G","ZHU, JOYCE",28-OCT-24
+"Khyati","","Garg","Garg, Khyati","","","kgarg21@MIT.EDU","IDS","Inst for Data, Syst, & Soc","G","GARG, KHYATI",28-OCT-24
+"Dominic","J.","Stewart-Guido","Stewart-Guido, Dominic J.","","","dominics@MIT.EDU","8","Physics","2","STEWART-GUIDO, DOMINIC J.",28-OCT-24
+"An An","","Chiang","Chiang, An An","","","anan1914@MIT.EDU","15","Management","3","CHIANG, AN AN",28-OCT-24
+"Michal","Marek","Stawarz","Stawarz, Michal Marek","","","mstawarz@MIT.EDU","6","Electrical Eng & Computer Sci","4","STAWARZ, MICHAL MAREK",28-OCT-24
+"Mia","","Scherer","Scherer, Mia","","","ms144@MIT.EDU","NIW","Wellesley Cross-Enrollment Pro","2","SCHERER, MIA",28-OCT-24
+"Tina","Tian","Chen","Chen, Tina Tian","","","tinachen@MIT.EDU","6","Electrical Eng & Computer Sci","G","CHEN, TINA TIAN",28-OCT-24
+"Tre","A.","Simons","Simons, Tre A.","","","simonsta@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","1","SIMONS, TRE A.",28-OCT-24
+"Yizhi","","Hu","Hu, Yizhi","","","yhu3@MIT.EDU","15","Management","G","HU, YIZHI",28-OCT-24
+"Afia","","Khan","Khan, Afia","","","afiakhan@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","KHAN, AFIA",28-OCT-24
+"Jaxon","","Wu","Wu, Jaxon","","","jaxonwu@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","WU, JAXON",28-OCT-24
+"Teresa","","He","He, Teresa","","","teresahe@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","HE, TERESA",28-OCT-24
+"Tingzhen","","Dong","Dong, Tingzhen","","","rogerdtz@MIT.EDU","6","Electrical Eng & Computer Sci","G","DONG, TINGZHEN",28-OCT-24
+"Tyler","John","Rauenzahn","Rauenzahn, Tyler John","","","tylerron@MIT.EDU","15","Management","G","RAUENZAHN, TYLER JOHN",28-OCT-24
+"Huiyi","","Lin","Lin, Huiyi","","","huiyilin@MIT.EDU","15","Management","4","LIN, HUIYI",28-OCT-24
+"Mary","","Stelow","Stelow, Mary","","","mcstelow@MIT.EDU","18","Mathematics","G","STELOW, MARY",28-OCT-24
+"Alissa","","Kopylova","Kopylova, Alissa","","","alissa02@MIT.EDU","18","Mathematics","3","KOPYLOVA, ALISSA",28-OCT-24
+"Shitong","","Luo","Luo, Shitong","66-257","","luost@MIT.EDU","6","Electrical Eng & Computer Sci","G","LUO, SHITONG",28-OCT-24
+"Brendan","M.","Spellman","Spellman, Brendan M.","","","bspell3@MIT.EDU","NONE","Freshmen","1","SPELLMAN, BRENDAN M.",28-OCT-24
+"Huiying","","Zhong","Zhong, Huiying","","","zhong826@MIT.EDU","OR","Operations Research","G","ZHONG, HUIYING",28-OCT-24
+"Rika","","Sugimoto Dimitrova","Sugimoto Dimitrova, Rika","","","rikasd@MIT.EDU","2","Mechanical Engineering","G","SUGIMOTO DIMITROVA, RIKA",28-OCT-24
+"Akshara","","Mahalingam","Mahalingam, Akshara","","","aksharam@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","MAHALINGAM, AKSHARA",28-OCT-24
+"William","","Stevenson","Stevenson, William","","","willia82@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","STEVENSON, WILLIAM",28-OCT-24
+"Claire","J.","Chen","Chen, Claire J.","","","clairejc@MIT.EDU","6","Electrical Eng & Computer Sci","4","CHEN, CLAIRE J.",28-OCT-24
+"Alix","Merriam","Carson","Carson, Alix Merriam","","","alixc562@MIT.EDU","15","Management","G","CARSON, ALIX MERRIAM",28-OCT-24
+"Rocio","","Larraguibel Rubio","Larraguibel Rubio, Rocio","","","ro_larra@MIT.EDU","15","Management","G","LARRAGUIBEL RUBIO, ROCIO",28-OCT-24
+"Susan","S.","Hong","Hong, Susan S.","","","suahong@MIT.EDU","6","Electrical Eng & Computer Sci","2","HONG, SUSAN S.",28-OCT-24
+"Erin","","Tevonian","Tevonian, Erin","16-451","","erintevo@MIT.EDU","20","Biological Engineering","G","TEVONIAN, ERIN",28-OCT-24
+"Danny","D.","Antonelli","Antonelli, Danny D.","","","danny_a@MIT.EDU","6","Electrical Eng & Computer Sci","3","ANTONELLI, DANNY D.",28-OCT-24
+"Courtney","Diane","Horvath","Horvath, Courtney Diane","","","horvaco1@MIT.EDU","15","Management","G","HORVATH, COURTNEY DIANE",28-OCT-24
+"Daniel","","Lotwin","Lotwin, Daniel","","","","NIT","Tufts Cross-Enrollment Prog","4","LOTWIN, DANIEL",28-OCT-24
+"Keyu","","Chen","Chen, Keyu","","","keyuchen@MIT.EDU","10","Chemical Engineering","G","CHEN, KEYU",28-OCT-24
+"Blake","O.","Chen","Chen, Blake O.","","","blakec@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","4","CHEN, BLAKE O.",28-OCT-24
+"Aldona","Jedrysiak","Spiegel","Spiegel, Aldona Jedrysiak","","","aldonas@MIT.EDU","15","Management","G","SPIEGEL, ALDONA JEDRYSIAK",28-OCT-24
+"Merrill","K.","Chiang","Chiang, Merrill K.","","","mkchiang@MIT.EDU","3","Materials Science and Eng","2","CHIANG, MERRILL K.",28-OCT-24
+"Justin","","Gelwicks","Gelwicks, Justin","","","gelwicks@MIT.EDU","RED","Center for Real Estate Develop","G","GELWICKS, JUSTIN",28-OCT-24
+"Yuru","","Lin","Lin, Yuru","","","yurulin@MIT.EDU","6","Electrical Eng & Computer Sci","2","LIN, YURU",28-OCT-24
+"Pearl","","Mitchell","Mitchell, Pearl","","","pearlm37@MIT.EDU","NONE","Freshmen","1","MITCHELL, PEARL",28-OCT-24
+"Siqi","","Wu","Wu, Siqi","","","swu777@MIT.EDU","10","Chemical Engineering","G","WU, SIQI",28-OCT-24
+"Tristan","B.","Hoang","Hoang, Tristan B.","","","tbhoang@MIT.EDU","NONE","Freshmen","1","HOANG, TRISTAN B.",28-OCT-24
+"Adan","","Flores Ramirez","Flores Ramirez, Adan","","","adanfr@MIT.EDU","2","Mechanical Engineering","G","FLORES RAMIREZ, ADAN",28-OCT-24
+"Alexa","L.","Cohen","Cohen, Alexa L.","","","acohen27@MIT.EDU","20","Biological Engineering","2","COHEN, ALEXA L.",28-OCT-24
+"Harry","","Chen","Chen, Harry","","","harryc@MIT.EDU","6","Electrical Eng & Computer Sci","4","CHEN, HARRY",28-OCT-24
+"Audrey","Y.","Cui","Cui, Audrey Y.","","","audcui@MIT.EDU","2","Mechanical Engineering","G","CUI, AUDREY Y.",28-OCT-24
+"Ignacio","Martin","Arzuaga Garcia","Arzuaga Garcia, Ignacio Martin","1-343A","","arzuaga@MIT.EDU","1","Civil and Environmental Eng","G","ARZUAGA GARCIA, IGNACIO MARTIN",28-OCT-24
+"Vishan","Gandhi","Nigam","Nigam, Vishan Gandhi","","","vishan@MIT.EDU","14","Economics","G","NIGAM, VISHAN GANDHI",28-OCT-24
+"Lydia","J.","Patterson","Patterson, Lydia J.","","","ljewel@MIT.EDU","6","Electrical Eng & Computer Sci","G","PATTERSON, LYDIA J.",28-OCT-24
+"Andrew","M.","Spears","Spears, Andrew M.","","","amspears@MIT.EDU","18","Mathematics","4","SPEARS, ANDREW M.",28-OCT-24
+"Weiyong","","Zhang","Zhang, Weiyong","","","weiyongz@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","ZHANG, WEIYONG",28-OCT-24
+"Claire","","Buffington","Buffington, Claire","","","cbuff@MIT.EDU","16","Aeronautics and Astronautics","G","BUFFINGTON, CLAIRE",28-OCT-24
+"Ashley","W.","Lu","Lu, Ashley W.","","","ashlu1@MIT.EDU","15","Management","2","LU, ASHLEY W.",28-OCT-24
+"Sophia","Louise","Campbell","Campbell, Sophia Louise","","","slcamp@MIT.EDU","11","Urban Studies and Planning","G","CAMPBELL, SOPHIA LOUISE",28-OCT-24
+"Kaleb","A.","Blake","Blake, Kaleb A.","","","kblake00@MIT.EDU","2","Mechanical Engineering","G","BLAKE, KALEB A.",28-OCT-24
+"Hudson","Alexander","Loughlin","Loughlin, Hudson Alexander","","","hudsonl@MIT.EDU","8","Physics","G","LOUGHLIN, HUDSON ALEXANDER",28-OCT-24
+"Esteban","","Cubides Ramirez","Cubides Ramirez, Esteban","","","esteban8@MIT.EDU","NONE","Freshmen","1","CUBIDES RAMIREZ, ESTEBAN",28-OCT-24
+"Erion","","Ruhani","Ruhani, Erion","","","erionrtv@MIT.EDU","NONE","Freshmen","1","RUHANI, ERION",28-OCT-24
+"Chiraz","","Toujani","Toujani, Chiraz","","","chiraz97@MIT.EDU","3","Materials Science and Eng","G","TOUJANI, CHIRAZ",28-OCT-24
+"Salvatore","","Pace","Pace, Salvatore","","","sdpace@MIT.EDU","8","Physics","G","PACE, SALVATORE",28-OCT-24
+"Dongchel","","Shin","Shin, Dongchel","","","dongchel@MIT.EDU","2","Mechanical Engineering","G","SHIN, DONGCHEL",28-OCT-24
+"Zeina","","Barghouti","Barghouti, Zeina","","","zeinaa@MIT.EDU","2","Mechanical Engineering","G","BARGHOUTI, ZEINA",28-OCT-24
+"Andrew","","Chen","Chen, Andrew","","","andrew8@MIT.EDU","NONE","Freshmen","1","CHEN, ANDREW",28-OCT-24
+"Nate","R.","Martinez","Martinez, Nate R.","","","natem297@MIT.EDU","2","Mechanical Engineering","2","MARTINEZ, NATE R.",28-OCT-24
+"Vanessa","","Deering","Deering, Vanessa","","","deeringv@MIT.EDU","21","Humanities","4","DEERING, VANESSA",28-OCT-24
+"Kiwhan","","Song","Song, Kiwhan","","","kiwhan@MIT.EDU","6","Electrical Eng & Computer Sci","3","SONG, KIWHAN",28-OCT-24
+"Jennifer","C.","Espinoza Maldonado","Espinoza Maldonado, Jennifer C.","","","jennespi@MIT.EDU","10","Chemical Engineering","2","ESPINOZA MALDONADO, JENNIFER C.",28-OCT-24
+"Ricky","E.","Zayas","Zayas, Ricky E.","","","rezayas@MIT.EDU","9","Brain and Cognitive Sciences","2","ZAYAS, RICKY E.",28-OCT-24
+"Megan","","Luu","Luu, Megan","","","luum@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","LUU, MEGAN",28-OCT-24
+"Jordan","E.","Tierney","Tierney, Jordan E.","","","tierneyj@MIT.EDU","3","Materials Science and Eng","4","TIERNEY, JORDAN E.",28-OCT-24
+"Herman","","Oestensen","Oestensen, Herman","","","herost96@MIT.EDU","15","Management","G","OESTENSEN, HERMAN",28-OCT-24
+"Abigail","Marie","Colclasure","Colclasure, Abigail Marie","","","acolclas@MIT.EDU","12","Earth, Atmos & Planetary Sci","G","COLCLASURE, ABIGAIL MARIE",28-OCT-24
+"Anna","","Shevzov-Zebrun","Shevzov-Zebrun, Anna","","","ashevzeb@MIT.EDU","7","Biology","G","SHEVZOV-ZEBRUN, ANNA",28-OCT-24
+"Ethan","J.","Purol","Purol, Ethan J.","","","epurol@MIT.EDU","16","Aeronautics and Astronautics","2","PUROL, ETHAN J.",28-OCT-24
+"Mason","Long","Wang","Wang, Mason Long","","","ycda@MIT.EDU","6","Electrical Eng & Computer Sci","G","WANG, MASON LONG",28-OCT-24
+"Prashasti","","Agrawal","Agrawal, Prashasti","","","praa@MIT.EDU","15","Management","G","AGRAWAL, PRASHASTI",28-OCT-24
+"Claire","","Lu","Lu, Claire","","","luclaire@MIT.EDU","6","Electrical Eng & Computer Sci","G","LU, CLAIRE",28-OCT-24
+"Boyuan","","Chen","Chen, Boyuan","","","boyuanc@MIT.EDU","6","Electrical Eng & Computer Sci","G","CHEN, BOYUAN",28-OCT-24
+"Emily","","Chang","Chang, Emily","","","emilyec@MIT.EDU","NIW","Wellesley Cross-Enrollment Pro","4","CHANG, EMILY",28-OCT-24
+"Rachel","Y.","Zhu","Zhu, Rachel Y.","","","ryzhu@MIT.EDU","NONE","Freshmen","1","ZHU, RACHEL Y.",28-OCT-24
+"Xiner","","Luo","Luo, Xiner","","","xluo04@MIT.EDU","15","Management","3","LUO, XINER",28-OCT-24
+"Nermine","","Hassanin","Hassanin, Nermine","","","nermine@MIT.EDU","4","Architecture","G","HASSANIN, NERMINE",28-OCT-24
+"Ashley","Laurel","Gin","Gin, Ashley Laurel","","","algin993@MIT.EDU","20","Biological Engineering","G","GIN, ASHLEY LAUREL",28-OCT-24
+"Aqua","","Janat","Janat, Aqua","","","aquaj197@MIT.EDU","15","Management","G","JANAT, AQUA",28-OCT-24
+"Sarah","G.","Bentley","Bentley, Sarah G.","","","sbentley@MIT.EDU","6","Electrical Eng & Computer Sci","G","BENTLEY, SARAH G.",28-OCT-24
+"Hannah","E.","Rose","Rose, Hannah E.","","","herose@MIT.EDU","12","Earth, Atmos & Planetary Sci","4","ROSE, HANNAH E.",28-OCT-24
+"Katherine","C.","Guo","Guo, Katherine C.","","","katguo@MIT.EDU","6","Electrical Eng & Computer Sci","3","GUO, KATHERINE C.",28-OCT-24
+"Kelly","","McKeon","McKeon, Kelly","","","kmckeon@MIT.EDU","12","Earth, Atmos & Planetary Sci","G","MCKEON, KELLY",28-OCT-24
+"Chris","G.","Martinez","Martinez, Chris G.","","","chris_m@MIT.EDU","6","Electrical Eng & Computer Sci","2","MARTINEZ, CHRIS G.",28-OCT-24
+"Sydney","A.","Parke","Parke, Sydney A.","","","sparke@MIT.EDU","16","Aeronautics and Astronautics","2","PARKE, SYDNEY A.",28-OCT-24
+"Cian","Franz","Schmitt-Ulms","Schmitt-Ulms, Cian Franz","","","cian@MIT.EDU","9","Brain and Cognitive Sciences","G","SCHMITT-ULMS, CIAN FRANZ",28-OCT-24
+"Hina","","Walajahi","Walajahi, Hina","","","hwala@MIT.EDU","STS","Science, Technology & Society","G","WALAJAHI, HINA",28-OCT-24
+"Paul","F.","Gregory","Gregory, Paul F.","","","paulg9@MIT.EDU","6","Electrical Eng & Computer Sci","3","GREGORY, PAUL F.",28-OCT-24
+"Akila","","Saravanan","Saravanan, Akila","","","akilasar@MIT.EDU","16","Aeronautics and Astronautics","G","SARAVANAN, AKILA",28-OCT-24
+"Jade","T.","Buckwalter","Buckwalter, Jade T.","","","jbuckwal@MIT.EDU","6","Electrical Eng & Computer Sci","3","BUCKWALTER, JADE T.",28-OCT-24
+"Ricardo","A.","Carrillo Silva","Carrillo Silva, Ricardo A.","","","ricar60@MIT.EDU","18","Mathematics","3","CARRILLO SILVA, RICARDO A.",28-OCT-24
+"Manuel","Francisco","Franck","Franck, Manuel Francisco","","","manuelfr@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","FRANCK, MANUEL FRANCISCO",28-OCT-24
+"Siyoung","","Kim","Kim, Siyoung","","","ksiyoung@MIT.EDU","6","Electrical Eng & Computer Sci","4","KIM, SIYOUNG",28-OCT-24
+"Elliot","H.","Akama-Garren","Akama-Garren, Elliot H.","","","egarren@MIT.EDU","HST","Health Sciences & Technology","G","AKAMA-GARREN, ELLIOT H.",28-OCT-24
+"Antoine","J.","Germain","Germain, Antoine J.","","","agermain@MIT.EDU","SCM","Supply Chain Management Progra","G","GERMAIN, ANTOINE J.",28-OCT-24
+"Tzuri","","Simon","Simon, Tzuri","","","tzuri@MIT.EDU","15","Management","G","SIMON, TZURI",28-OCT-24
+"Amanda","L.","Hulver","Hulver, Amanda L.","","","ahulver@MIT.EDU","6","Electrical Eng & Computer Sci","2","HULVER, AMANDA L.",28-OCT-24
+"Shaylin","Ashley","Cetegen","Cetegen, Shaylin Ashley","","","cetegen@MIT.EDU","10","Chemical Engineering","G","CETEGEN, SHAYLIN ASHLEY",28-OCT-24
+"Kazuatsu","","Shimizu","Shimizu, Kazuatsu","","","kazuatsu@MIT.EDU","14","Economics","G","SHIMIZU, KAZUATSU",28-OCT-24
+"Thomas","","Usherwood","Usherwood, Thomas","","","thomasu@MIT.EDU","HST","Health Sciences & Technology","G","USHERWOOD, THOMAS",28-OCT-24
+"Steve","","Zhou","Zhou, Steve","","","stevez02@MIT.EDU","15","Management","G","ZHOU, STEVE",28-OCT-24
+"Laila","E.","Salgado","Salgado, Laila E.","","","lsalgado@MIT.EDU","NONE","Freshmen","1","SALGADO, LAILA E.",28-OCT-24
+"Aneesh","Ramesh","Jois","Jois, Aneesh Ramesh","","","ajois@MIT.EDU","16","Aeronautics and Astronautics","G","JOIS, ANEESH RAMESH",28-OCT-24
+"Simone","Hope","Delaney","Delaney, Simone Hope","","","s3delane@MIT.EDU","11","Urban Studies and Planning","G","DELANEY, SIMONE HOPE",28-OCT-24
+"Evan","","Collins","Collins, Evan","76-661","","evanc@MIT.EDU","20","Biological Engineering","G","COLLINS, EVAN",28-OCT-24
+"An","","Chang","Chang, An","","","anchang@MIT.EDU","2","Mechanical Engineering","G","CHANG, AN",28-OCT-24
+"Martin","","Chan","Chan, Martin","","","martinch@MIT.EDU","6","Electrical Eng & Computer Sci","G","CHAN, MARTIN",28-OCT-24
+"Sanchit","","Agrawal","Agrawal, Sanchit","","","sanch863@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","AGRAWAL, SANCHIT",28-OCT-24
+"Hailang","","Jiang","Jiang, Hailang","","","hailangj@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","JIANG, HAILANG",28-OCT-24
+"Yixuan","","Jiao","Jiao, Yixuan","","","yjiao917@MIT.EDU","6","Electrical Eng & Computer Sci","G","JIAO, YIXUAN",28-OCT-24
+"Angie","","Jo","Jo, Angie","","","angiejo@MIT.EDU","17","Political Science","G","JO, ANGIE",28-OCT-24
+"Angela","P.","Guo","Guo, Angela P.","","","angguo17@MIT.EDU","NONE","Freshmen","1","GUO, ANGELA P.",28-OCT-24
+"Thomas","Benjamin","Khan","Khan, Thomas Benjamin","","","tkhan2@MIT.EDU","5","Chemistry","G","KHAN, THOMAS BENJAMIN",28-OCT-24
+"Yumou","","Fei","Fei, Yumou","","","yumou415@MIT.EDU","6","Electrical Eng & Computer Sci","G","FEI, YUMOU",28-OCT-24
+"Qixuan","","Jin","Jin, Qixuan","","","qixuanj@MIT.EDU","6","Electrical Eng & Computer Sci","G","JIN, QIXUAN",28-OCT-24
+"Sarah","","Barreto Ornellas","Barreto Ornellas, Sarah","","","sarah283@MIT.EDU","MAS","Prog in Media Arts Sciences","G","BARRETO ORNELLAS, SARAH",28-OCT-24
+"Raul","Ortega","Ochoa","Ochoa, Raul Ortega","","","rauoc@MIT.EDU","2","Mechanical Engineering","G","OCHOA, RAUL ORTEGA",28-OCT-24
+"Meredith","","Chagares","Chagares, Meredith","","","chagares@MIT.EDU","15","Management","G","CHAGARES, MEREDITH",28-OCT-24
+"Jung Hoon","","Cho","Cho, Jung Hoon","","","jhooncho@MIT.EDU","1","Civil and Environmental Eng","G","CHO, JUNG HOON",28-OCT-24
+"Sanjana","","Paul","Paul, Sanjana","","","sanjanap@MIT.EDU","11","Urban Studies and Planning","G","PAUL, SANJANA",28-OCT-24
+"Beiqi","","Wang","Wang, Beiqi","","","beiqiwan@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","WANG, BEIQI",28-OCT-24
+"Emilio","","Alvarez Flores","Alvarez Flores, Emilio","","","emalvare@MIT.EDU","15","Management","G","ALVAREZ FLORES, EMILIO",28-OCT-24
+"Mengyuan","","Liao","Liao, Mengyuan","","","liaomy@MIT.EDU","15","Management","G","LIAO, MENGYUAN",28-OCT-24
+"Andrea","Nicole","Marcano-Delgado","Marcano-Delgado, Andrea Nicole","","","amarcano@MIT.EDU","5","Chemistry","G","MARCANO-DELGADO, ANDREA NICOLE",28-OCT-24
+"Kiyoko","Y.","Hayano","Hayano, Kiyoko Y.","","","kyhayano@MIT.EDU","NONE","Freshmen","1","HAYANO, KIYOKO Y.",28-OCT-24
+"Yoyo","","Ge","Ge, Yoyo","","","yoyoge@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","GE, YOYO",28-OCT-24
+"Jiayin","","Chen","Chen, Jiayin","","","jiayinch@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","CHEN, JIAYIN",28-OCT-24
+"Yimeng","","Li","Li, Yimeng","","","yimengli@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","LI, YIMENG",28-OCT-24
+"Xinjiang","","Chen","Chen, Xinjiang","","","xjchen@MIT.EDU","10","Chemical Engineering","G","CHEN, XINJIANG",28-OCT-24
+"Gideon","A.","Tzafriri","Tzafriri, Gideon A.","","","gideontz@MIT.EDU","8","Physics","3","TZAFRIRI, GIDEON A.",28-OCT-24
+"Joseph","M.","Ntaimo","Ntaimo, Joseph M.","","","jntaimo@MIT.EDU","2","Mechanical Engineering","G","NTAIMO, JOSEPH M.",28-OCT-24
+"Lance","","Lu","Lu, Lance","","","yananlu@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","LU, LANCE",28-OCT-24
+"Dominic","R.","Maggio","Maggio, Dominic R.","","","drmaggio@MIT.EDU","16","Aeronautics and Astronautics","G","MAGGIO, DOMINIC R.",28-OCT-24
+"Geoffrey","Daniel","Kocks","Kocks, Geoffrey Daniel","","","gkocks@MIT.EDU","14","Economics","G","KOCKS, GEOFFREY DANIEL",28-OCT-24
+"Benjamin","S.","Carlson","Carlson, Benjamin S.","","","carls667@MIT.EDU","2","Mechanical Engineering","4","CARLSON, BENJAMIN S.",28-OCT-24
+"Kaya","R.","Weiser","Weiser, Kaya R.","","","kweiser6@MIT.EDU","10","Chemical Engineering","3","WEISER, KAYA R.",28-OCT-24
+"Senpeng","","Lin","Lin, Senpeng","","","splin@MIT.EDU","5","Chemistry","G","LIN, SENPENG",28-OCT-24
+"Anusha","M.","Nathan","Nathan, Anusha M.","","","amnathan@MIT.EDU","HST","Health Sciences & Technology","G","NATHAN, ANUSHA M.",28-OCT-24
+"Steve","McCray","Bryan","Bryan, Steve McCray","","","smbryan@MIT.EDU","15","Management","G","BRYAN, STEVE MCCRAY",28-OCT-24
+"Lilly","A.","Heilshorn","Heilshorn, Lilly A.","","","laheilsh@MIT.EDU","2","Mechanical Engineering","4","HEILSHORN, LILLY A.",28-OCT-24
+"Kai","T.","McClennen","McClennen, Kai T.","","","kmcclenn@MIT.EDU","6","Electrical Eng & Computer Sci","3","MCCLENNEN, KAI T.",28-OCT-24
+"Amrit","","Singh","Singh, Amrit","","","amrit05@MIT.EDU","2","Mechanical Engineering","2","SINGH, AMRIT",28-OCT-24
+"Tara","Colleen","Housen","Housen, Tara Colleen","","","thousen@MIT.EDU","16","Aeronautics and Astronautics","G","HOUSEN, TARA COLLEEN",28-OCT-24
+"Alexis","","Cook","Cook, Alexis","","","acc22@MIT.EDU","ASP","Advanced Study Program","G","COOK, ALEXIS",28-OCT-24
+"Emma","","Cutler","Cutler, Emma","","","ecutler@MIT.EDU","11","Urban Studies and Planning","G","CUTLER, EMMA",28-OCT-24
+"Iris","","Zhan","Zhan, Iris","","","iriszhan@MIT.EDU","NIW","Wellesley Cross-Enrollment Pro","2","ZHAN, IRIS",28-OCT-24
+"Kohleman","N.","Swift","Swift, Kohleman N.","","","knswift@MIT.EDU","HST","Health Sciences & Technology","G","SWIFT, KOHLEMAN N.",28-OCT-24
+"Jules","","Nguyen","Nguyen, Jules","","","j_nguyen@MIT.EDU","15","Management","G","NGUYEN, JULES",28-OCT-24
+"Adrian","","Rodriguez Munoz","Rodriguez Munoz, Adrian","","","adrianrm@MIT.EDU","6","Electrical Eng & Computer Sci","G","RODRIGUEZ MUNOZ, ADRIAN",28-OCT-24
+"Elizabete","S.","Grigalinovica Leja","Grigalinovica Leja, Elizabete S.","","","esgleja@MIT.EDU","16","Aeronautics and Astronautics","3","GRIGALINOVICA LEJA, ELIZABETE S.",28-OCT-24
+"Jorge Bryan","","Ortega Marquez","Ortega Marquez, Jorge Bryan","","","jorgebry@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","ORTEGA MARQUEZ, JORGE BRYAN",28-OCT-24
+"Josh","J.","Randolph","Randolph, Josh J.","","","joshra12@MIT.EDU","2","Mechanical Engineering","3","RANDOLPH, JOSH J.",28-OCT-24
+"Chonghyuk","","Song","Song, Chonghyuk","45-741A","","ndsong@MIT.EDU","6","Electrical Eng & Computer Sci","G","SONG, CHONGHYUK",28-OCT-24
+"Gha Young","","Lee","Lee, Gha Young","","","ghayoung@MIT.EDU","5","Chemistry","G","LEE, GHA YOUNG",28-OCT-24
+"Jennifer","","Turliuk","Turliuk, Jennifer","","","jturliuk@MIT.EDU","15","Management","G","TURLIUK, JENNIFER",28-OCT-24
+"Jaciel","","Ravelo Rodarte","Ravelo Rodarte, Jaciel","","","ysna@MIT.EDU","NONE","Freshmen","1","RAVELO RODARTE, JACIEL",28-OCT-24
+"Jordan","W.","Wilke","Wilke, Jordan W.","","","wilke18@MIT.EDU","6","Electrical Eng & Computer Sci","G","WILKE, JORDAN W.",28-OCT-24
+"Zhouyi","","Sun","Sun, Zhouyi","","","szy@MIT.EDU","24","Linguistics and Philosophy","G","SUN, ZHOUYI",28-OCT-24
+"Andrew","","Epstein","Epstein, Andrew","","","andrewep@MIT.EDU","15","Management","G","EPSTEIN, ANDREW",28-OCT-24
+"Maynard","T","Larweh","Larweh, Maynard T","","","larwehm@MIT.EDU","6","Electrical Eng & Computer Sci","2","LARWEH, MAYNARD T",28-OCT-24
+"Alyssa","N.","Keirn","Keirn, Alyssa N.","","","akeirn@MIT.EDU","6","Electrical Eng & Computer Sci","G","KEIRN, ALYSSA N.",28-OCT-24
+"Stephen","","Harvey","Harvey, Stephen","","","sjharvey@MIT.EDU","11","Urban Studies and Planning","G","HARVEY, STEPHEN",28-OCT-24
+"Xavier","A.","Banos","Banos, Xavier A.","","","xabanos@MIT.EDU","NONE","Freshmen","1","BANOS, XAVIER A.",28-OCT-24
+"Sebastian","M.","Cano Sanabria","Cano Sanabria, Sebastian M.","","","scano@MIT.EDU","6","Electrical Eng & Computer Sci","3","CANO SANABRIA, SEBASTIAN M.",28-OCT-24
+"Harsha","","Sharma","Sharma, Harsha","","","hs256@MIT.EDU","6","Electrical Eng & Computer Sci","G","SHARMA, HARSHA",28-OCT-24
+"Redwan","","Egal","Egal, Redwan","","","re101@MIT.EDU","NIW","Wellesley Cross-Enrollment Pro","3","EGAL, REDWAN",28-OCT-24
+"Olivia","M.","Avelino","Avelino, Olivia M.","","","oavelino@MIT.EDU","11","Urban Studies and Planning","4","AVELINO, OLIVIA M.",28-OCT-24
+"Eleni","T.","Mowery","Mowery, Eleni T.","","","etmowery@MIT.EDU","22","Nuclear Engineering","4","MOWERY, ELENI T.",28-OCT-24
+"Paula","Constanza","Servideo Fischer","Servideo Fischer, Paula Constanza","","","paulacsf@MIT.EDU","SCM","Supply Chain Management Progra","G","SERVIDEO FISCHER, PAULA CONSTANZA",28-OCT-24
+"Sydney","P.","Kim","Kim, Sydney P.","","","spkim275@MIT.EDU","2","Mechanical Engineering","G","KIM, SYDNEY P.",28-OCT-24
+"Wayne","","Nelms","Nelms, Wayne","","","wnelms@MIT.EDU","18","Mathematics","4","NELMS, WAYNE",28-OCT-24
+"Gabriel","Isaac","Afriat","Afriat, Gabriel Isaac","","","afriatg@MIT.EDU","OR","Operations Research","G","AFRIAT, GABRIEL ISAAC",28-OCT-24
+"Mary","","Holloway","Holloway, Mary","","","maryholl@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","HOLLOWAY, MARY",28-OCT-24
+"Swathi","","Ganesh","Ganesh, Swathi","","","swathig@MIT.EDU","10","Chemical Engineering","G","GANESH, SWATHI",28-OCT-24
+"Diego","","Iglesias Vega","Iglesias Vega, Diego","","","diegoi1@MIT.EDU","10","Chemical Engineering","G","IGLESIAS VEGA, DIEGO",28-OCT-24
+"Heejung","","Chung","Chung, Heejung","","","hjwchung@MIT.EDU","3","Materials Science and Eng","G","CHUNG, HEEJUNG",28-OCT-24
+"Isaac","M.","Lopez","Lopez, Isaac M.","","","imlopez@MIT.EDU","18","Mathematics","4","LOPEZ, ISAAC M.",28-OCT-24
+"Zhuoyang","","Zhang","Zhang, Zhuoyang","38-344","","zy_zhang@MIT.EDU","6","Electrical Eng & Computer Sci","G","ZHANG, ZHUOYANG",28-OCT-24
+"Lauren","","Hoorens van Heyningen","Hoorens van Heyningen, Lauren","","","lhoorens@MIT.EDU","20","Biological Engineering","G","HOORENS VAN HEYNINGEN, LAUREN",28-OCT-24
+"Hallie","Olivia","Trial","Trial, Hallie Olivia","","","h_trial@MIT.EDU","5","Chemistry","G","TRIAL, HALLIE OLIVIA",28-OCT-24
+"Harrison","","Fisher","Fisher, Harrison","","","hf303@MIT.EDU","6","Electrical Eng & Computer Sci","G","FISHER, HARRISON",28-OCT-24
+"Koko","T.","Kummel","Kummel, Koko T.","","","kkummel@MIT.EDU","12","Earth, Atmos & Planetary Sci","4","KUMMEL, KOKO T.",28-OCT-24
+"Phillip","Johannes Kerr","Christoffersen","Christoffersen, Phillip Johannes Kerr","","","philljkc@MIT.EDU","6","Electrical Eng & Computer Sci","G","CHRISTOFFERSEN, PHILLIP JOHANNES KERR",28-OCT-24
+"Emily","Y.","Hu","Hu, Emily Y.","","","eyhu@MIT.EDU","6","Electrical Eng & Computer Sci","2","HU, EMILY Y.",28-OCT-24
+"Madeleine","Rose","Howell","Howell, Madeleine Rose","","","howellm@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","HOWELL, MADELEINE ROSE",28-OCT-24
+"Andrew","L.","Jiang","Jiang, Andrew L.","","","linjiang@MIT.EDU","6","Electrical Eng & Computer Sci","4","JIANG, ANDREW L.",28-OCT-24
+"Olivia","M.","Carpenter","Carpenter, Olivia M.","","","ocarpeo@MIT.EDU","NONE","Freshmen","1","CARPENTER, OLIVIA M.",28-OCT-24
+"Rohan","","Deb","Deb, Rohan","","","rohandeb@MIT.EDU","6","Electrical Eng & Computer Sci","3","DEB, ROHAN",28-OCT-24
+"Ariel","","Attias","Attias, Ariel","5-332-A","","aattias@MIT.EDU","1","Civil and Environmental Eng","G","ATTIAS, ARIEL",28-OCT-24
+"Maheera","","Bawa","Bawa, Maheera","","","maheerab@MIT.EDU","2","Mechanical Engineering","G","BAWA, MAHEERA",28-OCT-24
+"Melat","Duguma","Hunde","Hunde, Melat Duguma","","","mhunde@MIT.EDU","ASP","Advanced Study Program","G","HUNDE, MELAT DUGUMA",28-OCT-24
+"Greta","Franziska","Berendes","Berendes, Greta Franziska","","","gretaber@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","BERENDES, GRETA FRANZISKA",28-OCT-24
+"Jace","M.","Lopez","Lopez, Jace M.","","","jace6506@MIT.EDU","NONE","Freshmen","1","LOPEZ, JACE M.",28-OCT-24
+"Levi","Stanton","Warring","Warring, Levi Stanton","","","lwarring@MIT.EDU","5","Chemistry","G","WARRING, LEVI STANTON",28-OCT-24
+"Charley","A.","Catalano","Catalano, Charley A.","31-380","","ccatalan@MIT.EDU","16","Aeronautics and Astronautics","G","CATALANO, CHARLEY A.",28-OCT-24
+"Aarushi","","Mehrotra","Mehrotra, Aarushi","","","aarushim@MIT.EDU","20","Biological Engineering","3","MEHROTRA, AARUSHI",28-OCT-24
+"Janet","","Teng","Teng, Janet","","","tengj@MIT.EDU","10","Chemical Engineering","4","TENG, JANET",28-OCT-24
+"April","","Hu","Hu, April","","","aprilhu@MIT.EDU","15","Management","G","HU, APRIL",28-OCT-24
+"Yousef","","Lawrence","Lawrence, Yousef","","","ylaw@MIT.EDU","22","Nuclear Engineering","G","LAWRENCE, YOUSEF",28-OCT-24
+"Anastasiia","","Pereverten","Pereverten, Anastasiia","","","apereverten@g.harvard.edu","NIH","Harvard Cross-Enrollment Prog","G","PEREVERTEN, ANASTASIIA",28-OCT-24
+"Peter","","Dong","Dong, Peter","","","pdong@MIT.EDU","NONE","Freshmen","1","DONG, PETER",28-OCT-24
+"Patrick","Farid","Aoude","Aoude, Patrick Farid","","","aoude@MIT.EDU","CSB","Computational and Systems Bio","G","AOUDE, PATRICK FARID",28-OCT-24
+"Maxwell","","Rae","Rae, Maxwell","","","mraechu@MIT.EDU","3","Materials Science and Eng","G","RAE, MAXWELL",28-OCT-24
+"Ania","N.","Kelly","Kelly, Ania N.","","","ankelly@MIT.EDU","NONE","Freshmen","1","KELLY, ANIA N.",28-OCT-24
+"Michelle","N.","Yan","Yan, Michelle N.","","","mnyan@MIT.EDU","7","Biology","2","YAN, MICHELLE N.",28-OCT-24
+"Michael","Bowen","Law","Law, Michael Bowen","","","mikelaw@MIT.EDU","18","Mathematics","G","LAW, MICHAEL BOWEN",28-OCT-24
+"Sonika","","Kohli","Kohli, Sonika","","","sonika@MIT.EDU","2","Mechanical Engineering","G","KOHLI, SONIKA",28-OCT-24
+"Flora","Antonia","Grilli","Grilli, Flora Antonia","","","flora25@MIT.EDU","2","Mechanical Engineering","G","GRILLI, FLORA ANTONIA",28-OCT-24
+"David","D","Baek","Baek, David D","","","dbaek@MIT.EDU","6","Electrical Eng & Computer Sci","G","BAEK, DAVID D",28-OCT-24
+"Lauren","E.","Gutierrez","Gutierrez, Lauren E.","","","laureng2@MIT.EDU","EM","Engineering Management","G","GUTIERREZ, LAUREN E.",28-OCT-24
+"Maia","","Lee DeMeyer","Lee DeMeyer, Maia","","","mdemeyer@MIT.EDU","6","Electrical Eng & Computer Sci","3","LEE DEMEYER, MAIA",28-OCT-24
+"Tiffany","","Zhang","Zhang, Tiffany","","","tiffany8@MIT.EDU","NONE","Freshmen","1","ZHANG, TIFFANY",28-OCT-24
+"Chanwoo","","Park","Park, Chanwoo","","","cpark97@MIT.EDU","6","Electrical Eng & Computer Sci","G","PARK, CHANWOO",28-OCT-24
+"Xinle","","Dai","Dai, Xinle","","","xinledai@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","DAI, XINLE",28-OCT-24
+"Han","","Zheng","Zheng, Han","32-D631","","hanzheng@MIT.EDU","2","Mechanical Engineering","G","ZHENG, HAN",28-OCT-24
+"Hai Yi Blue","","Chan","Chan, Hai Yi Blue","","","hc6945@MIT.EDU","4","Architecture","G","CHAN, HAI YI BLUE",28-OCT-24
+"Keona","P.","Kuo","Kuo, Keona P.","","","kpkuo@MIT.EDU","NONE","Freshmen","1","KUO, KEONA P.",28-OCT-24
+"Zifan","","Lin","Lin, Zifan","","","zifanlin@MIT.EDU","12","Earth, Atmos & Planetary Sci","G","LIN, ZIFAN",28-OCT-24
+"DongHun","","Ryu","Ryu, DongHun","","","dryu@MIT.EDU","6","Electrical Eng & Computer Sci","G","RYU, DONGHUN",28-OCT-24
+"Kailyn","A.","Gustafson","Gustafson, Kailyn A.","","","kgusty@MIT.EDU","18","Mathematics","3","GUSTAFSON, KAILYN A.",28-OCT-24
+"Nebus","A.","Kitessa","Kitessa, Nebus A.","","","nebus12@MIT.EDU","2","Mechanical Engineering","4","KITESSA, NEBUS A.",28-OCT-24
+"Aria","","Ragas","Ragas, Aria","","","ariaraga@MIT.EDU","15","Management","G","RAGAS, ARIA",28-OCT-24
+"Ian","M.","Koe","Koe, Ian M.","","","iankoe@MIT.EDU","7","Biology","4","KOE, IAN M.",28-OCT-24
+"Greg","Warren","Cucino","Cucino, Greg Warren","","","gcucino@MIT.EDU","15","Management","G","CUCINO, GREG WARREN",28-OCT-24
+"Caroline","","Zhang","Zhang, Caroline","46-2152","3721800","carol410@MIT.EDU","MAS","Prog in Media Arts Sciences","G","ZHANG, CAROLINE",28-OCT-24
+"Marissa","H","Schimpf","Schimpf, Marissa H","","","mschimpf@MIT.EDU","NIW","Wellesley Cross-Enrollment Pro","3","SCHIMPF, MARISSA H",28-OCT-24
+"Yuanqing","","Xie","Xie, Yuanqing","","","yuanqing@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","XIE, YUANQING",28-OCT-24
+"Andrew","Z.","Zhou","Zhou, Andrew Z.","","","azzhou@MIT.EDU","HST","Health Sciences & Technology","G","ZHOU, ANDREW Z.",28-OCT-24
+"Yuan","","Yuan","Yuan, Yuan","","","yuany999@MIT.EDU","16","Aeronautics and Astronautics","G","YUAN, YUAN",28-OCT-24
+"Jeremy","","Yu","Yu, Jeremy","","","jeremyyu@MIT.EDU","6","Electrical Eng & Computer Sci","3","YU, JEREMY",28-OCT-24
+"Alex","Jose","Brinson","Brinson, Alex Jose","","","brinson@MIT.EDU","8","Physics","G","BRINSON, ALEX JOSE",28-OCT-24
+"Zihao","","Wei","Wei, Zihao","","","zhw@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","WEI, ZIHAO",28-OCT-24
+"Suocheng","","Zhang","Zhang, Suocheng","","","suocheng@MIT.EDU","15","Management","G","ZHANG, SUOCHENG",28-OCT-24
+"Vivian","T.","Trinh","Trinh, Vivian T.","","","viviantt@MIT.EDU","6","Electrical Eng & Computer Sci","4","TRINH, VIVIAN T.",28-OCT-24
+"Azamat","","Magauov","Magauov, Azamat","","","amagauov@MIT.EDU","15","Management","G","MAGAUOV, AZAMAT",28-OCT-24
+"Yasmeen","Shaker A","Alfaraj","Alfaraj, Yasmeen Shaker A","","","alfarajy@MIT.EDU","5","Chemistry","G","ALFARAJ, YASMEEN SHAKER A",28-OCT-24
+"Liwen","","Bian","Bian, Liwen","","","beckyb48@MIT.EDU","15","Management","G","BIAN, LIWEN",28-OCT-24
+"Denny","","Cao","Cao, Denny","","","dennycao@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","2","CAO, DENNY",28-OCT-24
+"Daphne","A.","Gavros","Gavros, Daphne A.","","","daphgav@MIT.EDU","15","Management","3","GAVROS, DAPHNE A.",28-OCT-24
+"Victor","","Yin","Yin, Victor","","","victor05@MIT.EDU","18","Mathematics","2","YIN, VICTOR",28-OCT-24
+"Kenan","","Sehnawi","Sehnawi, Kenan","","","ksehnawi@MIT.EDU","2","Mechanical Engineering","G","SEHNAWI, KENAN",28-OCT-24
+"Mike","Hao","Jiang","Jiang, Mike Hao","","","mhjiang@MIT.EDU","MAS","Prog in Media Arts Sciences","G","JIANG, MIKE HAO",28-OCT-24
+"Akua","B.","Yeboah","Yeboah, Akua B.","","","akuay@MIT.EDU","6","Electrical Eng & Computer Sci","2","YEBOAH, AKUA B.",28-OCT-24
+"Aditya","S","Rao","Rao, Aditya S","","","adirao@MIT.EDU","3","Materials Science and Eng","G","RAO, ADITYA S",28-OCT-24
+"Daniela","Marion","Aguirre","Aguirre, Daniela Marion","","","dani94@MIT.EDU","15","Management","G","AGUIRRE, DANIELA MARION",28-OCT-24
+"Steven","Matthew","Hoak","Hoak, Steven Matthew","","","shoak@MIT.EDU","22","Nuclear Engineering","G","HOAK, STEVEN MATTHEW",28-OCT-24
+"Hannan","Alejandro","Rhodes","Rhodes, Hannan Alejandro","","","hrhodes@MIT.EDU","ASP","Advanced Study Program","G","RHODES, HANNAN ALEJANDRO",28-OCT-24
+"Adam","","Szetela","Szetela, Adam","","","as4222@MIT.EDU","20","Biological Engineering","G","SZETELA, ADAM",28-OCT-24
+"Cadine","","Navarro","Navarro, Cadine","","","cadine9@MIT.EDU","11","Urban Studies and Planning","G","NAVARRO, CADINE",28-OCT-24
+"Soki","","Sakurai","Sakurai, Soki","","","ssakurai@MIT.EDU","EM","Engineering Management","G","SAKURAI, SOKI",28-OCT-24
+"Chanthia","C.","Ma","Ma, Chanthia C.","","","ccma@MIT.EDU","HST","Health Sciences & Technology","G","MA, CHANTHIA C.",28-OCT-24
+"Smriti","","Saini","Saini, Smriti","46-3015","","smriti_s@MIT.EDU","9","Brain and Cognitive Sciences","G","SAINI, SMRITI",28-OCT-24
+"Colton","","Kim","Kim, Colton","","","coltonk@MIT.EDU","NONE","Freshmen","1","KIM, COLTON",28-OCT-24
+"Mateusz","","Firlej","Firlej, Mateusz","","","mateuszf@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","FIRLEJ, MATEUSZ",28-OCT-24
+"Shouyi","","Wang","Wang, Shouyi","","","syiwang@MIT.EDU","12","Earth, Atmos & Planetary Sci","G","WANG, SHOUYI",28-OCT-24
+"Felix","","Ivander","Ivander, Felix","","","fivander@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","IVANDER, FELIX",28-OCT-24
+"Georgios","","Margaritis","Margaritis, Georgios","","","geomar@MIT.EDU","OR","Operations Research","G","MARGARITIS, GEORGIOS",28-OCT-24
+"Anneka","Kogan","Benn","Benn, Anneka Kogan","","","anneka26@MIT.EDU","15","Management","G","BENN, ANNEKA KOGAN",28-OCT-24
+"Lauren","M.","Sloat","Sloat, Lauren M.","","","lsloat@MIT.EDU","HST","Health Sciences & Technology","G","SLOAT, LAUREN M.",28-OCT-24
+"Rico Henri","","Herzog","Herzog, Rico Henri","","","ricohh@MIT.EDU","MAS","Prog in Media Arts Sciences","G","HERZOG, RICO HENRI",28-OCT-24
+"Hsuan-Min","","Hung","Hung, Hsuan-Min","","","hmhung51@MIT.EDU","5","Chemistry","G","HUNG, HSUAN-MIN",28-OCT-24
+"Alex","C.","Meier","Meier, Alex C.","","","acmeier@MIT.EDU","16","Aeronautics and Astronautics","3","MEIER, ALEX C.",28-OCT-24
+"Caleb","","Davis","Davis, Caleb","","","cd4@MIT.EDU","15","Management","2","DAVIS, CALEB",28-OCT-24
+"Juliet","","Homes","Homes, Juliet","","","jhomes@MIT.EDU","NIW","Wellesley Cross-Enrollment Pro","4","HOMES, JULIET",28-OCT-24
+"Julia","","Woodward","Woodward, Julia","","","julia785@MIT.EDU","8","Physics","G","WOODWARD, JULIA",28-OCT-24
+"Thibault","Gaetan","Fredon","Fredon, Thibault Gaetan","","","tfredon@MIT.EDU","22","Nuclear Engineering","G","FREDON, THIBAULT GAETAN",28-OCT-24
+"Jen","","Ben Arye","Ben Arye, Jen","","","jen_ben@MIT.EDU","15","Management","2","BEN ARYE, JEN",28-OCT-24
+"Margaret","Elizabeth","Schroeder","Schroeder, Margaret Elizabeth","","","mschro@MIT.EDU","9","Brain and Cognitive Sciences","G","SCHROEDER, MARGARET ELIZABETH",28-OCT-24
+"Seiji","H.","Engelkemier","Engelkemier, Seiji H.","31-380","","seijieng@MIT.EDU","2","Mechanical Engineering","G","ENGELKEMIER, SEIJI H.",28-OCT-24
+"Aerin","J.","Lo","Lo, Aerin J.","","","aerinlo@MIT.EDU","6","Electrical Eng & Computer Sci","3","LO, AERIN J.",28-OCT-24
+"Saebyeok","","Shin","Shin, Saebyeok","","","saebyeok@MIT.EDU","6","Electrical Eng & Computer Sci","G","SHIN, SAEBYEOK",28-OCT-24
+"Eddy","O.","Onyango","Onyango, Eddy O.","","","ogolaedd@MIT.EDU","6","Electrical Eng & Computer Sci","4","ONYANGO, EDDY O.",28-OCT-24
+"David","Jake Henry","Levy","Levy, David Jake Henry","","","davidjhl@MIT.EDU","24","Linguistics and Philosophy","G","LEVY, DAVID JAKE HENRY",28-OCT-24
+"Rui","","Kato","Kato, Rui","","","ruikato@MIT.EDU","15","Management","G","KATO, RUI",28-OCT-24
+"Anney","","Ye","Ye, Anney","","","anneyye@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","YE, ANNEY",28-OCT-24
+"David","A.","Coll Leon","Coll Leon, David A.","","","dcll@MIT.EDU","NONE","Freshmen","1","COLL LEON, DAVID A.",28-OCT-24
+"Mycreta","K.","Johnston","Johnston, Mycreta K.","","","mkjohnst@MIT.EDU","1","Civil and Environmental Eng","3","JOHNSTON, MYCRETA K.",28-OCT-24
+"Bailey","Lynn","Fluegel","Fluegel, Bailey Lynn","","","bfluegel@MIT.EDU","12","Earth, Atmos & Planetary Sci","G","FLUEGEL, BAILEY LYNN",28-OCT-24
+"Yifan","","Guo","Guo, Yifan","","","yifanguo@MIT.EDU","5","Chemistry","G","GUO, YIFAN",28-OCT-24
+"Aurora","Shingshing","Zhang","Zhang, Aurora Shingshing","","","aszhang@MIT.EDU","IDS","Inst for Data, Syst, & Soc","G","ZHANG, AURORA SHINGSHING",28-OCT-24
+"Kenneth","","Panteleev","Panteleev, Kenneth","","","panteken@MIT.EDU","15","Management","G","PANTELEEV, KENNETH",28-OCT-24
+"Zach","A.","Hardgrave","Hardgrave, Zach A.","","","zachh707@MIT.EDU","16","Aeronautics and Astronautics","3","HARDGRAVE, ZACH A.",28-OCT-24
+"Hasan","","Al-Mahayni","Al-Mahayni, Hasan","","","hasan99@MIT.EDU","10","Chemical Engineering","G","AL-MAHAYNI, HASAN",28-OCT-24
+"Merete","","Ogah","Ogah, Merete","","","mogah@MIT.EDU","NIW","Wellesley Cross-Enrollment Pro","4","OGAH, MERETE",28-OCT-24
+"Isabella","L.","Quan","Quan, Isabella L.","","","isaq@MIT.EDU","18","Mathematics","3","QUAN, ISABELLA L.",28-OCT-24
+"Simone","","Bagatella","Bagatella, Simone","","","sbagatel@MIT.EDU","3","Materials Science and Eng","G","BAGATELLA, SIMONE",28-OCT-24
+"Jules","G.","Drean","Drean, Jules G.","","","drean@MIT.EDU","6","Electrical Eng & Computer Sci","G","DREAN, JULES G.",28-OCT-24
+"Fadi","","Wassaf","Wassaf, Fadi","","","fadiwas@MIT.EDU","6","Electrical Eng & Computer Sci","G","WASSAF, FADI",28-OCT-24
+"Lucas","","Ospina","Ospina, Lucas","","","lospina@MIT.EDU","10","Chemical Engineering","3","OSPINA, LUCAS",28-OCT-24
+"Kara","A.","Chou","Chou, Kara A.","","","karachou@MIT.EDU","NONE","Freshmen","1","CHOU, KARA A.",28-OCT-24
+"Ashley","Danielle","Westerfield","Westerfield, Ashley Danielle","","","ashleydw@MIT.EDU","HST","Health Sciences & Technology","G","WESTERFIELD, ASHLEY DANIELLE",28-OCT-24
+"Nick","","Allen","Allen, Nick","","","nballen@MIT.EDU","11","Urban Studies and Planning","G","ALLEN, NICK",28-OCT-24
+"Julia","Sarita","Sircar","Sircar, Julia Sarita","","","julias42@MIT.EDU","15","Management","G","SIRCAR, JULIA SARITA",28-OCT-24
+"Andrea","","Valacchi","Valacchi, Andrea","","","andval33@MIT.EDU","15","Management","G","VALACCHI, ANDREA",28-OCT-24
+"Alvaro","Jesus","Martinez Sanchez","Martinez Sanchez, Alvaro Jesus","","","alvaroms@MIT.EDU","16","Aeronautics and Astronautics","G","MARTINEZ SANCHEZ, ALVARO JESUS",28-OCT-24
+"Consti","Julius Vincent","Caspar","Caspar, Consti Julius Vincent","","","consti99@MIT.EDU","15","Management","G","CASPAR, CONSTI JULIUS VINCENT",28-OCT-24
+"Marco","Andres","Andrade","Andrade, Marco Andres","","","marcoand@MIT.EDU","6","Electrical Eng & Computer Sci","G","ANDRADE, MARCO ANDRES",28-OCT-24
+"Lee-Daniel","","Tran","Tran, Lee-Daniel","","","leedanie@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","TRAN, LEE-DANIEL",28-OCT-24
+"Niles","","Liu","Liu, Niles","","","nliu04@MIT.EDU","18","Mathematics","3","LIU, NILES",28-OCT-24
+"David","","Lewis","Lewis, David","","","davidlew@MIT.EDU","6","Electrical Eng & Computer Sci","4","LEWIS, DAVID",28-OCT-24
+"Abhitha","","Vegi","Vegi, Abhitha","","","abhitha@MIT.EDU","6","Electrical Eng & Computer Sci","4","VEGI, ABHITHA",28-OCT-24
+"Abe","W.","Schechinger","Schechinger, Abe W.","","","abeschec@MIT.EDU","NONE","Freshmen","1","SCHECHINGER, ABE W.",28-OCT-24
+"Iris","J.","Xu","Xu, Iris J.","","","irisxu@MIT.EDU","NONE","Freshmen","1","XU, IRIS J.",28-OCT-24
+"Sama","","Setty","Setty, Sama","","","sama@MIT.EDU","6","Electrical Eng & Computer Sci","4","SETTY, SAMA",28-OCT-24
+"Natalie","Lain","Madden","Madden, Natalie Lain","","","nlmadden@MIT.EDU","15","Management","G","MADDEN, NATALIE LAIN",28-OCT-24
+"Jian","","Qian","Qian, Jian","","","jianqian@MIT.EDU","6","Electrical Eng & Computer Sci","G","QIAN, JIAN",28-OCT-24
+"Anna","","Chan","Chan, Anna","","","annachan@MIT.EDU","6","Electrical Eng & Computer Sci","3","CHAN, ANNA",28-OCT-24
+"Bailey","","Bai","Bai, Bailey","","","yuqinbai@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","BAI, BAILEY",28-OCT-24
+"Anders","Chrastek","Steiness","Steiness, Anders Chrastek","","","steiness@MIT.EDU","15","Management","G","STEINESS, ANDERS CHRASTEK",28-OCT-24
+"Julian","L.","Powers","Powers, Julian L.","","","julianpo@MIT.EDU","16","Aeronautics and Astronautics","G","POWERS, JULIAN L.",28-OCT-24
+"Muen","","Zhang","Zhang, Muen","","","muenzhan@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","ZHANG, MUEN",28-OCT-24
+"Angelica","","Garlasche","Garlasche, Angelica","","","angi333@MIT.EDU","7","Biology","G","GARLASCHE, ANGELICA",28-OCT-24
+"Tong","","Zhang","Zhang, Tong","","","ztong@MIT.EDU","7","Biology","G","ZHANG, TONG",28-OCT-24
+"Song","","Guo","Guo, Song","","","guos15@MIT.EDU","11","Urban Studies and Planning","G","GUO, SONG",28-OCT-24
+"Daniel","","Perez","Perez, Daniel","","","perezd@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","4","PEREZ, DANIEL",28-OCT-24
+"Charlie","Charlie","Shi","Shi, Charlie Charlie","","","cs2024@MIT.EDU","15","Management","G","SHI, CHARLIE CHARLIE",28-OCT-24
+"Ritika","","Jain","Jain, Ritika","","","rvjain@MIT.EDU","15","Management","G","JAIN, RITIKA",28-OCT-24
+"Abhay","N.","Bestrapalli","Bestrapalli, Abhay N.","","","abhayb@MIT.EDU","8","Physics","3","BESTRAPALLI, ABHAY N.",28-OCT-24
+"Shaokai","","Wang","Wang, Shaokai","","","wsk20@MIT.EDU","15","Management","G","WANG, SHAOKAI",28-OCT-24
+"Aditya","","Chaudhry","Chaudhry, Aditya","","","adchaudh@MIT.EDU","15","Management","G","CHAUDHRY, ADITYA",28-OCT-24
+"Amy","X.","Zhong","Zhong, Amy X.","","","amyzhong@MIT.EDU","HST","Health Sciences & Technology","G","ZHONG, AMY X.",28-OCT-24
+"Emma","","Chen","Chen, Emma","","","emmachen@MIT.EDU","6","Electrical Eng & Computer Sci","3","CHEN, EMMA",28-OCT-24
+"Hien","Minh","Nguyen","Nguyen, Hien Minh","","","hienn211@MIT.EDU","5","Chemistry","G","NGUYEN, HIEN MINH",28-OCT-24
+"Win Win","","Tjong","Tjong, Win Win","","","winixent@MIT.EDU","6","Electrical Eng & Computer Sci","4","TJONG, WIN WIN",28-OCT-24
+"Felicia","Ann","Nappi","Nappi, Felicia Ann","","","felician@MIT.EDU","15","Management","G","NAPPI, FELICIA ANN",28-OCT-24
+"Juana","","Delao","Delao, Juana","","","jdelao@MIT.EDU","7","Biology","G","DELAO, JUANA",28-OCT-24
+"Megan","W.","Hung","Hung, Megan W.","","","mhung25@MIT.EDU","15","Management","G","HUNG, MEGAN W.",28-OCT-24
+"Rustam","","Khan","Khan, Rustam","","","rustam@MIT.EDU","STS","Science, Technology & Society","G","KHAN, RUSTAM",28-OCT-24
+"Jasmine","","Terrones","Terrones, Jasmine","","","jterrone@MIT.EDU","2","Mechanical Engineering","G","TERRONES, JASMINE",28-OCT-24
+"Titus","","Roesler","Roesler, Titus","","","tkr@MIT.EDU","6","Electrical Eng & Computer Sci","4","ROESLER, TITUS",28-OCT-24
+"Shaan","Anand","Jagani","Jagani, Shaan Anand","","","sjagani@MIT.EDU","16","Aeronautics and Astronautics","G","JAGANI, SHAAN ANAND",28-OCT-24
+"Evan","","Routhier","Routhier, Evan","","","routhev@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","ROUTHIER, EVAN",28-OCT-24
+"Allison","E.","Anderson","Anderson, Allison E.","","","alliande@MIT.EDU","1","Civil and Environmental Eng","2","ANDERSON, ALLISON E.",28-OCT-24
+"Joonhyuk","","Cho","Cho, Joonhyuk","","","joonhyuk@MIT.EDU","6","Electrical Eng & Computer Sci","G","CHO, JOONHYUK",28-OCT-24
+"Jonathan","W.","Dase","Dase, Jonathan W.","","","jwdase@MIT.EDU","NONE","Freshmen","1","DASE, JONATHAN W.",28-OCT-24
+"Tim","","Holzner","Holzner, Tim","","","tholzner@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","4","HOLZNER, TIM",28-OCT-24
+"Elizabeth","","Yoon","Yoon, Elizabeth","","","lizzie32@MIT.EDU","NONE","Freshmen","1","YOON, ELIZABETH",28-OCT-24
+"Mai","","Hoang","Hoang, Mai","","","maihoang@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","4","HOANG, MAI",28-OCT-24
+"Joseph","A.","Alongi","Alongi, Joseph A.","","","jalongi@MIT.EDU","6","Electrical Eng & Computer Sci","G","ALONGI, JOSEPH A.",28-OCT-24
+"Ashton","G.","Flather","Flather, Ashton G.","","","ashton_f@MIT.EDU","16","Aeronautics and Astronautics","2","FLATHER, ASHTON G.",28-OCT-24
+"Marco","","Caravello","Caravello, Marco","","","mcarav21@MIT.EDU","22","Nuclear Engineering","G","CARAVELLO, MARCO",28-OCT-24
+"Jiatu","","Li","Li, Jiatu","","","jiatuli@MIT.EDU","6","Electrical Eng & Computer Sci","G","LI, JIATU",28-OCT-24
+"Michael","Rainer","Braun","Braun, Michael Rainer","","","mrbraun@MIT.EDU","2","Mechanical Engineering","G","BRAUN, MICHAEL RAINER",28-OCT-24
+"Man","","Jiang","Jiang, Man","","","manjiang@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","JIANG, MAN",28-OCT-24
+"Lucia","T","Edmonds","Edmonds, Lucia T","","","luciae@MIT.EDU","NIW","Wellesley Cross-Enrollment Pro","4","EDMONDS, LUCIA T",28-OCT-24
+"Bowen","","Yu","Yu, Bowen","","","bowenyu@MIT.EDU","8","Physics","2","YU, BOWEN",28-OCT-24
+"Jessica","Lynn","Bonnar","Bonnar, Jessica Lynn","","","jbonnar@MIT.EDU","7","Biology","G","BONNAR, JESSICA LYNN",28-OCT-24
+"Ines","Prieto","Borromeo","Borromeo, Ines Prieto","","","aborrome@MIT.EDU","15","Management","G","BORROMEO, INES PRIETO",28-OCT-24
+"Atticus","","Wang","Wang, Atticus","","","atticusw@MIT.EDU","18","Mathematics","3","WANG, ATTICUS",28-OCT-24
+"Michael","","Leong","Leong, Michael","","","mleong1@MIT.EDU","1","Civil and Environmental Eng","G","LEONG, MICHAEL",28-OCT-24
+"Aya","","Schwartz","Schwartz, Aya","","","ayschwa@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","1","SCHWARTZ, AYA",28-OCT-24
+"Rami","","Chamoun","Chamoun, Rami","","","rec08@MIT.EDU","15","Management","G","CHAMOUN, RAMI",28-OCT-24
+"Bella","","Zhao","Zhao, Bella","","","bellazha@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","ZHAO, BELLA",28-OCT-24
+"Eric","Ryan","Lee","Lee, Eric Ryan","","","leeer@MIT.EDU","3","Materials Science and Eng","G","LEE, ERIC RYAN",28-OCT-24
+"Frank","","Liang","Liang, Frank","","","franklia@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","LIANG, FRANK",28-OCT-24
+"Patricia","","Jastrzebska-Perfect","Jastrzebska-Perfect, Patricia","38-107","","pjp@MIT.EDU","6","Electrical Eng & Computer Sci","G","JASTRZEBSKA-PERFECT, PATRICIA",28-OCT-24
+"Keira","A.","Mooney","Mooney, Keira A.","","","kmooney@MIT.EDU","6","Electrical Eng & Computer Sci","2","MOONEY, KEIRA A.",28-OCT-24
+"Victoria","","Pham","Pham, Victoria","","","phvic@MIT.EDU","NONE","Freshmen","1","PHAM, VICTORIA",28-OCT-24
+"Xinyan","","Pan","Pan, Xinyan","","","pxy@MIT.EDU","20","Biological Engineering","4","PAN, XINYAN",28-OCT-24
+"Anika","","Wadhera","Wadhera, Anika","","","awadhera@MIT.EDU","20","Biological Engineering","4","WADHERA, ANIKA",28-OCT-24
+"Cathy","","Wang","Wang, Cathy","","","cathy79@MIT.EDU","15","Management","G","WANG, CATHY",28-OCT-24
+"Daniel","","Potievsky","Potievsky, Daniel","","","dmp2277@MIT.EDU","NONE","Freshmen","1","POTIEVSKY, DANIEL",28-OCT-24
+"Nicholas","","Cicero","Cicero, Nicholas","","","ncicero@MIT.EDU","6","Electrical Eng & Computer Sci","G","CICERO, NICHOLAS",28-OCT-24
+"Ari","","Otoo","Otoo, Ari","","","ario@MIT.EDU","18","Mathematics","4","OTOO, ARI",28-OCT-24
+"Qufei","","Wang","Wang, Qufei","","","qufeiwan@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","WANG, QUFEI",28-OCT-24
+"William","","Zunker","Zunker, William","","","wzunker@MIT.EDU","2","Mechanical Engineering","G","ZUNKER, WILLIAM",28-OCT-24
+"Julia","F.","Vidlak","Vidlak, Julia F.","","","jfvidlak@MIT.EDU","HST","Health Sciences & Technology","G","VIDLAK, JULIA F.",28-OCT-24
+"Taryn","Elizabeth","Loutit","Loutit, Taryn Elizabeth","","","tarynl@MIT.EDU","2","Mechanical Engineering","G","LOUTIT, TARYN ELIZABETH",28-OCT-24
+"Yupeng","","Gao","Gao, Yupeng","","","yupengga@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","GAO, YUPENG",28-OCT-24
+"Aaron","","Li","Li, Aaron","","","aaronl46@MIT.EDU","5","Chemistry","G","LI, AARON",28-OCT-24
+"Nelson","","Zheng","Zheng, Nelson","","","nelsonz@MIT.EDU","NONE","Freshmen","1","ZHENG, NELSON",28-OCT-24
+"Javian","","Malcolm","Malcolm, Javian","","","javianm@MIT.EDU","15","Management","G","MALCOLM, JAVIAN",28-OCT-24
+"Rayna","","Arora","Arora, Rayna","","","raynaaro@MIT.EDU","6","Electrical Eng & Computer Sci","3","ARORA, RAYNA",28-OCT-24
+"Justin","Michael","Roberts","Roberts, Justin Michael","","","justinmr@MIT.EDU","7","Biology","G","ROBERTS, JUSTIN MICHAEL",28-OCT-24
+"Alex","E.","Gale","Gale, Alex E.","","","alexgale@MIT.EDU","16","Aeronautics and Astronautics","3","GALE, ALEX E.",28-OCT-24
+"Salim","","Cherkaoui","Cherkaoui, Salim","","","salim31@MIT.EDU","6","Electrical Eng & Computer Sci","G","CHERKAOUI, SALIM",28-OCT-24
+"Clara","","Park","Park, Clara","","","clarap@MIT.EDU","IDS","Inst for Data, Syst, & Soc","G","PARK, CLARA",28-OCT-24
+"Michelle","","Kim-Lee","Kim-Lee, Michelle","","","ymklee@MIT.EDU","11","Urban Studies and Planning","G","KIM-LEE, MICHELLE",28-OCT-24
+"Sebastian","S.","Becerril Salinas","Becerril Salinas, Sebastian S.","","","pedrob@MIT.EDU","6","Electrical Eng & Computer Sci","3","BECERRIL SALINAS, SEBASTIAN S.",28-OCT-24
+"Vedant","","Naik","Naik, Vedant","","","vednaik@MIT.EDU","NONE","Freshmen","1","NAIK, VEDANT",28-OCT-24
+"Daniel","","Wang","Wang, Daniel","31-183","","dwang97@MIT.EDU","2","Mechanical Engineering","G","WANG, DANIEL",28-OCT-24
+"Rohan","","Thakur","Thakur, Rohan","","","rthakur@MIT.EDU","HST","Health Sciences & Technology","G","THAKUR, ROHAN",28-OCT-24
+"Kyle","J.","Guerre","Guerre, Kyle J.","","","kguerre@MIT.EDU","2","Mechanical Engineering","4","GUERRE, KYLE J.",28-OCT-24
+"Xiaowei","","Ou","Ou, Xiaowei","","","xwou@MIT.EDU","8","Physics","G","OU, XIAOWEI",28-OCT-24
+"Justin","A.","Malloy","Malloy, Justin A.","","","jamalloy@MIT.EDU","6","Electrical Eng & Computer Sci","3","MALLOY, JUSTIN A.",28-OCT-24
+"Ziwen","","Sun","Sun, Ziwen","","","ziwensun@MIT.EDU","14","Economics","G","SUN, ZIWEN",28-OCT-24
+"Alexandra","Joy","Stasior","Stasior, Alexandra Joy","","","astasior@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","STASIOR, ALEXANDRA JOY",28-OCT-24
+"Vaishnavi","","Krishnamurthy","Krishnamurthy, Vaishnavi","","","vaish853@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","KRISHNAMURTHY, VAISHNAVI",28-OCT-24
+"Yuan","","Zhang","Zhang, Yuan","","","yuanzhan@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","ZHANG, YUAN",28-OCT-24
+"Thomas","J.","Lasalle","Lasalle, Thomas J.","","","tlasalle@MIT.EDU","HST","Health Sciences & Technology","G","LASALLE, THOMAS J.",28-OCT-24
+"Serena","","Foini","Foini, Serena","","","sfoini@MIT.EDU","15","Management","G","FOINI, SERENA",28-OCT-24
+"Saina","A.","Deshpande","Deshpande, Saina A.","","","saina@MIT.EDU","6","Electrical Eng & Computer Sci","2","DESHPANDE, SAINA A.",28-OCT-24
+"Kitty","","Boakye","Boakye, Kitty","","","kboakye@MIT.EDU","NIW","Wellesley Cross-Enrollment Pro","3","BOAKYE, KITTY",28-OCT-24
+"Jake","D.","Weiss","Weiss, Jake D.","","","jdweiss1@MIT.EDU","NONE","Freshmen","1","WEISS, JAKE D.",28-OCT-24
+"Anna","M.","Simmons","Simmons, Anna M.","","","annasim@MIT.EDU","6","Electrical Eng & Computer Sci","4","SIMMONS, ANNA M.",28-OCT-24
+"Can","","Okuyucu","Okuyucu, Can","","","okuyucu@MIT.EDU","3","Materials Science and Eng","G","OKUYUCU, CAN",28-OCT-24
+"Diego","Diego","Montes de Oca Quinde","Montes de Oca Quinde, Diego Diego","","","diegomq@MIT.EDU","15","Management","G","MONTES DE OCA QUINDE, DIEGO DIEGO",28-OCT-24
+"Mohammed","Saud","Alsehali","Alsehali, Mohammed Saud","","","malsehal@MIT.EDU","EM","Engineering Management","G","ALSEHALI, MOHAMMED SAUD",28-OCT-24
+"Tatiana","N.","Vassiliev","Vassiliev, Tatiana N.","","","tatianav@MIT.EDU","15","Management","3","VASSILIEV, TATIANA N.",28-OCT-24
+"Anish","","Ravichandran","Ravichandran, Anish","","","anishrav@MIT.EDU","6","Electrical Eng & Computer Sci","G","RAVICHANDRAN, ANISH",28-OCT-24
+"Nate","S.","Woodward","Woodward, Nate S.","","","nswood@MIT.EDU","18","Mathematics","4","WOODWARD, NATE S.",28-OCT-24
+"Calvin","J.","Macatantan","Macatantan, Calvin J.","","","cmacatan@MIT.EDU","6","Electrical Eng & Computer Sci","3","MACATANTAN, CALVIN J.",28-OCT-24
+"Alaysia Leilani","B.","Stone","Stone, Alaysia Leilani B.","","","alaysia@MIT.EDU","6","Electrical Eng & Computer Sci","3","STONE, ALAYSIA LEILANI B.",28-OCT-24
+"Tiffany","J.","Wang","Wang, Tiffany J.","","","wangtj@MIT.EDU","15","Management","G","WANG, TIFFANY J.",28-OCT-24
+"Anthony","","Meza","Meza, Anthony","","","ameza@MIT.EDU","12","Earth, Atmos & Planetary Sci","G","MEZA, ANTHONY",28-OCT-24
+"Amanda","Marie","Urke","Urke, Amanda Marie","","","aurke@MIT.EDU","HST","Health Sciences & Technology","G","URKE, AMANDA MARIE",28-OCT-24
+"Theodore","C.","Gurtsak","Gurtsak, Theodore C.","","","tedb29@MIT.EDU","NONE","Freshmen","1","GURTSAK, THEODORE C.",28-OCT-24
+"Christos","Vasili","Zarkos","Zarkos, Christos Vasili","","","czarkos@MIT.EDU","6","Electrical Eng & Computer Sci","G","ZARKOS, CHRISTOS VASILI",28-OCT-24
+"Anna","","Clark","Clark, Anna","","","acclark@MIT.EDU","5","Chemistry","G","CLARK, ANNA",28-OCT-24
+"Srushti","","Jayaramu","Jayaramu, Srushti","","","srushti_jayaramu@gse.harvard.edu","NIH","Harvard Cross-Enrollment Prog","G","JAYARAMU, SRUSHTI",28-OCT-24
+"Qi","","Ding","Ding, Qi","","","qding@MIT.EDU","6","Electrical Eng & Computer Sci","G","DING, QI",28-OCT-24
+"Benjamin","","Zeng","Zeng, Benjamin","","","benzeng@MIT.EDU","2","Mechanical Engineering","G","ZENG, BENJAMIN",28-OCT-24
+"Aneesa","","Sonawalla","Sonawalla, Aneesa","","","aneesa@MIT.EDU","16","Aeronautics and Astronautics","G","SONAWALLA, ANEESA",28-OCT-24
+"Nayeemur","","Rahman","Rahman, Nayeemur","","","nayeem31@MIT.EDU","6","Electrical Eng & Computer Sci","3","RAHMAN, NAYEEMUR",28-OCT-24
+"Sebastian","","Ochoa","Ochoa, Sebastian","","","roboseb@MIT.EDU","2","Mechanical Engineering","2","OCHOA, SEBASTIAN",28-OCT-24
+"Ayako","","Tsuchiyama","Tsuchiyama, Ayako","","","ayat@MIT.EDU","12","Earth, Atmos & Planetary Sci","G","TSUCHIYAMA, AYAKO",28-OCT-24
+"Kir","","Latyshev","Latyshev, Kir","","","latyshev@MIT.EDU","16","Aeronautics and Astronautics","G","LATYSHEV, KIR",28-OCT-24
+"Hui-Ying","","Suk","Suk, Hui-Ying","","","huiyings@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","SUK, HUI-YING",28-OCT-24
+"Khadija","","Ghanizada","Ghanizada, Khadija","","","kg7952@MIT.EDU","11","Urban Studies and Planning","G","GHANIZADA, KHADIJA",28-OCT-24
+"Jiahao","","Dong","Dong, Jiahao","13-5029","","jiahao_d@MIT.EDU","3","Materials Science and Eng","G","DONG, JIAHAO",28-OCT-24
+"Benjamin","Adam","Levy","Levy, Benjamin Adam","","","balevy@MIT.EDU","16","Aeronautics and Astronautics","G","LEVY, BENJAMIN ADAM",28-OCT-24
+"Sheng","","Huang","Huang, Sheng","","","shengh@MIT.EDU","6","Electrical Eng & Computer Sci","G","HUANG, SHENG",28-OCT-24
+"Rifqi","","Putera","Putera, Rifqi","","","rifqiput@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","PUTERA, RIFQI",28-OCT-24
+"Robert","Brandon","Mannier","Mannier, Robert Brandon","","","robert18@MIT.EDU","2","Mechanical Engineering","G","MANNIER, ROBERT BRANDON",28-OCT-24
+"Zhaozhong","","Zhuang","Zhuang, Zhaozhong","","","zhuangz@MIT.EDU","2","Mechanical Engineering","G","ZHUANG, ZHAOZHONG",28-OCT-24
+"Carlos","G.","Requena","Requena, Carlos G.","","","cgreq114@MIT.EDU","2","Mechanical Engineering","3","REQUENA, CARLOS G.",28-OCT-24
+"Renato","","Trono Figueras","Trono Figueras, Renato","","","renat999@MIT.EDU","16","Aeronautics and Astronautics","G","TRONO FIGUERAS, RENATO",28-OCT-24
+"Clay","","Coleman","Coleman, Clay","","","claycole@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","COLEMAN, CLAY",28-OCT-24
+"Pranjal","","Srivastava","Srivastava, Pranjal","","","pranjal0@MIT.EDU","6","Electrical Eng & Computer Sci","3","SRIVASTAVA, PRANJAL",28-OCT-24
+"Jorge","A.","Martinez","Martinez, Jorge A.","","","jorgem13@MIT.EDU","18","Mathematics","4","MARTINEZ, JORGE A.",28-OCT-24
+"Jo","Jannette Lucia","Tijssen","Tijssen, Jo Jannette Lucia","","","jtijssen@MIT.EDU","15","Management","G","TIJSSEN, JO JANNETTE LUCIA",28-OCT-24
+"Serena","","Kesha","Kesha, Serena","","","serena28@MIT.EDU","NONE","Freshmen","1","KESHA, SERENA",28-OCT-24
+"Yuxiang","","Ma","Ma, Yuxiang","","","yxma20@MIT.EDU","2","Mechanical Engineering","G","MA, YUXIANG",28-OCT-24
+"Hai","H.","Vo","Vo, Hai H.","","","haivo@MIT.EDU","NONE","Freshmen","1","VO, HAI H.",28-OCT-24
+"Carla","","Lorente Anon","Lorente Anon, Carla","","","cla6@MIT.EDU","15","Management","G","LORENTE ANON, CARLA",28-OCT-24
+"Aaron","L.","Putterman","Putterman, Aaron L.","","","aaronput@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","PUTTERMAN, AARON L.",28-OCT-24
+"Ayman","","Riad Solh","Riad Solh, Ayman","","","aymanrs@MIT.EDU","NONE","Freshmen","1","RIAD SOLH, AYMAN",28-OCT-24
+"Amanda","","Mackie","Mackie, Amanda","48-336","7291711","amanda22@MIT.EDU","1","Civil and Environmental Eng","G","MACKIE, AMANDA",28-OCT-24
+"Mengli","","Shi","Shi, Mengli","","","menglis@MIT.EDU","12","Earth, Atmos & Planetary Sci","G","SHI, MENGLI",28-OCT-24
+"Nathra","","Ramrajvel","Ramrajvel, Nathra","","","nathra@MIT.EDU","18","Mathematics","3","RAMRAJVEL, NATHRA",28-OCT-24
+"Sofia","","Marlasca Aparicio","Marlasca Aparicio, Sofia","","","sofia23@MIT.EDU","2","Mechanical Engineering","G","MARLASCA APARICIO, SOFIA",28-OCT-24
+"Benjamin","","Eu","Eu, Benjamin","","","beu@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","EU, BENJAMIN",28-OCT-24
+"Alice","Marie Uhland","Miller","Miller, Alice Marie Uhland","","","aumiller@MIT.EDU","15","Management","G","MILLER, ALICE MARIE UHLAND",28-OCT-24
+"Michael","","Sun","Sun, Michael","32-321","","msun415@MIT.EDU","6","Electrical Eng & Computer Sci","G","SUN, MICHAEL",28-OCT-24
+"Andrea","","Giani","Giani, Andrea","","","gnindr@MIT.EDU","1","Civil and Environmental Eng","G","GIANI, ANDREA",28-OCT-24
+"Xianyi","","Xiong","Xiong, Xianyi","","","xion1475@MIT.EDU","7","Biology","G","XIONG, XIANYI",28-OCT-24
+"Joann","C.","Shi","Shi, Joann C.","","","joannshi@MIT.EDU","15","Management","4","SHI, JOANN C.",28-OCT-24
+"Adriana","I.","Rivera-Socarras","Rivera-Socarras, Adriana I.","","","arivera6@MIT.EDU","15","Management","4","RIVERA-SOCARRAS, ADRIANA I.",28-OCT-24
+"James","","Kujareevanich","Kujareevanich, James","","","jameskuj@MIT.EDU","15","Management","G","KUJAREEVANICH, JAMES",28-OCT-24
+"Mitra","","Salasel","Salasel, Mitra","","","mitrasal@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","SALASEL, MITRA",28-OCT-24
+"Clara","Ostergaard","Christensen","Christensen, Clara Ostergaard","","","coec@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","CHRISTENSEN, CLARA OSTERGAARD",28-OCT-24
+"Aadhithya","","Manimaran","Manimaran, Aadhithya","","","aadhi314@MIT.EDU","7","Biology","G","MANIMARAN, AADHITHYA",28-OCT-24
+"Ritika","","Jeloka","Jeloka, Ritika","","","jelokari@MIT.EDU","6","Electrical Eng & Computer Sci","G","JELOKA, RITIKA",28-OCT-24
+"Joshua","Douglas","Henderson","Henderson, Joshua Douglas","","","joshuahe@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","HENDERSON, JOSHUA DOUGLAS",28-OCT-24
+"Malte Martin","","Franke","Franke, Malte Martin","","","maltef@MIT.EDU","3","Materials Science and Eng","G","FRANKE, MALTE MARTIN",28-OCT-24
+"Matias","Leandro","Andina","Andina, Matias Leandro","","","mandina@MIT.EDU","9","Brain and Cognitive Sciences","G","ANDINA, MATIAS LEANDRO",28-OCT-24
+"Hanna","","Mularczyk","Mularczyk, Hanna","","","hannamul@MIT.EDU","18","Mathematics","G","MULARCZYK, HANNA",28-OCT-24
+"Namitha","","Kumar","Kumar, Namitha","","","namithak@MIT.EDU","12","Earth, Atmos & Planetary Sci","G","KUMAR, NAMITHA",28-OCT-24
+"Aateeb","","Khan","Khan, Aateeb","","","aateeb@MIT.EDU","15","Management","G","KHAN, AATEEB",28-OCT-24
+"Angelina","I.","Ayoubi","Ayoubi, Angelina I.","","","angie_ai@MIT.EDU","NONE","Freshmen","1","AYOUBI, ANGELINA I.",28-OCT-24
+"Candice","Cu-Uy-Gam","Chua","Chua, Candice Cu-Uy-Gam","26-269","","candicec@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","CHUA, CANDICE CU-UY-GAM",28-OCT-24
+"Sid","","Vijay","Vijay, Sid","","","sidvijay@MIT.EDU","15","Management","G","VIJAY, SID",28-OCT-24
+"Konstantinos","Dimitrios","Mataras","Mataras, Konstantinos Dimitrios","","","kmataras@MIT.EDU","10","Chemical Engineering","G","MATARAS, KONSTANTINOS DIMITRIOS",28-OCT-24
+"Jongwoong","","Park","Park, Jongwoong","","","jwpark1@MIT.EDU","6","Electrical Eng & Computer Sci","G","PARK, JONGWOONG",28-OCT-24
+"Rohan","L.","Bosworth","Bosworth, Rohan L.","","","rohanb27@MIT.EDU","6","Electrical Eng & Computer Sci","2","BOSWORTH, ROHAN L.",28-OCT-24
+"Justin","A.","Kaskow","Kaskow, Justin A.","","","kaskow@MIT.EDU","10","Chemical Engineering","G","KASKOW, JUSTIN A.",28-OCT-24
+"Olha","","Volianyk","Volianyk, Olha","","","volianyk@MIT.EDU","NONE","Freshmen","1","VOLIANYK, OLHA",28-OCT-24
+"Florian","Murhula","Mudekereza","Mudekereza, Florian Murhula","","","florianm@MIT.EDU","14","Economics","G","MUDEKEREZA, FLORIAN MURHULA",28-OCT-24
+"Greggory","Robert","Heller","Heller, Greggory Robert","","","greggh@MIT.EDU","9","Brain and Cognitive Sciences","G","HELLER, GREGGORY ROBERT",28-OCT-24
+"Kevin","Frederick","Dunnell","Dunnell, Kevin Frederick","","","dunnell@MIT.EDU","MAS","Prog in Media Arts Sciences","G","DUNNELL, KEVIN FREDERICK",28-OCT-24
+"Shira","","Gur Arieh","Gur Arieh, Shira","","","sgurarie@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","GUR ARIEH, SHIRA",28-OCT-24
+"Pengrui","","Zhang","Zhang, Pengrui","","","pengrui@MIT.EDU","MAS","Prog in Media Arts Sciences","G","ZHANG, PENGRUI",28-OCT-24
+"Yosyp","","Schwab","Schwab, Yosyp","","","yosyp@MIT.EDU","15","Management","G","SCHWAB, YOSYP",28-OCT-24
+"Matthew","Jackson","Hill","Hill, Matthew Jackson","","","mjhill@MIT.EDU","7","Biology","G","HILL, MATTHEW JACKSON",28-OCT-24
+"Andrew","J.","Van Dusen","Van Dusen, Andrew J.","","","avdusen@MIT.EDU","20","Biological Engineering","2","VAN DUSEN, ANDREW J.",28-OCT-24
+"Cathy","","Hou","Hou, Cathy","","","cathyhou@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","3","HOU, CATHY",28-OCT-24
+"Tristan","B.","Wan","Wan, Tristan B.","","","tristanw@MIT.EDU","6","Electrical Eng & Computer Sci","2","WAN, TRISTAN B.",28-OCT-24
+"Katelyn","Susan","Meister","Meister, Katelyn Susan","","","kmeister@MIT.EDU","10","Chemical Engineering","G","MEISTER, KATELYN SUSAN",28-OCT-24
+"June","","Park","Park, June","","","junep@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","PARK, JUNE",28-OCT-24
+"William","Gisu","Chung","Chung, William Gisu","","","willc121@MIT.EDU","15","Management","G","CHUNG, WILLIAM GISU",28-OCT-24
+"Hannah","","Kim","Kim, Hannah","","","hann@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","3","KIM, HANNAH",28-OCT-24
+"Tina","","Zhang","Zhang, Tina","","","tinazhan@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","ZHANG, TINA",28-OCT-24
+"Alex","David","Stoneman","Stoneman, Alex David","","","astone@MIT.EDU","10","Chemical Engineering","G","STONEMAN, ALEX DAVID",28-OCT-24
+"Gerardo","A.","Berlanga Molina","Berlanga Molina, Gerardo A.","","","gerardo@MIT.EDU","2","Mechanical Engineering","4","BERLANGA MOLINA, GERARDO A.",28-OCT-24
+"Charles","","Lu","Lu, Charles","E14-374","","luchar@MIT.EDU","MAS","Prog in Media Arts Sciences","G","LU, CHARLES",28-OCT-24
+"Sara","","Romero Fernandez","Romero Fernandez, Sara","","","sararome@MIT.EDU","15","Management","G","ROMERO FERNANDEZ, SARA",28-OCT-24
+"Arnaud","","Zeng","Zeng, Arnaud","","","arzeng@MIT.EDU","15","Management","G","ZENG, ARNAUD",28-OCT-24
+"Rebecca","Hali","Sostek","Sostek, Rebecca Hali","","","rsostek@MIT.EDU","15","Management","G","SOSTEK, REBECCA HALI",28-OCT-24
+"Adrienne","Nicole","Fontan","Fontan, Adrienne Nicole","","","afontan@MIT.EDU","7","Biology","G","FONTAN, ADRIENNE NICOLE",28-OCT-24
+"Ponciano","","Rubio","Rubio, Ponciano","","","poncheee@MIT.EDU","NONE","Freshmen","1","RUBIO, PONCIANO",28-OCT-24
+"Jules","Leo","Baudet","Baudet, Jules Leo","","","jbaudet@MIT.EDU","14","Economics","G","BAUDET, JULES LEO",28-OCT-24
+"Ira","","Martyniak","Martyniak, Ira","6-418","","iramart8@MIT.EDU","5","Chemistry","G","MARTYNIAK, IRA",28-OCT-24
+"Yize","","Wang","Wang, Yize","","","yize2002@MIT.EDU","15","Management","G","WANG, YIZE",28-OCT-24
+"Gitanjali","A.","Rao","Rao, Gitanjali A.","","","anjalir@MIT.EDU","20","Biological Engineering","2","RAO, GITANJALI A.",28-OCT-24
+"Thomas","Joseph","Catapano","Catapano, Thomas Joseph","","","tcatapan@MIT.EDU","12","Earth, Atmos & Planetary Sci","G","CATAPANO, THOMAS JOSEPH",28-OCT-24
+"Ana","","Scott","Scott, Ana","","","arescott@MIT.EDU","9","Brain and Cognitive Sciences","2","SCOTT, ANA",28-OCT-24
+"Aditya","Dev","Varma","Varma, Aditya Dev","","","advarma@MIT.EDU","6","Electrical Eng & Computer Sci","G","VARMA, ADITYA DEV",28-OCT-24
+"Fernando","","Garrido Carreras","Garrido Carreras, Fernando","","","fgarrido@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","GARRIDO CARRERAS, FERNANDO",28-OCT-24
+"Vaishnavi","V.","Phadnis","Phadnis, Vaishnavi V.","","","vvp@MIT.EDU","HST","Health Sciences & Technology","G","PHADNIS, VAISHNAVI V.",28-OCT-24
+"Jessica","Jiyeon","Kim","Kim, Jessica Jiyeon","","","jkim01@MIT.EDU","5","Chemistry","G","KIM, JESSICA JIYEON",28-OCT-24
+"Thanaphone","","Shields","Shields, Thanaphone","","","gshields@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","1","SHIELDS, THANAPHONE",28-OCT-24
+"Omar","","Salinas","Salinas, Omar","","","osalinas@MIT.EDU","5","Chemistry","G","SALINAS, OMAR",28-OCT-24
+"Arthur","","Caer","Caer, Arthur","","","","NIT","Tufts Cross-Enrollment Prog","1","CAER, ARTHUR",28-OCT-24
+"Alejandro","","Reyes","Reyes, Alejandro","","","aleu@MIT.EDU","18","Mathematics","3","REYES, ALEJANDRO",28-OCT-24
+"Haley","A.","Hernandez","Hernandez, Haley A.","","","haleyher@MIT.EDU","NONE","Freshmen","1","HERNANDEZ, HALEY A.",28-OCT-24
+"Thomas","J.","Murphy","Murphy, Thomas J.","","","tjmurphy@MIT.EDU","16","Aeronautics and Astronautics","G","MURPHY, THOMAS J.",28-OCT-24
+"Giuseppe","","Albanese","Albanese, Giuseppe","","","giuse002@MIT.EDU","15","Management","G","ALBANESE, GIUSEPPE",28-OCT-24
+"Colbert","","Yu","Yu, Colbert","","","colb14@MIT.EDU","15","Management","G","YU, COLBERT",28-OCT-24
+"Luke","R.","Robitaille","Robitaille, Luke R.","","","lrobitai@MIT.EDU","18","Mathematics","3","ROBITAILLE, LUKE R.",28-OCT-24
+"Luca","E","Lum","Lum, Luca E","","","lumecl@MIT.EDU","4","Architecture","G","LUM, LUCA E",28-OCT-24
+"Madeleine","","Genereux","Genereux, Madeleine","","","genereux@MIT.EDU","15","Management","G","GENEREUX, MADELEINE",28-OCT-24
+"Jack","","Barlow","Barlow, Jack","","","jebarlow@MIT.EDU","22","Nuclear Engineering","G","BARLOW, JACK",28-OCT-24
+"Diana","Marcela","Garzon Nunez","Garzon Nunez, Diana Marcela","","","dianagn@MIT.EDU","15","Management","G","GARZON NUNEZ, DIANA MARCELA",28-OCT-24
+"Ching-Pei","","Hsu","Hsu, Ching-Pei","","","chingpei@MIT.EDU","5","Chemistry","G","HSU, CHING-PEI",28-OCT-24
+"Neha","","Muramalla","Muramalla, Neha","","","neham@MIT.EDU","NONE","Freshmen","1","MURAMALLA, NEHA",28-OCT-24
+"Rodrigo","","Rangel","Rangel, Rodrigo","","","rrangel@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","RANGEL, RODRIGO",28-OCT-24
+"Dominic","X.","Zuniga","Zuniga, Dominic X.","","","dxzuniga@MIT.EDU","NONE","Freshmen","1","ZUNIGA, DOMINIC X.",28-OCT-24
+"Andres","","Lira Vigneaux","Lira Vigneaux, Andres","","","andresli@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","LIRA VIGNEAUX, ANDRES",28-OCT-24
+"Rahul","","Gupta","Gupta, Rahul","","","grahul@MIT.EDU","HST","Health Sciences & Technology","G","GUPTA, RAHUL",28-OCT-24
+"Anna","","Mei","Mei, Anna","","","annamei@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","MEI, ANNA",28-OCT-24
+"Sameer","","Pai","Pai, Sameer","","","sampai@MIT.EDU","6","Electrical Eng & Computer Sci","G","PAI, SAMEER",28-OCT-24
+"Chelsea","","Wang","Wang, Chelsea","","","cwang701@MIT.EDU","HST","Health Sciences & Technology","G","WANG, CHELSEA",28-OCT-24
+"Yunyue","","Zhu","Zhu, Yunyue","13-3021","","yunyue@MIT.EDU","6","Electrical Eng & Computer Sci","G","ZHU, YUNYUE",28-OCT-24
+"Neal","R.","White","White, Neal R.","","","","NIT","Tufts Cross-Enrollment Prog","4","WHITE, NEAL R.",28-OCT-24
+"Lauren","C.","Levy","Levy, Lauren C.","","","llevy@MIT.EDU","20","Biological Engineering","3","LEVY, LAUREN C.",28-OCT-24
+"Kartikesh","","Mishra","Mishra, Kartikesh","","","mk314k@MIT.EDU","6","Electrical Eng & Computer Sci","G","MISHRA, KARTIKESH",28-OCT-24
+"Coco","","Wu","Wu, Coco","","","ke_wu@MIT.EDU","7","Biology","G","WU, COCO",28-OCT-24
+"Mahlet","","Aregawi","Aregawi, Mahlet","","","mahlet@MIT.EDU","9","Brain and Cognitive Sciences","G","AREGAWI, MAHLET",28-OCT-24
+"Benjamin","C.","Koenig","Koenig, Benjamin C.","31-296","","bckoenig@MIT.EDU","2","Mechanical Engineering","G","KOENIG, BENJAMIN C.",28-OCT-24
+"Adriana","Macieira","Mitchell","Mitchell, Adriana Macieira","","","amtchell@MIT.EDU","16","Aeronautics and Astronautics","G","MITCHELL, ADRIANA MACIEIRA",28-OCT-24
+"Rafaela","","Saraiva","Saraiva, Rafaela","","","rafa95@MIT.EDU","15","Management","G","SARAIVA, RAFAELA",28-OCT-24
+"Henrietta","Emefa","Asamoah","Asamoah, Henrietta Emefa","","","emefa01@MIT.EDU","15","Management","G","ASAMOAH, HENRIETTA EMEFA",28-OCT-24
+"Hin","","Polcharoen","Polcharoen, Hin","","","hpolch@MIT.EDU","15","Management","G","POLCHAROEN, HIN",28-OCT-24
+"Kathryn","L.","Stoltz","Stoltz, Kathryn L.","","","stoltz28@MIT.EDU","NONE","Freshmen","1","STOLTZ, KATHRYN L.",28-OCT-24
+"Jessica","","Situ","Situ, Jessica","","","jsitu11@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","SITU, JESSICA",28-OCT-24
+"Akshay","","Gupta","Gupta, Akshay","","","akshayg@MIT.EDU","7","Biology","4","GUPTA, AKSHAY",28-OCT-24
+"Daniel","","Epstein","Epstein, Daniel","","","deps26@MIT.EDU","15","Management","G","EPSTEIN, DANIEL",28-OCT-24
+"Shelby","E.","Elder","Elder, Shelby E.","","","shelbyel@MIT.EDU","5","Chemistry","G","ELDER, SHELBY E.",28-OCT-24
+"David","R.","Santana","Santana, David R.","","","santanad@MIT.EDU","6","Electrical Eng & Computer Sci","2","SANTANA, DAVID R.",28-OCT-24
+"Luke","X.","Pelletier","Pelletier, Luke X.","","","lukepell@MIT.EDU","NONE","Freshmen","1","PELLETIER, LUKE X.",28-OCT-24
+"Theodore","J.","Dahl","Dahl, Theodore J.","","","dahlt781@MIT.EDU","NONE","Freshmen","1","DAHL, THEODORE J.",28-OCT-24
+"Ruoxi","","Qian","Qian, Ruoxi","","","rqian@MIT.EDU","18","Mathematics","2","QIAN, RUOXI",28-OCT-24
+"Yejin","","Park","Park, Yejin","36-880","3249200","jin1021@MIT.EDU","6","Electrical Eng & Computer Sci","G","PARK, YEJIN",28-OCT-24
+"Anahita","","Srinivasan","Srinivasan, Anahita","","","anahi183@MIT.EDU","6","Electrical Eng & Computer Sci","4","SRINIVASAN, ANAHITA",28-OCT-24
+"Petr","","Cervenka","Cervenka, Petr","","","cerve377@MIT.EDU","22","Nuclear Engineering","G","CERVENKA, PETR",28-OCT-24
+"Xiyuan","","Jin","Jin, Xiyuan","","","jinxy910@MIT.EDU","HST","Health Sciences & Technology","G","JIN, XIYUAN",28-OCT-24
+"Jessica","M.","Meza","Meza, Jessica M.","","","jmeza@MIT.EDU","2","Mechanical Engineering","2","MEZA, JESSICA M.",28-OCT-24
+"Junru","","Ren","Ren, Junru","","","junruren@MIT.EDU","15","Management","G","REN, JUNRU",28-OCT-24
+"Casey","G.","Fienberg","Fienberg, Casey G.","","","caseyf@MIT.EDU","2","Mechanical Engineering","3","FIENBERG, CASEY G.",28-OCT-24
+"Rotsuprit","","Saengthong","Saengthong, Rotsuprit","32-D976","2580216","rotsupri@MIT.EDU","24","Linguistics and Philosophy","G","SAENGTHONG, ROTSUPRIT",28-OCT-24
+"Bruno","","Moscarini","Moscarini, Bruno","","","bmosca@MIT.EDU","14","Economics","G","MOSCARINI, BRUNO",28-OCT-24
+"Junkun","","Ren","Ren, Junkun","","","jkren@MIT.EDU","12","Earth, Atmos & Planetary Sci","G","REN, JUNKUN",28-OCT-24
+"Sungmoon","","Lim","Lim, Sungmoon","","","sungmoon@MIT.EDU","11","Urban Studies and Planning","G","LIM, SUNGMOON",28-OCT-24
+"Hans","Ade","Larsen","Larsen, Hans Ade","","","alarsen7@MIT.EDU","7","Biology","2","LARSEN, HANS ADE",28-OCT-24
+"Sydney","","Dolan","Dolan, Sydney","","","sydneyd@MIT.EDU","16","Aeronautics and Astronautics","G","DOLAN, SYDNEY",28-OCT-24
+"Andrew","L.","Kessler","Kessler, Andrew L.","","","andrewlk@MIT.EDU","18","Mathematics","4","KESSLER, ANDREW L.",28-OCT-24
+"Norah","","Catlin","Catlin, Norah","","","ncatlin@MIT.EDU","NIW","Wellesley Cross-Enrollment Pro","4","CATLIN, NORAH",28-OCT-24
+"Ka Yee","","Wong","Wong, Ka Yee","","","kayee_wong@gsd.harvard.edu","NIH","Harvard Cross-Enrollment Prog","G","WONG, KA YEE",28-OCT-24
+"Bernard","","Burman","Burman, Bernard","","","bburman@MIT.EDU","ASP","Advanced Study Program","G","BURMAN, BERNARD",28-OCT-24
+"Jenny","Jiwon","Kim","Kim, Jenny Jiwon","","","jjwk@MIT.EDU","NONE","Freshmen","1","KIM, JENNY JIWON",28-OCT-24
+"Mariem","","Boughzala","Boughzala, Mariem","","","mariembo@MIT.EDU","6","Electrical Eng & Computer Sci","G","BOUGHZALA, MARIEM",28-OCT-24
+"Brett","Stephen","Chatfield","Chatfield, Brett Stephen","","","bchat26@MIT.EDU","15","Management","G","CHATFIELD, BRETT STEPHEN",28-OCT-24
+"Mark Airol","","Escranda","Escranda, Mark Airol","","","markairo@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","ESCRANDA, MARK AIROL",28-OCT-24
+"Tal","R.","Canetti","Canetti, Tal R.","","","tcanetti@MIT.EDU","NONE","Freshmen","1","CANETTI, TAL R.",28-OCT-24
+"Abhishek","","Patkar","Patkar, Abhishek","","","patkar2@MIT.EDU","2","Mechanical Engineering","G","PATKAR, ABHISHEK",28-OCT-24
+"Natalie","","Huang","Huang, Natalie","","","huangn@MIT.EDU","6","Electrical Eng & Computer Sci","G","HUANG, NATALIE",28-OCT-24
+"Aaron","Y.","Zhu","Zhu, Aaron Y.","","","aaronzhu@MIT.EDU","6","Electrical Eng & Computer Sci","G","ZHU, AARON Y.",28-OCT-24
+"Jonathan","Russell","Buchanan","Buchanan, Jonathan Russell","","","jbuch333@MIT.EDU","18","Mathematics","G","BUCHANAN, JONATHAN RUSSELL",28-OCT-24
+"Daniel","Zhu","Lee","Lee, Daniel Zhu","","","lee_d@MIT.EDU","6","Electrical Eng & Computer Sci","G","LEE, DANIEL ZHU",28-OCT-24
+"Sebo","","Diaz","Diaz, Sebo","","","sdd@MIT.EDU","HST","Health Sciences & Technology","G","DIAZ, SEBO",28-OCT-24
+"April","","Ren","Ren, April","","","aprilren@MIT.EDU","6","Electrical Eng & Computer Sci","2","REN, APRIL",28-OCT-24
+"Juan","C.","Santiago","Santiago, Juan C.","","","jcs05@MIT.EDU","6","Electrical Eng & Computer Sci","2","SANTIAGO, JUAN C.",28-OCT-24
+"Patty","Maria","Isaias","Isaias, Patty Maria","","","pisaias@MIT.EDU","15","Management","G","ISAIAS, PATTY MARIA",28-OCT-24
+"Shuting","","Shi","Shi, Shuting","76-231","","stshi@MIT.EDU","10","Chemical Engineering","G","SHI, SHUTING",28-OCT-24
+"Timmy","T.","Dang","Dang, Timmy T.","","","timmyd@MIT.EDU","6","Electrical Eng & Computer Sci","G","DANG, TIMMY T.",28-OCT-24
+"Alexander","Marcel M","Genoe","Genoe, Alexander Marcel M","","","agenoe@MIT.EDU","15","Management","G","GENOE, ALEXANDER MARCEL M",28-OCT-24
+"Michael","D.","Hadjiivanov","Hadjiivanov, Michael D.","","","mhivanov@MIT.EDU","6","Electrical Eng & Computer Sci","G","HADJIIVANOV, MICHAEL D.",28-OCT-24
+"Phoebe","","Rao","Rao, Phoebe","","","raop213@MIT.EDU","15","Management","G","RAO, PHOEBE",28-OCT-24
+"Alfred","Robert","Bonfantini","Bonfantini, Alfred Robert","","","alfre333@MIT.EDU","15","Management","G","BONFANTINI, ALFRED ROBERT",28-OCT-24
+"Chaerin","","Lim","Lim, Chaerin","","","chaerinl@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","LIM, CHAERIN",28-OCT-24
+"Isaac","B.","Harris","Harris, Isaac B.","36-531","","ibwharri@MIT.EDU","6","Electrical Eng & Computer Sci","G","HARRIS, ISAAC B.",28-OCT-24
+"Medha","G.","Mahanta","Mahanta, Medha G.","","","medham@MIT.EDU","NONE","Freshmen","1","MAHANTA, MEDHA G.",28-OCT-24
+"Tsukasa","","Nakamura","Nakamura, Tsukasa","","","tsukasan@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","NAKAMURA, TSUKASA",28-OCT-24
+"Sarah","C","Pottle","Pottle, Sarah C","","","pottle@MIT.EDU","NIW","Wellesley Cross-Enrollment Pro","4","POTTLE, SARAH C",28-OCT-24
+"Evan","","Chang","Chang, Evan","","","evchang@MIT.EDU","NONE","Freshmen","1","CHANG, EVAN",28-OCT-24
+"Koya","","Himeno","Himeno, Koya","","","koyah508@MIT.EDU","8","Physics","G","HIMENO, KOYA",28-OCT-24
+"Jiayi","","Gu","Gu, Jiayi","","","jgu321@MIT.EDU","OR","Operations Research","G","GU, JIAYI",28-OCT-24
+"Michael","","Xu","Xu, Michael","4-217","","mxu86@MIT.EDU","3","Materials Science and Eng","G","XU, MICHAEL",28-OCT-24
+"Stella","S.","Shipps","Shipps, Stella S.","","","stella24@MIT.EDU","10","Chemical Engineering","4","SHIPPS, STELLA S.",28-OCT-24
+"James","","Zhao","Zhao, James","","","jamesz00@MIT.EDU","15","Management","G","ZHAO, JAMES",28-OCT-24
+"Benjamin","Thomas","James","James, Benjamin Thomas","","","benjames@MIT.EDU","6","Electrical Eng & Computer Sci","G","JAMES, BENJAMIN THOMAS",28-OCT-24
+"Wayne","Thomas","O'Donnell","O'Donnell, Wayne Thomas","","","wto@MIT.EDU","15","Management","G","O'DONNELL, WAYNE THOMAS",28-OCT-24
+"John","Lloyd","Baker","Baker, John Lloyd","NW17-169","","jlbaker@MIT.EDU","22","Nuclear Engineering","G","BAKER, JOHN LLOYD",28-OCT-24
+"Namo","","Samuthrsindh","Samuthrsindh, Namo","","","paramuth@MIT.EDU","6","Electrical Eng & Computer Sci","3","SAMUTHRSINDH, NAMO",28-OCT-24
+"Andrea","V.","Cosio","Cosio, Andrea V.","","","acosio@MIT.EDU","10","Chemical Engineering","2","COSIO, ANDREA V.",28-OCT-24
+"Ana","","Onoprishvili","Onoprishvili, Ana","","","onopre@MIT.EDU","6","Electrical Eng & Computer Sci","3","ONOPRISHVILI, ANA",28-OCT-24
+"Zhixing","","Chen","Chen, Zhixing","","","zhixingc@MIT.EDU","2","Mechanical Engineering","4","CHEN, ZHIXING",28-OCT-24
+"Anya","Alex","Gert","Gert, Anya Alex","","","anyagert@MIT.EDU","15","Management","G","GERT, ANYA ALEX",28-OCT-24
+"Estevan","","Cortez","Cortez, Estevan","","","corteze@MIT.EDU","7","Biology","4","CORTEZ, ESTEVAN",28-OCT-24
+"Henry","","Ma","Ma, Henry","","","henryma@MIT.EDU","6","Electrical Eng & Computer Sci","G","MA, HENRY",28-OCT-24
+"Hsiang-Ling","","Hsu","Hsu, Hsiang-Ling","","","ling0319@MIT.EDU","14","Economics","G","HSU, HSIANG-LING",28-OCT-24
+"Alexander","E.","Siemenn","Siemenn, Alexander E.","","","asiemenn@MIT.EDU","2","Mechanical Engineering","G","SIEMENN, ALEXANDER E.",28-OCT-24
+"Isabella","","Villar","Villar, Isabella","","","ivillar@MIT.EDU","NONE","Freshmen","1","VILLAR, ISABELLA",28-OCT-24
+"Ajay","Yatheendhar","Manicka","Manicka, Ajay Yatheendhar","","","ajay_m@MIT.EDU","6","Electrical Eng & Computer Sci","G","MANICKA, AJAY YATHEENDHAR",28-OCT-24
+"Caroline","","Ohlson","Ohlson, Caroline","","","cohlson@MIT.EDU","15","Management","G","OHLSON, CAROLINE",28-OCT-24
+"Otavio","Luiz","Tecchio","Tecchio, Otavio Luiz","","","otecchio@MIT.EDU","14","Economics","G","TECCHIO, OTAVIO LUIZ",28-OCT-24
+"Paulina","","Xu","Xu, Paulina","","","paulinax@MIT.EDU","NONE","Freshmen","1","XU, PAULINA",28-OCT-24
+"Shagun","","Singh","Singh, Shagun","","","shagun@MIT.EDU","6","Electrical Eng & Computer Sci","4","SINGH, SHAGUN",28-OCT-24
+"Sarah","R.","Xuan","Xuan, Sarah R.","","","sarahrx@MIT.EDU","6","Electrical Eng & Computer Sci","2","XUAN, SARAH R.",28-OCT-24
+"Andreas","","Mentzelopoulos","Mentzelopoulos, Andreas","","","ament@MIT.EDU","2","Mechanical Engineering","G","MENTZELOPOULOS, ANDREAS",28-OCT-24
+"Lucy","","Gong","Gong, Lucy","","","lucygong@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","GONG, LUCY",28-OCT-24
+"Sarah","","Hopp","Hopp, Sarah","","","sarah556@MIT.EDU","NONE","Freshmen","1","HOPP, SARAH",28-OCT-24
+"Shutong","","Liu","Liu, Shutong","","","shutongl@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","LIU, SHUTONG",28-OCT-24
+"Wenxi","","Xiao","Xiao, Wenxi","","","wenxi_x@MIT.EDU","9","Brain and Cognitive Sciences","G","XIAO, WENXI",28-OCT-24
+"Ufuk","","Keskin","Keskin, Ufuk","","","ufukkesk@MIT.EDU","16","Aeronautics and Astronautics","G","KESKIN, UFUK",28-OCT-24
+"Jack","E.","Bolte","Bolte, Jack E.","","","jbolte@MIT.EDU","NONE","Freshmen","1","BOLTE, JACK E.",28-OCT-24
+"Nikita","","Agrawal","Agrawal, Nikita","","","nagrawal@MIT.EDU","NONE","Freshmen","1","AGRAWAL, NIKITA",28-OCT-24
+"Bonny","","Mahajan","Mahajan, Bonny","","","bonny151@MIT.EDU","15","Management","G","MAHAJAN, BONNY",28-OCT-24
+"Betty","","Chen","Chen, Betty","","","bettychen@gsd.harvard.edu","NIH","Harvard Cross-Enrollment Prog","G","CHEN, BETTY",28-OCT-24
+"Khang","D","Le","Le, Khang D","","","khangle@MIT.EDU","6","Electrical Eng & Computer Sci","G","LE, KHANG D",28-OCT-24
+"Gloria","","Huang","Huang, Gloria","","","glohuang@MIT.EDU","15","Management","4","HUANG, GLORIA",28-OCT-24
+"Yigit","","Gencbay","Gencbay, Yigit","","","yigit61@MIT.EDU","7","Biology","G","GENCBAY, YIGIT",28-OCT-24
+"Dip Joti","","Paul","Paul, Dip Joti","","","djpaul@MIT.EDU","6","Electrical Eng & Computer Sci","G","PAUL, DIP JOTI",28-OCT-24
+"Yang","","Li","Li, Yang","31-292","","yangl95@MIT.EDU","2","Mechanical Engineering","G","LI, YANG",28-OCT-24
+"Sean","","Klein","Klein, Sean","","","sklein@MIT.EDU","15","Management","G","KLEIN, SEAN",28-OCT-24
+"Maria","Elisabeth","Macfarlane","Macfarlane, Maria Elisabeth","","","mariaem@MIT.EDU","1","Civil and Environmental Eng","G","MACFARLANE, MARIA ELISABETH",28-OCT-24
+"Alexa","","Resendiz Alvarez","Resendiz Alvarez, Alexa","","","alexares@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","RESENDIZ ALVAREZ, ALEXA",28-OCT-24
+"Walter","H.","Truitt","Truitt, Walter H.","","","wtruitt@MIT.EDU","6","Electrical Eng & Computer Sci","4","TRUITT, WALTER H.",28-OCT-24
+".","","Aparajithan","Aparajithan, .","","","asampath@MIT.EDU","EM","Engineering Management","G","APARAJITHAN, .",28-OCT-24
+"Angela","","Wu","Wu, Angela","","","angelawu@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","WU, ANGELA",28-OCT-24
+"Maggie","Z.","Wu","Wu, Maggie Z.","","","maggiezw@MIT.EDU","6","Electrical Eng & Computer Sci","3","WU, MAGGIE Z.",28-OCT-24
+"Harsh","","Deep","Deep, Harsh","","","hdeep@MIT.EDU","6","Electrical Eng & Computer Sci","2","DEEP, HARSH",28-OCT-24
+"Matthew","David","Huggins","Huggins, Matthew David","","","hugginsm@MIT.EDU","15","Management","G","HUGGINS, MATTHEW DAVID",28-OCT-24
+"Peter","","Chang","Chang, Peter","","","gyuyoung@MIT.EDU","6","Electrical Eng & Computer Sci","G","CHANG, PETER",28-OCT-24
+"Eugenie","","Cha","Cha, Eugenie","","","eugeniec@MIT.EDU","NONE","Freshmen","1","CHA, EUGENIE",28-OCT-24
+"Juyeop","","Han","Han, Juyeop","","","juyeop@MIT.EDU","2","Mechanical Engineering","G","HAN, JUYEOP",28-OCT-24
+"Chuck","","Lin","Lin, Chuck","","","chucklin@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","LIN, CHUCK",28-OCT-24
+"Rhea","","Senthil Kumar","Senthil Kumar, Rhea","","","rheask@MIT.EDU","ASP","Advanced Study Program","G","SENTHIL KUMAR, RHEA",28-OCT-24
+"Ethan","","Sontarp","Sontarp, Ethan","","","ethanson@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","G","SONTARP, ETHAN",28-OCT-24
+"Advaith","","Avadhanam","Avadhanam, Advaith","","","advaith5@MIT.EDU","NONE","Freshmen","1","AVADHANAM, ADVAITH",28-OCT-24
+"Kyle","James","Kekeisen","Kekeisen, Kyle James","","","kjk978@MIT.EDU","15","Management","G","KEKEISEN, KYLE JAMES",28-OCT-24
+"Noah","Michael","McAllister","McAllister, Noah Michael","","","nmmcall@MIT.EDU","16","Aeronautics and Astronautics","G","MCALLISTER, NOAH MICHAEL",28-OCT-24
+"Jimin","","Park","Park, Jimin","","","pjimin@MIT.EDU","OR","Operations Research","G","PARK, JIMIN",28-OCT-24
+"Sophia","","Khan","Khan, Sophia","","","khansoph@MIT.EDU","NIH","Harvard Cross-Enrollment Prog","1","KHAN, SOPHIA",28-OCT-24
+"Yue","","Zhuo","Zhuo, Yue","","","joyzhuo@MIT.EDU","NONE","Freshmen","1","ZHUO, YUE",28-OCT-24
+"Sam","","Salwan","Salwan, Sam","","","ssalwan@MIT.EDU","6","Electrical Eng & Computer Sci","4","SALWAN, SAM",28-OCT-24
+"Yasmeen","A.","Shabazz","Shabazz, Yasmeen A.","","","yasmeens@MIT.EDU","6","Electrical Eng & Computer Sci","3","SHABAZZ, YASMEEN A.",28-OCT-24
+"Daniel","A.","Korsun","Korsun, Daniel A.","","","dkorsun@MIT.EDU","22","Nuclear Engineering","G","KORSUN, DANIEL A.",28-OCT-24
+"Yizhen","","Jiang","Jiang, Yizhen","","","yizhen66@MIT.EDU","24","Linguistics and Philosophy","G","JIANG, YIZHEN",28-OCT-24
+"Aanchal","","Sadana","Sadana, Aanchal","","","aanch25@MIT.EDU","15","Management","G","SADANA, AANCHAL",28-OCT-24
+"Megan","A.","Huang","Huang, Megan A.","","","megan_h@MIT.EDU","NONE","Freshmen","1","HUANG, MEGAN A.",28-OCT-24
+"Allison","K.","Eto","Eto, Allison K.","","","allisone@MIT.EDU","16","Aeronautics and Astronautics","2","ETO, ALLISON K.",28-OCT-24
+"Aiden","Ross","Kolodziej","Kolodziej, Aiden Ross","","","aidenkzj@MIT.EDU","7","Biology","G","KOLODZIEJ, AIDEN ROSS",28-OCT-24
+"Rebecca","","Levy","Levy, Rebecca","","","rebelevy@MIT.EDU","NONE","Freshmen","1","LEVY, REBECCA",28-OCT-24
+"Ellie","Frances","Baker","Baker, Ellie Frances","","","efbaker@MIT.EDU","IDS","Inst for Data, Syst, & Soc","G","BAKER, ELLIE FRANCES",28-OCT-24
+"Liang","","Tan","Tan, Liang","","","tanliang@MIT.EDU","14","Economics","G","TAN, LIANG",28-OCT-24
+"Kevin","Willis","Gelston","Gelston, Kevin Willis","","","kgelston@MIT.EDU","15","Management","G","GELSTON, KEVIN WILLIS",28-OCT-24
+"Karla","Naomy","Manzanares","Manzanares, Karla Naomy","","","karlamg@MIT.EDU","20","Biological Engineering","G","MANZANARES, KARLA NAOMY",28-OCT-24
+"Aitor","","Arrese-Igor","Arrese-Igor, Aitor","","","aitor984@MIT.EDU","6","Electrical Eng & Computer Sci","2","ARRESE-IGOR, AITOR",28-OCT-24
+"Ysabel","","Wang","Wang, Ysabel","","","ysabel@MIT.EDU","12","Earth, Atmos & Planetary Sci","G","WANG, YSABEL",28-OCT-24
+"Daniel","Uchenna","Meke","Meke, Daniel Uchenna","","","meke@MIT.EDU","15","Management","G","MEKE, DANIEL UCHENNA",28-OCT-24
+"Marc","","Bacvanski","Bacvanski, Marc","36-469","","marcbac@MIT.EDU","6","Electrical Eng & Computer Sci","G","BACVANSKI, MARC",28-OCT-24
+"Yuxian","","Gu","Gu, Yuxian","","","guyx21@MIT.EDU","6","Electrical Eng & Computer Sci","G","GU, YUXIAN",28-OCT-24
+"Tony","R.","Odhiambo","Odhiambo, Tony R.","","","tony_odh@MIT.EDU","NONE","Freshmen","1","ODHIAMBO, TONY R.",28-OCT-24
+"Irina","Sergeevna","Golovitskaya","Golovitskaya, Irina Sergeevna","","","irinasg@MIT.EDU","11","Urban Studies and Planning","G","GOLOVITSKAYA, IRINA SERGEEVNA",28-OCT-24
+"Drew","J.","Tufto","Tufto, Drew J.","","","djtufto@MIT.EDU","16","Aeronautics and Astronautics","3","TUFTO, DREW J.",28-OCT-24

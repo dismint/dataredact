@@ -1,0 +1,18 @@
+"HASS_ATTRIBUTE","DESCRIPTION_ON_FORM","DESCRIPTION_IN_BULLETIN","CIS_ATTRIBUTE_GROUP","CIS_ATTRIBUTE_GROUP_NOTE","ICON_GIF_NAME","ICON_HEIGHT","ICON_WIDTH","LAST_ACTIVITY_DATE","LAST_UPDATE_USER","WAREHOUSE_LOAD_DATE"
+"HE","HASS Elective","HASS-E","H","HASS_ATTRIBUTE, for students entering in Fall 2010 or later","hassT.gif","16","16",05-MAR-10,"ROBERTAC",28-OCT-24
+"HS2","1/2 HASS Social Sciences","HASS-S/2","H","HASS_ATTRIBUTE, for students entering in Fall 2010 or later","","","",22-FEB-12,"ROBERTAC",28-OCT-24
+"HD1","HASS-D, Category 1","HASS-D 1","G","GIR_ATTRIBUTE, for students entering prior to Fall 2010","hass1.gif","16","16",05-MAR-10,"ROBERTAC",28-OCT-24
+"HD2","HASS-D, Category 2","HASS-D 2","G","GIR_ATTRIBUTE, for students entering prior to Fall 2010","hass2.gif","16","16",05-MAR-10,"ROBERTAC",28-OCT-24
+"HD3","HASS-D, Category 3","HASS-D 3","G","GIR_ATTRIBUTE, for students entering prior to Fall 2010","hass3.gif","16","16",05-MAR-10,"ROBERTAC",28-OCT-24
+"HD4","HASS-D, Category 4","HASS-D 4","G","GIR_ATTRIBUTE, for students entering prior to Fall 2010","hass4.gif","16","16",05-MAR-10,"ROBERTAC",28-OCT-24
+"HD5","HASS-D, Category 5","HASS-D 5","G","GIR_ATTRIBUTE, for students entering prior to Fall 2010","hass5.gif","16","16",05-MAR-10,"ROBERTAC",28-OCT-24
+"HDL","HASS-D Language Option","HASS-L","G","GIR_ATTRIBUTE, for students entering prior to Fall 2010","hassL.gif","16","16",05-MAR-10,"ROBERTAC",28-OCT-24
+"HE","HASS Elective","HASS-E","G","GIR_ATTRIBUTE, for students entering prior to Fall 2010","hassE.gif","16","16",05-MAR-10,"ROBERTAC",28-OCT-24
+"HA,HH","Arts + Humanities","HASS-A, HASS-H","H","HASS_ATTRIBUTE, for students entering in Fall 2010 or later","hassAH.gif","16","35",26-APR-10,"ROBERTAC",28-OCT-24
+"HA","HASS Arts","HASS-A","H","HASS_ATTRIBUTE, for students entering in Fall 2010 or later","hassA.gif","16","16",05-MAR-10,"ROBERTAC",28-OCT-24
+"HH","HASS Humanities","HASS-H","H","HASS_ATTRIBUTE, for students entering in Fall 2010 or later","hassH.gif","16","16",05-MAR-10,"ROBERTAC",28-OCT-24
+"HS","HASS Social Sciences","HASS-S","H","HASS_ATTRIBUTE, for students entering in Fall 2010 or later","hassS.gif","16","16",05-MAR-10,"ROBERTAC",28-OCT-24
+"HH,HS","Humanities + Social Sciences","HASS-H, HASS-S","H","HASS_ATTRIBUTE, for students entering in Fall 2010 or later","hassHS.gif","16","35",26-APR-10,"ROBERTAC",28-OCT-24
+"HA,HS","Arts + Social Sciences","HASS-A, HASS-S","H","HASS_ATTRIBUTE, for students entering in Fall 2010 or later","hassAS.gif","16","35",26-APR-10,"ROBERTAC",28-OCT-24
+"HA2","1/2 HASS Arts","HASS-A/2","H","HASS_ATTRIBUTE, for students entering in Fall 2010 or later","","","",22-FEB-12,"ROBERTAC",28-OCT-24
+"HH2","1/2 HASS Humanities","HASS-H/2","H","HASS_ATTRIBUTE, for students entering in Fall 2010 or later","","","",22-FEB-12,"ROBERTAC",28-OCT-24
