@@ -1,0 +1,1039 @@
+"TABLE_KEY","FIELD_NAME","TABLE_NAME","DEFINITION","FIELD_LENGTH","DATA_TYPE","SEQUENCE"
+1636,"RELEASE_DATE","REQUISITION_DETAIL","XXXX",8,"DATE",148
+9844,"RELEASE_DATE","REQ_ITEM_RAW","XXXX",8,"DATE",148
+8967,"COMPLETION_DATE","NEW_HIRE_EMPLOYEE","The end date.",8,"DATE",151
+107,"LAB_ALLOCATION","PROJECT_OSP","Description associated with Lab Allocation Key.",30,"VARCHAR2",157
+11992,"LAB_ALLOCATION","FRC_COST_COLLECTOR","Description associated with Lab Allocation Key.",30,"VARCHAR2",157
+49,"LAB_ALLOCATION","INTERNAL_ORDER","Description associated with Lab Allocation Key.",30,"VARCHAR2",157
+11312,"LAB_ALLOCATION","PAYROLL_CO_ACCESSIBLE","Description associated with Lab Allocation Key.",30,"VARCHAR2",157
+28,"LAB_ALLOCATION","COST_CENTER","Description associated with Lab Allocation Key.",30,"VARCHAR2",157
+9598,"LAB_ALLOCATION","SING_PROJECT_OSP","Description associated with Lab Allocation Key.",30,"VARCHAR2",157
+8,"LAB_ALLOCATION","PROJECT","Description associated with Lab Allocation Key.",30,"VARCHAR2",157
+482,"LAB_ALLOCATION","COST_COLLECTOR_HISTORY","Description associated with Lab Allocation Key.",30,"VARCHAR2",157
+543,"LAB_ALLOCATION","INTERNAL_ORDER_HISTORY","Description associated with Lab Allocation Key.",30,"VARCHAR2",157
+544,"LAB_ALLOCATION","PROJECT_HISTORY","Description associated with Lab Allocation Key.",30,"VARCHAR2",157
+9597,"LAB_ALLOCATION","SING_PROJECT","Description associated with Lab Allocation Key.",30,"VARCHAR2",157
+11993,"LAB_ALLOCATION","UTILITY_COST_COLLECTOR","Description associated with Lab Allocation Key.",30,"VARCHAR2",157
+12332,"LAB_ALLOCATION","SING_COST_COLLECTOR","Description associated with Lab Allocation Key.",30,"VARCHAR2",157
+204,"LAB_ALLOCATION","COST_COLLECTORS_ACCESSIBLE","Description associated with Lab Allocation Key.",30,"VARCHAR2",157
+542,"LAB_ALLOCATION","COST_CENTER_HISTORY","Description associated with Lab Allocation Key.",30,"VARCHAR2",157
+51,"LAB_ALLOCATION","COST_COLLECTOR","Description associated with Lab Allocation Key.",30,"VARCHAR2",157
+107,"EB_ADJUSTMENT","PROJECT_OSP","Description associated with EB Adjustment Key.",30,"VARCHAR2",159
+11992,"EB_ADJUSTMENT","FRC_COST_COLLECTOR","Description associated with EB Adjustment Key.",30,"VARCHAR2",159
+49,"EB_ADJUSTMENT","INTERNAL_ORDER","Description associated with EB Adjustment Key.",30,"VARCHAR2",159
+11312,"EB_ADJUSTMENT","PAYROLL_CO_ACCESSIBLE","Description associated with EB Adjustment Key.",30,"VARCHAR2",159
+28,"EB_ADJUSTMENT","COST_CENTER","Description associated with EB Adjustment Key.",30,"VARCHAR2",159
+9598,"EB_ADJUSTMENT","SING_PROJECT_OSP","Description associated with EB Adjustment Key.",30,"VARCHAR2",159
+8,"EB_ADJUSTMENT","PROJECT","Description associated with EB Adjustment Key.",30,"VARCHAR2",159
+482,"EB_ADJUSTMENT","COST_COLLECTOR_HISTORY","Description associated with EB Adjustment Key.",30,"VARCHAR2",159
+543,"EB_ADJUSTMENT","INTERNAL_ORDER_HISTORY","Description associated with EB Adjustment Key.",30,"VARCHAR2",159
+544,"EB_ADJUSTMENT","PROJECT_HISTORY","Description associated with EB Adjustment Key.",30,"VARCHAR2",159
+9597,"EB_ADJUSTMENT","SING_PROJECT","Description associated with EB Adjustment Key.",30,"VARCHAR2",159
+11993,"EB_ADJUSTMENT","UTILITY_COST_COLLECTOR","Description associated with EB Adjustment Key.",30,"VARCHAR2",159
+12332,"EB_ADJUSTMENT","SING_COST_COLLECTOR","Description associated with EB Adjustment Key.",30,"VARCHAR2",159
+204,"EB_ADJUSTMENT","COST_COLLECTORS_ACCESSIBLE","Description associated with EB Adjustment Key.",30,"VARCHAR2",159
+542,"EB_ADJUSTMENT","COST_CENTER_HISTORY","Description associated with EB Adjustment Key.",30,"VARCHAR2",159
+51,"EB_ADJUSTMENT","COST_COLLECTOR","Description associated with EB Adjustment Key.",30,"VARCHAR2",159
+107,"OH_ADJUSTMENT","PROJECT_OSP","Description associated with OH Adjustment Key.",30,"VARCHAR2",161
+11992,"OH_ADJUSTMENT","FRC_COST_COLLECTOR","Description associated with OH Adjustment Key.",30,"VARCHAR2",161
+49,"OH_ADJUSTMENT","INTERNAL_ORDER","Description associated with OH Adjustment Key.",30,"VARCHAR2",161
+11312,"OH_ADJUSTMENT","PAYROLL_CO_ACCESSIBLE","Description associated with OH Adjustment Key.",30,"VARCHAR2",161
+28,"OH_ADJUSTMENT","COST_CENTER","Description associated with OH Adjustment Key.",30,"VARCHAR2",161
+9598,"OH_ADJUSTMENT","SING_PROJECT_OSP","Description associated with OH Adjustment Key.",30,"VARCHAR2",161
+8,"OH_ADJUSTMENT","PROJECT","Description associated with OH Adjustment Key.",30,"VARCHAR2",161
+482,"OH_ADJUSTMENT","COST_COLLECTOR_HISTORY","Description associated with OH Adjustment Key.",30,"VARCHAR2",161
+543,"OH_ADJUSTMENT","INTERNAL_ORDER_HISTORY","Description associated with OH Adjustment Key.",30,"VARCHAR2",161
+544,"OH_ADJUSTMENT","PROJECT_HISTORY","Description associated with OH Adjustment Key.",30,"VARCHAR2",161
+9597,"OH_ADJUSTMENT","SING_PROJECT","Description associated with OH Adjustment Key.",30,"VARCHAR2",161
+11993,"OH_ADJUSTMENT","UTILITY_COST_COLLECTOR","Description associated with OH Adjustment Key.",30,"VARCHAR2",161
+12332,"OH_ADJUSTMENT","SING_COST_COLLECTOR","Description associated with OH Adjustment Key.",30,"VARCHAR2",161
+204,"OH_ADJUSTMENT","COST_COLLECTORS_ACCESSIBLE","Description associated with OH Adjustment Key.",30,"VARCHAR2",161
+542,"OH_ADJUSTMENT","COST_CENTER_HISTORY","Description associated with OH Adjustment Key.",30,"VARCHAR2",161
+51,"OH_ADJUSTMENT","COST_COLLECTOR","Description associated with OH Adjustment Key.",30,"VARCHAR2",161
+11992,"PLANNING_KEY","FRC_COST_COLLECTOR","XXX",6,"VARCHAR2",162
+8,"PLANNING_KEY","PROJECT","XXX",6,"VARCHAR2",162
+544,"PLANNING_KEY","PROJECT_HISTORY","XXX",6,"VARCHAR2",162
+9597,"PLANNING_KEY","SING_PROJECT","XXX",6,"VARCHAR2",162
+11992,"PLANNING","FRC_COST_COLLECTOR","XXX",30,"VARCHAR2",163
+8,"PLANNING","PROJECT","XXX",30,"VARCHAR2",163
+544,"PLANNING","PROJECT_HISTORY","XXX",30,"VARCHAR2",163
+9597,"PLANNING","SING_PROJECT","XXX",30,"VARCHAR2",163
+11992,"OBJECT_NUMBER","FRC_COST_COLLECTOR","XXX",22,"VARCHAR2",164
+11152,"OBJECT_NUMBER","WORK_ORDER_OPERATION_DETAIL","XXX",22,"VARCHAR2",164
+11273,"OBJECT_NUMBER","SETTLEMENT_WORK_CENTER","XXX",22,"VARCHAR2",164
+11272,"OBJECT_NUMBER","SETTLEMENT_COST_CENTER","XXX",22,"VARCHAR2",164
+12332,"OBJECT_NUMBER","SING_COST_COLLECTOR","XXX",22,"VARCHAR2",164
+13813,"GL_ACCOUNT_ID","FRC_REVIEWS","Identifies the GL Account.",6,"VARCHAR2",169
+13793,"GL_ACCOUNT_ID","AWSFRC_REVIEWS","Identifies the GL Account.",6,"VARCHAR2",169
+13393,"GL_ACCOUNT_ID","CGREVIEW_CURRENT","Identifies the GL Account.",6,"VARCHAR2",169
+2933,"GL_ACCOUNT_ID","HR_POSITION_FULL_HISTORY","Identifies the GL Account.",6,"VARCHAR2",169
+1607,"GL_ACCOUNT_ID","GL_ACCOUNT_TECR","Identifies the GL Account.",6,"VARCHAR2",169
+10029,"GL_ACCOUNT_ID","GL_ACCOUNT_CUR","Identifies the GL Account.",6,"VARCHAR2",169
+1728,"GL_ACCOUNT_ID","HR_JOB","Identifies the GL Account.",6,"VARCHAR2",169
+14093,"GL_ACCOUNT_ID","ESANDI_RETRO","Identifies the GL Account.",6,"VARCHAR2",169
+10742,"GL_ACCOUNT_ID","SING_CONSOLIDATED","Identifies the GL Account.",6,"VARCHAR2",169
+188,"GL_ACCOUNT_ID","GL_ACCOUNT_REPORT","Identifies the GL Account.",6,"VARCHAR2",169
+14094,"GL_ACCOUNT_ID","ESANDI_TRANSFER_IN","Identifies the GL Account.",6,"VARCHAR2",169
+1808,"GL_ACCOUNT_ID","HR_JOB_FULL","Identifies the GL Account.",6,"VARCHAR2",169
+1812,"GL_ACCOUNT_ID","HR_POSITION_FULL","Identifies the GL Account.",6,"VARCHAR2",169
+9888,"GL_ACCOUNT_ID","FRC_COGNOS","Identifies the GL Account.",6,"VARCHAR2",169
+11413,"GL_ACCOUNT_ID","BI_PEOPLE_RATES","Identifies the GL Account.",6,"VARCHAR2",169
+10295,"GL_ACCOUNT_ID","FRC_COGNOS_NEW","Identifies the GL Account.",6,"VARCHAR2",169
+10886,"GL_ACCOUNT_ID","ESANDI","Identifies the GL Account.",6,"VARCHAR2",169
+50,"GL_ACCOUNT_ID","GL_ACCOUNT","Identifies the GL Account.",6,"VARCHAR2",169
+10663,"GL_ACCOUNT_ID","SING_COMMITMENT_BUDGET","Identifies the GL Account.",6,"VARCHAR2",169
+2019,"GL_ACCOUNT_ID","HR_JOB_HISTORY","Identifies the GL Account.",6,"VARCHAR2",169
+2933,"GL_ACCOUNT_NAME","HR_POSITION_FULL_HISTORY","The text name associated with the GL_ACCOUNT_ID.  For example: Telephone-Data Facilities, Materials and Services, and outside purchases.",20,"VARCHAR2",170
+1607,"GL_ACCOUNT_NAME","GL_ACCOUNT_TECR","The text name associated with the GL_ACCOUNT_ID.  For example: Telephone-Data Facilities, Materials and Services, and outside purchases.",20,"VARCHAR2",170
+10029,"GL_ACCOUNT_NAME","GL_ACCOUNT_CUR","The text name associated with the GL_ACCOUNT_ID.  For example: Telephone-Data Facilities, Materials and Services, and outside purchases.",20,"VARCHAR2",170
+1728,"GL_ACCOUNT_NAME","HR_JOB","The text name associated with the GL_ACCOUNT_ID.  For example: Telephone-Data Facilities, Materials and Services, and outside purchases.",20,"VARCHAR2",170
+14093,"GL_ACCOUNT_NAME","ESANDI_RETRO","The text name associated with the GL_ACCOUNT_ID.  For example: Telephone-Data Facilities, Materials and Services, and outside purchases.",20,"VARCHAR2",170
+11539,"GL_ACCOUNT_NAME","OSPA_BUDGET","The text name associated with the GL_ACCOUNT_ID.  For example: Telephone-Data Facilities, Materials and Services, and outside purchases.",20,"VARCHAR2",170
+10742,"GL_ACCOUNT_NAME","SING_CONSOLIDATED","The text name associated with the GL_ACCOUNT_ID.  For example: Telephone-Data Facilities, Materials and Services, and outside purchases.",20,"VARCHAR2",170
+188,"GL_ACCOUNT_NAME","GL_ACCOUNT_REPORT","The text name associated with the GL_ACCOUNT_ID.  For example: Telephone-Data Facilities, Materials and Services, and outside purchases.",20,"VARCHAR2",170
+14094,"GL_ACCOUNT_NAME","ESANDI_TRANSFER_IN","The text name associated with the GL_ACCOUNT_ID.  For example: Telephone-Data Facilities, Materials and Services, and outside purchases.",20,"VARCHAR2",170
+1808,"GL_ACCOUNT_NAME","HR_JOB_FULL","The text name associated with the GL_ACCOUNT_ID.  For example: Telephone-Data Facilities, Materials and Services, and outside purchases.",20,"VARCHAR2",170
+1812,"GL_ACCOUNT_NAME","HR_POSITION_FULL","The text name associated with the GL_ACCOUNT_ID.  For example: Telephone-Data Facilities, Materials and Services, and outside purchases.",20,"VARCHAR2",170
+9888,"GL_ACCOUNT_NAME","FRC_COGNOS","The text name associated with the GL_ACCOUNT_ID.  For example: Telephone-Data Facilities, Materials and Services, and outside purchases.",20,"VARCHAR2",170
+11541,"GL_ACCOUNT_NAME","OSPA_BUDGET_CAL","The text name associated with the GL_ACCOUNT_ID.  For example: Telephone-Data Facilities, Materials and Services, and outside purchases.",20,"VARCHAR2",170
+10295,"GL_ACCOUNT_NAME","FRC_COGNOS_NEW","The text name associated with the GL_ACCOUNT_ID.  For example: Telephone-Data Facilities, Materials and Services, and outside purchases.",20,"VARCHAR2",170
+10886,"GL_ACCOUNT_NAME","ESANDI","The text name associated with the GL_ACCOUNT_ID.  For example: Telephone-Data Facilities, Materials and Services, and outside purchases.",20,"VARCHAR2",170
+50,"GL_ACCOUNT_NAME","GL_ACCOUNT","The text name associated with the GL_ACCOUNT_ID.  For example: Telephone-Data Facilities, Materials and Services, and outside purchases.",20,"VARCHAR2",170
+2019,"GL_ACCOUNT_NAME","HR_JOB_HISTORY","The text name associated with the GL_ACCOUNT_ID.  For example: Telephone-Data Facilities, Materials and Services, and outside purchases.",20,"VARCHAR2",170
+1607,"GL_ACCOUNT_TYPE_CODE","GL_ACCOUNT_TECR","Identifies the type of GL Account (Example: ND, LIAB, REVN, STL).",4,"VARCHAR2",172
+10029,"GL_ACCOUNT_TYPE_CODE","GL_ACCOUNT_CUR","Identifies the type of GL Account (Example: ND, LIAB, REVN, STL).",4,"VARCHAR2",172
+188,"GL_ACCOUNT_TYPE_CODE","GL_ACCOUNT_REPORT","Identifies the type of GL Account (Example: ND, LIAB, REVN, STL).",4,"VARCHAR2",172
+50,"GL_ACCOUNT_TYPE_CODE","GL_ACCOUNT","Identifies the type of GL Account (Example: ND, LIAB, REVN, STL).",4,"VARCHAR2",172
+1607,"IS_BALANCE_SHEET_ACCOUNT","GL_ACCOUNT_TECR","Y= this is a balance sheet account.
+N= this is not a balance sheet account.",1,"VARCHAR2",174
+10029,"IS_BALANCE_SHEET_ACCOUNT","GL_ACCOUNT_CUR","Y= this is a balance sheet account.
+N= this is not a balance sheet account.",1,"VARCHAR2",174
+188,"IS_BALANCE_SHEET_ACCOUNT","GL_ACCOUNT_REPORT","Y= this is a balance sheet account.
+N= this is not a balance sheet account.",1,"VARCHAR2",174
+50,"IS_BALANCE_SHEET_ACCOUNT","GL_ACCOUNT","Y= this is a balance sheet account.
+N= this is not a balance sheet account.",1,"VARCHAR2",174
+1607,"IS_LIQUID_ASSET_ACCOUNT","GL_ACCOUNT_TECR","Y= this is a liquid asset account.
+N= this is not a liquid asset account.",1,"VARCHAR2",176
+10029,"IS_LIQUID_ASSET_ACCOUNT","GL_ACCOUNT_CUR","Y= this is a liquid asset account.
+N= this is not a liquid asset account.",1,"VARCHAR2",176
+188,"IS_LIQUID_ASSET_ACCOUNT","GL_ACCOUNT_REPORT","Y= this is a liquid asset account.
+N= this is not a liquid asset account.",1,"VARCHAR2",176
+50,"IS_LIQUID_ASSET_ACCOUNT","GL_ACCOUNT","Y= this is a liquid asset account.
+N= this is not a liquid asset account.",1,"VARCHAR2",176
+1607,"IS_FIXED_ASSET_ACCOUNT","GL_ACCOUNT_TECR","Y= this is a fixed asset account.
+N=this is not a fixed asset account.",1,"VARCHAR2",177
+10029,"IS_FIXED_ASSET_ACCOUNT","GL_ACCOUNT_CUR","Y= this is a fixed asset account.
+N=this is not a fixed asset account.",1,"VARCHAR2",177
+188,"IS_FIXED_ASSET_ACCOUNT","GL_ACCOUNT_REPORT","Y= this is a fixed asset account.
+N=this is not a fixed asset account.",1,"VARCHAR2",177
+50,"IS_FIXED_ASSET_ACCOUNT","GL_ACCOUNT","Y= this is a fixed asset account.
+N=this is not a fixed asset account.",1,"VARCHAR2",177
+1607,"IS_LIABILITY_ACCOUNT","GL_ACCOUNT_TECR","Y= this is a liability account.
+N= this is not a liability account.",1,"VARCHAR2",178
+10029,"IS_LIABILITY_ACCOUNT","GL_ACCOUNT_CUR","Y= this is a liability account.
+N= this is not a liability account.",1,"VARCHAR2",178
+188,"IS_LIABILITY_ACCOUNT","GL_ACCOUNT_REPORT","Y= this is a liability account.
+N= this is not a liability account.",1,"VARCHAR2",178
+50,"IS_LIABILITY_ACCOUNT","GL_ACCOUNT","Y= this is a liability account.
+N= this is not a liability account.",1,"VARCHAR2",178
+1607,"IS_FUND_ACCOUNT","GL_ACCOUNT_TECR","Y= this is a fund account.
+N= this is not a fund account.",1,"VARCHAR2",179
+10029,"IS_FUND_ACCOUNT","GL_ACCOUNT_CUR","Y= this is a fund account.
+N= this is not a fund account.",1,"VARCHAR2",179
+188,"IS_FUND_ACCOUNT","GL_ACCOUNT_REPORT","Y= this is a fund account.
+N= this is not a fund account.",1,"VARCHAR2",179
+50,"IS_FUND_ACCOUNT","GL_ACCOUNT","Y= this is a fund account.
+N= this is not a fund account.",1,"VARCHAR2",179
+1607,"IS_EXPENSE_ACCOUNT","GL_ACCOUNT_TECR","Y= this is an expense account.
+N= this is not an expense account.",1,"VARCHAR2",180
+10029,"IS_EXPENSE_ACCOUNT","GL_ACCOUNT_CUR","Y= this is an expense account.
+N= this is not an expense account.",1,"VARCHAR2",180
+188,"IS_EXPENSE_ACCOUNT","GL_ACCOUNT_REPORT","Y= this is an expense account.
+N= this is not an expense account.",1,"VARCHAR2",180
+50,"IS_EXPENSE_ACCOUNT","GL_ACCOUNT","Y= this is an expense account.
+N= this is not an expense account.",1,"VARCHAR2",180
+1607,"IS_REVENUE_ACCOUNT","GL_ACCOUNT_TECR","Y=this is a revenue account.
+N=this is not a revenue account.",1,"VARCHAR2",181
+10029,"IS_REVENUE_ACCOUNT","GL_ACCOUNT_CUR","Y=this is a revenue account.
+N=this is not a revenue account.",1,"VARCHAR2",181
+188,"IS_REVENUE_ACCOUNT","GL_ACCOUNT_REPORT","Y=this is a revenue account.
+N=this is not a revenue account.",1,"VARCHAR2",181
+50,"IS_REVENUE_ACCOUNT","GL_ACCOUNT","Y=this is a revenue account.
+N=this is not a revenue account.",1,"VARCHAR2",181
+1607,"IS_SETTLEMENT_ACCOUNT","GL_ACCOUNT_TECR","Y=this is a settlement account.
+N=this is not a settlement account.",1,"VARCHAR2",182
+10029,"IS_SETTLEMENT_ACCOUNT","GL_ACCOUNT_CUR","Y=this is a settlement account.
+N=this is not a settlement account.",1,"VARCHAR2",182
+188,"IS_SETTLEMENT_ACCOUNT","GL_ACCOUNT_REPORT","Y=this is a settlement account.
+N=this is not a settlement account.",1,"VARCHAR2",182
+50,"IS_SETTLEMENT_ACCOUNT","GL_ACCOUNT","Y=this is a settlement account.
+N=this is not a settlement account.",1,"VARCHAR2",182
+1607,"IS_BLOCKED_FOR_POSTING","GL_ACCOUNT_TECR","Y= this GL Account is blocked and cannot be posted to.
+N= this GL Account is not blocked and can be posted to.",1,"VARCHAR2",186
+10029,"IS_BLOCKED_FOR_POSTING","GL_ACCOUNT_CUR","Y= this GL Account is blocked and cannot be posted to.
+N= this GL Account is not blocked and can be posted to.",1,"VARCHAR2",186
+50,"IS_BLOCKED_FOR_POSTING","GL_ACCOUNT","Y= this GL Account is blocked and cannot be posted to.
+N= this GL Account is not blocked and can be posted to.",1,"VARCHAR2",186
+50,"IS_BLOCKED_FOR_PLANNING","GL_ACCOUNT","Y= this is blocked for posting.",1,"VARCHAR2",187
+1607,"IS_MARKED_FOR_DELETION","GL_ACCOUNT_TECR","Y= this account is marked for deletion.
+N= this account is not marked for deletion.",1,"VARCHAR2",188
+10029,"IS_MARKED_FOR_DELETION","GL_ACCOUNT_CUR","Y= this account is marked for deletion.
+N= this account is not marked for deletion.",1,"VARCHAR2",188
+50,"IS_MARKED_FOR_DELETION","GL_ACCOUNT","Y= this account is marked for deletion.
+N= this account is not marked for deletion.",1,"VARCHAR2",188
+1607,"GL_ACCOUNT_COUNTER","GL_ACCOUNT_TECR","Used to count records within a group on a report.  Always contains a value of 1.",1,"NUMBER",189
+10029,"GL_ACCOUNT_COUNTER","GL_ACCOUNT_CUR","Used to count records within a group on a report.  Always contains a value of 1.",1,"NUMBER",189
+50,"GL_ACCOUNT_COUNTER","GL_ACCOUNT","Used to count records within a group on a report.  Always contains a value of 1.",1,"NUMBER",189
+10990,"COST_COLLECTOR","NIMBUD_DSBUD","Cost collector or cost object",12,"VARCHAR2",276
+13174,"MIT_ID","EHSI_PREVIOUS_ASSIGNEE","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+9351,"MIT_ID","ACAD_CHAIR_DETAIL_HISTORY","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+8668,"MIT_ID","OPA_PERSON","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+11952,"MIT_ID","LOAD_SPACE_SUPV_DEPT_HISTO","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+2352,"MIT_ID","DAPER_ATHLETE_CREW","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+2954,"MIT_ID","HR_PERSON_EMPLOYEE_BASIC","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+8002,"MIT_ID","HR_PERSON_ACCESSIBLE","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+12673,"MIT_ID","HR_STU_RESIDENCY_STS_HISTORY","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10230,"MIT_ID","HR_STUDENT_EMPLOYEE","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10051,"MIT_ID","HR_APPT_ACTION_MISSING","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+9739,"MIT_ID","TEACHING_EVALUATION","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+3681,"MIT_ID","PAYROLL_SALARY_DIST_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+9819,"MIT_ID","ORCID_PEOPLE","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10335,"MIT_ID","POSTDOC_ALUMNI","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+6116,"MIT_ID","STUDENT_ETHNICITY","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+12613,"MIT_ID","IR_AWARD_PERSONNEL_DATA","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+2224,"MIT_ID","EXTERNAL_CREDIT_RESULT_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+383,"MIT_ID","FINAID_GRANT_PCKG_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+12372,"MIT_ID","PAYROLL_POSTINGS","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+7697,"MIT_ID","SHA_STUDENT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+11794,"MIT_ID","SPACE_PERSON_SNAPSHOT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+11793,"MIT_ID","SPACE_SUPERVISOR_SNAPSHOT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10478,"MIT_ID","STUDENT_TEMP_I9","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+12177,"MIT_ID","HR_DIVERSITY_PROMOTIONS","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+2354,"MIT_ID","DAPER_ELIG_FINAID","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+1298,"MIT_ID","ADM_GRAD_APPLICANT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10582,"MIT_ID","AA_GRANT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+3038,"MIT_ID","HR_EMPLOYMENT_CIP_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+4372,"MIT_ID","EMPLOYEE_DIRECTORY_FULL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10581,"MIT_ID","AA_AWARD","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+12012,"MIT_ID","STUDENT_HOURLY_APPT_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+1727,"MIT_ID","HR_EDUCATION_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+12174,"MIT_ID","HR_DIVERSITY_HIRES","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+1731,"MIT_ID","HR_PERSONNEL_ACTION_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+7699,"MIT_ID","STUDENT_HOURLY_APPT_SEGMENT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+13273,"MIT_ID","HR_APPT_ACTION_DETAIL_ALL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+986,"MIT_ID","STUDENT_ALL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+11292,"MIT_ID","STUDENT_WITHDRAWN","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+14093,"MIT_ID","ESANDI_RETRO","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+8105,"MIT_ID","SPACE_PERSON","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+1008,"MIT_ID","BENEFITS_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+7372,"MIT_ID","WTW_OLD_INSTRUCTOR","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+12115,"MIT_ID","FAID_INSTITUTE_BUDGET_CATGY","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+12934,"MIT_ID","WHPERSON_EMPLOYEE","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+8062,"MIT_ID","STUDENT_AUDIT_SUMMARY","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+12548,"MIT_ID","PARK_ELIGIBLE_EMERITUS","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+12547,"MIT_ID","PARK_ACCOUNT_BALANCE","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+12542,"MIT_ID","PARK_ELIGIBLE_ASSIGN","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+7698,"MIT_ID","STUDENT_HOURLY_APPT_DST_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+8988,"MIT_ID","AA_ARTICLE","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+13413,"MIT_ID","HR_EMPLOYEE_EMERGENCY_CONTACT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+2203,"MIT_ID","BENEFITS_PERSON_EMPLOYEE","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+2692,"MIT_ID","HR_POSITION_LIM_DET_HISTORY","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+7962,"MIT_ID","APPOINTMENT_CYBORG","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+8827,"MIT_ID","PAYROLL_PERSON_FULL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+6680,"MIT_ID","LSO_QUALIFICATION_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+1563,"MIT_ID","APPOINTMENT_BASIC","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+11540,"MIT_ID","PENSION_ACH_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+13134,"MIT_ID","EHSTA_RECONCILER_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+11238,"MIT_ID","EM_WAITLIST_SNAPSHOT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+11237,"MIT_ID","EM_FINAL_ALGOR_RESULT_SPSHOT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+1610,"MIT_ID","HR_ROLES_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+1595,"MIT_ID","EMPLOYEE_BASIC","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+11773,"MIT_ID","OSP_WORKLOAD_SIM_CAPACITY","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+11536,"MIT_ID","PAYROLL_ACH_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+9090,"MIT_ID","STUDENT_GRADE_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+1720,"MIT_ID","HR_APPOINTMENT_LIMITED_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+11112,"MIT_ID","HR_APPT_TX_ALL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+8990,"MIT_ID","AA_BOOK","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+12172,"MIT_ID","HR_DIVERSITY_DEMOGRAPHICS","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+7700,"MIT_ID","HR_RESIDENCY_STATUS_HISTORY","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+9436,"MIT_ID","FPR_PEER_FACULTY","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+1592,"MIT_ID","EHS_ROLES_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+3680,"MIT_ID","PAYROLL_SALARY_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10661,"MIT_ID","FACULTY_ALUMNI","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+5297,"MIT_ID","STUDENT_CURRENT_ENROLLMENT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+12252,"MIT_ID","EPR_PUBLICATION","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+3718,"MIT_ID","HR_APPT_ACTION_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+11973,"MIT_ID","FAID_AWARD_DISBURSE_XACTION","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+11972,"MIT_ID","FAID_AWARD_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+11172,"MIT_ID","FAID_APPLICANT_AWARD_SNAPSHOT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+3938,"MIT_ID","PAYROLL_ROLES_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10762,"MIT_ID","ASR_PERSON_EMPLOYEE_WR957","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+11533,"MIT_ID","FAID_NEED_ANALYSIS","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+11912,"MIT_ID","HR_PARENTAL_LEAVE_ELIG_DATES","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10929,"MIT_ID","EM_STUDENT_WAITLIST_HIST","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10602,"MIT_ID","SAPH_WHHR_PERSON_EMPLOYEE","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10520,"MIT_ID","HRBRIO_NON_DISCRIM_CUTBACK","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+56,"MIT_ID","STUDENT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+7472,"MIT_ID","STUDENT_BASIC","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+502,"MIT_ID","STUDENT_DEGREE","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+12556,"MIT_ID","PARK_PERMIT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+11236,"MIT_ID","EM_STUDENT_SUBJ_SELECT_SNAP","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+55,"MIT_ID","EMPLOYEE","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+2250,"MIT_ID","PENSION_ACTION_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+58,"MIT_ID","APPOINTMENT_OLD","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+1295,"MIT_ID","DEPARTMENT_EMPLOYEE_DIRECTORY","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+89,"MIT_ID","APPOINTMENT_LIMITED","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+11574,"MIT_ID","WHHR_PERSON_EMPLOYEE","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+14094,"MIT_ID","ESANDI_TRANSFER_IN","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+6078,"MIT_ID","IR_AWARD_PERSON","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+11800,"MIT_ID","SPACE_PERSON_SUPVR_SNAPSHOT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+11776,"MIT_ID","OSP_WORKLOAD_ABSENTEE","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+11775,"MIT_ID","OSP_WORKLOAD_SIM_FLEXIBILITY","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+2332,"MIT_ID","DAPER_PE_STUDENT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10907,"MIT_ID","EM_STUDENT_REGISTRATION","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+11753,"MIT_ID","ROLES_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+7252,"MIT_ID","WTW_INSTRUCTOR","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+12551,"MIT_ID","PARK_TX_ACTIVITY","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10050,"MIT_ID","TLO_CONTACT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+12272,"MIT_ID","EPR_COURSE_EVALUATION","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+12212,"MIT_ID","PARK_TX_INVOICE","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+1011,"MIT_ID","BENEFITS_ELIGIBILITY_HISTORY","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+12536,"MIT_ID","PARK_PARKER_ACCOUNT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+12534,"MIT_ID","PARK_AFFILIATE_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+12521,"MIT_ID","PARK_TX_PAYMENT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+2251,"MIT_ID","PENSION_PERSON","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10438,"MIT_ID","HRBRIO_BEN_457B_NEW_ELIG","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+88,"MIT_ID","EMPLOYEE_DIRECTORY","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10379,"MIT_ID","ACAD_CHAIR_HOLDER","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10644,"MIT_ID","SAPH_HR_STUDENT_EMPLOYEE","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10928,"MIT_ID","EM_WAITLIST_HIST_SNAPSHOT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10826,"MIT_ID","EM_STUDENT_SUBJECT_CHOICES","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+9637,"MIT_ID","FPR_MIT_PATENT_DETAIL_NEW","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+11235,"MIT_ID","EM_REGISTRATION_SNAPSHOT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+99,"MIT_ID","KRB_PERSON","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10605,"MIT_ID","SAPH_WHSTUDENT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10604,"MIT_ID","SAPH_WHHR_STUDENT_EMPLOYEE","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10418,"MIT_ID","HRBRIO_SEIU_SICK_CHARGES_OVT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+12524,"MIT_ID","PARK_ELIGIBLE_RESIDENT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+11544,"MIT_ID","FAID_APPLICATION_INFO","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+12314,"MIT_ID","EPR_COURSE_AND_EVALUATION","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+1586,"MIT_ID","EHST_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+9456,"MIT_ID","STUDENT_CLRHSE_CORE_2014SU","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+1589,"MIT_ID","EHST_TRAINEE","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+12114,"MIT_ID","FAID_INST_METHOD_NEED_ANALY","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+9332,"MIT_ID","FPR_IR_AWARD_NEW","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+9455,"MIT_ID","STUDENT_CLRHSE_CORE_2_2014SU","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+9555,"MIT_ID","SUBJECT_ENROLL_GRADED_SUMMARY","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+9495,"MIT_ID","STUDENT_MINOR","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+7982,"MIT_ID","EECS_SUBJECT_ENROLLMENT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+12493,"MIT_ID","SUBJECT_ENROLLMENT_DTL_STELLAR","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10009,"MIT_ID","LIBRARY_PERSON_LOOKUP","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+13113,"MIT_ID","XFINITY_INFORMATION","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+9699,"MIT_ID","SPACE_SUPV_HISTO","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+9698,"MIT_ID","SPACE_SUPV_DEPT_HISTO","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10250,"MIT_ID","SPACE_PERSON_SUPERVISOR","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+9374,"MIT_ID","FPR_MIT_APPOINTMENT_X","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+8970,"MIT_ID","NEW_HIRE_EMPLOYEE_NO_KERBEROS","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10606,"MIT_ID","SAPH_WHHR_APPOINTMENT_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+9719,"MIT_ID","NEW_HIRE_TLO_IPIA_DATE","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+9331,"MIT_ID","OSP_ERI_DISTRIBUTION","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+7392,"MIT_ID","SUBJECT_ENROLLMENT_SUMMARY","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+417,"MIT_ID","SUBJECT_ENROLLMENT_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+9435,"MIT_ID","EFPR_PEOPLE","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+1735,"MIT_ID","HR_POSITION_LIMITED_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+11412,"MIT_ID","EL_PI_DLC_AFF_HISTORY","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+2454,"MIT_ID","PRE_REG_STUDENT_STATUS","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+9678,"MIT_ID","FPR_TEACHING_EVALUATION_TT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+8042,"MIT_ID","SUBJECT_AUDIT_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+4058,"MIT_ID","UROP_STUDENT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+3978,"MIT_ID","STUDENT_GRAD_GEN_EXAM_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+12453,"MIT_ID","PRE_REG_DETAIL_STELLAR","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+3440,"MIT_ID","OSP_INVESTIGATOR","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+9779,"MIT_ID","STUDENT_ADDRESS_Y_REPORT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+11332,"MIT_ID","HR_APPOINTMENTS_ALL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+11780,"MIT_ID","OSP_WORKLOAD_FLEXIBILITY","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+5719,"MIT_ID","SUBJECT_ENROLL_GRADED_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+1725,"MIT_ID","HR_APPT_TX_SU_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+13593,"MIT_ID","PERSON_SERVICE_LOOKUP","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+11452,"MIT_ID","BENEFITS_TUITION_ASSISTANCE","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10381,"MIT_ID","COUNTRY_OF_ORIGIN","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+3744,"MIT_ID","HR_ABSENCE_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+11779,"MIT_ID","OSP_WORKLOAD_SIM_UNIT_ASSIGN","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+11778,"MIT_ID","OSP_WORKLOAD_CAPACITY","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+2312,"MIT_ID","FINAID_FWS_TIMESHEET_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+11111,"MIT_ID","HR_PERSON_BUILDINGS","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+3958,"MIT_ID","ALUMNI_ADDRESS","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+1375,"MIT_ID","ALUMNI_BY_COURSE","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10866,"MIT_ID","EM_FINAL_ALGORITHM","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+9130,"MIT_ID","FPR_PEOPLE_RECORD","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+84,"MIT_ID","STUDENT_TERM_ENROLLMENT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10294,"MIT_ID","HR_ROLES_DETAIL_X","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+9373,"MIT_ID","PI_MEASURES","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+2452,"MIT_ID","PRE_REG_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+2101,"MIT_ID","ACAD_CHAIR_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+13934,"MIT_ID","EPR_ACL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10130,"MIT_ID","FPR_SUPERVISED_ACTIVITY_UROP","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+7554,"MIT_ID","PAYING","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+13453,"MIT_ID","STUDENT_ENROLLMENT_Y_RP_0920","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+6376,"MIT_ID","ARRA_REPORTING_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+9352,"MIT_ID","PERSON_OSP","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10580,"MIT_ID","FPR_ROLES","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+9129,"MIT_ID","FPR_PEOPLE","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+11977,"MIT_ID","FAID_APPLICANT_MANUAL_BUDGET","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+11976,"MIT_ID","FAID_PERIOD_ENROLL_DISBURSE","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+7493,"MIT_ID","TRAVEL_PERSON","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10641,"MIT_ID","SAPH_HR_PERSON_ACCESSIBLE","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+1999,"MIT_ID","BENEFITS_ELIGIBILITY_CURRENT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+1442,"MIT_ID","EHS_CONTACT_PERSON","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+12313,"MIT_ID","EPR_AWARD_HONOR","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+12312,"MIT_ID","EPR_PATENT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+12232,"MIT_ID","EPR_MIT_SERVICE_COMMITTEE","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+1600,"MIT_ID","FACULTY_DIRECTORY","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+12292,"MIT_ID","EPR_PROFESSORSHIP","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+9029,"MIT_ID","HR_APPT_TX_DETAIL_TEST","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+1939,"MIT_ID","ALUM_BIOGRAPHIC","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+11975,"MIT_ID","FAID_APPLICANT_BUDGET_ITEMS","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+12113,"MIT_ID","FAID_FED_METHOD_NEED_ANALY","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+8225,"MIT_ID","PAID_PERSON","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+12072,"MIT_ID","FAID_STUDENT_REQ_DOCS","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+6056,"MIT_ID","STUDENT_ETHNIC_SUBGROUP_ACTIVE","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+6437,"MIT_ID","FINAID_GRANT_STUDENT_INTEREST1","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+8083,"MIT_ID","WORK_HOURS_STUDENT_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+8082,"MIT_ID","WORK_HOURS_STUDENT_SUMMARY","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+11173,"MIT_ID","FAID_APPLICANT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+9434,"MIT_ID","STUDENT_CLRHSE_CORE_2_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+3538,"MIT_ID","STUDENT_MINOR_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+8967,"MIT_ID","NEW_HIRE_EMPLOYEE","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+5916,"MIT_ID","STUDENT_ETHNICITY_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+12913,"MIT_ID","RR_TRAINEE","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+6678,"MIT_ID","LSO_ATTENDEE","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10150,"MIT_ID","HRBRIO_OUT_OF_COUNTRY_LIST","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+3742,"MIT_ID","HR_ABSENCE_BALANCE","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+9989,"MIT_ID","ORCID_ELIGIBLE_PEOPLE","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+3398,"MIT_ID","STUDENT_CURRENT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+13333,"MIT_ID","LIBRARY_NAME_VARIANT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+12433,"MIT_ID","STUDENT_PROCUREMENT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+112,"MIT_ID","STUDENT_DIRECTORY_FULL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+1724,"MIT_ID","HR_APPT_TX_LIMITED_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+1721,"MIT_ID","HR_APPOINTMENT_SU_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+2039,"MIT_ID","HR_POSITION_DETAIL_HISTORY","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+3698,"MIT_ID","PAYROLL_PERSON","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+1651,"MIT_ID","STUDENT_TUITION_ASSESSMENT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10090,"MIT_ID","ORCID_TO_MITID","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+6536,"MIT_ID","STUDENT_ADDRESS","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+3679,"MIT_ID","PAYROLL_EDACCA_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+85,"MIT_ID","STUDENT_DIRECTORY","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+2355,"MIT_ID","DAPER_ELIG_STUDENT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+6516,"MIT_ID","STUDENT_ACADEMIC","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+8185,"MIT_ID","EECS_STUDENT_PERSONAL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+743,"MIT_ID","STUDENT_COURSE_ENROLLMENT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+13173,"MIT_ID","EHSI_CURRENT_ASSIGNEE","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+9663,"MIT_ID","FA_STUDENT_PROFILE","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+2434,"MIT_ID","PENSION_MIT_MEDICAL_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+9231,"MIT_ID","STUDENT_BIOGRAPHIC","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+2432,"MIT_ID","PENSION_MIT_MEDICAL_PERSON","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+12873,"MIT_ID","FINAID_WK5_AWARD_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+12413,"MIT_ID","HR_CSP_SCHOLARSHIP_BENEFITS","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+13673,"MIT_ID","FPR_EMPLOYEE_DIRECTORY","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+319,"MIT_ID","FINAID_AID_APPLICANT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+13653,"MIT_ID","FA_AWARD_SUMMARY","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+13853,"MIT_ID","TRAINCASTER_COURSE_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+11954,"MIT_ID","LOAD_SPACE_SUPV_HISTO","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+3678,"MIT_ID","PAYROLL_DIST_RULE_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+1620,"MIT_ID","MIT_MEDICAL_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+12693,"MIT_ID","RANK_LIST_2B","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+11174,"MIT_ID","FAID_APPLICANT_DETAIL_SNAPSHOT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+8987,"MIT_ID","STUDENT_AUDIT_STRIP","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+105,"MIT_ID","PERSON_HELP","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+2532,"MIT_ID","KERBEROS_NAME_CURRENT_STUDENT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+1296,"MIT_ID","STUDENT_ENROLLMENT_WEEK5","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10498,"MIT_ID","MITX_RESIDENTIAL_STUDENT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+8467,"MIT_ID","PERSON_CURRENT_RELATION","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+8325,"MIT_ID","EECS_DEGREE_AWARDED","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+2253,"MIT_ID","PENSION_BENEFITS_ELIG_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+8326,"MIT_ID","EECS_TERM_ENROLLMENT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+336,"MIT_ID","FINAID_AWARD_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+2512,"MIT_ID","SUBJECT_ENROLLMENT_EHS","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10601,"MIT_ID","SAPH_HR_APPOINTMENT_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+5476,"MIT_ID","MIT_CARD_DATA","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+1759,"MIT_ID","HR_PERSON_EMPLOYEE","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+61,"MIT_ID","APPOINTMENT_ALL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+9969,"MIT_ID","AA_ID_CROSSWALK","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+11234,"MIT_ID","EM_RESERVATION_SNAPSHOT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10683,"MIT_ID","OSP_AWARD_PERSON","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+12154,"MIT_ID","SE_HQA","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+9759,"MIT_ID","PAYROLL_COMMITMENT_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10886,"MIT_ID","ESANDI","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+2271,"MIT_ID","FINAID_WORK_STUDENT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+2270,"MIT_ID","FINAID_WORK_EARNINGS_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+6176,"MIT_ID","HR_PERSON_EMPLOYEE_YEAR_END","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+437,"MIT_ID","FINAID_PAYROLL_DIST_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+1723,"MIT_ID","HR_APPT_TX_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+1645,"MIT_ID","SSM_SUBJECT_ENROLLMENT_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+1441,"MIT_ID","EHS_PERSON","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10643,"MIT_ID","SAPH_STUDENT_TERM_ENROLLMENT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+340,"MIT_ID","FINAID_APPLICANT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+2953,"MIT_ID","HR_APPOINTMENT_BASIC_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+12733,"MIT_ID","FPR_TEACHING_NT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10420,"MIT_ID","HRBRIO_SEIU_SICK_CHARGES","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+1814,"MIT_ID","LAB_MGMNT_DIRECTORY","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+7452,"MIT_ID","TEACHING_FACULTY","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+94,"MIT_ID","EMPLOYEE_LIMITED","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10603,"MIT_ID","SAPH_HR_PERSON_EMPLOYEE","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+1596,"MIT_ID","EMPLOYEE_BASIC_PLUS","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+13693,"MIT_ID","BENEFITS_PCCS","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+946,"MIT_ID","STUDENT_DEGREE_AWARDED","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10539,"MIT_ID","HR_STUDENT_APPOINTMENT_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+1395,"MIT_ID","STUDENT_DEGREE_CANDIDATE","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+6438,"MIT_ID","FINAID_GRANT_STUDENT_INTEREST2","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+6439,"MIT_ID","FINAID_GRANT_STUDENT_INTEREST3","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+8867,"MIT_ID","EL_REQUIREMENT_ORIGIN","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+4019,"MIT_ID","UROP_INSTRUCTOR","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+8607,"MIT_ID","STUDENT_DEGREE_THESIS","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+11091,"MIT_ID","FACILITIES_TIME_SHEET","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+7273,"MIT_ID","GRADUATE_AWARD_APPOINTMENT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+13933,"MIT_ID","EPR_SUPER_ACL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+1719,"MIT_ID","HR_APPOINTMENT_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+3118,"MIT_ID","STUDENT_ALL_ENROLLMENT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+9089,"MIT_ID","STUDENT_COURSE_OF_MAJOR","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+6436,"MIT_ID","FINAID_GRANT_STUDENT_INTEREST","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+12815,"MIT_ID","FINAID_OUTSIDE_INTEREST_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+12522,"MIT_ID","PARK_TX_HEADER","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+13533,"MIT_ID","HR_CHILDCARE_CENTER_SCHLRSHP","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+12176,"MIT_ID","HR_DIVERSITY_TERMS","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+9171,"MIT_ID","MIT_APPOINTMENT_ALL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+1806,"MIT_ID","HR_EMPLOYEE_AFFILIATION_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+6416,"MIT_ID","ARRA_PERSON","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10621,"MIT_ID","INSTITUTE_COMMITTEE","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+11232,"MIT_ID","EM_STUDENT_SCHEDULE_SNAPSHOT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+1722,"MIT_ID","HR_APPT_LETTER_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+100,"MIT_ID","MAILING_LABELS","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+1734,"MIT_ID","HR_POSITION_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+1297,"MIT_ID","STUDENT_ENROLLMENT_Y_REPORT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+2252,"MIT_ID","PENSION_BENEFITS_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+83,"MIT_ID","GRADUATE_AWARD_TERM_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10827,"MIT_ID","EM_STUDENT_RESERVATION","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+12935,"MIT_ID","EMPLOYEE_STATUS","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10927,"MIT_ID","EM_STUDENT_WAITLIST","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+10828,"MIT_ID","EM_STUDENT_SUBJ_SELECTOR_USE","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+4555,"MIT_ID","HR_PERSON_EMPLOYEE_LIMITED","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+2672,"MIT_ID","HR_POSITION_LIMITED_HISTORY","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+3378,"MIT_ID","MIT_CARD_PICTURE","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+6517,"MIT_ID","STUDENT_ACADEMIC_BY_TERM","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+2182,"MIT_ID","BENEFITS_ADJ_REASON_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+2228,"MIT_ID","EXTERNAL_TEST_SCORE_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+13033,"MIT_ID","HR_OBJECT_RELATIONSHIP_PFML","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+6966,"MIT_ID","LSO_REGISTRATION_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+2353,"MIT_ID","DAPER_ELIG_ENROLLMENT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+13353,"MIT_ID","STUDENT_GENDER_IDENTITY","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+2773,"MIT_ID","STUDENT_GRAD_ENROLLMENT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+9617,"MIT_ID","STUDENT_ENROLLMENT_STATUS","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+1613,"MIT_ID","INSTRUCTOR_VIEW","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+11832,"MIT_ID","HR_SECONDMENT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+13136,"MIT_ID","SPACE_SUPERVISOR","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+2060,"MIT_ID","HR_BENEFIT_ELIGIBILITY_HISTORY","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+13253,"MIT_ID","BUDGET_EMPLOYEE_DIRECTORY","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+8487,"MIT_ID","EECS_FRESHMAN","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+2059,"MIT_ID","HR_BENEFIT_ELIGIBILITY_CURRENT","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+4038,"MIT_ID","PAYROLL_HRLY_STU_SAL_DETAIL","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+1619,"MIT_ID","MITID_DB_PERSON","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+3418,"MIT_ID","MITID_DB_ACTIVE","MIT ID number of the person. Use this field to join with other tables containing data about people at MIT.",9,"VARCHAR2",278
+12934,"SSN","WHPERSON_EMPLOYEE","The person's social security number.",9,"VARCHAR2",279
+11252,"SSN","STUDENT_ALUMNI_2","The person's social security number.",9,"VARCHAR2",279
+13153,"SSN","STUDENT_ALUMNI_V2","The person's social security number.",9,"VARCHAR2",279
+10605,"SSN","SAPH_WHSTUDENT","The person's social security number.",9,"VARCHAR2",279
+55,"SSN","EMPLOYEE","The person's social security number.",9,"VARCHAR2",279
+11976,"SSN","FAID_PERIOD_ENROLL_DISBURSE","The person's social security number.",9,"VARCHAR2",279
+11532,"SSN","STUDENT_ARCHIVE_ALUMNI","The person's social security number.",9,"VARCHAR2",279
+319,"SSN","FINAID_AID_APPLICANT","The person's social security number.",9,"VARCHAR2",279
+2271,"SSN","FINAID_WORK_STUDENT","The person's social security number.",9,"VARCHAR2",279
+9535,"SSN","OSP_PERSON_HISTORY","The person's social security number.",9,"VARCHAR2",279
+13174,"LAST_NAME","EHSI_PREVIOUS_ASSIGNEE","The person's last name.",30,"VARCHAR2",280
+8668,"LAST_NAME","OPA_PERSON","The person's last name.",30,"VARCHAR2",280
+2954,"LAST_NAME","HR_PERSON_EMPLOYEE_BASIC","The person's last name.",30,"VARCHAR2",280
+8002,"LAST_NAME","HR_PERSON_ACCESSIBLE","The person's last name.",30,"VARCHAR2",280
+10230,"LAST_NAME","HR_STUDENT_EMPLOYEE","The person's last name.",30,"VARCHAR2",280
+12853,"LAST_NAME","TEM_INSTRUCTOR","The person's last name.",30,"VARCHAR2",280
+9819,"LAST_NAME","ORCID_PEOPLE","The person's last name.",30,"VARCHAR2",280
+10335,"LAST_NAME","POSTDOC_ALUMNI","The person's last name.",30,"VARCHAR2",280
+11794,"LAST_NAME","SPACE_PERSON_SNAPSHOT","The person's last name.",30,"VARCHAR2",280
+11793,"LAST_NAME","SPACE_SUPERVISOR_SNAPSHOT","The person's last name.",30,"VARCHAR2",280
+7697,"LAST_NAME","SHA_STUDENT","The person's last name.",30,"VARCHAR2",280
+10478,"LAST_NAME","STUDENT_TEMP_I9","The person's last name.",30,"VARCHAR2",280
+12177,"LAST_NAME","HR_DIVERSITY_PROMOTIONS","The person's last name.",30,"VARCHAR2",280
+1298,"LAST_NAME","ADM_GRAD_APPLICANT","The person's last name.",30,"VARCHAR2",280
+4372,"LAST_NAME","EMPLOYEE_DIRECTORY_FULL","The person's last name.",30,"VARCHAR2",280
+12174,"LAST_NAME","HR_DIVERSITY_HIRES","The person's last name.",30,"VARCHAR2",280
+11010,"LAST_NAME","ATS_WORKFLOW_ACTIVITY","The person's last name.",30,"VARCHAR2",280
+986,"LAST_NAME","STUDENT_ALL","The person's last name.",30,"VARCHAR2",280
+11292,"LAST_NAME","STUDENT_WITHDRAWN","The person's last name.",30,"VARCHAR2",280
+8105,"LAST_NAME","SPACE_PERSON","The person's last name.",30,"VARCHAR2",280
+7372,"LAST_NAME","WTW_OLD_INSTRUCTOR","The person's last name.",30,"VARCHAR2",280
+62,"LAST_NAME","KEYS","The person's last name.",30,"VARCHAR2",280
+12934,"LAST_NAME","WHPERSON_EMPLOYEE","The person's last name.",30,"VARCHAR2",280
+13413,"LAST_NAME","HR_EMPLOYEE_EMERGENCY_CONTACT","The person's last name.",30,"VARCHAR2",280
+2203,"LAST_NAME","BENEFITS_PERSON_EMPLOYEE","The person's last name.",30,"VARCHAR2",280
+8827,"LAST_NAME","PAYROLL_PERSON_FULL","The person's last name.",30,"VARCHAR2",280
+1595,"LAST_NAME","EMPLOYEE_BASIC","The person's last name.",30,"VARCHAR2",280
+11252,"LAST_NAME","STUDENT_ALUMNI_2","The person's last name.",30,"VARCHAR2",280
+12172,"LAST_NAME","HR_DIVERSITY_DEMOGRAPHICS","The person's last name.",30,"VARCHAR2",280
+9436,"LAST_NAME","FPR_PEER_FACULTY","The person's last name.",30,"VARCHAR2",280
+10661,"LAST_NAME","FACULTY_ALUMNI","The person's last name.",30,"VARCHAR2",280
+10762,"LAST_NAME","ASR_PERSON_EMPLOYEE_WR957","The person's last name.",30,"VARCHAR2",280
+13153,"LAST_NAME","STUDENT_ALUMNI_V2","The person's last name.",30,"VARCHAR2",280
+10602,"LAST_NAME","SAPH_WHHR_PERSON_EMPLOYEE","The person's last name.",30,"VARCHAR2",280
+56,"LAST_NAME","STUDENT","The person's last name.",30,"VARCHAR2",280
+7472,"LAST_NAME","STUDENT_BASIC","The person's last name.",30,"VARCHAR2",280
+1295,"LAST_NAME","DEPARTMENT_EMPLOYEE_DIRECTORY","The person's last name.",30,"VARCHAR2",280
+11574,"LAST_NAME","WHHR_PERSON_EMPLOYEE","The person's last name.",30,"VARCHAR2",280
+55,"LAST_NAME","EMPLOYEE","The person's last name.",30,"VARCHAR2",280
+2332,"LAST_NAME","DAPER_PE_STUDENT","The person's last name.",30,"VARCHAR2",280
+7252,"LAST_NAME","WTW_INSTRUCTOR","The person's last name.",30,"VARCHAR2",280
+10050,"LAST_NAME","TLO_CONTACT","The person's last name.",30,"VARCHAR2",280
+12534,"LAST_NAME","PARK_AFFILIATE_DETAIL","The person's last name.",30,"VARCHAR2",280
+6721,"LAST_NAME","LSO_INSTRUCTOR","The person's last name.",30,"VARCHAR2",280
+2251,"LAST_NAME","PENSION_PERSON","The person's last name.",30,"VARCHAR2",280
+10644,"LAST_NAME","SAPH_HR_STUDENT_EMPLOYEE","The person's last name.",30,"VARCHAR2",280
+99,"LAST_NAME","KRB_PERSON","The person's last name.",30,"VARCHAR2",280
+88,"LAST_NAME","EMPLOYEE_DIRECTORY","The person's last name.",30,"VARCHAR2",280
+10605,"LAST_NAME","SAPH_WHSTUDENT","The person's last name.",30,"VARCHAR2",280
+10604,"LAST_NAME","SAPH_WHHR_STUDENT_EMPLOYEE","The person's last name.",30,"VARCHAR2",280
+9456,"LAST_NAME","STUDENT_CLRHSE_CORE_2014SU","The person's last name.",30,"VARCHAR2",280
+1589,"LAST_NAME","EHST_TRAINEE","The person's last name.",30,"VARCHAR2",280
+7982,"LAST_NAME","EECS_SUBJECT_ENROLLMENT","The person's last name.",30,"VARCHAR2",280
+10009,"LAST_NAME","LIBRARY_PERSON_LOOKUP","The person's last name.",30,"VARCHAR2",280
+1375,"LAST_NAME","ALUMNI_BY_COURSE","The person's last name.",30,"VARCHAR2",280
+3958,"LAST_NAME","ALUMNI_ADDRESS","The person's last name.",30,"VARCHAR2",280
+84,"LAST_NAME","STUDENT_TERM_ENROLLMENT","The person's last name.",30,"VARCHAR2",280
+10580,"LAST_NAME","FPR_ROLES","The person's last name.",30,"VARCHAR2",280
+9129,"LAST_NAME","FPR_PEOPLE","The person's last name.",30,"VARCHAR2",280
+11976,"LAST_NAME","FAID_PERIOD_ENROLL_DISBURSE","The person's last name.",30,"VARCHAR2",280
+7493,"LAST_NAME","TRAVEL_PERSON","The person's last name.",30,"VARCHAR2",280
+10641,"LAST_NAME","SAPH_HR_PERSON_ACCESSIBLE","The person's last name.",30,"VARCHAR2",280
+7574,"LAST_NAME","TRAVELER","The person's last name.",30,"VARCHAR2",280
+1600,"LAST_NAME","FACULTY_DIRECTORY","The person's last name.",30,"VARCHAR2",280
+1939,"LAST_NAME","ALUM_BIOGRAPHIC","The person's last name.",30,"VARCHAR2",280
+8225,"LAST_NAME","PAID_PERSON","The person's last name.",30,"VARCHAR2",280
+11173,"LAST_NAME","FAID_APPLICANT","The person's last name.",30,"VARCHAR2",280
+6678,"LAST_NAME","LSO_ATTENDEE","The person's last name.",30,"VARCHAR2",280
+3398,"LAST_NAME","STUDENT_CURRENT","The person's last name.",30,"VARCHAR2",280
+112,"LAST_NAME","STUDENT_DIRECTORY_FULL","The person's last name.",30,"VARCHAR2",280
+3698,"LAST_NAME","PAYROLL_PERSON","The person's last name.",30,"VARCHAR2",280
+6536,"LAST_NAME","STUDENT_ADDRESS","The person's last name.",30,"VARCHAR2",280
+85,"LAST_NAME","STUDENT_DIRECTORY","The person's last name.",30,"VARCHAR2",280
+2355,"LAST_NAME","DAPER_ELIG_STUDENT","The person's last name.",30,"VARCHAR2",280
+6516,"LAST_NAME","STUDENT_ACADEMIC","The person's last name.",30,"VARCHAR2",280
+8185,"LAST_NAME","EECS_STUDENT_PERSONAL","The person's last name.",30,"VARCHAR2",280
+13173,"LAST_NAME","EHSI_CURRENT_ASSIGNEE","The person's last name.",30,"VARCHAR2",280
+1010,"LAST_NAME","BENEFITS_RECIPIENT","The person's last name.",30,"VARCHAR2",280
+2254,"LAST_NAME","PENSION_BENEFITS_RECIPIENT","The person's last name.",30,"VARCHAR2",280
+13521,"LAST_NAME","VAPS_TRAVELER","The person's last name.",30,"VARCHAR2",280
+11532,"LAST_NAME","STUDENT_ARCHIVE_ALUMNI","The person's last name.",30,"VARCHAR2",280
+9231,"LAST_NAME","STUDENT_BIOGRAPHIC","The person's last name.",30,"VARCHAR2",280
+13673,"LAST_NAME","FPR_EMPLOYEE_DIRECTORY","The person's last name.",30,"VARCHAR2",280
+11174,"LAST_NAME","FAID_APPLICANT_DETAIL_SNAPSHOT","The person's last name.",30,"VARCHAR2",280
+105,"LAST_NAME","PERSON_HELP","The person's last name.",30,"VARCHAR2",280
+1759,"LAST_NAME","HR_PERSON_EMPLOYEE","The person's last name.",30,"VARCHAR2",280
+6176,"LAST_NAME","HR_PERSON_EMPLOYEE_YEAR_END","The person's last name.",30,"VARCHAR2",280
+1441,"LAST_NAME","EHS_PERSON","The person's last name.",30,"VARCHAR2",280
+10643,"LAST_NAME","SAPH_STUDENT_TERM_ENROLLMENT","The person's last name.",30,"VARCHAR2",280
+1814,"LAST_NAME","LAB_MGMNT_DIRECTORY","The person's last name.",30,"VARCHAR2",280
+7452,"LAST_NAME","TEACHING_FACULTY","The person's last name.",30,"VARCHAR2",280
+94,"LAST_NAME","EMPLOYEE_LIMITED","The person's last name.",30,"VARCHAR2",280
+10603,"LAST_NAME","SAPH_HR_PERSON_EMPLOYEE","The person's last name.",30,"VARCHAR2",280
+1596,"LAST_NAME","EMPLOYEE_BASIC_PLUS","The person's last name.",30,"VARCHAR2",280
+4019,"LAST_NAME","UROP_INSTRUCTOR","The person's last name.",30,"VARCHAR2",280
+9535,"LAST_NAME","OSP_PERSON_HISTORY","The person's last name.",30,"VARCHAR2",280
+3118,"LAST_NAME","STUDENT_ALL_ENROLLMENT","The person's last name.",30,"VARCHAR2",280
+12176,"LAST_NAME","HR_DIVERSITY_TERMS","The person's last name.",30,"VARCHAR2",280
+11071,"LAST_NAME","ATS_CANDIDATE_PROFILE","The person's last name.",30,"VARCHAR2",280
+6416,"LAST_NAME","ARRA_PERSON","The person's last name.",30,"VARCHAR2",280
+100,"LAST_NAME","MAILING_LABELS","The person's last name.",30,"VARCHAR2",280
+12935,"LAST_NAME","EMPLOYEE_STATUS","The person's last name.",30,"VARCHAR2",280
+12833,"LAST_NAME","TEM_ATTENDEE","The person's last name.",30,"VARCHAR2",280
+4555,"LAST_NAME","HR_PERSON_EMPLOYEE_LIMITED","The person's last name.",30,"VARCHAR2",280
+1335,"LAST_NAME","MIT_STUDENT_DIRECTORY","The person's last name.",30,"VARCHAR2",280
+1613,"LAST_NAME","INSTRUCTOR_VIEW","The person's last name.",30,"VARCHAR2",280
+13136,"LAST_NAME","SPACE_SUPERVISOR","The person's last name.",30,"VARCHAR2",280
+13253,"LAST_NAME","BUDGET_EMPLOYEE_DIRECTORY","The person's last name.",30,"VARCHAR2",280
+2773,"LAST_NAME","STUDENT_GRAD_ENROLLMENT","The person's last name.",30,"VARCHAR2",280
+3418,"LAST_NAME","MITID_DB_ACTIVE","The person's last name.",30,"VARCHAR2",280
+8487,"LAST_NAME","EECS_FRESHMAN","The person's last name.",30,"VARCHAR2",280
+1619,"LAST_NAME","MITID_DB_PERSON","The person's last name.",30,"VARCHAR2",280
+6907,"COST_COLLECTOR_ID","BUDGET_TRANSACTION_DETAIL","7-digit number which uniquely identifies the Cost Collector.",7,"VARCHAR2",200
+13813,"COST_COLLECTOR_ID","FRC_REVIEWS","7-digit number which uniquely identifies the Cost Collector.",7,"VARCHAR2",200
+13773,"COST_COLLECTOR_ID","FRC_RISKS","7-digit number which uniquely identifies the Cost Collector.",7,"VARCHAR2",200
+13793,"COST_COLLECTOR_ID","AWSFRC_REVIEWS","7-digit number which uniquely identifies the Cost Collector.",7,"VARCHAR2",200
+13393,"COST_COLLECTOR_ID","CGREVIEW_CURRENT","7-digit number which uniquely identifies the Cost Collector.",7,"VARCHAR2",200
+11992,"COST_COLLECTOR_ID","FRC_COST_COLLECTOR","7-digit number which uniquely identifies the Cost Collector.",7,"VARCHAR2",200
+184,"COST_COLLECTOR_ID","BALANCE_SHEET_ACCOUNT","7-digit number which uniquely identifies the Cost Collector.",7,"VARCHAR2",200
+14093,"COST_COLLECTOR_ID","ESANDI_RETRO","7-digit number which uniquely identifies the Cost Collector.",7,"VARCHAR2",200
+14094,"COST_COLLECTOR_ID","ESANDI_TRANSFER_IN","7-digit number which uniquely identifies the Cost Collector.",7,"VARCHAR2",200
+187,"COST_COLLECTOR_ID","FUND_ACCOUNT","7-digit number which uniquely identifies the Cost Collector.",7,"VARCHAR2",200
+482,"COST_COLLECTOR_ID","COST_COLLECTOR_HISTORY","7-digit number which uniquely identifies the Cost Collector.",7,"VARCHAR2",200
+11312,"COST_COLLECTOR_ID","PAYROLL_CO_ACCESSIBLE","7-digit number which uniquely identifies the Cost Collector.",7,"VARCHAR2",200
+904,"COST_COLLECTOR_ID","FUND_COST_COLLECTOR_HISTORY","7-digit number which uniquely identifies the Cost Collector.",7,"VARCHAR2",200
+3158,"COST_COLLECTOR_ID","REWARDS_RECOGNITION_MAP","7-digit number which uniquely identifies the Cost Collector.",7,"VARCHAR2",200
+462,"COST_COLLECTOR_ID","FUND_COST_COLLECTOR","7-digit number which uniquely identifies the Cost Collector.",7,"VARCHAR2",200
+12332,"COST_COLLECTOR_ID","SING_COST_COLLECTOR","7-digit number which uniquely identifies the Cost Collector.",7,"VARCHAR2",200
+9888,"COST_COLLECTOR_ID","FRC_COGNOS","7-digit number which uniquely identifies the Cost Collector.",7,"VARCHAR2",200
+10295,"COST_COLLECTOR_ID","FRC_COGNOS_NEW","7-digit number which uniquely identifies the Cost Collector.",7,"VARCHAR2",200
+14053,"COST_COLLECTOR_ID","FUNDS_REPORTING_CC_HISTORY","7-digit number which uniquely identifies the Cost Collector.",7,"VARCHAR2",200
+11993,"COST_COLLECTOR_ID","UTILITY_COST_COLLECTOR","7-digit number which uniquely identifies the Cost Collector.",7,"VARCHAR2",200
+10190,"COST_COLLECTOR_ID","BUDGET_GROUPINGS_HISTORY","7-digit number which uniquely identifies the Cost Collector.",7,"VARCHAR2",200
+204,"COST_COLLECTOR_ID","COST_COLLECTORS_ACCESSIBLE","7-digit number which uniquely identifies the Cost Collector.",7,"VARCHAR2",200
+10886,"COST_COLLECTOR_ID","ESANDI","7-digit number which uniquely identifies the Cost Collector.",7,"VARCHAR2",200
+2100,"COST_COLLECTOR_ID","ACAD_CHAIR_COST_COLLECTOR","7-digit number which uniquely identifies the Cost Collector.",7,"VARCHAR2",200
+51,"COST_COLLECTOR_ID","COST_COLLECTOR","7-digit number which uniquely identifies the Cost Collector.",7,"VARCHAR2",200
+2099,"COST_COLLECTOR_ID","ACAD_CHAIR","7-digit number which uniquely identifies the Cost Collector.",7,"VARCHAR2",200
+11992,"COST_COLLECTOR_ID_WITH_TYPE","FRC_COST_COLLECTOR","Contains the first digit of the Cost Collector Type Code and the seven digit Cost Collector ID.",8,"VARCHAR2",201
+482,"COST_COLLECTOR_ID_WITH_TYPE","COST_COLLECTOR_HISTORY","Contains the first digit of the Cost Collector Type Code and the seven digit Cost Collector ID.",8,"VARCHAR2",201
+11312,"COST_COLLECTOR_ID_WITH_TYPE","PAYROLL_CO_ACCESSIBLE","Contains the first digit of the Cost Collector Type Code and the seven digit Cost Collector ID.",8,"VARCHAR2",201
+904,"COST_COLLECTOR_ID_WITH_TYPE","FUND_COST_COLLECTOR_HISTORY","Contains the first digit of the Cost Collector Type Code and the seven digit Cost Collector ID.",8,"VARCHAR2",201
+12332,"COST_COLLECTOR_ID_WITH_TYPE","SING_COST_COLLECTOR","Contains the first digit of the Cost Collector Type Code and the seven digit Cost Collector ID.",8,"VARCHAR2",201
+204,"COST_COLLECTOR_ID_WITH_TYPE","COST_COLLECTORS_ACCESSIBLE","Contains the first digit of the Cost Collector Type Code and the seven digit Cost Collector ID.",8,"VARCHAR2",201
+90,"COST_COLLECTOR_ID_WITH_TYPE","BALANCES","Contains the first digit of the Cost Collector Type Code and the seven digit Cost Collector ID.",8,"VARCHAR2",201
+51,"COST_COLLECTOR_ID_WITH_TYPE","COST_COLLECTOR","Contains the first digit of the Cost Collector Type Code and the seven digit Cost Collector ID.",8,"VARCHAR2",201
+11992,"COST_COLLECTOR_TYPE_CODE","FRC_COST_COLLECTOR","A two-character code identifying the type of Cost Collector.  CC=Cost Center, IO=Internal Order, PR=Project or WBS Element.",2,"VARCHAR2",202
+184,"COST_COLLECTOR_TYPE_CODE","BALANCE_SHEET_ACCOUNT","A two-character code identifying the type of Cost Collector.  CC=Cost Center, IO=Internal Order, PR=Project or WBS Element.",2,"VARCHAR2",202
+187,"COST_COLLECTOR_TYPE_CODE","FUND_ACCOUNT","A two-character code identifying the type of Cost Collector.  CC=Cost Center, IO=Internal Order, PR=Project or WBS Element.",2,"VARCHAR2",202
+482,"COST_COLLECTOR_TYPE_CODE","COST_COLLECTOR_HISTORY","A two-character code identifying the type of Cost Collector.  CC=Cost Center, IO=Internal Order, PR=Project or WBS Element.",2,"VARCHAR2",202
+11312,"COST_COLLECTOR_TYPE_CODE","PAYROLL_CO_ACCESSIBLE","A two-character code identifying the type of Cost Collector.  CC=Cost Center, IO=Internal Order, PR=Project or WBS Element.",2,"VARCHAR2",202
+904,"COST_COLLECTOR_TYPE_CODE","FUND_COST_COLLECTOR_HISTORY","A two-character code identifying the type of Cost Collector.  CC=Cost Center, IO=Internal Order, PR=Project or WBS Element.",2,"VARCHAR2",202
+462,"COST_COLLECTOR_TYPE_CODE","FUND_COST_COLLECTOR","A two-character code identifying the type of Cost Collector.  CC=Cost Center, IO=Internal Order, PR=Project or WBS Element.",2,"VARCHAR2",202
+14053,"COST_COLLECTOR_TYPE_CODE","FUNDS_REPORTING_CC_HISTORY","A two-character code identifying the type of Cost Collector.  CC=Cost Center, IO=Internal Order, PR=Project or WBS Element.",2,"VARCHAR2",202
+204,"COST_COLLECTOR_TYPE_CODE","COST_COLLECTORS_ACCESSIBLE","A two-character code identifying the type of Cost Collector.  CC=Cost Center, IO=Internal Order, PR=Project or WBS Element.",2,"VARCHAR2",202
+51,"COST_COLLECTOR_TYPE_CODE","COST_COLLECTOR","A two-character code identifying the type of Cost Collector.  CC=Cost Center, IO=Internal Order, PR=Project or WBS Element.",2,"VARCHAR2",202
+11992,"COST_COLLECTOR_TYPE_DESC","FRC_COST_COLLECTOR","The full name of the cost collector type",20,"VARCHAR2",203
+184,"COST_COLLECTOR_TYPE_DESC","BALANCE_SHEET_ACCOUNT","The full name of the cost collector type",20,"VARCHAR2",203
+187,"COST_COLLECTOR_TYPE_DESC","FUND_ACCOUNT","The full name of the cost collector type",20,"VARCHAR2",203
+482,"COST_COLLECTOR_TYPE_DESC","COST_COLLECTOR_HISTORY","The full name of the cost collector type",20,"VARCHAR2",203
+11312,"COST_COLLECTOR_TYPE_DESC","PAYROLL_CO_ACCESSIBLE","The full name of the cost collector type",20,"VARCHAR2",203
+904,"COST_COLLECTOR_TYPE_DESC","FUND_COST_COLLECTOR_HISTORY","The full name of the cost collector type",20,"VARCHAR2",203
+462,"COST_COLLECTOR_TYPE_DESC","FUND_COST_COLLECTOR","The full name of the cost collector type",20,"VARCHAR2",203
+204,"COST_COLLECTOR_TYPE_DESC","COST_COLLECTORS_ACCESSIBLE","The full name of the cost collector type",20,"VARCHAR2",203
+51,"COST_COLLECTOR_TYPE_DESC","COST_COLLECTOR","The full name of the cost collector type",20,"VARCHAR2",203
+6907,"COST_COLLECTOR_NAME","BUDGET_TRANSACTION_DETAIL","The name of the Cost Collector.",40,"VARCHAR2",204
+11992,"COST_COLLECTOR_NAME","FRC_COST_COLLECTOR","The name of the Cost Collector.",40,"VARCHAR2",204
+184,"COST_COLLECTOR_NAME","BALANCE_SHEET_ACCOUNT","The name of the Cost Collector.",40,"VARCHAR2",204
+14093,"COST_COLLECTOR_NAME","ESANDI_RETRO","The name of the Cost Collector.",40,"VARCHAR2",204
+14094,"COST_COLLECTOR_NAME","ESANDI_TRANSFER_IN","The name of the Cost Collector.",40,"VARCHAR2",204
+187,"COST_COLLECTOR_NAME","FUND_ACCOUNT","The name of the Cost Collector.",40,"VARCHAR2",204
+482,"COST_COLLECTOR_NAME","COST_COLLECTOR_HISTORY","The name of the Cost Collector.",40,"VARCHAR2",204
+11312,"COST_COLLECTOR_NAME","PAYROLL_CO_ACCESSIBLE","The name of the Cost Collector.",40,"VARCHAR2",204
+904,"COST_COLLECTOR_NAME","FUND_COST_COLLECTOR_HISTORY","The name of the Cost Collector.",40,"VARCHAR2",204
+462,"COST_COLLECTOR_NAME","FUND_COST_COLLECTOR","The name of the Cost Collector.",40,"VARCHAR2",204
+12332,"COST_COLLECTOR_NAME","SING_COST_COLLECTOR","The name of the Cost Collector.",40,"VARCHAR2",204
+9888,"COST_COLLECTOR_NAME","FRC_COGNOS","The name of the Cost Collector.",40,"VARCHAR2",204
+10295,"COST_COLLECTOR_NAME","FRC_COGNOS_NEW","The name of the Cost Collector.",40,"VARCHAR2",204
+14053,"COST_COLLECTOR_NAME","FUNDS_REPORTING_CC_HISTORY","The name of the Cost Collector.",40,"VARCHAR2",204
+11993,"COST_COLLECTOR_NAME","UTILITY_COST_COLLECTOR","The name of the Cost Collector.",40,"VARCHAR2",204
+204,"COST_COLLECTOR_NAME","COST_COLLECTORS_ACCESSIBLE","The name of the Cost Collector.",40,"VARCHAR2",204
+10886,"COST_COLLECTOR_NAME","ESANDI","The name of the Cost Collector.",40,"VARCHAR2",204
+51,"COST_COLLECTOR_NAME","COST_COLLECTOR","The name of the Cost Collector.",40,"VARCHAR2",204
+2099,"COST_COLLECTOR_NAME","ACAD_CHAIR","The name of the Cost Collector.",40,"VARCHAR2",204
+13174,"FIRST_NAME","EHSI_PREVIOUS_ASSIGNEE","The person's first name.",30,"VARCHAR2",281
+8668,"FIRST_NAME","OPA_PERSON","The person's first name.",30,"VARCHAR2",281
+10230,"FIRST_NAME","HR_STUDENT_EMPLOYEE","The person's first name.",30,"VARCHAR2",281
+2954,"FIRST_NAME","HR_PERSON_EMPLOYEE_BASIC","The person's first name.",30,"VARCHAR2",281
+8002,"FIRST_NAME","HR_PERSON_ACCESSIBLE","The person's first name.",30,"VARCHAR2",281
+12853,"FIRST_NAME","TEM_INSTRUCTOR","The person's first name.",30,"VARCHAR2",281
+9819,"FIRST_NAME","ORCID_PEOPLE","The person's first name.",30,"VARCHAR2",281
+10335,"FIRST_NAME","POSTDOC_ALUMNI","The person's first name.",30,"VARCHAR2",281
+11794,"FIRST_NAME","SPACE_PERSON_SNAPSHOT","The person's first name.",30,"VARCHAR2",281
+11793,"FIRST_NAME","SPACE_SUPERVISOR_SNAPSHOT","The person's first name.",30,"VARCHAR2",281
+7697,"FIRST_NAME","SHA_STUDENT","The person's first name.",30,"VARCHAR2",281
+10478,"FIRST_NAME","STUDENT_TEMP_I9","The person's first name.",30,"VARCHAR2",281
+12177,"FIRST_NAME","HR_DIVERSITY_PROMOTIONS","The person's first name.",30,"VARCHAR2",281
+1298,"FIRST_NAME","ADM_GRAD_APPLICANT","The person's first name.",30,"VARCHAR2",281
+4372,"FIRST_NAME","EMPLOYEE_DIRECTORY_FULL","The person's first name.",30,"VARCHAR2",281
+12174,"FIRST_NAME","HR_DIVERSITY_HIRES","The person's first name.",30,"VARCHAR2",281
+11010,"FIRST_NAME","ATS_WORKFLOW_ACTIVITY","The person's first name.",30,"VARCHAR2",281
+986,"FIRST_NAME","STUDENT_ALL","The person's first name.",30,"VARCHAR2",281
+11292,"FIRST_NAME","STUDENT_WITHDRAWN","The person's first name.",30,"VARCHAR2",281
+8105,"FIRST_NAME","SPACE_PERSON","The person's first name.",30,"VARCHAR2",281
+7372,"FIRST_NAME","WTW_OLD_INSTRUCTOR","The person's first name.",30,"VARCHAR2",281
+62,"FIRST_NAME","KEYS","The person's first name.",30,"VARCHAR2",281
+12934,"FIRST_NAME","WHPERSON_EMPLOYEE","The person's first name.",30,"VARCHAR2",281
+13413,"FIRST_NAME","HR_EMPLOYEE_EMERGENCY_CONTACT","The person's first name.",30,"VARCHAR2",281
+2203,"FIRST_NAME","BENEFITS_PERSON_EMPLOYEE","The person's first name.",30,"VARCHAR2",281
+8827,"FIRST_NAME","PAYROLL_PERSON_FULL","The person's first name.",30,"VARCHAR2",281
+1595,"FIRST_NAME","EMPLOYEE_BASIC","The person's first name.",30,"VARCHAR2",281
+11252,"FIRST_NAME","STUDENT_ALUMNI_2","The person's first name.",30,"VARCHAR2",281
+12172,"FIRST_NAME","HR_DIVERSITY_DEMOGRAPHICS","The person's first name.",30,"VARCHAR2",281
+9436,"FIRST_NAME","FPR_PEER_FACULTY","The person's first name.",30,"VARCHAR2",281
+10661,"FIRST_NAME","FACULTY_ALUMNI","The person's first name.",30,"VARCHAR2",281
+10762,"FIRST_NAME","ASR_PERSON_EMPLOYEE_WR957","The person's first name.",30,"VARCHAR2",281
+13153,"FIRST_NAME","STUDENT_ALUMNI_V2","The person's first name.",30,"VARCHAR2",281
+10602,"FIRST_NAME","SAPH_WHHR_PERSON_EMPLOYEE","The person's first name.",30,"VARCHAR2",281
+56,"FIRST_NAME","STUDENT","The person's first name.",30,"VARCHAR2",281
+7472,"FIRST_NAME","STUDENT_BASIC","The person's first name.",30,"VARCHAR2",281
+1295,"FIRST_NAME","DEPARTMENT_EMPLOYEE_DIRECTORY","The person's first name.",30,"VARCHAR2",281
+11574,"FIRST_NAME","WHHR_PERSON_EMPLOYEE","The person's first name.",30,"VARCHAR2",281
+55,"FIRST_NAME","EMPLOYEE","The person's first name.",30,"VARCHAR2",281
+2332,"FIRST_NAME","DAPER_PE_STUDENT","The person's first name.",30,"VARCHAR2",281
+7252,"FIRST_NAME","WTW_INSTRUCTOR","The person's first name.",30,"VARCHAR2",281
+10050,"FIRST_NAME","TLO_CONTACT","The person's first name.",30,"VARCHAR2",281
+12534,"FIRST_NAME","PARK_AFFILIATE_DETAIL","The person's first name.",30,"VARCHAR2",281
+6721,"FIRST_NAME","LSO_INSTRUCTOR","The person's first name.",30,"VARCHAR2",281
+2251,"FIRST_NAME","PENSION_PERSON","The person's first name.",30,"VARCHAR2",281
+88,"FIRST_NAME","EMPLOYEE_DIRECTORY","The person's first name.",30,"VARCHAR2",281
+10644,"FIRST_NAME","SAPH_HR_STUDENT_EMPLOYEE","The person's first name.",30,"VARCHAR2",281
+99,"FIRST_NAME","KRB_PERSON","The person's first name.",30,"VARCHAR2",281
+10605,"FIRST_NAME","SAPH_WHSTUDENT","The person's first name.",30,"VARCHAR2",281
+10604,"FIRST_NAME","SAPH_WHHR_STUDENT_EMPLOYEE","The person's first name.",30,"VARCHAR2",281
+9456,"FIRST_NAME","STUDENT_CLRHSE_CORE_2014SU","The person's first name.",30,"VARCHAR2",281
+1589,"FIRST_NAME","EHST_TRAINEE","The person's first name.",30,"VARCHAR2",281
+7982,"FIRST_NAME","EECS_SUBJECT_ENROLLMENT","The person's first name.",30,"VARCHAR2",281
+10009,"FIRST_NAME","LIBRARY_PERSON_LOOKUP","The person's first name.",30,"VARCHAR2",281
+1375,"FIRST_NAME","ALUMNI_BY_COURSE","The person's first name.",30,"VARCHAR2",281
+3958,"FIRST_NAME","ALUMNI_ADDRESS","The person's first name.",30,"VARCHAR2",281
+84,"FIRST_NAME","STUDENT_TERM_ENROLLMENT","The person's first name.",30,"VARCHAR2",281
+10580,"FIRST_NAME","FPR_ROLES","The person's first name.",30,"VARCHAR2",281
+9129,"FIRST_NAME","FPR_PEOPLE","The person's first name.",30,"VARCHAR2",281
+11976,"FIRST_NAME","FAID_PERIOD_ENROLL_DISBURSE","The person's first name.",30,"VARCHAR2",281
+7493,"FIRST_NAME","TRAVEL_PERSON","The person's first name.",30,"VARCHAR2",281
+10641,"FIRST_NAME","SAPH_HR_PERSON_ACCESSIBLE","The person's first name.",30,"VARCHAR2",281
+7574,"FIRST_NAME","TRAVELER","The person's first name.",30,"VARCHAR2",281
+1600,"FIRST_NAME","FACULTY_DIRECTORY","The person's first name.",30,"VARCHAR2",281
+1939,"FIRST_NAME","ALUM_BIOGRAPHIC","The person's first name.",30,"VARCHAR2",281
+8225,"FIRST_NAME","PAID_PERSON","The person's first name.",30,"VARCHAR2",281
+11173,"FIRST_NAME","FAID_APPLICANT","The person's first name.",30,"VARCHAR2",281
+6678,"FIRST_NAME","LSO_ATTENDEE","The person's first name.",30,"VARCHAR2",281
+3398,"FIRST_NAME","STUDENT_CURRENT","The person's first name.",30,"VARCHAR2",281
+112,"FIRST_NAME","STUDENT_DIRECTORY_FULL","The person's first name.",30,"VARCHAR2",281
+3698,"FIRST_NAME","PAYROLL_PERSON","The person's first name.",30,"VARCHAR2",281
+6536,"FIRST_NAME","STUDENT_ADDRESS","The person's first name.",30,"VARCHAR2",281
+85,"FIRST_NAME","STUDENT_DIRECTORY","The person's first name.",30,"VARCHAR2",281
+2355,"FIRST_NAME","DAPER_ELIG_STUDENT","The person's first name.",30,"VARCHAR2",281
+6516,"FIRST_NAME","STUDENT_ACADEMIC","The person's first name.",30,"VARCHAR2",281
+8185,"FIRST_NAME","EECS_STUDENT_PERSONAL","The person's first name.",30,"VARCHAR2",281
+13173,"FIRST_NAME","EHSI_CURRENT_ASSIGNEE","The person's first name.",30,"VARCHAR2",281
+1010,"FIRST_NAME","BENEFITS_RECIPIENT","The person's first name.",30,"VARCHAR2",281
+2254,"FIRST_NAME","PENSION_BENEFITS_RECIPIENT","The person's first name.",30,"VARCHAR2",281
+13521,"FIRST_NAME","VAPS_TRAVELER","The person's first name.",30,"VARCHAR2",281
+11532,"FIRST_NAME","STUDENT_ARCHIVE_ALUMNI","The person's first name.",30,"VARCHAR2",281
+9231,"FIRST_NAME","STUDENT_BIOGRAPHIC","The person's first name.",30,"VARCHAR2",281
+13673,"FIRST_NAME","FPR_EMPLOYEE_DIRECTORY","The person's first name.",30,"VARCHAR2",281
+11174,"FIRST_NAME","FAID_APPLICANT_DETAIL_SNAPSHOT","The person's first name.",30,"VARCHAR2",281
+105,"FIRST_NAME","PERSON_HELP","The person's first name.",30,"VARCHAR2",281
+1759,"FIRST_NAME","HR_PERSON_EMPLOYEE","The person's first name.",30,"VARCHAR2",281
+6176,"FIRST_NAME","HR_PERSON_EMPLOYEE_YEAR_END","The person's first name.",30,"VARCHAR2",281
+1441,"FIRST_NAME","EHS_PERSON","The person's first name.",30,"VARCHAR2",281
+10643,"FIRST_NAME","SAPH_STUDENT_TERM_ENROLLMENT","The person's first name.",30,"VARCHAR2",281
+1814,"FIRST_NAME","LAB_MGMNT_DIRECTORY","The person's first name.",30,"VARCHAR2",281
+7452,"FIRST_NAME","TEACHING_FACULTY","The person's first name.",30,"VARCHAR2",281
+94,"FIRST_NAME","EMPLOYEE_LIMITED","The person's first name.",30,"VARCHAR2",281
+10603,"FIRST_NAME","SAPH_HR_PERSON_EMPLOYEE","The person's first name.",30,"VARCHAR2",281
+1596,"FIRST_NAME","EMPLOYEE_BASIC_PLUS","The person's first name.",30,"VARCHAR2",281
+4019,"FIRST_NAME","UROP_INSTRUCTOR","The person's first name.",30,"VARCHAR2",281
+9535,"FIRST_NAME","OSP_PERSON_HISTORY","The person's first name.",30,"VARCHAR2",281
+3118,"FIRST_NAME","STUDENT_ALL_ENROLLMENT","The person's first name.",30,"VARCHAR2",281
+12176,"FIRST_NAME","HR_DIVERSITY_TERMS","The person's first name.",30,"VARCHAR2",281
+11071,"FIRST_NAME","ATS_CANDIDATE_PROFILE","The person's first name.",30,"VARCHAR2",281
+6416,"FIRST_NAME","ARRA_PERSON","The person's first name.",30,"VARCHAR2",281
+100,"FIRST_NAME","MAILING_LABELS","The person's first name.",30,"VARCHAR2",281
+12935,"FIRST_NAME","EMPLOYEE_STATUS","The person's first name.",30,"VARCHAR2",281
+12833,"FIRST_NAME","TEM_ATTENDEE","The person's first name.",30,"VARCHAR2",281
+4555,"FIRST_NAME","HR_PERSON_EMPLOYEE_LIMITED","The person's first name.",30,"VARCHAR2",281
+1335,"FIRST_NAME","MIT_STUDENT_DIRECTORY","The person's first name.",30,"VARCHAR2",281
+1613,"FIRST_NAME","INSTRUCTOR_VIEW","The person's first name.",30,"VARCHAR2",281
+13136,"FIRST_NAME","SPACE_SUPERVISOR","The person's first name.",30,"VARCHAR2",281
+13253,"FIRST_NAME","BUDGET_EMPLOYEE_DIRECTORY","The person's first name.",30,"VARCHAR2",281
+2773,"FIRST_NAME","STUDENT_GRAD_ENROLLMENT","The person's first name.",30,"VARCHAR2",281
+3418,"FIRST_NAME","MITID_DB_ACTIVE","The person's first name.",30,"VARCHAR2",281
+8487,"FIRST_NAME","EECS_FRESHMAN","The person's first name.",30,"VARCHAR2",281
+1619,"FIRST_NAME","MITID_DB_PERSON","The person's first name.",30,"VARCHAR2",281
+13174,"MIDDLE_NAME","EHSI_PREVIOUS_ASSIGNEE","The person's middle name (where available).",30,"VARCHAR2",282
+8668,"MIDDLE_NAME","OPA_PERSON","The person's middle name (where available).",30,"VARCHAR2",282
+10230,"MIDDLE_NAME","HR_STUDENT_EMPLOYEE","The person's middle name (where available).",30,"VARCHAR2",282
+2954,"MIDDLE_NAME","HR_PERSON_EMPLOYEE_BASIC","The person's middle name (where available).",30,"VARCHAR2",282
+8002,"MIDDLE_NAME","HR_PERSON_ACCESSIBLE","The person's middle name (where available).",30,"VARCHAR2",282
+12853,"MIDDLE_NAME","TEM_INSTRUCTOR","The person's middle name (where available).",30,"VARCHAR2",282
+9819,"MIDDLE_NAME","ORCID_PEOPLE","The person's middle name (where available).",30,"VARCHAR2",282
+10335,"MIDDLE_NAME","POSTDOC_ALUMNI","The person's middle name (where available).",30,"VARCHAR2",282
+11794,"MIDDLE_NAME","SPACE_PERSON_SNAPSHOT","The person's middle name (where available).",30,"VARCHAR2",282
+11793,"MIDDLE_NAME","SPACE_SUPERVISOR_SNAPSHOT","The person's middle name (where available).",30,"VARCHAR2",282
+10478,"MIDDLE_NAME","STUDENT_TEMP_I9","The person's middle name (where available).",30,"VARCHAR2",282
+12177,"MIDDLE_NAME","HR_DIVERSITY_PROMOTIONS","The person's middle name (where available).",30,"VARCHAR2",282
+4372,"MIDDLE_NAME","EMPLOYEE_DIRECTORY_FULL","The person's middle name (where available).",30,"VARCHAR2",282
+12174,"MIDDLE_NAME","HR_DIVERSITY_HIRES","The person's middle name (where available).",30,"VARCHAR2",282
+986,"MIDDLE_NAME","STUDENT_ALL","The person's middle name (where available).",30,"VARCHAR2",282
+11292,"MIDDLE_NAME","STUDENT_WITHDRAWN","The person's middle name (where available).",30,"VARCHAR2",282
+8105,"MIDDLE_NAME","SPACE_PERSON","The person's middle name (where available).",30,"VARCHAR2",282
+7372,"MIDDLE_NAME","WTW_OLD_INSTRUCTOR","The person's middle name (where available).",30,"VARCHAR2",282
+12934,"MIDDLE_NAME","WHPERSON_EMPLOYEE","The person's middle name (where available).",30,"VARCHAR2",282
+13413,"MIDDLE_NAME","HR_EMPLOYEE_EMERGENCY_CONTACT","The person's middle name (where available).",30,"VARCHAR2",282
+2203,"MIDDLE_NAME","BENEFITS_PERSON_EMPLOYEE","The person's middle name (where available).",30,"VARCHAR2",282
+1595,"MIDDLE_NAME","EMPLOYEE_BASIC","The person's middle name (where available).",30,"VARCHAR2",282
+11252,"MIDDLE_NAME","STUDENT_ALUMNI_2","The person's middle name (where available).",30,"VARCHAR2",282
+12172,"MIDDLE_NAME","HR_DIVERSITY_DEMOGRAPHICS","The person's middle name (where available).",30,"VARCHAR2",282
+9436,"MIDDLE_NAME","FPR_PEER_FACULTY","The person's middle name (where available).",30,"VARCHAR2",282
+10661,"MIDDLE_NAME","FACULTY_ALUMNI","The person's middle name (where available).",30,"VARCHAR2",282
+10762,"MIDDLE_NAME","ASR_PERSON_EMPLOYEE_WR957","The person's middle name (where available).",30,"VARCHAR2",282
+13153,"MIDDLE_NAME","STUDENT_ALUMNI_V2","The person's middle name (where available).",30,"VARCHAR2",282
+10602,"MIDDLE_NAME","SAPH_WHHR_PERSON_EMPLOYEE","The person's middle name (where available).",30,"VARCHAR2",282
+56,"MIDDLE_NAME","STUDENT","The person's middle name (where available).",30,"VARCHAR2",282
+7472,"MIDDLE_NAME","STUDENT_BASIC","The person's middle name (where available).",30,"VARCHAR2",282
+1295,"MIDDLE_NAME","DEPARTMENT_EMPLOYEE_DIRECTORY","The person's middle name (where available).",30,"VARCHAR2",282
+11574,"MIDDLE_NAME","WHHR_PERSON_EMPLOYEE","The person's middle name (where available).",30,"VARCHAR2",282
+55,"MIDDLE_NAME","EMPLOYEE","The person's middle name (where available).",30,"VARCHAR2",282
+2332,"MIDDLE_NAME","DAPER_PE_STUDENT","The person's middle name (where available).",30,"VARCHAR2",282
+7252,"MIDDLE_NAME","WTW_INSTRUCTOR","The person's middle name (where available).",30,"VARCHAR2",282
+10050,"MIDDLE_NAME","TLO_CONTACT","The person's middle name (where available).",30,"VARCHAR2",282
+6721,"MIDDLE_NAME","LSO_INSTRUCTOR","The person's middle name (where available).",30,"VARCHAR2",282
+2251,"MIDDLE_NAME","PENSION_PERSON","The person's middle name (where available).",30,"VARCHAR2",282
+88,"MIDDLE_NAME","EMPLOYEE_DIRECTORY","The person's middle name (where available).",30,"VARCHAR2",282
+10644,"MIDDLE_NAME","SAPH_HR_STUDENT_EMPLOYEE","The person's middle name (where available).",30,"VARCHAR2",282
+99,"MIDDLE_NAME","KRB_PERSON","The person's middle name (where available).",30,"VARCHAR2",282
+10605,"MIDDLE_NAME","SAPH_WHSTUDENT","The person's middle name (where available).",30,"VARCHAR2",282
+10604,"MIDDLE_NAME","SAPH_WHHR_STUDENT_EMPLOYEE","The person's middle name (where available).",30,"VARCHAR2",282
+9456,"MIDDLE_NAME","STUDENT_CLRHSE_CORE_2014SU","The person's middle name (where available).",30,"VARCHAR2",282
+1589,"MIDDLE_NAME","EHST_TRAINEE","The person's middle name (where available).",30,"VARCHAR2",282
+7982,"MIDDLE_NAME","EECS_SUBJECT_ENROLLMENT","The person's middle name (where available).",30,"VARCHAR2",282
+10009,"MIDDLE_NAME","LIBRARY_PERSON_LOOKUP","The person's middle name (where available).",30,"VARCHAR2",282
+1375,"MIDDLE_NAME","ALUMNI_BY_COURSE","The person's middle name (where available).",30,"VARCHAR2",282
+3958,"MIDDLE_NAME","ALUMNI_ADDRESS","The person's middle name (where available).",30,"VARCHAR2",282
+84,"MIDDLE_NAME","STUDENT_TERM_ENROLLMENT","The person's middle name (where available).",30,"VARCHAR2",282
+9129,"MIDDLE_NAME","FPR_PEOPLE","The person's middle name (where available).",30,"VARCHAR2",282
+7493,"MIDDLE_NAME","TRAVEL_PERSON","The person's middle name (where available).",30,"VARCHAR2",282
+10641,"MIDDLE_NAME","SAPH_HR_PERSON_ACCESSIBLE","The person's middle name (where available).",30,"VARCHAR2",282
+7574,"MIDDLE_NAME","TRAVELER","The person's middle name (where available).",30,"VARCHAR2",282
+1600,"MIDDLE_NAME","FACULTY_DIRECTORY","The person's middle name (where available).",30,"VARCHAR2",282
+1939,"MIDDLE_NAME","ALUM_BIOGRAPHIC","The person's middle name (where available).",30,"VARCHAR2",282
+2873,"MIDDLE_NAME","ALUM_DISPLAY_OPTION","The person's middle name (where available).",30,"VARCHAR2",282
+6678,"MIDDLE_NAME","LSO_ATTENDEE","The person's middle name (where available).",30,"VARCHAR2",282
+3398,"MIDDLE_NAME","STUDENT_CURRENT","The person's middle name (where available).",30,"VARCHAR2",282
+112,"MIDDLE_NAME","STUDENT_DIRECTORY_FULL","The person's middle name (where available).",30,"VARCHAR2",282
+6536,"MIDDLE_NAME","STUDENT_ADDRESS","The person's middle name (where available).",30,"VARCHAR2",282
+85,"MIDDLE_NAME","STUDENT_DIRECTORY","The person's middle name (where available).",30,"VARCHAR2",282
+2355,"MIDDLE_NAME","DAPER_ELIG_STUDENT","The person's middle name (where available).",30,"VARCHAR2",282
+6516,"MIDDLE_NAME","STUDENT_ACADEMIC","The person's middle name (where available).",30,"VARCHAR2",282
+8185,"MIDDLE_NAME","EECS_STUDENT_PERSONAL","The person's middle name (where available).",30,"VARCHAR2",282
+13173,"MIDDLE_NAME","EHSI_CURRENT_ASSIGNEE","The person's middle name (where available).",30,"VARCHAR2",282
+1010,"MIDDLE_NAME","BENEFITS_RECIPIENT","The person's middle name (where available).",30,"VARCHAR2",282
+2254,"MIDDLE_NAME","PENSION_BENEFITS_RECIPIENT","The person's middle name (where available).",30,"VARCHAR2",282
+11532,"MIDDLE_NAME","STUDENT_ARCHIVE_ALUMNI","The person's middle name (where available).",30,"VARCHAR2",282
+9231,"MIDDLE_NAME","STUDENT_BIOGRAPHIC","The person's middle name (where available).",30,"VARCHAR2",282
+13673,"MIDDLE_NAME","FPR_EMPLOYEE_DIRECTORY","The person's middle name (where available).",30,"VARCHAR2",282
+105,"MIDDLE_NAME","PERSON_HELP","The person's middle name (where available).",30,"VARCHAR2",282
+1759,"MIDDLE_NAME","HR_PERSON_EMPLOYEE","The person's middle name (where available).",30,"VARCHAR2",282
+6176,"MIDDLE_NAME","HR_PERSON_EMPLOYEE_YEAR_END","The person's middle name (where available).",30,"VARCHAR2",282
+1441,"MIDDLE_NAME","EHS_PERSON","The person's middle name (where available).",30,"VARCHAR2",282
+10643,"MIDDLE_NAME","SAPH_STUDENT_TERM_ENROLLMENT","The person's middle name (where available).",30,"VARCHAR2",282
+1814,"MIDDLE_NAME","LAB_MGMNT_DIRECTORY","The person's middle name (where available).",30,"VARCHAR2",282
+7452,"MIDDLE_NAME","TEACHING_FACULTY","The person's middle name (where available).",30,"VARCHAR2",282
+94,"MIDDLE_NAME","EMPLOYEE_LIMITED","The person's middle name (where available).",30,"VARCHAR2",282
+10603,"MIDDLE_NAME","SAPH_HR_PERSON_EMPLOYEE","The person's middle name (where available).",30,"VARCHAR2",282
+1596,"MIDDLE_NAME","EMPLOYEE_BASIC_PLUS","The person's middle name (where available).",30,"VARCHAR2",282
+9535,"MIDDLE_NAME","OSP_PERSON_HISTORY","The person's middle name (where available).",30,"VARCHAR2",282
+3118,"MIDDLE_NAME","STUDENT_ALL_ENROLLMENT","The person's middle name (where available).",30,"VARCHAR2",282
+12176,"MIDDLE_NAME","HR_DIVERSITY_TERMS","The person's middle name (where available).",30,"VARCHAR2",282
+100,"MIDDLE_NAME","MAILING_LABELS","The person's middle name (where available).",30,"VARCHAR2",282
+12935,"MIDDLE_NAME","EMPLOYEE_STATUS","The person's middle name (where available).",30,"VARCHAR2",282
+12833,"MIDDLE_NAME","TEM_ATTENDEE","The person's middle name (where available).",30,"VARCHAR2",282
+4555,"MIDDLE_NAME","HR_PERSON_EMPLOYEE_LIMITED","The person's middle name (where available).",30,"VARCHAR2",282
+1335,"MIDDLE_NAME","MIT_STUDENT_DIRECTORY","The person's middle name (where available).",30,"VARCHAR2",282
+1613,"MIDDLE_NAME","INSTRUCTOR_VIEW","The person's middle name (where available).",30,"VARCHAR2",282
+13136,"MIDDLE_NAME","SPACE_SUPERVISOR","The person's middle name (where available).",30,"VARCHAR2",282
+13253,"MIDDLE_NAME","BUDGET_EMPLOYEE_DIRECTORY","The person's middle name (where available).",30,"VARCHAR2",282
+2773,"MIDDLE_NAME","STUDENT_GRAD_ENROLLMENT","The person's middle name (where available).",30,"VARCHAR2",282
+3418,"MIDDLE_NAME","MITID_DB_ACTIVE","The person's middle name (where available).",30,"VARCHAR2",282
+8487,"MIDDLE_NAME","EECS_FRESHMAN","The person's middle name (where available).",30,"VARCHAR2",282
+1619,"MIDDLE_NAME","MITID_DB_PERSON","The person's middle name (where available).",30,"VARCHAR2",282
+13174,"FULL_NAME","EHSI_PREVIOUS_ASSIGNEE","The full name of the person.",90,"VARCHAR2",283
+8668,"FULL_NAME","OPA_PERSON","The full name of the person.",90,"VARCHAR2",283
+10230,"FULL_NAME","HR_STUDENT_EMPLOYEE","The full name of the person.",90,"VARCHAR2",283
+2954,"FULL_NAME","HR_PERSON_EMPLOYEE_BASIC","The full name of the person.",90,"VARCHAR2",283
+8002,"FULL_NAME","HR_PERSON_ACCESSIBLE","The full name of the person.",90,"VARCHAR2",283
+12853,"FULL_NAME","TEM_INSTRUCTOR","The full name of the person.",90,"VARCHAR2",283
+9819,"FULL_NAME","ORCID_PEOPLE","The full name of the person.",90,"VARCHAR2",283
+10335,"FULL_NAME","POSTDOC_ALUMNI","The full name of the person.",90,"VARCHAR2",283
+6116,"FULL_NAME","STUDENT_ETHNICITY","The full name of the person.",90,"VARCHAR2",283
+12613,"FULL_NAME","IR_AWARD_PERSONNEL_DATA","The full name of the person.",90,"VARCHAR2",283
+12372,"FULL_NAME","PAYROLL_POSTINGS","The full name of the person.",90,"VARCHAR2",283
+11794,"FULL_NAME","SPACE_PERSON_SNAPSHOT","The full name of the person.",90,"VARCHAR2",283
+11793,"FULL_NAME","SPACE_SUPERVISOR_SNAPSHOT","The full name of the person.",90,"VARCHAR2",283
+7697,"FULL_NAME","SHA_STUDENT","The full name of the person.",90,"VARCHAR2",283
+10478,"FULL_NAME","STUDENT_TEMP_I9","The full name of the person.",90,"VARCHAR2",283
+12177,"FULL_NAME","HR_DIVERSITY_PROMOTIONS","The full name of the person.",90,"VARCHAR2",283
+1298,"FULL_NAME","ADM_GRAD_APPLICANT","The full name of the person.",90,"VARCHAR2",283
+10582,"FULL_NAME","AA_GRANT","The full name of the person.",90,"VARCHAR2",283
+4372,"FULL_NAME","EMPLOYEE_DIRECTORY_FULL","The full name of the person.",90,"VARCHAR2",283
+10581,"FULL_NAME","AA_AWARD","The full name of the person.",90,"VARCHAR2",283
+12174,"FULL_NAME","HR_DIVERSITY_HIRES","The full name of the person.",90,"VARCHAR2",283
+986,"FULL_NAME","STUDENT_ALL","The full name of the person.",90,"VARCHAR2",283
+946,"FULL_NAME","STUDENT_DEGREE_AWARDED","The full name of the person.",90,"VARCHAR2",283
+11292,"FULL_NAME","STUDENT_WITHDRAWN","The full name of the person.",90,"VARCHAR2",283
+14093,"FULL_NAME","ESANDI_RETRO","The full name of the person.",90,"VARCHAR2",283
+8105,"FULL_NAME","SPACE_PERSON","The full name of the person.",90,"VARCHAR2",283
+7372,"FULL_NAME","WTW_OLD_INSTRUCTOR","The full name of the person.",90,"VARCHAR2",283
+12934,"FULL_NAME","WHPERSON_EMPLOYEE","The full name of the person.",90,"VARCHAR2",283
+8988,"FULL_NAME","AA_ARTICLE","The full name of the person.",90,"VARCHAR2",283
+13413,"FULL_NAME","HR_EMPLOYEE_EMERGENCY_CONTACT","The full name of the person.",90,"VARCHAR2",283
+2203,"FULL_NAME","BENEFITS_PERSON_EMPLOYEE","The full name of the person.",90,"VARCHAR2",283
+8827,"FULL_NAME","PAYROLL_PERSON_FULL","The full name of the person.",90,"VARCHAR2",283
+7962,"FULL_NAME","APPOINTMENT_CYBORG","The full name of the person.",90,"VARCHAR2",283
+1563,"FULL_NAME","APPOINTMENT_BASIC","The full name of the person.",90,"VARCHAR2",283
+1595,"FULL_NAME","EMPLOYEE_BASIC","The full name of the person.",90,"VARCHAR2",283
+8990,"FULL_NAME","AA_BOOK","The full name of the person.",90,"VARCHAR2",283
+12172,"FULL_NAME","HR_DIVERSITY_DEMOGRAPHICS","The full name of the person.",90,"VARCHAR2",283
+9436,"FULL_NAME","FPR_PEER_FACULTY","The full name of the person.",90,"VARCHAR2",283
+2433,"FULL_NAME","PENSION_MIT_MEDICAL_RECIPIENT","The full name of the person.",90,"VARCHAR2",283
+10661,"FULL_NAME","FACULTY_ALUMNI","The full name of the person.",90,"VARCHAR2",283
+5297,"FULL_NAME","STUDENT_CURRENT_ENROLLMENT","The full name of the person.",90,"VARCHAR2",283
+10762,"FULL_NAME","ASR_PERSON_EMPLOYEE_WR957","The full name of the person.",90,"VARCHAR2",283
+10602,"FULL_NAME","SAPH_WHHR_PERSON_EMPLOYEE","The full name of the person.",90,"VARCHAR2",283
+56,"FULL_NAME","STUDENT","The full name of the person.",90,"VARCHAR2",283
+7472,"FULL_NAME","STUDENT_BASIC","The full name of the person.",90,"VARCHAR2",283
+502,"FULL_NAME","STUDENT_DEGREE","The full name of the person.",90,"VARCHAR2",283
+58,"FULL_NAME","APPOINTMENT_OLD","The full name of the person.",90,"VARCHAR2",283
+1295,"FULL_NAME","DEPARTMENT_EMPLOYEE_DIRECTORY","The full name of the person.",90,"VARCHAR2",283
+89,"FULL_NAME","APPOINTMENT_LIMITED","The full name of the person.",90,"VARCHAR2",283
+11574,"FULL_NAME","WHHR_PERSON_EMPLOYEE","The full name of the person.",90,"VARCHAR2",283
+14094,"FULL_NAME","ESANDI_TRANSFER_IN","The full name of the person.",90,"VARCHAR2",283
+6078,"FULL_NAME","IR_AWARD_PERSON","The full name of the person.",90,"VARCHAR2",283
+55,"FULL_NAME","EMPLOYEE","The full name of the person.",90,"VARCHAR2",283
+7252,"FULL_NAME","WTW_INSTRUCTOR","The full name of the person.",90,"VARCHAR2",283
+6721,"FULL_NAME","LSO_INSTRUCTOR","The full name of the person.",90,"VARCHAR2",283
+2251,"FULL_NAME","PENSION_PERSON","The full name of the person.",90,"VARCHAR2",283
+10438,"FULL_NAME","HRBRIO_BEN_457B_NEW_ELIG","The full name of the person.",90,"VARCHAR2",283
+88,"FULL_NAME","EMPLOYEE_DIRECTORY","The full name of the person.",90,"VARCHAR2",283
+10644,"FULL_NAME","SAPH_HR_STUDENT_EMPLOYEE","The full name of the person.",90,"VARCHAR2",283
+10379,"FULL_NAME","ACAD_CHAIR_HOLDER","The full name of the person.",90,"VARCHAR2",283
+10605,"FULL_NAME","SAPH_WHSTUDENT","The full name of the person.",90,"VARCHAR2",283
+10604,"FULL_NAME","SAPH_WHHR_STUDENT_EMPLOYEE","The full name of the person.",90,"VARCHAR2",283
+1589,"FULL_NAME","EHST_TRAINEE","The full name of the person.",90,"VARCHAR2",283
+7982,"FULL_NAME","EECS_SUBJECT_ENROLLMENT","The full name of the person.",90,"VARCHAR2",283
+12493,"FULL_NAME","SUBJECT_ENROLLMENT_DTL_STELLAR","The full name of the person.",90,"VARCHAR2",283
+13113,"FULL_NAME","XFINITY_INFORMATION","The full name of the person.",90,"VARCHAR2",283
+10009,"FULL_NAME","LIBRARY_PERSON_LOOKUP","The full name of the person.",90,"VARCHAR2",283
+8970,"FULL_NAME","NEW_HIRE_EMPLOYEE_NO_KERBEROS","The full name of the person.",90,"VARCHAR2",283
+417,"FULL_NAME","SUBJECT_ENROLLMENT_DETAIL","The full name of the person.",90,"VARCHAR2",283
+9435,"FULL_NAME","EFPR_PEOPLE","The full name of the person.",90,"VARCHAR2",283
+11932,"FULL_NAME","OPA_DISCL_REVIEW","The full name of the person.",90,"VARCHAR2",283
+9331,"FULL_NAME","OSP_ERI_DISTRIBUTION","The full name of the person.",90,"VARCHAR2",283
+2454,"FULL_NAME","PRE_REG_STUDENT_STATUS","The full name of the person.",90,"VARCHAR2",283
+4058,"FULL_NAME","UROP_STUDENT","The full name of the person.",90,"VARCHAR2",283
+3440,"FULL_NAME","OSP_INVESTIGATOR","The full name of the person.",90,"VARCHAR2",283
+5719,"FULL_NAME","SUBJECT_ENROLL_GRADED_DETAIL","The full name of the person.",90,"VARCHAR2",283
+10381,"FULL_NAME","COUNTRY_OF_ORIGIN","The full name of the person.",90,"VARCHAR2",283
+84,"FULL_NAME","STUDENT_TERM_ENROLLMENT","The full name of the person.",90,"VARCHAR2",283
+13453,"FULL_NAME","STUDENT_ENROLLMENT_Y_RP_0920","The full name of the person.",90,"VARCHAR2",283
+9352,"FULL_NAME","PERSON_OSP","The full name of the person.",90,"VARCHAR2",283
+9129,"FULL_NAME","FPR_PEOPLE","The full name of the person.",90,"VARCHAR2",283
+7493,"FULL_NAME","TRAVEL_PERSON","The full name of the person.",90,"VARCHAR2",283
+10641,"FULL_NAME","SAPH_HR_PERSON_ACCESSIBLE","The full name of the person.",90,"VARCHAR2",283
+7574,"FULL_NAME","TRAVELER","The full name of the person.",90,"VARCHAR2",283
+1600,"FULL_NAME","FACULTY_DIRECTORY","The full name of the person.",90,"VARCHAR2",283
+13654,"FULL_NAME","SB_DLC_CONTACT","The full name of the person.",90,"VARCHAR2",283
+1939,"FULL_NAME","ALUM_BIOGRAPHIC","The full name of the person.",90,"VARCHAR2",283
+8225,"FULL_NAME","PAID_PERSON","The full name of the person.",90,"VARCHAR2",283
+6437,"FULL_NAME","FINAID_GRANT_STUDENT_INTEREST1","The full name of the person.",90,"VARCHAR2",283
+8967,"FULL_NAME","NEW_HIRE_EMPLOYEE","The full name of the person.",90,"VARCHAR2",283
+6678,"FULL_NAME","LSO_ATTENDEE","The full name of the person.",90,"VARCHAR2",283
+10150,"FULL_NAME","HRBRIO_OUT_OF_COUNTRY_LIST","The full name of the person.",90,"VARCHAR2",283
+13333,"FULL_NAME","LIBRARY_NAME_VARIANT","The full name of the person.",90,"VARCHAR2",283
+3398,"FULL_NAME","STUDENT_CURRENT","The full name of the person.",90,"VARCHAR2",283
+112,"FULL_NAME","STUDENT_DIRECTORY_FULL","The full name of the person.",90,"VARCHAR2",283
+3698,"FULL_NAME","PAYROLL_PERSON","The full name of the person.",90,"VARCHAR2",283

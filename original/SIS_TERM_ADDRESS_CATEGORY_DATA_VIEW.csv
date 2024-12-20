@@ -1,0 +1,113 @@
+"TERM_ADDRESS_CATEGORY_CODE","TERM_ADDRESS_CATEGORY","LIVING_GROUP_TYPE","LIVING_GROUP_TYPE_DESC","VALID_FROM_DATE","VALID_THRU_DATE","LAST_ACTIVITY_DATE","WAREHOUSE_LOAD_DATE"
+"AP","Alpha Phi","S","Sorority",14-FEB-94,,22-FEB-94,28-OCT-24
+"WOR","Worthington Place","D","Dormitory",25-JUN-98,,26-AUG-98,28-OCT-24
+"NW3","NW30","D","Dormitory",01-AUG-01,,27-AUG-01,28-OCT-24
+"SIM","Simmons Hall","D","Dormitory",08-JUL-02,,08-JUL-02,28-OCT-24
+"SID","Sidney & Pacific","D","Dormitory",08-JUL-02,,14-AUG-02,28-OCT-24
+"MAS","Maseeh Hall","D","Dormitory",01-MAY-11,,18-MAY-11,28-OCT-24
+"NWA","Ashdown","D","Dormitory",03-JUL-08,,03-JUL-08,28-OCT-24
+"PBP","Pi Beta Phi","S","Sorority",14-JUL-08,,04-MAR-09,28-OCT-24
+"405","405 Memorial Dr","D","Dormitory",09-JUL-12,,21-NOV-16,28-OCT-24
+"DPE","Delta Phi Epsilon","S","Sorority",09-SEP-15,,11-JUL-16,28-OCT-24
+"99","99 Bay State","D","Dormitory",26-APR-17,,26-APR-17,28-OCT-24
+"DST","Delta Sigma Theta","S","Sorority",16-MAR-23,,16-MAR-23,28-OCT-24
+"GJB","Graduate Junction","D","Dormitory",10-AUG-24,,20-SEP-24,28-OCT-24
+"407","407 Memorial Dr","D","Dormitory",07-JUN-16,,07-JUN-16,28-OCT-24
+"70","70 Amherst Street","D","Dormitory",10-JUL-17,,10-JUL-17,28-OCT-24
+"VAS","Vassar Street Residential Hall","D","Dormitory",04-DEC-19,,04-DEC-19,28-OCT-24
+"GRT","Graduate Tower at Site 4","D","Dormitory",04-DEC-19,,04-DEC-19,28-OCT-24
+"PSR","Phi Sigma Rho","S","Sorority",31-AUG-20,,03-MAR-21,28-OCT-24
+"AKA","Alpha Kappa Alpha","S","Sorority",16-MAR-23,,16-MAR-23,28-OCT-24
+"APA","Alpha Phi Alpha","F","Fraternity",16-MAR-23,,16-MAR-23,28-OCT-24
+"KAP","Kappa Alpha Psi","F","Fraternity",16-MAR-23,,16-MAR-23,28-OCT-24
+"PBS","Phi Beta Sigma","F","Fraternity",16-MAR-23,,16-MAR-23,28-OCT-24
+"OPB","Omega Phi Beta","S","Sorority",16-MAR-23,,16-MAR-23,28-OCT-24
+"TT","Theta Tau","F","Fraternity",28-AUG-16,,29-SEP-16,28-OCT-24
+"GJA","Graduate Junction","D","Dormitory",06-OCT-23,,20-SEP-24,28-OCT-24
+"ASP","Alpha Sigma Phi","F","Fraternity",12-MAR-13,,12-MAR-13,28-OCT-24
+"HYA","Hyatt","D","Dormitory",01-AUG-15,,04-AUG-15,28-OCT-24
+"XI","Xi Fellowship","F","Fraternity",01-AUG-23,,01-AUG-23,28-OCT-24
+"ADP","Alpha Delta Phi","F","Fraternity",14-FEB-17,,14-FEB-17,28-OCT-24
+"BEX","Bexley Hall","D","Dormitory",14-FEB-94,,16-FEB-94,28-OCT-24
+"BTP","Beta Theta Pi","F","Fraternity",14-FEB-94,,22-FEB-94,28-OCT-24
+"CP","Chi Phi","F","Fraternity",16-FEB-94,,22-FEB-94,28-OCT-24
+"DKE","Delta Kappa Epsilon","F","Fraternity",16-FEB-94,,22-FEB-94,28-OCT-24
+"DP","Delta Psi - No. 6","F","Fraternity",16-FEB-94,,27-AUG-15,28-OCT-24
+"DTD","Delta Tau Delta","F","Fraternity",16-FEB-94,,22-FEB-94,28-OCT-24
+"DU","Delta Upsilon","F","Fraternity",16-FEB-94,,22-FEB-94,28-OCT-24
+"ET","Epsilon Theta","I","ILG",16-FEB-94,,12-AUG-15,28-OCT-24
+"FEN","Fenway House","I","ILG",16-FEB-94,,22-FEB-94,28-OCT-24
+"GRE","Green Hall","D","Dormitory",17-FEB-94,,17-FEB-94,28-OCT-24
+"BAK","Baker House","D","Dormitory",14-FEB-94,,15-FEB-94,28-OCT-24
+"BUR","Burton House","D","Dormitory",14-FEB-94,,15-FEB-94,28-OCT-24
+"ASH","Ashdown House","D","Dormitory",14-FEB-94,,14-FEB-94,28-OCT-24
+"500","500 Memorial Drive","D","Dormitory",14-FEB-94,,14-FEB-94,28-OCT-24
+"MAC","MacGregor House","D","Dormitory",17-FEB-94,,28-OCT-94,28-OCT-24
+"NUD","Nu Delta","F","Fraternity",17-FEB-94,,22-FEB-94,28-OCT-24
+"OFF","Off Campus","O","Off Campus",17-FEB-94,,22-FEB-94,28-OCT-24
+"PBE","Phi Beta Epsilon","F","Fraternity",17-FEB-94,,22-FEB-94,28-OCT-24
+"PDT","Phi Delta Theta","F","Fraternity",17-FEB-94,,22-FEB-94,28-OCT-24
+"PKT","Phi Kappa Theta","F","Fraternity",17-FEB-94,,22-FEB-94,28-OCT-24
+"PSK","Phi Sigma Kappa","F","Fraternity",17-FEB-94,,22-FEB-94,28-OCT-24
+"RAN","Random Hall","D","Dormitory",17-FEB-94,,17-FEB-94,28-OCT-24
+"SAE","Sigma Alpha Epsilon","F","Fraternity",17-FEB-94,,13-DEC-21,28-OCT-24
+"SPE","Sigma Phi Epsilon","F","Fraternity",17-FEB-94,,22-FEB-94,28-OCT-24
+"TEP","Tau Epsilon Phi","F","Fraternity",17-FEB-94,,22-FEB-94,28-OCT-24
+"TXI","Theta Xi","F","Fraternity",17-FEB-94,,22-FEB-94,28-OCT-24
+"WLG","WILG","I","ILG",17-FEB-94,,01-JUN-98,28-OCT-24
+"ZBT","Zeta Beta Tau","F","Fraternity",17-FEB-94,,10-SEP-98,28-OCT-24
+"ZP","Zeta Psi","F","Fraternity",17-FEB-94,,22-FEB-94,28-OCT-24
+"AEP","Alpha Epsilon Pi","F","Fraternity",01-JAN-90,,05-JUL-06,28-OCT-24
+"TDC","Theta Delta Chi","F","Fraternity",17-FEB-94,,22-FEB-94,28-OCT-24
+"MCC","McCormick Hall","D","Dormitory",17-FEB-94,,17-FEB-94,28-OCT-24
+"KS","Kappa Sigma","F","Fraternity",17-FEB-94,,22-FEB-94,28-OCT-24
+"PKS","Phi Kappa Sigma","F","Fraternity",17-FEB-94,,22-FEB-94,28-OCT-24
+"PLP","Pi Lambda Phi","F","Fraternity",17-FEB-94,,22-FEB-94,28-OCT-24
+"EAS","Eastgate","D","Dormitory",17-FEB-94,,09-JAN-95,28-OCT-24
+"NEW","New West Campus Houses","D","Dormitory",17-FEB-94,,17-FEB-94,28-OCT-24
+"EC","East Campus","D","Dormitory",16-FEB-94,,17-FEB-94,28-OCT-24
+"EDG","Edgerton House","D","Dormitory",17-FEB-94,,09-JAN-95,28-OCT-24
+"HUN","Huntington Hall","D","Dormitory",17-FEB-94,,25-FEB-94,28-OCT-24
+"SC","Sigma Chi","F","Fraternity",17-FEB-94,,22-FEB-94,28-OCT-24
+"SEN","Senior House","D","Dormitory",30-JUL-96,,07-OCT-99,28-OCT-24
+"SH","MIT Student House","I","ILG",17-FEB-94,,22-FEB-94,28-OCT-24
+"TAN","Tang Residence Hall","D","Dormitory",17-FEB-94,,09-JAN-95,28-OCT-24
+"TC","Theta Chi","F","Fraternity",17-FEB-94,,22-FEB-94,28-OCT-24
+"WES","Westgate (old code)","D","Dormitory",17-FEB-94,,14-SEP-95,28-OCT-24
+"ONC","On-campus (office/lab)","","Unknown",31-JAN-94,,30-APR-94,28-OCT-24
+"PKA","pika","F","Fraternity",14-SEP-94,,05-JUL-06,28-OCT-24
+"AXO","Alpha Chi Omega","S","Sorority",01-SEP-94,,18-NOV-94,28-OCT-24
+"WC","Wellesley College","","Unknown",03-MAR-95,,27-OCT-22,28-OCT-24
+"SK","Sigma Kappa","S","Sorority",01-FEB-94,,19-AUG-97,28-OCT-24
+"AEF","Alpha Epsilon Phi","S","Sorority",01-FEB-94,,23-MAR-15,28-OCT-24
+"KAO","Kappa Alpha Theta","S","Sorority",01-FEB-94,,21-APR-95,28-OCT-24
+"SNU","Sigma Nu","F","Fraternity",11-SEP-95,,25-FEB-19,28-OCT-24
+"WGC","Westgate Lowrise","D","Dormitory",13-SEP-95,,14-SEP-95,28-OCT-24
+"WGT","Westgate Highrise","D","Dormitory",13-SEP-95,,21-SEP-95,28-OCT-24
+"WGA","Westgate Lowrise","D","Dormitory",13-SEP-95,,14-SEP-95,28-OCT-24
+"WGB","Westgate Lowrise","D","Dormitory",13-SEP-95,,14-SEP-95,28-OCT-24
+"WGD","Westgate Lowrise","D","Dormitory",13-SEP-95,,14-SEP-95,28-OCT-24
+"WGE","Westgate Lowrise","D","Dormitory",13-SEP-95,,14-SEP-95,28-OCT-24
+"WGF","Westgate Lowrise","D","Dormitory",13-SEP-95,,14-SEP-95,28-OCT-24
+"WGG","Westgate Lowrise","D","Dormitory",13-SEP-95,,14-SEP-95,28-OCT-24
+"WGH","Westgate Lowrise","D","Dormitory",13-SEP-95,,05-JUL-06,28-OCT-24
+"WGJ","Westgate Lowrise","D","Dormitory",13-SEP-95,,05-JUL-06,28-OCT-24
+"WGK","Westgate Lowrise","D","Dormitory",13-SEP-95,,05-JUL-06,28-OCT-24
+"APH","Alpha Phi","","Unknown",,,01-FEB-94,28-OCT-24
+"ALU","Alumni House (old code)","I","ILG",01-JAN-60,01-JAN-94,18-NOV-94,28-OCT-24
+"ATO","Alpha Tau Omega","F","Fraternity",14-FEB-94,01-JUN-10,22-FEB-94,28-OCT-24
+"CA2","Cambridge 02142","","Unknown",23-FEB-94,01-JAN-15,14-AUG-15,28-OCT-24
+"CA8","Cambridge 02138","","Unknown",01-JAN-93,01-JAN-15,14-AUG-15,28-OCT-24
+"CA9","Cambridge 02139","","Unknown",01-JAN-93,01-JAN-15,14-AUG-15,28-OCT-24
+"HHS","Hamilton House (old code)","I","ILG",01-JAN-60,01-JAN-94,18-NOV-94,28-OCT-24
+"HST","Harvard Medical School","","Unknown",10-SEP-95,01-JAN-15,14-AUG-15,28-OCT-24
+"KAT","Kappa Alpha Theta KAT","S","Sorority",01-JUL-08,02-JUL-08,12-AUG-08,28-OCT-24
+"LCA","Lambda Chi Alpha","F","Fraternity",17-FEB-94,01-JAN-15,12-AUG-15,28-OCT-24
+"PGD","Phi Gamma Delta","F","Fraternity",17-FEB-94,07-SEP-98,29-SEP-98,28-OCT-24
+"PIK","Pi Kappa Alpha","F","Fraternity",01-FEB-10,01-JAN-15,12-AUG-15,28-OCT-24
+"PMD","Phi Mu Delta(old code;now NUD)","F","Fraternity",01-JAN-60,01-JAN-94,18-NOV-94,28-OCT-24
+"SAM","Sigma Alpha Mu (old; now FEN)","F","Fraternity",01-JAN-60,01-JAN-94,18-NOV-94,28-OCT-24
+"SM1","Somerville 02143","","Unknown",13-FEB-13,01-JAN-15,14-AUG-15,28-OCT-24
+"SN","Sigma Nu (old; now ET)","F","Fraternity",01-JAN-60,01-JAN-94,18-NOV-94,28-OCT-24
+"WH","Woods Hole Oceanographic Inst","","Unknown",03-AUG-95,01-JAN-15,14-AUG-15,28-OCT-24
+"WSD","West Street (old code)","I","ILG",01-JAN-60,01-JAN-94,18-NOV-94,28-OCT-24

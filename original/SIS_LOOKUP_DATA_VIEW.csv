@@ -1,0 +1,68 @@
+"LOOKUP_TYPE","CODE","DESCRIPTION","WAREHOUSE_LOAD_DATE"
+"Load Level","3Q","3/4 Time",28-OCT-24
+"Load Level","ET","Early Thesis",28-OCT-24
+"Load Level","FS","Full Time Senior",28-OCT-24
+"Load Level","FT","Full Time",28-OCT-24
+"Load Level","HT","Half Time",28-OCT-24
+"Load Level","LH","Less than half time",28-OCT-24
+"Load Level","NA","Cross-registered",28-OCT-24
+"Load Level","NL","No Load",28-OCT-24
+"Registration Type","N","Nonresident",28-OCT-24
+"Registration Type","R","Regular",28-OCT-24
+"Registration Type","S","Special",28-OCT-24
+"Registration Type","X","Cross-Registered",28-OCT-24
+"Enrollment Status","CN","Candidate Not Registered",28-OCT-24
+"Enrollment Status","CO","Co-op Term",28-OCT-24
+"Enrollment Status","DH","Degree Held Previously",28-OCT-24
+"Enrollment Status","DN","Dropped Term, Not Attended",28-OCT-24
+"Enrollment Status","DS","Domestic Study",28-OCT-24
+"Enrollment Status","DT","Dropped Term",28-OCT-24
+"Enrollment Status","EL","Eligible to Register",28-OCT-24
+"Enrollment Status","ER","Error",28-OCT-24
+"Enrollment Status","ET","Early Thesis",28-OCT-24
+"Enrollment Status","FC","Fall Term Candidate",28-OCT-24
+"Enrollment Status","FS","Foreign Study",28-OCT-24
+"Enrollment Status","GE","General Exam, No Subj Reg",28-OCT-24
+"Enrollment Status","IN","Not Eligible to Register",28-OCT-24
+"Enrollment Status","NA","Not Attended",28-OCT-24
+"Enrollment Status","NR","Not Returning",28-OCT-24
+"Enrollment Status","NS","No Show",28-OCT-24
+"Enrollment Status","NW","Registered and Withdrew",28-OCT-24
+"Enrollment Status","PR","Pre-Registered",28-OCT-24
+"Enrollment Status","RE","Registered",28-OCT-24
+"Enrollment Status","WE","Withdrew Before 5th Week",28-OCT-24
+"Enrollment Status","WR","Withdrew After 5th Week",28-OCT-24
+"Registration Group","C","Continuing Registration or Non-Resident Student",28-OCT-24
+"Registration Group","E","Entering Freshman (Reg)",28-OCT-24
+"Registration Group","F","Registered Student with Former Attendance",28-OCT-24
+"Registration Group","N","New Regular Grad Student",28-OCT-24
+"Registration Group","O","New Special/Cross-Registered Student",28-OCT-24
+"Registration Group","P","Special/Cross-Registered, Previously Attended",28-OCT-24
+"Registration Group","R","New Regular Grad/Former MIT Undergraduate",28-OCT-24
+"Registration Group","T","Entering Transfer Student (Reg)",28-OCT-24
+"Registration Status","AF","Advanced Standing Freshman",28-OCT-24
+"Registration Status","AP","Advanced Placement",28-OCT-24
+"Registration Status","AS","Advanced Standing",28-OCT-24
+"Registration Status","AT","Attended, Not registered",28-OCT-24
+"Registration Status","DE","Dropped Early, Not recorded",28-OCT-24
+"Registration Status","DN","Dropped, No Tuition",28-OCT-24
+"Registration Status","DR","Dropped after 5th week, On Record",28-OCT-24
+"Registration Status","ER","Error Registration",28-OCT-24
+"Registration Status","ET","Early Thesis",28-OCT-24
+"Registration Status","LX","Listener",28-OCT-24
+"Registration Status","NE","Dropped on Reg Day, No Tuition",28-OCT-24
+"Registration Status","PJ","Pre-Registered Jr/Sr P/D/F",28-OCT-24
+"Registration Status","PL","Pre-Registered Listener",28-OCT-24
+"Registration Status","PP","?",28-OCT-24
+"Registration Status","PR","Pre-Registered",28-OCT-24
+"Registration Status","RE","Registered",28-OCT-24
+"Registration Status","RJ","Registered Jr/Sr PDF",28-OCT-24
+"Registration Status","RL","Registered Listener",28-OCT-24
+"Registration Status","RP","Registered Graduate P/D/F",28-OCT-24
+"Registration Status","RX","Registered Exploratory Subject",28-OCT-24
+"Registration Status","TC","Transfer Credit",28-OCT-24
+"Registration Status","TP","Transfer Advanced Placement Credit",28-OCT-24
+"Registration Status","UR","UROP (Paid)",28-OCT-24
+"HGN","G","Graduate level program",28-OCT-24
+"HGN","H","Highter level graduate program",28-OCT-24
+"HGN","N","Not for graduate credit",28-OCT-24

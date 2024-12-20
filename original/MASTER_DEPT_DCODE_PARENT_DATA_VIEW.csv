@@ -1,0 +1,340 @@
+"DEPT_ID","D_CODE","D_NAME","PARENT_ID","PARENT_D_CODE","PARENT_D_NAME","WAREHOUSE_LOAD_DATE"
+11396,"D_RLE","Research Lab Of Electronics",11493,"D_VPRES","VP Research",28-OCT-24
+11397,"D_BIOLOGY","Biology",12263,"D_SCHOOL_SCI","School of Science",28-OCT-24
+11398,"D_PRES_AREA","President's area",10000,"D_ALL","All Departments",28-OCT-24
+11399,"D_DIBNER","Dibner Institute",13611,"D_OTHER_ORG","Outside organizations affiliated with MIT",28-OCT-24
+11400,"D_INST_PROF","Institute Professors",13630,"D_OFC_PROVOST","Office of the Provost Area",28-OCT-24
+11410,"D_ARCH","Architecture",12261,"D_SCHOOL_ARCH","School of Architecture & Planning",28-OCT-24
+11411,"D_TLO","OSATT - Techology Licensing Office",15701,"D_OSATT_AREA","Office of Strategic Alliances & Tech Transfer Area",28-OCT-24
+11434,"D_RESDEV","Vice President for Resource Development",12262,"D_EXECVP_AREA","Executive Vice President's Area",28-OCT-24
+11439,"D_LIBRARIES","Libraries",13761,"D_LIB_TR_PRESS","Libraries, Tech Review, and MIT Press",28-OCT-24
+11453,"D_HST","Harvard-MIT Health Sciences & Technology",11493,"D_VPRES","VP Research",28-OCT-24
+11459,"D_DEANGRAD","Dean Of The Grad School Office",11493,"D_VPRES","VP Research",28-OCT-24
+11465,"D_HAYSTACK","Haystack Observatory",11493,"D_VPRES","VP Research",28-OCT-24
+11471,"D_MAGLAB","Francis Bitter Magnet Laboratory",11493,"D_VPRES","VP Research",28-OCT-24
+11477,"D_CEHS","Center for Environmental Health Sciences",11493,"D_VPRES","VP Research",28-OCT-24
+11488,"D_CLINRES","Clinical Research Center",11493,"D_VPRES","VP Research",28-OCT-24
+11493,"D_VPRES","VP Research",12938,"D_PROVOST_AREA","Provost Area",28-OCT-24
+11494,"D_CMSE","Center for Materials Science & Engineering",11493,"D_VPRES","VP Research",28-OCT-24
+11500,"D_COMPMED","Division Of Comparative Medicine",11493,"D_VPRES","VP Research",28-OCT-24
+11523,"D_EECS","Electrical Engineering & Computer Science",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+11535,"D_NRL","Nuclear Reactor Laboratory",11493,"D_VPRES","VP Research",28-OCT-24
+11547,"D_PSFC","Plasma Sciences & Fusion Center",11493,"D_VPRES","VP Research",28-OCT-24
+11559,"D_TDP","Technology & Development Program",11493,"D_VPRES","VP Research",28-OCT-24
+11565,"D_VPRESOFF","Vice President for Research",11493,"D_VPRES","VP Research",28-OCT-24
+11570,"D_WHIT","Whitaker College",11493,"D_VPRES","VP Research",28-OCT-24
+11576,"D_PROVOST","Provost's Office",13630,"D_OFC_PROVOST","Office of the Provost Area",28-OCT-24
+11585,"D_PRESIDENT","Office of President / Chair",11398,"D_PRES_AREA","President's area",28-OCT-24
+11594,"D_MUSEUM","MIT Museum",13631,"D_ARTS_PROVOST","Associate Provost for the Arts",28-OCT-24
+11599,"D_LVA","List Visual Arts Center",13631,"D_ARTS_PROVOST","Associate Provost for the Arts",28-OCT-24
+11604,"D_ARTS","Office of The Arts",13631,"D_ARTS_PROVOST","Associate Provost for the Arts",28-OCT-24
+11610,"D_CHEM","Chemistry",12263,"D_SCHOOL_SCI","School of Science",28-OCT-24
+11616,"D_EAPS","Earth, Atmospheric & Planetary Sciences",12263,"D_SCHOOL_SCI","School of Science",28-OCT-24
+11622,"D_B&CS","Brain & Cognitive Sciences",12263,"D_SCHOOL_SCI","School of Science",28-OCT-24
+11634,"D_MATHS","Mathematics",12263,"D_SCHOOL_SCI","School of Science",28-OCT-24
+11639,"D_DEANSCI","Dean Of Science",12263,"D_SCHOOL_SCI","School of Science",28-OCT-24
+11651,"D_MECHE","Mechanical Engineering",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+11657,"D_MEDIA","Media Lab",12261,"D_SCHOOL_ARCH","School of Architecture & Planning",28-OCT-24
+11663,"D_MAS","Media Arts & Sciences Program",12261,"D_SCHOOL_ARCH","School of Architecture & Planning",28-OCT-24
+11677,"D_CAES","Center for Advanced Educational Services",13630,"D_OFC_PROVOST","Office of the Provost Area",28-OCT-24
+11682,"D_CIS","Center for International Studies",12260,"D_SCHOOL_HUM","School of Humanities & Social Science",28-OCT-24
+11688,"D_DHSS","Dean of Humanities & Social Sciences",12260,"D_SCHOOL_HUM","School of Humanities & Social Science",28-OCT-24
+11693,"D_ECO","Economics",12260,"D_SCHOOL_HUM","School of Humanities & Social Science",28-OCT-24
+11699,"D_FLL","Foreign Languages & Literature",12260,"D_SCHOOL_HUM","School of Humanities & Social Science",28-OCT-24
+11704,"D_HISTORY","History",12260,"D_SCHOOL_HUM","School of Humanities & Social Science",28-OCT-24
+11709,"D_L&P","Linguistics & Philosophy",12260,"D_SCHOOL_HUM","School of Humanities & Social Science",28-OCT-24
+11714,"D_LIT","Literature",12260,"D_SCHOOL_HUM","School of Humanities & Social Science",28-OCT-24
+11719,"D_MTA","Music & Theater Arts",12260,"D_SCHOOL_HUM","School of Humanities & Social Science",28-OCT-24
+11724,"D_POLSCI","Political Science",12260,"D_SCHOOL_HUM","School of Humanities & Social Science",28-OCT-24
+11729,"D_STS","Program In Science, Technology & Society",12260,"D_SCHOOL_HUM","School of Humanities & Social Science",28-OCT-24
+11735,"D_ANTHRO","Anthropology",12260,"D_SCHOOL_HUM","School of Humanities & Social Science",28-OCT-24
+11755,"D_CSR","Kavli Institute for Astrophysics & Space Research",12263,"D_SCHOOL_SCI","School of Science",28-OCT-24
+11761,"D_ESG","Experimental Study Group",12336,"D_DUE","Dean for Undergraduate Education",28-OCT-24
+11772,"D_PHYSICS","Physics",12263,"D_SCHOOL_SCI","School of Science",28-OCT-24
+11778,"D_SPEC","Spectroscopy Laboratory",12263,"D_SCHOOL_SCI","School of Science",28-OCT-24
+11789,"D_CRE","Center for Real Estate",12261,"D_SCHOOL_ARCH","School of Architecture & Planning",28-OCT-24
+11794,"D_DEANARCH","Dean of Architecture",12261,"D_SCHOOL_ARCH","School of Architecture & Planning",28-OCT-24
+11799,"D_DUSP","Urban Studies & Planning",12261,"D_SCHOOL_ARCH","School of Architecture & Planning",28-OCT-24
+11805,"D_BPEC","Biotechnology Process Engineering Center",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+11811,"D_CIPD","Center for Innovation in Product Development",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+11822,"D_IPC","Industrial Performance Center",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+11838,"D_LIDS","Laboratory for Information & Decision Systems",15680,"D_COLLEGE_COMPU","Stephen A. Schwarzman College of Computing",28-OCT-24
+11844,"D_NUCENG","Nuclear Science and Engineering",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+11850,"D_SDM","Systems Design & Management",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+11856,"D_TPP","Technology & Policy Program",15680,"D_COLLEGE_COMPU","Stephen A. Schwarzman College of Computing",28-OCT-24
+11861,"D_AVS","Audiovisual Services",12335,"D_DSL","Dean for Student Life",28-OCT-24
+11867,"D_AUDIT","Audit Division",12262,"D_EXECVP_AREA","Executive Vice President's Area",28-OCT-24
+11872,"D_POLICE","MIT Police",12262,"D_EXECVP_AREA","Executive Vice President's Area",28-OCT-24
+11883,"D_COPYTECH","Copy Technology Center",11398,"D_PRES_AREA","President's area",28-OCT-24
+11889,"D_ENDICOTT","Endicott House",12335,"D_DSL","Dean for Student Life",28-OCT-24
+11894,"D_IS&T","Information Services and Technology",12262,"D_EXECVP_AREA","Executive Vice President's Area",28-OCT-24
+11903,"D_LFO","Lincoln Fiscal Office",14040,"D_FINANCE_AREA","VP Finance Area",28-OCT-24
+11914,"D_OBFP","Office of Budget & Financial Planning",12262,"D_EXECVP_AREA","Executive Vice President's Area",28-OCT-24
+11919,"D_OSP","Office of Sponsored Programs",11493,"D_VPRES","VP Research",28-OCT-24
+11935,"D_GRAY","Gray House",12262,"D_EXECVP_AREA","Executive Vice President's Area",28-OCT-24
+11940,"D_PROCURE","Procurement Office",14161,"D_SOURCING_AREA","Sourcing Area",28-OCT-24
+11945,"D_PROPERTY","Property Office",14040,"D_FINANCE_AREA","VP Finance Area",28-OCT-24
+11955,"D_MITIMCO","MIT Investment Management Company",12262,"D_EXECVP_AREA","Executive Vice President's Area",28-OCT-24
+11961,"D_CEE","Civil & Environmental Engineering",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+11967,"D_CONCOURSE","Concourse",12336,"D_DUE","Dean for Undergraduate Education",28-OCT-24
+11972,"D_DOE","Dean of Engineering",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+11977,"D_ECSEL","ECSEL",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+11982,"D_EIP","Engineering Internship Program",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+11986,"D_MITES","Minority Intro to Engineering & Science Program",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+11996,"D_ISP","Integrated Studies Program",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+12007,"D_LEES","Lab for Electromagnetic & Electrical Systems",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+12013,"D_MPC","Materials Processing Center",11493,"D_VPRES","VP Research",28-OCT-24
+12019,"D_MTL","Microsystems Technology Laboratory",11493,"D_VPRES","VP Research",28-OCT-24
+12031,"D_SMA","Singapore/MIT Alliance",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+12037,"D_EXECVP","Executive Vice President's Office",12262,"D_EXECVP_AREA","Executive Vice President's Area",28-OCT-24
+12041,"D_FACILITIES","Department of Facilities",14920,"D_FACILITIES_AR","Facilities Area",28-OCT-24
+12049,"D_CFELLOWS","Central Fellowships",11493,"D_VPRES","VP Research",28-OCT-24
+12059,"D_HR","Human Resources Department",13618,"D_HR_AREA","HR Area",28-OCT-24
+12065,"D_MEDICAL","MIT Health",12262,"D_EXECVP_AREA","Executive Vice President's Area",28-OCT-24
+12071,"D_SLOAN","Sloan School of Management",12951,"D_SLOAN_SCHOOL","Sloan School Area",28-OCT-24
+12180,"D_CHANCELLOR","Chancellor's Office",13632,"D_CHANCEL_AREA","Chancellor's Area",28-OCT-24
+12187,"D_ARCHAE","Archaeology",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+12193,"D_CBE","Center for Biomedical Engineering",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+12199,"D_CHEME","Chemical Engineering",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+12205,"D_DMSE","Dept Material Science and Engineering",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+12215,"D_ICAMPUS","Project I-Campus",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+12221,"D_CREDITUNION","Credit Union",13611,"D_OTHER_ORG","Outside organizations affiliated with MIT",28-OCT-24
+12245,"D_PRESS","MIT Press",13761,"D_LIB_TR_PRESS","Libraries, Tech Review, and MIT Press",28-OCT-24
+12255,"D_PIW","Dean of Engineering Program in Writing",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+12259,"D_SCHOOL_ENG","School of Engineering",12938,"D_PROVOST_AREA","Provost Area",28-OCT-24
+12260,"D_SCHOOL_HUM","School of Humanities & Social Science",12938,"D_PROVOST_AREA","Provost Area",28-OCT-24
+12261,"D_SCHOOL_ARCH","School of Architecture & Planning",12938,"D_PROVOST_AREA","Provost Area",28-OCT-24
+12262,"D_EXECVP_AREA","Executive Vice President's Area",10000,"D_ALL","All Departments",28-OCT-24
+12263,"D_SCHOOL_SCI","School of Science",12938,"D_PROVOST_AREA","Provost Area",28-OCT-24
+12273,"D_IPCOUNSEL","Intellectual Property Counsel",11493,"D_VPRES","VP Research",28-OCT-24
+12286,"D_ALUM","Alumni Association",12262,"D_EXECVP_AREA","Executive Vice President's Area",28-OCT-24
+12335,"D_DSL","Dean for Student Life",12938,"D_PROVOST_AREA","Provost Area",28-OCT-24
+12336,"D_DUE","Dean for Undergraduate Education",12938,"D_PROVOST_AREA","Provost Area",28-OCT-24
+12349,"D_MCGOVERN","McGovern Institute for Brain Research",13630,"D_OFC_PROVOST","Office of the Provost Area",28-OCT-24
+12514,"D_TECHREVIEW","Technology Review",13761,"D_LIB_TR_PRESS","Libraries, Tech Review, and MIT Press",28-OCT-24
+12524,"D_WALLACE","Wallace Observatory",12263,"D_SCHOOL_SCI","School of Science",28-OCT-24
+12533,"D_CPSE","Council on Primary and Secondary Education",12938,"D_PROVOST_AREA","Provost Area",28-OCT-24
+12538,"D_CMI","Cambridge-MIT Institute",13630,"D_OFC_PROVOST","Office of the Provost Area",28-OCT-24
+12552,"D_CAC","Campus Activities Complex",12335,"D_DSL","Dean for Student Life",28-OCT-24
+12559,"D_CHAPLAINS","Chaplains",12335,"D_DSL","Dean for Student Life",28-OCT-24
+12575,"D_DSL:HQ","Dean for Student Life - Headquarters",12335,"D_DSL","Dean for Student Life",28-OCT-24
+12581,"D_MITCARD","MIT Card Office",14920,"D_FACILITIES_AR","Facilities Area",28-OCT-24
+12605,"D_LFEE","MIT Energy Initiative",11493,"D_VPRES","VP Research",28-OCT-24
+12609,"D_ACAD","Academic Services",12336,"D_DUE","Dean for Undergraduate Education",28-OCT-24
+12615,"D_ADM","Admissions",12336,"D_DUE","Dean for Undergraduate Education",28-OCT-24
+12622,"D_CSPA","Career Serv & Pre-Prof Advising",12336,"D_DUE","Dean for Undergraduate Education",28-OCT-24
+12627,"D_DUE:HQ","DUE HQ",12336,"D_DUE","Dean for Undergraduate Education",28-OCT-24
+12632,"D_OME","Office of Minority Education",12336,"D_DUE","Dean for Undergraduate Education",28-OCT-24
+12637,"D_REG","Registrar",12336,"D_DUE","Dean for Undergraduate Education",28-OCT-24
+12657,"D_SFS","Student Financial Services",12336,"D_DUE","Dean for Undergraduate Education",28-OCT-24
+12669,"D_SSIT","Student Services Information Technology",12336,"D_DUE","Dean for Undergraduate Education",28-OCT-24
+12674,"D_TLL","Teaching and Learning Lab",12336,"D_DUE","Dean for Undergraduate Education",28-OCT-24
+12738,"D_LEMELSON","Lemelson-MIT Project",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+12746,"D_ENTSRVCS","Enterprise Services",12335,"D_DSL","Dean for Student Life",28-OCT-24
+12775,"D_OCW","Open Courseware",14620,"D_DL_AREA","Digital Learning Area",28-OCT-24
+12785,"D_UPOP","Undergrad Practice Op Prog",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+12790,"D_EHSO","Environment, Health and Safety Office",13620,"D_SC_ENVP","Senior Council and Environmental Programs",28-OCT-24
+12805,"D_EDGERTON","Edgerton Center",15480,"D_OVC_AREA","Office of the Vice Chancellor's Area",28-OCT-24
+12811,"D_DCTI","Deshpande Center for Technological Innovation",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+12822,"D_HPMIT","HP-MIT Alliance",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+12830,"D_ISN","Institute for Soldier Nanotechnologies",11493,"D_VPRES","VP Research",28-OCT-24
+12883,"D_ATHLETICS","Dept of Athletics, Phys Ed, & Recreation",12335,"D_DSL","Dean for Student Life",28-OCT-24
+12887,"D_BIOENG","Biological Engineering",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+12888,"D_ASP","Advanced Study Program",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+12890,"D_TIE","Tech. Innovation and Entrepreneurship",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+12921,"D_LINCOLN","Lincoln Laboratory",12938,"D_PROVOST_AREA","Provost Area",28-OCT-24
+12923,"D_HOUSING","Housing and Residential Services",12335,"D_DSL","Dean for Student Life",28-OCT-24
+12924,"D_STUDORG","Student Organizations",12335,"D_DSL","Dean for Student Life",28-OCT-24
+12938,"D_PROVOST_AREA","Provost Area",10000,"D_ALL","All Departments",28-OCT-24
+12941,"D_AEROASTRO","Aeronautics and Astronautics",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+12945,"D_CSBI","Computational and Systems Biology",12263,"D_SCHOOL_SCI","School of Science",28-OCT-24
+12951,"D_SLOAN_SCHOOL","Sloan School Area",12938,"D_PROVOST_AREA","Provost Area",28-OCT-24
+12965,"D_CTL","Center for Transportation & Logistics",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+12980,"D_PEP","Professional Education Programs",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+12984,"D_PILM","Picower Institute for Learning & Memory",12263,"D_SCHOOL_SCI","School of Science",28-OCT-24
+12992,"D_CSAIL","Computer Sciences and Artificial Intelligence Lab",15680,"D_COLLEGE_COMPU","Stephen A. Schwarzman College of Computing",28-OCT-24
+12993,"D_BROAD","The Broad Institute",11493,"D_VPRES","VP Research",28-OCT-24
+13203,"D_BA","Benefits Administration",13618,"D_HR_AREA","HR Area",28-OCT-24
+13204,"D_DINING","Campus Dining",12335,"D_DSL","Dean for Student Life",28-OCT-24
+13600,"D_LNS","Laboratory for Nuclear Science",12263,"D_SCHOOL_SCI","School of Science",28-OCT-24
+13602,"D_ARCH_DEPTHEAD","Architecture Department Heads",12261,"D_SCHOOL_ARCH","School of Architecture & Planning",28-OCT-24
+13604,"D_PPST","Program in Polymer Sciences & Technology",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+13605,"D_HUM_DEPTHEAD","Humanities and Social Sciences Department Heads",12260,"D_SCHOOL_HUM","School of Humanities & Social Science",28-OCT-24
+13606,"D_SCI_DEPTHEAD","School of Science Department Heads",12263,"D_SCHOOL_SCI","School of Science",28-OCT-24
+13607,"D_CBI","Center for Biomedical Innovation",15680,"D_COLLEGE_COMPU","Stephen A. Schwarzman College of Computing",28-OCT-24
+13608,"D_VPRES_DEPTHD","VP for Research Department Heads",11493,"D_VPRES","VP Research",28-OCT-24
+13609,"D_ESI","Earth Systems Initiative",11493,"D_VPRES","VP Research",28-OCT-24
+13610,"D_BPMIT","BP-MIT Program",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+13611,"D_OTHER_ORG","Outside organizations affiliated with MIT",10000,"D_ALL","All Departments",28-OCT-24
+13612,"D_WHITEHEAD","Whitehead Institute",13611,"D_OTHER_ORG","Outside organizations affiliated with MIT",28-OCT-24
+13613,"D_DRAPER","Draper Laboratories",13611,"D_OTHER_ORG","Outside organizations affiliated with MIT",28-OCT-24
+13614,"D_CENTRAL_PROF","Central Professorships",13630,"D_OFC_PROVOST","Office of the Provost Area",28-OCT-24
+13615,"D_OTHER_EXPENSE","Other budgeted expenses",12938,"D_PROVOST_AREA","Provost Area",28-OCT-24
+13616,"D_SR_DEAN_STDNT","Senior Associate Dean of Students",12335,"D_DSL","Dean for Student Life",28-OCT-24
+13617,"D_DEFUNCT","Defunct units",13740,"D_UNDEF_DEFUNCT","Undefined or defunct",28-OCT-24
+13618,"D_HR_AREA","HR Area",12262,"D_EXECVP_AREA","Executive Vice President's Area",28-OCT-24
+13619,"D_FAMILY_RESCTR","Family Resource Center",13618,"D_HR_AREA","HR Area",28-OCT-24
+13620,"D_SC_ENVP","Senior Council and Environmental Programs",12262,"D_EXECVP_AREA","Executive Vice President's Area",28-OCT-24
+13621,"D_COFHE","Consortium on Financing Higher Education",13611,"D_OTHER_ORG","Outside organizations affiliated with MIT",28-OCT-24
+13622,"D_PRES_EMERITUS","President Emeritus",11398,"D_PRES_AREA","President's area",28-OCT-24
+13623,"D_CORP_CHAIR","Office of the Corporate Chair",11398,"D_PRES_AREA","President's area",28-OCT-24
+13624,"D_INST_RELATED","Institute Related",13629,"D_INST_REL_AREA","Miscellaneous Institute Related",28-OCT-24
+13625,"D_ROTC","ROTC area",12336,"D_DUE","Dean for Undergraduate Education",28-OCT-24
+13626,"D_LONGTERM_DIS","Long term disability",13629,"D_INST_REL_AREA","Miscellaneous Institute Related",28-OCT-24
+13628,"D_OTHER_PAYMENT","Payroll - other payments",13629,"D_INST_REL_AREA","Miscellaneous Institute Related",28-OCT-24
+13629,"D_INST_REL_AREA","Miscellaneous Institute Related",10000,"D_ALL","All Departments",28-OCT-24
+13630,"D_OFC_PROVOST","Office of the Provost Area",12938,"D_PROVOST_AREA","Provost Area",28-OCT-24
+13631,"D_ARTS_PROVOST","Associate Provost for the Arts",12938,"D_PROVOST_AREA","Provost Area",28-OCT-24
+13632,"D_CHANCEL_AREA","Chancellor's Area",12938,"D_PROVOST_AREA","Provost Area",28-OCT-24
+13633,"D_VP_SEC_CORP","VP and Secretary of the Corporation",11398,"D_PRES_AREA","President's area",28-OCT-24
+13634,"D_ASO:HQ","Administrative Services Org. Headquarters",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+13638,"D_CGCS","Center for Global Change Science",12263,"D_SCHOOL_SCI","School of Science",28-OCT-24
+13639,"D_UNDEF","Undefined - no DLC",13740,"D_UNDEF_DEFUNCT","Undefined or defunct",28-OCT-24
+13700,"D_UAAP","Office of First Year Advising & Programs",12336,"D_DUE","Dean for Undergraduate Education",28-OCT-24
+13701,"D_OFS","Faculty & Curriculum Support",12336,"D_DUE","Dean for Undergraduate Education",28-OCT-24
+13702,"D_OSA","Office of Study Abroad",12336,"D_DUE","Dean for Undergraduate Education",28-OCT-24
+13740,"D_UNDEF_DEFUNCT","Undefined or defunct",10000,"D_ALL","All Departments",28-OCT-24
+13760,"D_FFHE","Forum for the Future of Higher Education",13611,"D_OTHER_ORG","Outside organizations affiliated with MIT",28-OCT-24
+13761,"D_LIB_TR_PRESS","Libraries, Tech Review, and MIT Press",12938,"D_PROVOST_AREA","Provost Area",28-OCT-24
+13780,"D_PORTUGAL","MIT-Portugal Program",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+13781,"D_OEIT","Office of Education, Innovation and Technology",14620,"D_DL_AREA","Digital Learning Area",28-OCT-24
+13782,"D_OEL","Office of Experiential Learning",12336,"D_DUE","Dean for Undergraduate Education",28-OCT-24
+13840,"D_STUDDEV","Student Development",12335,"D_DSL","Dean for Student Life",28-OCT-24
+13860,"D_SMART","Singapore-MIT Alliance for Res & Tech",12938,"D_PROVOST_AREA","Provost Area",28-OCT-24
+13880,"D_GLP","Gordon Leadership Program",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+13900,"D_OMA","Office of Major Agreements",12262,"D_EXECVP_AREA","Executive Vice President's Area",28-OCT-24
+13920,"D_OUTSIDE_INST","Other institutions outside of MIT",10000,"D_ALL","All Departments",28-OCT-24
+13921,"D_CROSS_REG","Institutions where students are cross-registered",13920,"D_OUTSIDE_INST","Other institutions outside of MIT",28-OCT-24
+13940,"D_STUDENT_FRESH","Freshman",12938,"D_PROVOST_AREA","Provost Area",28-OCT-24
+13960,"D_VPRLL","VPR - LINCOLN LAB",11493,"D_VPRES","VP Research",28-OCT-24
+13980,"D_HHMI","Howard Hughes Medical Institute",12263,"D_SCHOOL_SCI","School of Science",28-OCT-24
+14000,"D_III","International Innovation Initiative",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+14020,"D_VPFINANCE","Vice President for Finance",14040,"D_FINANCE_AREA","VP Finance Area",28-OCT-24
+14040,"D_FINANCE_AREA","VP Finance Area",12262,"D_EXECVP_AREA","Executive Vice President's Area",28-OCT-24
+14060,"D_BROADAFF","Broad Affiliations",11493,"D_VPRES","VP Research",28-OCT-24
+14080,"D_KI","Koch Institute for Integrative Cancer Research",11493,"D_VPRES","VP Research",28-OCT-24
+14100,"D_SOURCING","Sourcing",14161,"D_SOURCING_AREA","Sourcing Area",28-OCT-24
+14120,"D_CAS","Controller & Accounting Services",14040,"D_FINANCE_AREA","VP Finance Area",28-OCT-24
+14140,"D_BF&T","Budget, Finance & Treasury",14040,"D_FINANCE_AREA","VP Finance Area",28-OCT-24
+14161,"D_SOURCING_AREA","Sourcing Area",14040,"D_FINANCE_AREA","VP Finance Area",28-OCT-24
+14162,"D_TRAVEL","Travel office",14161,"D_SOURCING_AREA","Sourcing Area",28-OCT-24
+14180,"D_BROAD:CB","Broad Chemical Biology",11493,"D_VPRES","VP Research",28-OCT-24
+14200,"D_SSS","Student Support Services",12336,"D_DUE","Dean for Undergraduate Education",28-OCT-24
+14220,"D_ACT","Program in Art Culture & Technology",12261,"D_SCHOOL_ARCH","School of Architecture & Planning",28-OCT-24
+14221,"D_VPFINSD","VP Finance Senior Director",14040,"D_FINANCE_AREA","VP Finance Area",28-OCT-24
+14222,"D_VPFINIR","VP Finance Institute Related",14040,"D_FINANCE_AREA","VP Finance Area",28-OCT-24
+14223,"D_VPFINHR","VP Finance HR",14040,"D_FINANCE_AREA","VP Finance Area",28-OCT-24
+14225,"D_TERRASCOPE","Terrascope",12336,"D_DUE","Dean for Undergraduate Education",28-OCT-24
+14226,"D_PARKING","Parking and Transportation",12262,"D_EXECVP_AREA","Executive Vice President's Area",28-OCT-24
+14228,"D_REVENUES","Tuition Fees and Related Revenues",12336,"D_DUE","Dean for Undergraduate Education",28-OCT-24
+14241,"D_CAVS","Center for Advanced Visual Studies",14340,"D_OBSOLETE","Obsolete DLC codes",28-OCT-24
+14260,"D_LEADDEV","Leadership Development",12335,"D_DSL","Dean for Student Life",28-OCT-24
+14280,"D_SUTD","MIT-SUTD Collaboration",13630,"D_OFC_PROVOST","Office of the Provost Area",28-OCT-24
+14300,"D_MGHPCC","Mass Green High Performance Computing",13611,"D_OTHER_ORG","Outside organizations affiliated with MIT",28-OCT-24
+14340,"D_OBSOLETE","Obsolete DLC codes",10000,"D_ALL","All Departments",28-OCT-24
+14360,"D_PCLM","Picower Institute for Learning and Memory",14340,"D_OBSOLETE","Obsolete DLC codes",28-OCT-24
+14361,"D_DAPER","Department of Athletics",14340,"D_OBSOLETE","Obsolete DLC codes",28-OCT-24
+14380,"D_MASDAR","Masdar Institute",13630,"D_OFC_PROVOST","Office of the Provost Area",28-OCT-24
+14381,"D_SKOLKOVO","Skolkovo",13630,"D_OFC_PROVOST","Office of the Provost Area",28-OCT-24
+14400,"D_SCSB","Simons Center for the Social Brain",12263,"D_SCHOOL_SCI","School of Science",28-OCT-24
+14440,"D_OLE","Open Learning Enterprise",13740,"D_UNDEF_DEFUNCT","Undefined or defunct",28-OCT-24
+14460,"D_IMES","Institute for Medical Engineering and Science",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+14480,"D_LDDA","Lab Directors & Department Admin",11493,"D_VPRES","VP Research",28-OCT-24
+14500,"D_EDX","EDX",14620,"D_DL_AREA","Digital Learning Area",28-OCT-24
+14520,"D_DOF_CORE","Facilities Building Core (hallways, stairs, etc.)",12262,"D_EXECVP_AREA","Executive Vice President's Area",28-OCT-24
+14521,"D_DOF_RESERVE","Facilities Provost Reserved",12262,"D_EXECVP_AREA","Executive Vice President's Area",28-OCT-24
+14540,"D_DOF_RESIDENCE","Facilities Residences",12262,"D_EXECVP_AREA","Executive Vice President's Area",28-OCT-24
+14580,"D_CMS","Comparative Media Studies/Writing",12260,"D_SCHOOL_HUM","School of Humanities & Social Science",28-OCT-24
+14600,"D_DL","Digital Learning",14620,"D_DL_AREA","Digital Learning Area",28-OCT-24
+14620,"D_DL_AREA","Digital Learning Area",12938,"D_PROVOST_AREA","Provost Area",28-OCT-24
+14640,"D_MITX","MIT ON-LINE LEARNING",13630,"D_OFC_PROVOST","Office of the Provost Area",28-OCT-24
+14680,"D_LCAU","LEVENTHAL CENTER FOR ADVANCED URBANISM",12261,"D_SCHOOL_ARCH","School of Architecture & Planning",28-OCT-24
+14700,"D_SUST","OFFICE OF SUSTAINABILITY",12262,"D_EXECVP_AREA","Executive Vice President's Area",28-OCT-24
+14720,"D_LGO","Leaders for Global Operations",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+14740,"D_CAMPLAN","Campus Planning",12262,"D_EXECVP_AREA","Executive Vice President's Area",28-OCT-24
+14760,"D_STUDENT_UND","UNDESIGNATED SOPHOMORE",12938,"D_PROVOST_AREA","Provost Area",28-OCT-24
+14761,"D_OCEAN","Ocean Engineering",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+14780,"D_CDO","Computation for Design & Optimization",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+14781,"D_STU_SPECIAL","Special Programs in Student Systems",12336,"D_DUE","Dean for Undergraduate Education",28-OCT-24
+14800,"D_SSRC","Sociotechnical Systems Research Center",15680,"D_COLLEGE_COMPU","Stephen A. Schwarzman College of Computing",28-OCT-24
+14820,"D_ILP","OSATT - Corporate Relations",15701,"D_OSATT_AREA","Office of Strategic Alliances & Tech Transfer Area",28-OCT-24
+14840,"D_MITEI","MIT Energy Initiative",11493,"D_VPRES","VP Research",28-OCT-24
+14841,"D_CAA","Chancellor Academic Advancement",11398,"D_PRES_AREA","President's area",28-OCT-24
+14860,"D_J-WAFS","Abdul Latif Jameel Water and Food Systems Lab",11493,"D_VPRES","VP Research",28-OCT-24
+14900,"D_MITESI","MIT Environmental Solutions Initiative",11493,"D_VPRES","VP Research",28-OCT-24
+14920,"D_FACILITIES_AR","Facilities Area",12262,"D_EXECVP_AREA","Executive Vice President's Area",28-OCT-24
+14940,"D_TREAS_AREA","Treasurer's Area",12262,"D_EXECVP_AREA","Executive Vice President's Area",28-OCT-24
+14941,"D_OTP","Office of Treasury and Planning",14940,"D_TREAS_AREA","Treasurer's Area",28-OCT-24
+14960,"D_MITII","MIT INNOVATION INITIATIVE",13630,"D_OFC_PROVOST","Office of the Provost Area",28-OCT-24
+14980,"D_IDSS","Institute for Data, Systems, and Society",15680,"D_COLLEGE_COMPU","Stephen A. Schwarzman College of Computing",28-OCT-24
+15020,"D_SCM","Supply Chain Management Program",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+15040,"D_D-LAB","D-LAB",15480,"D_OVC_AREA","Office of the Vice Chancellor's Area",28-OCT-24
+15041,"D_OVPC","OFFICE OF VICE PRESIDENT FOR COMMUNICATIONS",11398,"D_PRES_AREA","President's area",28-OCT-24
+15060,"D_OGC","General Counsel and Risk Management",13620,"D_SC_ENVP","Senior Council and Environmental Programs",28-OCT-24
+15080,"D_CLAB","Communication Lab",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+15100,"D_NEWCO","NewCo",12262,"D_EXECVP_AREA","Executive Vice President's Area",28-OCT-24
+15120,"D_FINOPS","Financial Operations",14040,"D_FINANCE_AREA","VP Finance Area",28-OCT-24
+15140,"D_SSWB","Student Support and Well-being",12335,"D_DSL","Dean for Student Life",28-OCT-24
+15160,"D_ATLAS","ATLAS SERVICE CENTER",12262,"D_EXECVP_AREA","Executive Vice President's Area",28-OCT-24
+15180,"D_INSURANCE","Office of Insurance",12262,"D_EXECVP_AREA","Executive Vice President's Area",28-OCT-24
+15200,"D_OEOP","Office of Engineering Outreach Program",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+15220,"D_RE","Residential Education",12335,"D_DSL","Dean for Student Life",28-OCT-24
+15240,"D_RLP","Residential Life Programs",12335,"D_DSL","Dean for Student Life",28-OCT-24
+15260,"D_FSILG","FSILG",12335,"D_DSL","Dean for Student Life",28-OCT-24
+15261,"D_PPSC","PKG Public Service Center",15480,"D_OVC_AREA","Office of the Vice Chancellor's Area",28-OCT-24
+15262,"D_D&CI","Diversity & Community Involvment",12335,"D_DSL","Dean for Student Life",28-OCT-24
+15280,"D_SLMPLS","Student Leadership, Multicultural Programs & LBGTQ",12335,"D_DSL","Dean for Student Life",28-OCT-24
+15300,"D_HOHP","Head of House Programs",12335,"D_DSL","Dean for Student Life",28-OCT-24
+15320,"D_GEO","Global Education Office",12336,"D_DUE","Dean for Undergraduate Education",28-OCT-24
+15360,"D_SLP","Student Life programs",12335,"D_DSL","Dean for Student Life",28-OCT-24
+15380,"D_OGCR","Office of Government and Community Relations",12262,"D_EXECVP_AREA","Executive Vice President's Area",28-OCT-24
+15400,"D_MRL","Materials Research Laboratory",11493,"D_VPRES","VP Research",28-OCT-24
+15401,"D_MIT.NANO","MIT NANO",11493,"D_VPRES","VP Research",28-OCT-24
+15420,"D_MITIBMAI","MIT IBM AI LABORATORY",15680,"D_COLLEGE_COMPU","Stephen A. Schwarzman College of Computing",28-OCT-24
+15440,"D_THEENGINE","The Engine",12262,"D_EXECVP_AREA","Executive Vice President's Area",28-OCT-24
+15460,"D_SOLVE","Solve",13630,"D_OFC_PROVOST","Office of the Provost Area",28-OCT-24
+15480,"D_OVC_AREA","Office of the Vice Chancellor's Area",12938,"D_PROVOST_AREA","Provost Area",28-OCT-24
+15481,"D_OVC","Office of the Vice Chancellor",15480,"D_OVC_AREA","Office of the Vice Chancellor's Area",28-OCT-24
+15500,"D_ASOPS","Administrative Services & Operations",14040,"D_FINANCE_AREA","VP Finance Area",28-OCT-24
+15501,"D_CONTROLLER","Controller",14040,"D_FINANCE_AREA","VP Finance Area",28-OCT-24
+15502,"D_SSC","Strategic Sourcing & Contracts",14040,"D_FINANCE_AREA","VP Finance Area",28-OCT-24
+15503,"D_VPFHQ","VPF Headquarters",14040,"D_FINANCE_AREA","VP Finance Area",28-OCT-24
+15504,"D_BFA","Budget & Financial Analysis",14040,"D_FINANCE_AREA","VP Finance Area",28-OCT-24
+15521,"D_OVCOEL","OVC Office of Experiential Learning",15480,"D_OVC_AREA","Office of the Vice Chancellor's Area",28-OCT-24
+15522,"D_REGALL","Registrar All",15480,"D_OVC_AREA","Office of the Vice Chancellor's Area",28-OCT-24
+15523,"D_ISO","International Students Office",15480,"D_OVC_AREA","Office of the Vice Chancellor's Area",28-OCT-24
+15524,"D_OFY","Office of the First Year",15480,"D_OVC_AREA","Office of the Vice Chancellor's Area",28-OCT-24
+15540,"D_QUEST","MIT Quest for Intelligence",15680,"D_COLLEGE_COMPU","Stephen A. Schwarzman College of Computing",28-OCT-24
+15560,"D_OVCHQ","Office of the Vice Chancellor HQ",15480,"D_OVC_AREA","Office of the Vice Chancellor's Area",28-OCT-24
+15580,"D_RSO","Office of Recoring Secretary",14040,"D_FINANCE_AREA","VP Finance Area",28-OCT-24
+15600,"D_JCLINIC","JCCLINIC",15680,"D_COLLEGE_COMPU","Stephen A. Schwarzman College of Computing",28-OCT-24
+15640,"D_UROP","Undergraduate Research Opportunities Pro 441420",15480,"D_OVC_AREA","Office of the Vice Chancellor's Area",28-OCT-24
+15660,"D_DEANCOMP","Dean School of Computing",15680,"D_COLLEGE_COMPU","Stephen A. Schwarzman College of Computing",28-OCT-24
+15680,"D_COLLEGE_COMPU","Stephen A. Schwarzman College of Computing",12938,"D_PROVOST_AREA","Provost Area",28-OCT-24
+15700,"D_OSATT","Ofc of Strategic Alliances & Tech Transfer",15701,"D_OSATT_AREA","Office of Strategic Alliances & Tech Transfer Area",28-OCT-24
+15701,"D_OSATT_AREA","Office of Strategic Alliances & Tech Transfer Area",11493,"D_VPRES","VP Research",28-OCT-24
+15720,"D_CATALYSTS","OSATT - Catalysts",15701,"D_OSATT_AREA","Office of Strategic Alliances & Tech Transfer Area",28-OCT-24
+15722,"D_ALLIANCE_MGMT","OSATT - Alliance Management",15701,"D_OSATT_AREA","Office of Strategic Alliances & Tech Transfer Area",28-OCT-24
+15740,"D_STRATEG_TRANS","OSATT - Strategic Transactions",15701,"D_OSATT_AREA","Office of Strategic Alliances & Tech Transfer Area",28-OCT-24
+15760,"D_EMMGMT","Emergency Management",12262,"D_EXECVP_AREA","Executive Vice President's Area",28-OCT-24
+15780,"D_CCSE","Center for Computational Science and Engineering",15680,"D_COLLEGE_COMPU","Stephen A. Schwarzman College of Computing",28-OCT-24
+15800,"D_MITTAKEDA","MIT - Takeda Program",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+15820,"D_OPENSPACE","Open Space Programming",12262,"D_EXECVP_AREA","Executive Vice President's Area",28-OCT-24
+15840,"D_SERC","Social & Ethical Responsibilities in  Computing",15680,"D_COLLEGE_COMPU","Stephen A. Schwarzman College of Computing",28-OCT-24
+15860,"D_MISTI","MISTI",12260,"D_SCHOOL_HUM","School of Humanities & Social Science",28-OCT-24
+15880,"D_RAS","Research Administration Services",11493,"D_VPRES","VP Research",28-OCT-24
+15900,"D_INDONESIA","INDONESIA",13630,"D_OFC_PROVOST","Office of the Provost Area",28-OCT-24
+15920,"D_MCSC","MIT Climate & Sustainability Consortium",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+15940,"D_GRADEL","Graduate Program in Engineering Leadership",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+15960,"D_MITAMAZON","MIT-Amazon Science Hub",15680,"D_COLLEGE_COMPU","Stephen A. Schwarzman College of Computing",28-OCT-24
+15980,"D_CSS","Campus Servies and Stewardship",12262,"D_EXECVP_AREA","Executive Vice President's Area",28-OCT-24
+16000,"D_CCTR","Center for Clinical & Translational Research",11493,"D_VPRES","VP Research",28-OCT-24
+16021,"D_MITOI","MIT OFFICE OF INNOVATION",12259,"D_SCHOOL_ENG","School of Engineering",28-OCT-24
+16041,"D_DESIGNACAD","DESIGN ACADEMY",12261,"D_SCHOOL_ARCH","School of Architecture & Planning",28-OCT-24
+16080,"D_CGC","Climate Grand Challenges",11493,"D_VPRES","VP Research",28-OCT-24
+16101,"D_MITMAD","MORNINGSIDE ACADEMY FOR DESIGN",12261,"D_SCHOOL_ARCH","School of Architecture & Planning",28-OCT-24
+16120,"D_IRDF","Independent Residence Development Fund",12335,"D_DSL","Dean for Student Life",28-OCT-24
+16140,"D_OBDT","Office of Business & Digital Transformation",12262,"D_EXECVP_AREA","Executive Vice President's Area",28-OCT-24
+16160,"D_GRADJUNCTION","GRAD JUNCTION",12335,"D_DSL","Dean for Student Life",28-OCT-24
+16180,"D_CS3","Center for Sustainability Science & Strategy",12263,"D_SCHOOL_SCI","School of Science",28-OCT-24
+16200,"D_OIS","Office of Innovation and Strategy",13630,"D_OFC_PROVOST","Office of the Provost Area",28-OCT-24
