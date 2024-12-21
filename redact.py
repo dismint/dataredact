@@ -10,6 +10,7 @@ import itertools
 #############
 
 # ASSETS
+EMAIL_SUFFIX = ["@gmail.com", "@yahoo.com", "@hotmail.com", "@aol.com"]
 FNAMES, LNAMES, USAGES = [], [], []
 with open("assets/names.json") as f:
     names = json.load(f)
@@ -29,6 +30,8 @@ MIT_ID_MAP = {}
 ROOM_MAP = {}
 RKEY_MAP = {}
 BROOM_MAP = {}
+BUILDING_ROOM_MAP = {}
+MEET_MAP = {}
 
 # VMAP: original data, except values [old, new] pairs instead
 VMAP = {}
@@ -38,10 +41,10 @@ for file in os.listdir("data"):
         tname = file.split(".")[0]
         header = [h.strip('"') for h in next(f).strip().split(",")]
         # limit the amount that we can read for speed purposes
-        # info = list(csv.DictReader(
-        #     itertools.islice(f, 2000), fieldnames=header))
+        info = list(csv.DictReader(
+            itertools.islice(f, 2000), fieldnames=header))
         # unlimited
-        info = list(csv.DictReader(f, fieldnames=header))
+        # info = list(csv.DictReader(f, fieldnames=header))
         if len(info) == 0:
             print(f"EMPTY: {tname}")
         VMAP[tname] = [{key: [row[key], row[key]]
@@ -84,9 +87,10 @@ def random_kerb(fname, lname):
     return kerb
 
 
-def random_room_for_building(building):
+def random_room_for_building(building, floor):
     while 1:
-        room = str(random.randint(1, 9999))
+        room = str(floor) + \
+            "".join([str(random.randint(0, 9)) for _ in range(2)])
         if random.randint(0, 1):
             room += random.choice("ABCDEFGH")
         if f"{building}-{room}" not in BUILDING_AND_ROOM_POOL:
@@ -107,6 +111,8 @@ def person_task(related):
         "FIRST_NAME",
         "MIDDLE_NAME",
         "FULL_NAME",
+        "FULL_NAME2",
+        "FULL_NAME3",
         "FULL_NAME_UPPERCASE",
         "DIRECTORY_FULL_NAME",
         "KRB_NAME",
@@ -146,8 +152,6 @@ def person_task(related):
         ids = get_column(
             table_name, table["MIT_ID"] if "MIT_ID" in table else list(table.values())[0])
         for i, id in enumerate(ids):
-            if not id:
-                continue
             fill_fields = set(field for field in table)
             if id in MIT_ID_MAP:
                 mapping = MIT_ID_MAP[id]
@@ -162,18 +166,21 @@ def person_task(related):
                         pass
 
             def check_val(field):
-                return field in table and VMAP[table_name][i][table[field]][0]
+                return field in table and VMAP[table_name][i][table[field]][0] != ""
 
             def need(field):
                 return field in fill_fields
 
-            if id not in MIT_ID_MAP:
+            if id and id not in MIT_ID_MAP:
                 new_id = random_mitid()
                 MIT_ID_MAP[id] = {}
                 if "MIT_ID" in table:
                     set_value_by_index(table_name, table["MIT_ID"], i, new_id)
                 MIT_ID_MAP[id]["MIT_ID"] = new_id
                 MIT_ID_MAP[id]["CREATED_TABLE"] = table_name
+            if not id:
+                MIT_ID_MAP["NOID"] = {}
+                id = "NOID"
 
             new_fname = random.choice(FNAMES)
             if "FIRST_NAME" in table and check_val("FIRST_NAME") and need("FIRST_NAME"):
@@ -199,6 +206,20 @@ def person_task(related):
                     table_name, table["FULL_NAME"], i, new_full_name)
                 MIT_ID_MAP[id]["FULL_NAME"] = new_full_name
 
+            # hacky solution for now to allow multiple full names
+            if "FULL_NAME2" in table and check_val("FULL_NAME2") and need("FULL_NAME2"):
+                if "INSTRUCTOR" in table["FULL_NAME2"]:
+                    new_full_name = f"{new_fname[0]}. {new_mname[0]}. {new_lname}"
+                set_value_by_index(
+                    table_name, table["FULL_NAME2"], i, new_full_name)
+                MIT_ID_MAP[id]["FULL_NAME2"] = new_full_name
+            if "FULL_NAME3" in table and check_val("FULL_NAME3") and need("FULL_NAME3"):
+                if "INSTRUCTOR" in table["FULL_NAME3"]:
+                    new_full_name = f"{new_fname[0]}. {new_mname[0]}. {new_lname}"
+                set_value_by_index(
+                    table_name, table["FULL_NAME3"], i, new_full_name)
+                MIT_ID_MAP[id]["FULL_NAME3"] = new_full_name
+
             new_full_name_upper = new_full_name.upper()
             if "FULL_NAME_UPPERCASE" in table and check_val("FULL_NAME_UPPERCASE") and need("FULL_NAME_UPPERCASE"):
                 set_value_by_index(
@@ -223,6 +244,8 @@ def person_task(related):
                 MIT_ID_MAP[id]["KRB_NAME_UPPERCASE"] = kerb.upper()
 
             email = f"{kerb}@mit.edu"
+            if random.randint(0, 1):
+                email = f"{kerb}{random.choice(EMAIL_SUFFIX)}"
             if "EMAIL_ADDRESS" in table and check_val("EMAIL_ADDRESS") and need("EMAIL_ADDRESS"):
                 set_value_by_index(
                     table_name, table["EMAIL_ADDRESS"], i, email)
@@ -282,14 +305,20 @@ def room_task(source, related):
     building_rooms = get_column(source, "BUILDING_ROOM")
     rooms = get_column(source, "ROOM")
     rkey = get_column(source, "FCLT_ROOM_KEY")
+    floors = get_column(source, "FLOOR")
     for i, br in enumerate(building_rooms):
         BUILDING_AND_ROOM_POOL.add(br)
         building = br.split("-")[0]
-        new_room = random_room_for_building(building)
+        new_room = random_room_for_building(building, floors[i])
         new_building_room = f"{building}-{new_room}"
         set_value_by_index(source, "FCLT_ROOM_KEY", i, new_building_room)
         set_value_by_index(source, "BUILDING_ROOM", i, new_building_room)
         set_value_by_index(source, "ROOM", i, new_room)
+        set_value_by_index(source, "SPACE_ID", i,
+                           f"{building}-{floors[i]}-{new_room}")
+        if building not in BUILDING_ROOM_MAP:
+            BUILDING_ROOM_MAP[building] = []
+        BUILDING_ROOM_MAP[building].append(new_room)
         ROOM_MAP[rooms[i]] = new_room
         RKEY_MAP[rkey[i]] = new_building_room
         BROOM_MAP[building_rooms[i]] = new_building_room
@@ -307,8 +336,12 @@ def room_task(source, related):
                             table_name, table[field], i, random.choice(list(ROOM_MAP.values())))
             if field == "BUILDING_ROOM":
                 for i, room in enumerate(cols):
+                    new_building_room = random.choice(list(BROOM_MAP))
+                    building = room.split("-")[0]
+                    if building in BUILDING_ROOM_MAP:
+                        new_building_room = f"{building}-{random.choice(list(BUILDING_ROOM_MAP[building]))}"
                     set_value_by_index(
-                        table_name, table[field], i, random.choice(list(BROOM_MAP)))
+                        table_name, table[field], i, new_building_room)
             if field == "FCLT_ROOM_KEY":
                 for i, room in enumerate(cols):
                     if room in RKEY_MAP:
@@ -331,18 +364,21 @@ def admin_task(source):
 
 
 def meet_task(related):
-    meet_mapping = {}
     cols = []
     for table_name in related:
         cols.extend(get_column(table_name, "MEET_PLACE"))
     for loc in cols:
-        if loc not in meet_mapping:
-            meet_mapping[loc] = random.choice(list(BROOM_MAP.keys()))
+        if loc not in MEET_MAP:
+            building = loc.split("-")[0]
+            if building in BUILDING_ROOM_MAP:
+                MEET_MAP[loc] = f"{building}-{random.choice(list(BUILDING_ROOM_MAP.values()))}"
+            else:
+                MEET_MAP[loc] = random.choice(list(BROOM_MAP))
     for table_name in related:
         for i, loc in enumerate(get_column(table_name, "MEET_PLACE")):
             if not loc:
                 continue
-            set_value_by_index(table_name, "MEET_PLACE", i, meet_mapping[loc])
+            set_value_by_index(table_name, "MEET_PLACE", i, MEET_MAP[loc])
 
 
 def session_task(source):
@@ -351,7 +387,13 @@ def session_task(source):
         if "virtual" in location:
             set_value_by_index(source, "SESSION_LOCATION", i, "Virtual")
         elif "zoom" in location:
-            set_value_by_index(source, "SESSION_LOCATION", i, "Zoom")
+            loc = "Zoom"
+            if any(char.isdigit() for char in location):
+                loc += " "
+                for char in location:
+                    if char.isdigit():
+                        loc += str(random.randint(0, 9))
+            set_value_by_index(source, "SESSION_LOCATION", i, loc)
         else:
             set_value_by_index(source, "SESSION_LOCATION", i, "In-Person")
 
@@ -362,12 +404,19 @@ def subject_task(source):
         kerb = random_kerb(fname, lname)
         email = f"{kerb}@mit.edu"
         if row["PERSON_NAME"][0]:
-            set_value_by_index(source, "PERSON_NAME", i, f"{lname}, {fname}")
+            set_value_by_index(source, "PERSON_NAME", i, f"{fname} {lname}")
         if row["PERSON_EMAIL"][0]:
             set_value_by_index(source, "PERSON_EMAIL", i, email)
         if row["PERSON_LOCATION"][0]:
-            set_value_by_index(source, "PERSON_LOCATION", i,
-                               random.choice(list(BROOM_MAP.keys())))
+            loc = row["PERSON_LOCATION"][0]
+            if loc in MEET_MAP:
+                set_value_by_index(source, "PERSON_LOCATION", i, MEET_MAP[loc])
+            else:
+                new_loc = random.choice(list(BROOM_MAP))
+                building = loc.split("-")[0]
+                if building in BUILDING_ROOM_MAP:
+                    new_loc = f"{building}-{random.choice(list(BUILDING_ROOM_MAP[building]))}"
+                set_value_by_index(source, "PERSON_LOCATION", i, new_loc)
 
 
 def library_task(related, name):
@@ -399,16 +448,24 @@ def usage_task(source):
             set_value_by_index(source, "SPACE_USAGE", i, random.choice(USAGES))
 
 
-def clamp_task(related):
-    for table_name, column in related.items():
+def clamp_task(area, integers):
+    for table_name, column in area.items():
         cols = get_column(table_name, column)
-        nums = [float(num) for num in cols if num]
-        if not nums:
-            continue
         for i, num in enumerate(cols):
             if num:
-                val = random.uniform(min(nums), max(nums))
-                if type(nums[0]) == str:
+                val = random.uniform(float(num) * 0.95, float(num) * 1.05)
+                if type(num) == str:
+                    val = str(val)
+                set_value_by_index(table_name, column, i, val)
+    for table_name, column in integers.items():
+        cols = get_column(table_name, column)
+        nums = [int(num) for num in cols if num]
+        min_num, max_num = min(nums), max(nums)
+        for i, num in enumerate(cols):
+            if num:
+                val = random.randint(min_num, max_num)
+                val = round(val, -1)  # round to the nearest 10
+                if type(num) == str:
                     val = str(val)
                 set_value_by_index(table_name, column, i, val)
 
@@ -458,8 +515,8 @@ TASKS = [
             ["COURSE_CATALOG_SUBJECT_OFFERED", {
                 "MIT_ID": "RESPONSIBLE_FACULTY_MIT_ID",
                 "FULL_NAME": "RESPONSIBLE_FACULTY_NAME",
-                "FULL_NAME": "FALL_INSTRUCTORS",
-                "FULL_NAME": "SPRING_INSTRUCTORS",
+                "FULL_NAME2": "FALL_INSTRUCTORS",
+                "FULL_NAME3": "SPRING_INSTRUCTORS",
             }],
             ["TIP_SUBJECT_OFFERED", {
                 "MIT_ID": "RESPONSIBLE_FACULTY_MIT_ID",
@@ -473,8 +530,8 @@ TASKS = [
                 "MIT_ID": "MIT_ID",
             }],
             ["CIS_COURSE_CATALOG", {
-                "FULL_NAME": "FALL_INSTRUCTORS",
-                "FULL_NAME": "SPRING_INSTRUCTORS",
+                "FULL_NAME2": "FALL_INSTRUCTORS",
+                "FULL_NAME3": "SPRING_INSTRUCTORS",
             }],
             # these are from the full 99 tables, not in the 48
             # "HR_FACULTY_ROSTER": {
@@ -556,7 +613,7 @@ TASKS = [
     },
     {
         "func": clamp_task,
-        "related": {
+        "area": {
             "BUILDINGS": "BLDG_GROSS_SQUARE_FOOTAGE",
             "BUILDINGS": "BLDG_ASSIGNABLE_SQUARE_FOOTAGE",
             "FAC_BUILDING": "EXT_GROSS_AREA",
@@ -570,21 +627,24 @@ TASKS = [
             "FCLT_BUILDING": "ASSIGNABLE_AREA",
             "FCLT_BUILDING": "NON_ASSIGNABLE_AREA",
             "FCLT_BUILDING": "BUILDING_HEIGHT",
-            "FCLT_BUILDING": "NUM_OF_ROOMS",
             "FCLT_BUILDING": "EXT_GROSS_AREA",
             "FCLT_BUILDING": "ASSIGNABLE_AREA",
             "FCLT_BUILDING": "NON_ASSIGNABLE_AREA",
             "FCLT_BUILDING": "BUILDING_HEIGHT",
-            "FCLT_BUILDING": "NUM_OF_ROOMS",
             "FCLT_ROOMS": "AREA",
-            "IAP_SUBJECT_DETAIL": "MAX_ENROLLMENT",
-            "LIBRARY_SUBJECT_OFFERED": "NUM_ENROLLED_STUDENTS",
             "SPACE_DETAIL": "ROOM_SQUARE_FOOTAGE",
             "SPACE_SUPERVISOR_USAGE": "SQFT",
             "SPACE_SUPERVISOR_USAGE": "RESEARCH_VOLUME",
             "SPACE_SUPERVISOR_USAGE": "SQFT_PER_SUPERVISEE",
             "SPACE_SUPERVISOR_USAGE": "SQFT_PER_RES_VOL",
             "SPACE_SUPERVISOR_USAGE": "RES_VOL_PER_SQFT",
+        },
+        "integers": {
+            "FCLT_BUILDING": "NUM_OF_ROOMS",
+            "FAC_BUILDING": "NUM_OF_ROOMS",
+            "FCLT_BUILDING_HIST": "NUM_OF_ROOMS",
+            "IAP_SUBJECT_DETAIL": "MAX_ENROLLMENT",
+            "LIBRARY_SUBJECT_OFFERED": "NUM_ENROLLED_STUDENTS",
             "SUBJECT_OFFERED": "NUM_ENROLLED_STUDENTS"
         }
     }
