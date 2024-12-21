@@ -41,10 +41,10 @@ for file in os.listdir("data"):
         tname = file.split(".")[0]
         header = [h.strip('"') for h in next(f).strip().split(",")]
         # limit the amount that we can read for speed purposes
-        info = list(csv.DictReader(
-            itertools.islice(f, 2000), fieldnames=header))
+        # info = list(csv.DictReader(
+        #     itertools.islice(f, 2000), fieldnames=header))
         # unlimited
-        # info = list(csv.DictReader(f, fieldnames=header))
+        info = list(csv.DictReader(f, fieldnames=header))
         if len(info) == 0:
             print(f"EMPTY: {tname}")
         VMAP[tname] = [{key: [row[key], row[key]]
