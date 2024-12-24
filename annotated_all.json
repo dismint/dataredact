@@ -476,7 +476,7 @@
     "FLOOR": "KEEP",
     "FLOOR_KEY": "KEEP",
     "ROOM": "REDACT",
-    "SPACE_ID": "KEEP",
+    "SPACE_ID": "REDACT",
     "MAJOR_USE_KEY": "KEEP",
     "MAJOR_USE_DESC": "KEEP",
     "USE_KEY": "KEEP",

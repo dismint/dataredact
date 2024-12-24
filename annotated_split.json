@@ -423,7 +423,6 @@
       "BUILDING_KEY",
       "FLOOR",
       "FLOOR_KEY",
-      "SPACE_ID",
       "MAJOR_USE_KEY",
       "MAJOR_USE_DESC",
       "USE_KEY",
@@ -1641,6 +1640,7 @@
     "FAC_ROOMS": [
       "FAC_ROOM_KEY",
       "ROOM",
+      "SPACE_ID",
       "AREA"
     ],
     "FCLT_BUILDING": [

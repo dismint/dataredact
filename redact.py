@@ -11,6 +11,7 @@ import itertools
 
 # ASSETS
 EMAIL_SUFFIX = ["@gmail.com", "@yahoo.com", "@hotmail.com", "@aol.com"]
+URL_SUFFIX = [".com", ".org", ".net", ".edu"]
 FNAMES, LNAMES, USAGES = [], [], []
 with open("assets/names.json") as f:
     names = json.load(f)
@@ -28,10 +29,13 @@ PHONE_POOL = set()
 # QUICKFINDS
 MIT_ID_MAP = {}
 ROOM_MAP = {}
+BUILD_ROOM_FLOOR_MAP = {}
+ROOM_FLOOR_MAP = {}
 RKEY_MAP = {}
 BROOM_MAP = {}
 BUILDING_ROOM_MAP = {}
 MEET_MAP = {}
+INSTRUCTOR_MAP = {}
 
 # VMAP: original data, except values [old, new] pairs instead
 VMAP = {}
@@ -41,10 +45,10 @@ for file in os.listdir("data"):
         tname = file.split(".")[0]
         header = [h.strip('"') for h in next(f).strip().split(",")]
         # limit the amount that we can read for speed purposes
-        # info = list(csv.DictReader(
-        #     itertools.islice(f, 2000), fieldnames=header))
+        info = list(csv.DictReader(
+            itertools.islice(f, 2000), fieldnames=header))
         # unlimited
-        info = list(csv.DictReader(f, fieldnames=header))
+        # info = list(csv.DictReader(f, fieldnames=header))
         if len(info) == 0:
             print(f"EMPTY: {tname}")
         VMAP[tname] = [{key: [row[key], row[key]]
@@ -96,6 +100,52 @@ def random_room_for_building(building, floor):
         if f"{building}-{room}" not in BUILDING_AND_ROOM_POOL:
             BUILDING_AND_ROOM_POOL.add(f"{building}-{room}")
             return room
+
+
+def random_consistent_room(room):
+    if room in ROOM_MAP:
+        return ("-1", -1, ROOM_MAP[room])
+
+    floor = -1
+    if len(room) > 2:
+        floor = room[:len(room)-2]
+    else:
+        floor = room
+    return ("-1", floor, random_room_for_building("-1", floor))
+
+
+def random_room_consider_floor(loc, room_mode=False):
+    if "-" not in loc:
+        return (loc, None, None)
+
+    if room_mode:
+        return random_consistent_room(loc)
+
+    building = loc.split("-")[0].strip()
+    old_room = "-".join([x.strip() for x in loc.split("-")[1:]])
+    room = old_room
+    found_room = False
+    floor = -1
+    if old_room in ROOM_MAP and ROOM_MAP[old_room] is not None:
+        found_room = True
+        room = ROOM_MAP[old_room]
+    if loc in BUILD_ROOM_FLOOR_MAP:
+        floor = BUILD_ROOM_FLOOR_MAP[loc]
+        if not found_room:
+            if building in ROOM_FLOOR_MAP and floor in ROOM_FLOOR_MAP[building]:
+                room = random.choice(BUILD_ROOM_FLOOR_MAP[building][floor])
+            else:
+                room = random_room_for_building(building, floor)
+    else:
+        rmf = "-".join([x.strip() for x in loc.split("-")[1:]])
+        _, floor, troom = random_consistent_room(rmf)
+        if not found_room:
+            room = troom
+    if not found_room:
+        if old_room not in ROOM_MAP:
+            ROOM_MAP[old_room] = room
+    assert room is not None, f"room is None for {loc}"
+    return (building, floor, room)
 
 
 ##############
@@ -201,6 +251,8 @@ def person_task(related):
                 MIT_ID_MAP[id]["MIDDLE_NAME"] = new_mname
 
             new_full_name = f"{new_lname}, {new_fname}"
+            if "MIDDLE_NAME" in MIT_ID_MAP[id]:
+                new_full_name = f"{new_lname}, {new_fname} {new_mname}."
             if "FULL_NAME" in table and check_val("FULL_NAME") and need("FULL_NAME"):
                 set_value_by_index(
                     table_name, table["FULL_NAME"], i, new_full_name)
@@ -210,14 +262,22 @@ def person_task(related):
             if "FULL_NAME2" in table and check_val("FULL_NAME2") and need("FULL_NAME2"):
                 if "INSTRUCTOR" in table["FULL_NAME2"]:
                     new_full_name = f"{new_fname[0]}. {new_mname[0]}. {new_lname}"
+                original = VMAP[table_name][i][table["FULL_NAME2"]][0]
+                if original in INSTRUCTOR_MAP:
+                    new_full_name = INSTRUCTOR_MAP[original]
                 set_value_by_index(
                     table_name, table["FULL_NAME2"], i, new_full_name)
+                INSTRUCTOR_MAP[original] = new_full_name
                 MIT_ID_MAP[id]["FULL_NAME2"] = new_full_name
             if "FULL_NAME3" in table and check_val("FULL_NAME3") and need("FULL_NAME3"):
                 if "INSTRUCTOR" in table["FULL_NAME3"]:
                     new_full_name = f"{new_fname[0]}. {new_mname[0]}. {new_lname}"
+                original = VMAP[table_name][i][table["FULL_NAME3"]][0]
+                if original in INSTRUCTOR_MAP:
+                    new_full_name = INSTRUCTOR_MAP[original]
                 set_value_by_index(
                     table_name, table["FULL_NAME3"], i, new_full_name)
+                INSTRUCTOR_MAP[original] = new_full_name
                 MIT_ID_MAP[id]["FULL_NAME3"] = new_full_name
 
             new_full_name_upper = new_full_name.upper()
@@ -243,9 +303,7 @@ def person_task(related):
                     table_name, table["KRB_NAME_UPPERCASE"], i, kerb_upper)
                 MIT_ID_MAP[id]["KRB_NAME_UPPERCASE"] = kerb.upper()
 
-            email = f"{kerb}@mit.edu"
-            if random.randint(0, 1):
-                email = f"{kerb}{random.choice(EMAIL_SUFFIX)}"
+            email = f"{kerb}{random.choice(EMAIL_SUFFIX)}"
             if "EMAIL_ADDRESS" in table and check_val("EMAIL_ADDRESS") and need("EMAIL_ADDRESS"):
                 set_value_by_index(
                     table_name, table["EMAIL_ADDRESS"], i, email)
@@ -257,7 +315,7 @@ def person_task(related):
                     table_name, table["EMAIL_ADDRESS_UPPERCASE"], i, email_upper)
                 MIT_ID_MAP[id]["EMAIL_ADDRESS_UPPERCASE"] = email_upper
 
-            personal_url = f"{kerb}.mit.edu"
+            personal_url = f"{kerb}{random.choice(URL_SUFFIX)}"
             if "PERSONAL_URL" in table and check_val("PERSONAL_URL") and need("PERSONAL_URL"):
                 set_value_by_index(
                     table_name, table["PERSONAL_URL"], i, personal_url)
@@ -318,8 +376,17 @@ def room_task(source, related):
                            f"{building}-{floors[i]}-{new_room}")
         if building not in BUILDING_ROOM_MAP:
             BUILDING_ROOM_MAP[building] = []
+        if building not in ROOM_FLOOR_MAP:
+            ROOM_FLOOR_MAP[building] = {}
+        if floors[i] not in ROOM_FLOOR_MAP[building]:
+            ROOM_FLOOR_MAP[building][floors[i]] = []
+        ROOM_FLOOR_MAP[building][floors[i]].append(new_room)
+        if br not in BUILD_ROOM_FLOOR_MAP:
+            BUILD_ROOM_FLOOR_MAP[building] = {}
+        BUILD_ROOM_FLOOR_MAP[br] = floors[i]
         BUILDING_ROOM_MAP[building].append(new_room)
-        ROOM_MAP[rooms[i]] = new_room
+        if rooms[i] not in ROOM_MAP:
+            ROOM_MAP[rooms[i]] = new_room
         RKEY_MAP[rkey[i]] = new_building_room
         BROOM_MAP[building_rooms[i]] = new_building_room
 
@@ -332,14 +399,46 @@ def room_task(source, related):
                         set_value_by_index(
                             table_name, table[field], i, ROOM_MAP[room])
                     else:
+                        _, _, new_room = random_room_consider_floor(
+                            room, room_mode=True)
                         set_value_by_index(
-                            table_name, table[field], i, random.choice(list(ROOM_MAP.values())))
-            if field == "BUILDING_ROOM":
+                            table_name, table[field], i, new_room)
+                        ROOM_MAP[room] = new_room
+            if field == "ROOM_NO_FLOOR":
+                floors = [str(x) for x in get_column(table_name, "FLOOR_KEY")]
+                for i, only_room in enumerate(cols):
+                    room = f"{floors[i]}{only_room}"
+                    if room in ROOM_MAP:
+                        set_value_by_index(
+                            table_name, table[field], i, ROOM_MAP[room][len(floors[i]):])
+                    else:
+                        _, _, new_room = random_room_consider_floor(
+                            room, room_mode=True)
+                        assert new_room is not None, f"new_room is None for {room}"
+                        set_value_by_index(
+                            table_name, table[field], i, new_room[len(floors[i]):])
+                        ROOM_MAP[room] = new_room
+            if "BUILDING_ROOM" in field:
                 for i, room in enumerate(cols):
-                    new_building_room = random.choice(list(BROOM_MAP))
-                    building = room.split("-")[0]
-                    if building in BUILDING_ROOM_MAP:
-                        new_building_room = f"{building}-{random.choice(list(BUILDING_ROOM_MAP[building]))}"
+                    new_building_room = -1
+                    building, _, new_room = random_room_consider_floor(room)
+                    if not room:
+                        new_building_room = f"{building}"
+                    else:
+                        new_building_room = f"{building}-{new_room}"
+                    set_value_by_index(
+                        table_name, table[field], i, new_building_room)
+            if field == "ALL_ROOM":
+                for i, all_room in enumerate(cols):
+                    info = all_room.split("-")
+                    room = f"{info[0]}-{"-".join(info[2:])}"
+                    floor = info[1]
+                    new_building_room = -1
+                    building, _, new_room = random_room_consider_floor(room)
+                    if not room:
+                        new_building_room = f"{building}"
+                    else:
+                        new_building_room = f"{building}-{floor}-{new_room}"
                     set_value_by_index(
                         table_name, table[field], i, new_building_room)
             if field == "FCLT_ROOM_KEY":
@@ -369,11 +468,11 @@ def meet_task(related):
         cols.extend(get_column(table_name, "MEET_PLACE"))
     for loc in cols:
         if loc not in MEET_MAP:
-            building = loc.split("-")[0]
-            if building in BUILDING_ROOM_MAP:
-                MEET_MAP[loc] = f"{building}-{random.choice(list(BUILDING_ROOM_MAP.values()))}"
+            building, _, room = random_room_consider_floor(loc)
+            if not room:
+                MEET_MAP[loc] = f"{building}"
             else:
-                MEET_MAP[loc] = random.choice(list(BROOM_MAP))
+                MEET_MAP[loc] = f"{building}-{room}"
     for table_name in related:
         for i, loc in enumerate(get_column(table_name, "MEET_PLACE")):
             if not loc:
@@ -402,7 +501,7 @@ def subject_task(source):
     for i, row in enumerate(VMAP[source]):
         fname, lname = random.choice(FNAMES), random.choice(LNAMES)
         kerb = random_kerb(fname, lname)
-        email = f"{kerb}@mit.edu"
+        email = f"{kerb}{random.choice(EMAIL_SUFFIX)}"
         if row["PERSON_NAME"][0]:
             set_value_by_index(source, "PERSON_NAME", i, f"{fname} {lname}")
         if row["PERSON_EMAIL"][0]:
@@ -418,22 +517,32 @@ def subject_task(source):
                     new_loc = f"{building}-{random.choice(list(BUILDING_ROOM_MAP[building]))}"
                 set_value_by_index(source, "PERSON_LOCATION", i, new_loc)
 
+            # weird case
+            if "[" in VMAP[source][i]["PERSON_LOCATION"][1]:
+                print("ERROR:", VMAP[source][i]["PERSON_LOCATION"][1])
+
 
 def library_task(related, name):
+    lname_map = {}
     for i in range(len(VMAP[name])):
         fname, lname = random.choice(FNAMES), random.choice(LNAMES)
         set_value_by_index(name, "INSTRUCTOR_NAME", i, f"{lname}, {fname}")
+        key = VMAP[name][i]["LIBRARY_COURSE_INSTRUCTOR_KEY"][0]
+        if key not in lname_map:
+            lname_map[key] = lname.upper()
     cols = []
     key_mapping = {}
     for table_name in related:
         cols.extend(get_column(table_name, "LIBRARY_COURSE_INSTRUCTOR_KEY"))
-    for key in cols:
+    for i, key in enumerate(cols):
         info = key.split("-")
         front, back = info[0], "".join(info[1:])
-        back = back.lstrip(
+        new_back = back.lstrip(
             "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz")
-        lname = random.choice(LNAMES)
-        new_key = front + "-" + lname.upper() + back
+        if key in lname_map:
+            new_key = front + "-" + lname_map[key] + new_back
+        else:
+            new_key = front + "-" + random.choice(LNAMES).upper() + new_back
         key_mapping[key] = new_key
     for table_name in related:
         for i, key in enumerate(get_column(table_name, "LIBRARY_COURSE_INSTRUCTOR_KEY")):
@@ -533,33 +642,6 @@ TASKS = [
                 "FULL_NAME2": "FALL_INSTRUCTORS",
                 "FULL_NAME3": "SPRING_INSTRUCTORS",
             }],
-            # these are from the full 99 tables, not in the 48
-            # "HR_FACULTY_ROSTER": {
-            #     "MIT_ID": "MIT_ID",
-            #     "LAST_NAME": "LAST_NAME",
-            #     "FIRST_NAME": "FIRST_NAME",
-            #     "MIDDLE_NAME": "MIDDLE_NAME",
-            # },
-            # "SE_PERSON": {
-            #     "MIT_ID": "MIT_ID",
-            #     "LAST_NAME": "LAST_NAME",
-            #     "FIRST_NAME": "FIRST_NAME",
-            #     "MIDDLE_NAME": "MIDDLE_NAME",
-            #     "KRB_NAME": "KRB_NAME",
-            # },
-            # "SUBJECT_OFFERED_SUMMARY": {
-            #     "MIT_ID": "RESPONSIBLE_FACULTY_MIT_ID",
-            #     "FULL_NAME": "RESPONSIBLE_FACULTY_NAME",
-            # },
-            # "WAREHOUSE_USERS": {
-            #     "MIT_ID": "MIT_ID",
-            #     "FIRST_NAME": "FIRST_NAME",
-            #     "LAST_NAME": "LAST_NAME",
-            #     "MIDDLE_NAME": "MIDDLE_NAME",
-            #     "KRB_NAME": "KRB_NAME",
-            #     "KRB_NAME_UPPERCASE": "KRB_NAME_UPPERCASE",
-            #     "EMAIL_ADDRESS": "EMAIL_ADDRESS",
-            # },
         ]
     },
     {
@@ -569,6 +651,7 @@ TASKS = [
             ["FAC_ROOMS", {
                 "ROOM": "ROOM",
                 "FCLT_ROOM_KEY": "FAC_ROOM_KEY",
+                "ALL_ROOM": "SPACE_ID",
             }],
             ["EMPLOYEE_DIRECTORY", {
                 "BUILDING_ROOM": "OFFICE_LOCATION"
@@ -577,9 +660,9 @@ TASKS = [
                 "BUILDING_ROOM": "OFFICE_LOCATION"
             }],
             ["SPACE_DETAIL", {
-                "BUILDING_ROOM": "BUILDING_ROOM",
                 "BUILDING_ROOM": "BUILDING_ROOM_NAME",
-                "ROOM": "ROOM_NUMBER"
+                "BUILDING_ROOM2": "BUILDING_ROOM",
+                "ROOM_NO_FLOOR": "ROOM_NUMBER"
             }],
         ]
     },
