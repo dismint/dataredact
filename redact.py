@@ -431,7 +431,7 @@ def room_task(source, related):
             if field == "ALL_ROOM":
                 for i, all_room in enumerate(cols):
                     info = all_room.split("-")
-                    room = f"{info[0]}-{"-".join(info[2:])}"
+                    room = f"{info[0]}-{'-'.join(info[2:])}"
                     floor = info[1]
                     new_building_room = -1
                     building, _, new_room = random_room_consider_floor(room)
