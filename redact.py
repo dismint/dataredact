@@ -467,17 +467,17 @@ def meet_task(related):
     for table_name in related:
         cols.extend(get_column(table_name, "MEET_PLACE"))
     for loc in cols:
-        if loc not in MEET_MAP:
+        if loc not in RKEY_MAP:
             building, _, room = random_room_consider_floor(loc)
             if not room:
-                MEET_MAP[loc] = f"{building}"
+                RKEY_MAP[loc] = f"{building}"
             else:
-                MEET_MAP[loc] = f"{building}-{room}"
+                RKEY_MAP[loc] = f"{building}-{room}"
     for table_name in related:
         for i, loc in enumerate(get_column(table_name, "MEET_PLACE")):
             if not loc:
                 continue
-            set_value_by_index(table_name, "MEET_PLACE", i, MEET_MAP[loc])
+            set_value_by_index(table_name, "MEET_PLACE", i, RKEY_MAP[loc])
 
 
 def session_task(source):
