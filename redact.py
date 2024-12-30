@@ -12,13 +12,15 @@ import itertools
 # ASSETS
 EMAIL_SUFFIX = ["@gmail.com", "@yahoo.com", "@hotmail.com", "@aol.com"]
 URL_SUFFIX = [".com", ".org", ".net", ".edu"]
-FNAMES, LNAMES, USAGES = [], [], []
+FNAMES, LNAMES, USAGES, TITLES = [], [], [], []
 with open("assets/names.json") as f:
     names = json.load(f)
     FNAMES = names[0]
     LNAMES = names[1]
 with open("assets/usages.json") as f:
     USAGES = json.load(f)
+with open("assets/titles.json") as f:
+    TITLES = json.load(f)
 
 # POOLS
 MIT_ID_POOL = set()
@@ -26,16 +28,17 @@ KERB_POOL = set()
 BUILDING_AND_ROOM_POOL = set()
 PHONE_POOL = set()
 
-# QUICKFINDS
+# QUICKFINDS and MAPS
+BUILD_ROOM_FLOOR_MAP = {}
+BUILDING_ROOM_MAP = {}
+ROOM_FLOOR_MAP = {}
+INSTRUCTOR_MAP = {}
+TITLE_MAP = {}
+BROOM_MAP = {}
 MIT_ID_MAP = {}
 ROOM_MAP = {}
-BUILD_ROOM_FLOOR_MAP = {}
-ROOM_FLOOR_MAP = {}
 RKEY_MAP = {}
-BROOM_MAP = {}
-BUILDING_ROOM_MAP = {}
 MEET_MAP = {}
-INSTRUCTOR_MAP = {}
 
 # VMAP: original data, except values [old, new] pairs instead
 VMAP = {}
@@ -161,6 +164,7 @@ def person_task(related):
         "FIRST_NAME",
         "MIDDLE_NAME",
         "FULL_NAME",
+        "FULL_NAME_FL",
         "FULL_NAME2",
         "FULL_NAME3",
         "FULL_NAME_UPPERCASE",
@@ -258,6 +262,12 @@ def person_task(related):
                     table_name, table["FULL_NAME"], i, new_full_name)
                 MIT_ID_MAP[id]["FULL_NAME"] = new_full_name
 
+            new_full_name_fl = f"{new_lname}, {new_fname}"
+            if "FULL_NAME_FL" in table and check_val("FULL_NAME_FL") and need("FULL_NAME_FL"):
+                set_value_by_index(
+                    table_name, table["FULL_NAME_FL"], i, new_full_name_fl)
+                MIT_ID_MAP[id]["FULL_NAME_FL"] = new_full_name_fl
+
             # hacky solution for now to allow multiple full names
             if "FULL_NAME2" in table and check_val("FULL_NAME2") and need("FULL_NAME2"):
                 if "INSTRUCTOR" in table["FULL_NAME2"]:
@@ -286,7 +296,9 @@ def person_task(related):
                     table_name, table["FULL_NAME_UPPERCASE"], i, new_full_name_upper)
                 MIT_ID_MAP[id]["FULL_NAME_UPPERCASE"] = new_full_name_upper
 
-            new_directory_full_name = new_full_name
+            new_directory_full_name = new_full_name_fl
+            if "MIDDLE_NAME" in MIT_ID_MAP[id]:
+                new_directory_full_name = f"{new_lname}, {new_fname} {new_mname}."
             if "DIRECTORY_FULL_NAME" in table and check_val("DIRECTORY_FULL_NAME") and need("DIRECTORY_FULL_NAME"):
                 set_value_by_index(
                     table_name, table["DIRECTORY_FULL_NAME"], i, new_directory_full_name)
@@ -511,13 +523,14 @@ def subject_task(source):
             if loc in MEET_MAP:
                 set_value_by_index(source, "PERSON_LOCATION", i, MEET_MAP[loc])
             else:
-                new_loc = random.choice(list(BROOM_MAP))
-                building = loc.split("-")[0]
-                if building in BUILDING_ROOM_MAP:
-                    new_loc = f"{building}-{random.choice(list(BUILDING_ROOM_MAP[building]))}"
-                set_value_by_index(source, "PERSON_LOCATION", i, new_loc)
+                loc = loc.split(" ")[0]
+                # don't need to process if just a building
+                if "-" in loc:
+                    b, _, r = random_room_consider_floor(loc)
+                    new_loc = f"{b}-{r}"
+                    set_value_by_index(source, "PERSON_LOCATION", i, new_loc)
 
-            # weird case
+            # check weird bug
             if "[" in VMAP[source][i]["PERSON_LOCATION"][1]:
                 print("ERROR:", VMAP[source][i]["PERSON_LOCATION"][1])
 
@@ -538,7 +551,7 @@ def library_task(related, name):
         info = key.split("-")
         front, back = info[0], "".join(info[1:])
         new_back = back.lstrip(
-            "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz")
+            "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz/'\".,")
         if key in lname_map:
             new_key = front + "-" + lname_map[key] + new_back
         else:
@@ -577,6 +590,20 @@ def clamp_task(area, integers):
                 if type(num) == str:
                     val = str(val)
                 set_value_by_index(table_name, column, i, val)
+
+
+def title_task(title_cols):
+    for tblcol in title_cols:
+        table, col = tblcol
+        titles = get_column(table, col)
+        for i, title in enumerate(titles):
+            if not title:
+                continue
+            new_title = random.choice(TITLES)
+            if title in TITLE_MAP:
+                new_title = TITLE_MAP[title]
+            TITLE_MAP[title] = new_title
+            set_value_by_index(table, col, i, new_title)
 
 
 #########
@@ -619,21 +646,21 @@ TASKS = [
             }],
             ["LIBRARY_SUBJECT_OFFERED", {
                 "MIT_ID": "RESPONSIBLE_FACULTY_MIT_ID",
-                "FULL_NAME": "RESPONSIBLE_FACULTY_NAME",
+                "FULL_NAME_FL": "RESPONSIBLE_FACULTY_NAME",
             }],
             ["COURSE_CATALOG_SUBJECT_OFFERED", {
                 "MIT_ID": "RESPONSIBLE_FACULTY_MIT_ID",
-                "FULL_NAME": "RESPONSIBLE_FACULTY_NAME",
+                "FULL_NAME_FL": "RESPONSIBLE_FACULTY_NAME",
                 "FULL_NAME2": "FALL_INSTRUCTORS",
                 "FULL_NAME3": "SPRING_INSTRUCTORS",
             }],
             ["TIP_SUBJECT_OFFERED", {
                 "MIT_ID": "RESPONSIBLE_FACULTY_MIT_ID",
-                "FULL_NAME": "RESPONSIBLE_FACULTY_NAME",
+                "FULL_NAME_FL": "RESPONSIBLE_FACULTY_NAME",
             }],
             ["SUBJECT_OFFERED", {
                 "MIT_ID": "RESPONSIBLE_FACULTY_MIT_ID",
-                "FULL_NAME": "RESPONSIBLE_FACULTY_NAME",
+                "FULL_NAME_FL": "RESPONSIBLE_FACULTY_NAME",
             }],
             ["SPACE_SUPERVISOR_USAGE", {
                 "MIT_ID": "MIT_ID",
@@ -730,6 +757,14 @@ TASKS = [
             "LIBRARY_SUBJECT_OFFERED": "NUM_ENROLLED_STUDENTS",
             "SUBJECT_OFFERED": "NUM_ENROLLED_STUDENTS"
         }
+    },
+    {
+        "func": title_task,
+        "title_cols": [
+            ["IAP_SUBJECT_PERSON", "PERSON_TITLE"],
+            ["EMPLOYEE_DIRECTORY", "DIRECTORY_TITLE"],
+            ["EMPLOYEE_DIRECTORY", "PRIMARY_TITLE"],
+        ]
     }
 ]
 
