@@ -33,9 +33,11 @@ BUILD_ROOM_FLOOR_MAP = {}
 BUILDING_ROOM_MAP = {}
 ROOM_FLOOR_MAP = {}
 INSTRUCTOR_MAP = {}
-TITLE_MAP = {}
-BROOM_MAP = {}
 MIT_ID_MAP = {}
+TITLE_MAP = {}
+USAGE_MAP = {}
+BROOM_MAP = {}
+PHONE_MAP = {}
 ROOM_MAP = {}
 RKEY_MAP = {}
 MEET_MAP = {}
@@ -43,9 +45,18 @@ MEET_MAP = {}
 # VMAP: original data, except values [old, new] pairs instead
 VMAP = {}
 
-for file in os.listdir("data"):
-    with open(f"data/{file}") as f:
-        tname = file.split(".")[0]
+old_tables, more_tables = [], []
+with open("annotated_split.json") as f:
+    data = json.load(f)
+    old_tables = [t for t in data["REDACT"]]
+    more_tables = [t for t in data["REDACT_MORE"]]
+
+for tname in old_tables:
+    with open(f"data/{tname}.csv") as f:
+        # tname = file.split(".")[0]
+        if tname not in old_tables and tname not in more_tables:
+            continue
+
         header = [h.strip('"') for h in next(f).strip().split(",")]
         # limit the amount that we can read for speed purposes
         # info = list(csv.DictReader(
@@ -54,8 +65,9 @@ for file in os.listdir("data"):
         info = list(csv.DictReader(f, fieldnames=header))
         if len(info) == 0:
             print(f"EMPTY: {tname}")
-        VMAP[tname] = [{key: [row[key], row[key]]
-                        for key in row} for row in info]
+        if tname in old_tables:
+            VMAP[tname] = [{key: [row[key], row[key]]
+                            for key in row} for row in info]
         print("finished loading:", tname)
 print("\n")
 
@@ -366,41 +378,57 @@ def person_task(related):
             if "OFFICE_PHONE" in table and check_val("OFFICE_PHONE") and need("OFFICE_PHONE"):
                 new_phone = "".join([str(random.randint(0, 9))
                                     for _ in range(10)])
+                if VMAP[table_name][i][table["OFFICE_PHONE"]][0] in PHONE_MAP:
+                    new_phone = PHONE_MAP[VMAP[table_name]
+                                          [i][table["OFFICE_PHONE"]][0]]
                 set_value_by_index(
                     table_name, table["OFFICE_PHONE"], i, new_phone)
                 MIT_ID_MAP[id]["OFFICE_PHONE"] = new_phone
 
 
-def room_task(source, related):
-    building_rooms = get_column(source, "BUILDING_ROOM")
-    rooms = get_column(source, "ROOM")
-    rkey = get_column(source, "FCLT_ROOM_KEY")
-    floors = get_column(source, "FLOOR")
-    for i, br in enumerate(building_rooms):
-        BUILDING_AND_ROOM_POOL.add(br)
-        building = br.split("-")[0]
-        new_room = random_room_for_building(building, floors[i])
-        new_building_room = f"{building}-{new_room}"
-        set_value_by_index(source, "FCLT_ROOM_KEY", i, new_building_room)
-        set_value_by_index(source, "BUILDING_ROOM", i, new_building_room)
-        set_value_by_index(source, "ROOM", i, new_room)
-        set_value_by_index(source, "SPACE_ID", i,
-                           f"{building}-{floors[i]}-{new_room}")
-        if building not in BUILDING_ROOM_MAP:
-            BUILDING_ROOM_MAP[building] = []
-        if building not in ROOM_FLOOR_MAP:
-            ROOM_FLOOR_MAP[building] = {}
-        if floors[i] not in ROOM_FLOOR_MAP[building]:
-            ROOM_FLOOR_MAP[building][floors[i]] = []
-        ROOM_FLOOR_MAP[building][floors[i]].append(new_room)
-        if br not in BUILD_ROOM_FLOOR_MAP:
-            BUILD_ROOM_FLOOR_MAP[building] = {}
-        BUILD_ROOM_FLOOR_MAP[br] = floors[i]
-        BUILDING_ROOM_MAP[building].append(new_room)
-        if rooms[i] not in ROOM_MAP:
-            ROOM_MAP[rooms[i]] = new_room
-        RKEY_MAP[rkey[i]] = new_building_room
-        BROOM_MAP[building_rooms[i]] = new_building_room
+def room_task(source, related, skip=False, hist=False):
+    if not skip:
+        building_rooms = get_column(source, "BUILDING_ROOM")
+        rooms = get_column(source, "ROOM")
+        rkey = get_column(source, "FCLT_ROOM_KEY")
+        floors = get_column(source, "FLOOR")
+        fiscal_period = []
+        if hist:
+            fiscal_period = get_column(source, "FISCAL_PERIOD")
+        for i, br in enumerate(building_rooms):
+            BUILDING_AND_ROOM_POOL.add(br)
+            building = br.split("-")[0]
+
+            new_room = -1
+            if rooms[i] in ROOM_MAP:
+                new_room = ROOM_MAP[rooms[i]]
+            else:
+                new_room = random_room_for_building(building, floors[i])
+
+            new_building_room = f"{building}-{new_room}"
+            set_value_by_index(source, "FCLT_ROOM_KEY", i, new_building_room)
+            set_value_by_index(source, "BUILDING_ROOM", i, new_building_room)
+            set_value_by_index(source, "ROOM", i, new_room)
+            set_value_by_index(source, "SPACE_ID", i,
+                               f"{building}-{floors[i]}-{new_room}")
+            if hist:
+                set_value_by_index(
+                    source, "FCLT_ROOM_HIST_KEY", i, f"{new_building_room}-{fiscal_period[i]}")
+            if building not in BUILDING_ROOM_MAP:
+                BUILDING_ROOM_MAP[building] = []
+            if building not in ROOM_FLOOR_MAP:
+                ROOM_FLOOR_MAP[building] = {}
+            if floors[i] not in ROOM_FLOOR_MAP[building]:
+                ROOM_FLOOR_MAP[building][floors[i]] = []
+            ROOM_FLOOR_MAP[building][floors[i]].append(new_room)
+            if br not in BUILD_ROOM_FLOOR_MAP:
+                BUILD_ROOM_FLOOR_MAP[building] = {}
+            BUILD_ROOM_FLOOR_MAP[br] = floors[i]
+            BUILDING_ROOM_MAP[building].append(new_room)
+            if rooms[i] not in ROOM_MAP:
+                ROOM_MAP[rooms[i]] = new_room
+            RKEY_MAP[rkey[i]] = new_building_room
+            BROOM_MAP[building_rooms[i]] = new_building_room
 
     for table_name, table in related:
         for field in table:
@@ -466,6 +494,10 @@ def admin_task(source):
     for i, row in enumerate(VMAP[source]):
         new_phone = "".join([str(random.randint(0, 9)) for _ in range(10)])
         area, number = row["DEPARTMENT_PHONE_AREA_CODE"][0], row["DEPARTMENT_PHONE_NUMBER"][0]
+        if area + number in PHONE_MAP:
+            new_phone = PHONE_MAP[area + number]
+        else:
+            PHONE_MAP[area + number] = new_phone
         if area:
             set_value_by_index(
                 source, "DEPARTMENT_PHONE_NUMBER", i, new_phone[:3])
@@ -567,7 +599,10 @@ def library_task(related, name):
 def usage_task(source):
     for i, row in enumerate(VMAP[source]):
         if row["SPACE_USAGE"][0]:
-            set_value_by_index(source, "SPACE_USAGE", i, random.choice(USAGES))
+            if row["SPACE_USAGE"][0] not in USAGE_MAP:
+                USAGE_MAP[row["SPACE_USAGE"][0]] = random.choice(USAGES)
+            set_value_by_index(source, "SPACE_USAGE", i,
+                               USAGE_MAP[row["SPACE_USAGE"][0]])
 
 
 def clamp_task(area, integers):
@@ -788,3 +823,279 @@ for table_name in VMAP:
         for row in VMAP[table_name]:
             writer.writerow([row[key][1] for key in row])
     print("finished writing:", table_name)
+
+VMAP = {}
+
+TASKS = [
+    [
+        "FCLT_ROOMS_HIST",
+        {
+            "func": room_task,
+            "source": "FCLT_ROOMS_HIST",
+            "related": [],
+            "skip": False,
+            "hist": True,
+        },
+        {
+            "func": clamp_task,
+            "area": {
+                "FCLT_ROOMS_HIST": "AREA",
+            },
+            "integers": {}
+        },
+    ],
+    [
+        "DRUPAL_COURSE_CATALOG",
+        {
+            "func": person_task,
+            "related": [
+                ["DRUPAL_COURSE_CATALOG", {
+                    "MIT_ID": "RESPONSIBLE_FACULTY_MIT_ID",
+                    "FULL_NAME2": "FALL_INSTRUCTORS",
+                    "FULL_NAME_FL": "RESPONSIBLE_FACULTY_NAME",
+                    "FULL_NAME3": "SPRING_INSTRUCTORS",
+                }],
+            ]
+        },
+        {
+            "func": meet_task,
+            "related": [
+                "DRUPAL_COURSE_CATALOG",
+            ]
+        },
+    ],
+    [
+        "SUBJECT_IAP_SCHEDULE",
+        {
+            "func": meet_task,
+            "related": [
+                "SUBJECT_IAP_SCHEDULE",
+            ]
+        },
+    ],
+    [
+        "WAREHOUSE_USERS",
+        {
+            "func": person_task,
+            "related": [
+                ["WAREHOUSE_USERS", {
+                    "MIT_ID": "MIT_ID",
+                    "KRB_NAME": "KRB_NAME",
+                    "KRB_NAME_UPPERCASE": "KRB_NAME_UPPERCASE",
+                    "LAST_NAME": "LAST_NAME",
+                    "FIRST_NAME": "FIRST_NAME",
+                    "MIDDLE_NAME": "MIDDLE_NAME",
+                    "EMAIL_ADDRESS": "EMAIL_ADDRESS",
+                    "OFFICE_PHONE": "OFFICE_PHONE",
+                }],
+            ]
+        },
+        {
+            "func": room_task,
+            "source": "",
+            "related": [
+                ["WAREHOUSE_USERS", {
+                    "BUILDING_ROOM": "OFFICE_LOCATION"
+                }],
+            ],
+            "skip": True,
+        },
+    ],
+    [
+        "DRUPAL_EMPLOYEE_DIRECTORY",
+        {
+            "func": person_task,
+            "related": [
+                ["DRUPAL_EMPLOYEE_DIRECTORY", {
+                    "MIT_ID": "MIT_ID",
+                    "FULL_NAME": "FULL_NAME",
+                    "LAST_NAME": "LAST_NAME",
+                    "FIRST_NAME": "FIRST_NAME",
+                    "MIDDLE_NAME": "MIDDLE_NAME",
+                    "EMAIL_ADDRESS": "EMAIL_ADDRESS",
+                    "PERSONAL_URL": "PERSONAL_URL",
+                    "OFFICE_PHONE": "OFFICE_PHONE",
+                }],
+            ]
+        },
+        {
+            "func": room_task,
+            "source": "",
+            "related": [
+                ["DRUPAL_EMPLOYEE_DIRECTORY", {
+                    "BUILDING_ROOM": "OFFICE_LOCATION"
+                }],
+            ],
+            "skip": True,
+        },
+        {
+            "func": title_task,
+            "title_cols": [
+                ["DRUPAL_EMPLOYEE_DIRECTORY", "PRIMARY_TITLE"],
+                ["DRUPAL_EMPLOYEE_DIRECTORY", "DIRECTORY_TITLE"],
+            ]
+        },
+    ],
+    [
+        "SE_PERSON",
+        {
+            "func": person_task,
+            "related": [
+                ["SE_PERSON", {
+                    "MIT_ID": "MIT_ID",
+                    "KRB_NAME": "KRB_NAME",
+                    "FULL_NAME": "FULL_NAME",
+                    "LAST_NAME": "LAST_NAME",
+                    "FIRST_NAME": "FIRST_NAME",
+                    "MIDDLE_NAME": "MIDDLE_NAME",
+                }],
+            ]
+        },
+        {
+            "func": room_task,
+            "source": "",
+            "related": [
+                ["SE_PERSON", {
+                    "BUILDING_ROOM": "OFFICE_LOCATION"
+                }],
+            ],
+            "skip": True,
+        },
+    ],
+    [
+        "HR_FACULTY_ROSTER",
+        {
+            "func": person_task,
+            "related": [
+                ["HR_FACULTY_ROSTER", {
+                    "MIT_ID": "MIT_ID",
+                    "LAST_NAME": "LAST_NAME",
+                    "FIRST_NAME": "FIRST_NAME",
+                    "MIDDLE_NAME": "MIDDLE_NAME",
+                }],
+            ]
+        },
+    ],
+    [
+        "SUBJECT_SUMMARY",
+        {
+            "func": clamp_task,
+            "area": {},
+            "integers": {
+                "SUBJECT_SUMMARY": "SUBJECT_ENROLLMENT_NUMBER",
+                "SUBJECT_SUMMARY": "CLUSTER_ENROLLMENT_NUMBER",
+            }
+        },
+    ],
+    [
+        "SUBJECT_OFFERED_SUMMARY",
+        {
+            "func": person_task,
+            "related": [
+                ["SUBJECT_OFFERED_SUMMARY", {
+                    "MIT_ID": "RESPONSIBLE_FACULTY_MIT_ID",
+                    "FULL_NAME": "RESPONSIBLE_FACULTY_NAME",
+                }],
+            ]
+        },
+        {
+            "func": clamp_task,
+            "area": {},
+            "integers": {
+                "SUBJECT_OFFERED_SUMMARY": "SUBJECT_ENROLLMENT_NUMBER",
+                "SUBJECT_OFFERED_SUMMARY": "CLUSTER_ENROLLMENT_NUMBER",
+                "SUBJECT_OFFERED_SUMMARY": "NUM_ENROLLED_STUDENTS",
+            }
+        },
+    ],
+    [
+        "FCLT_BUILDING_HIST_1",
+        {
+            "func": clamp_task,
+            "area": {
+                "FCLT_BUILDING_HIST_1": "EXT_GROSS_AREA",
+                "FCLT_BUILDING_HIST_1": "ASSIGNABLE_AREA",
+                "FCLT_BUILDING_HIST_1": "NON_ASSIGNABLE_AREA",
+                "FCLT_BUILDING_HIST_1": "BUILDING_HEIGHT",
+            },
+            "integers": {
+                "FCLT_BUILDING_HIST_1": "NUM_OF_ROOMS",
+            }
+        },
+    ],
+    [
+        "FCLT_FLOOR",
+        {
+            "func": clamp_task,
+            "area": {
+                "FCLT_FLOOR": "EXT_GROSS_AREA",
+                "FCLT_FLOOR": "ASSIGNABLE_AREA",
+                "FCLT_FLOOR": "NON_ASSIGNABLE_AREA",
+            },
+            "integers": {}
+        },
+    ],
+    [
+        "FCLT_FLOOR_HIST",
+        {
+            "func": clamp_task,
+            "area": {
+                "FCLT_FLOOR_HIST": "EXT_GROSS_AREA",
+                "FCLT_FLOOR_HIST": "ASSIGNABLE_AREA",
+                "FCLT_FLOOR_HIST": "NON_ASSIGNABLE_AREA",
+            },
+            "integers": {}
+        },
+    ],
+    [
+        "ZPM_ROOMS_LOAD",
+        {
+            "func": room_task,
+            "source": "",
+            "related": [
+                ["ZPM_ROOMS_LOAD", {
+                    "BUILDING_ROOM": "BUILDING_ROOM"
+                }],
+            ],
+            "skip": True,
+        },
+        {
+            "func": usage_task,
+            "source": "ZPM_ROOMS_LOAD",
+        },
+    ],
+]
+
+print("\nStarting Phase 2\n")
+
+for task_info in TASKS:
+    table, tasks = task_info[0], task_info[1:]
+    with open(f"data/{table}.csv") as f:
+        header = [h.strip('"') for h in next(f).strip().split(",")]
+        # limit the amount that we can read for speed purposes
+        # info = list(csv.DictReader(
+        #     itertools.islice(f, 2000), fieldnames=header))
+        # unlimited
+        info = list(csv.DictReader(f, fieldnames=header))
+        VMAP[table] = [{key: [row[key], row[key]]
+                        for key in row} for row in info]
+
+    print("tasklist starting for table:", table)
+    for task in tasks:
+        print("\tstarting:", task["func"].__name__)
+
+        args = []
+        for key in task:
+            if key != "func":
+                args.append(task[key])
+        task["func"](*args)
+
+    with open(f"redacted/{table}.csv", "w") as f:
+        writer = csv.writer(f)
+        header = [key for key in VMAP[table][0]]
+        writer.writerow(header)
+        for row in VMAP[table]:
+            writer.writerow([row[key][1] for key in row])
+    print("finished writing:", table)
+
+    VMAP = {}
