@@ -2,6 +2,7 @@ import os
 import csv
 import json
 import random
+import pandas
 import itertools
 
 
@@ -38,6 +39,7 @@ TITLE_MAP = {}
 USAGE_MAP = {}
 BROOM_MAP = {}
 PHONE_MAP = {}
+KERB_MAP = {}
 ROOM_MAP = {}
 RKEY_MAP = {}
 MEET_MAP = {}
@@ -52,23 +54,19 @@ with open("annotated_split.json") as f:
     more_tables = [t for t in data["REDACT_MORE"]]
 
 for tname in old_tables:
-    with open(f"data/{tname}.csv") as f:
-        # tname = file.split(".")[0]
-        if tname not in old_tables and tname not in more_tables:
-            continue
+    # limit the amount that we can read for speed purposes
+    # info = list(csv.DictReader(
+    #     itertools.islice(f, 2000), fieldnames=header))
+    # unlimited
+    info = pandas.read_csv(f"data/{tname}.csv", engine="pyarrow")
+    # info = list(csv.DictReader(f, fieldnames=header))
+    if len(info) == 0:
+        print(f"EMPTY: {tname}")
 
-        header = [h.strip('"') for h in next(f).strip().split(",")]
-        # limit the amount that we can read for speed purposes
-        # info = list(csv.DictReader(
-        #     itertools.islice(f, 2000), fieldnames=header))
-        # unlimited
-        info = list(csv.DictReader(f, fieldnames=header))
-        if len(info) == 0:
-            print(f"EMPTY: {tname}")
-        if tname in old_tables:
-            VMAP[tname] = [{key: [row[key], row[key]]
-                            for key in row} for row in info]
-        print("finished loading:", tname)
+    headers = [h.strip('"') for h in info.columns]
+    VMAP[tname] = {header: [[x, x] for x in info[header].tolist()]
+                   for header in headers}
+    print("finished loading:", tname)
 print("\n")
 
 
@@ -78,11 +76,11 @@ print("\n")
 
 
 def get_column(table, column):
-    return [row[column][0] for row in VMAP[table]]
+    return [x[0] for x in VMAP[table][column]]
 
 
 def set_value_by_index(table, column, index, new_value):
-    VMAP[table][index][column][1] = new_value
+    VMAP[table][column][index][1] = new_value
 
 
 def random_mitid():
@@ -232,7 +230,7 @@ def person_task(related):
                         pass
 
             def check_val(field):
-                return field in table and VMAP[table_name][i][table[field]][0] != ""
+                return field in table and VMAP[table_name][table[field]][i][0] != ""
 
             def need(field):
                 return field in fill_fields
@@ -284,7 +282,7 @@ def person_task(related):
             if "FULL_NAME2" in table and check_val("FULL_NAME2") and need("FULL_NAME2"):
                 if "INSTRUCTOR" in table["FULL_NAME2"]:
                     new_full_name = f"{new_fname[0]}. {new_mname[0]}. {new_lname}"
-                original = VMAP[table_name][i][table["FULL_NAME2"]][0]
+                original = VMAP[table_name][table["FULL_NAME2"]][i][0]
                 if original in INSTRUCTOR_MAP:
                     new_full_name = INSTRUCTOR_MAP[original]
                 set_value_by_index(
@@ -294,7 +292,7 @@ def person_task(related):
             if "FULL_NAME3" in table and check_val("FULL_NAME3") and need("FULL_NAME3"):
                 if "INSTRUCTOR" in table["FULL_NAME3"]:
                     new_full_name = f"{new_fname[0]}. {new_mname[0]}. {new_lname}"
-                original = VMAP[table_name][i][table["FULL_NAME3"]][0]
+                original = VMAP[table_name][table["FULL_NAME3"]][i][0]
                 if original in INSTRUCTOR_MAP:
                     new_full_name = INSTRUCTOR_MAP[original]
                 set_value_by_index(
@@ -316,7 +314,10 @@ def person_task(related):
                     table_name, table["DIRECTORY_FULL_NAME"], i, new_directory_full_name)
                 MIT_ID_MAP[id]["DIRECTORY_FULL_NAME"] = new_directory_full_name
 
+            o_kerb = VMAP[table_name][table["KRB_NAME"]
+                                      ][i][0] if "KRB_NAME" in table else ""
             kerb = random_kerb(new_fname, new_lname)
+            KERB_MAP[o_kerb] = [kerb]
             if "KRB_NAME" in table and check_val("KRB_NAME") and need("KRB_NAME"):
                 set_value_by_index(table_name, table["KRB_NAME"], i, kerb)
                 MIT_ID_MAP[id]["KRB_NAME"] = kerb
@@ -328,6 +329,7 @@ def person_task(related):
                 MIT_ID_MAP[id]["KRB_NAME_UPPERCASE"] = kerb.upper()
 
             email = f"{kerb}{random.choice(EMAIL_SUFFIX)}"
+            KERB_MAP[o_kerb].append(email)
             if "EMAIL_ADDRESS" in table and check_val("EMAIL_ADDRESS") and need("EMAIL_ADDRESS"):
                 set_value_by_index(
                     table_name, table["EMAIL_ADDRESS"], i, email)
@@ -378,9 +380,9 @@ def person_task(related):
             if "OFFICE_PHONE" in table and check_val("OFFICE_PHONE") and need("OFFICE_PHONE"):
                 new_phone = "".join([str(random.randint(0, 9))
                                     for _ in range(10)])
-                if VMAP[table_name][i][table["OFFICE_PHONE"]][0] in PHONE_MAP:
+                if VMAP[table_name][table["OFFICE_PHONE"]][i][0] in PHONE_MAP:
                     new_phone = PHONE_MAP[VMAP[table_name]
-                                          [i][table["OFFICE_PHONE"]][0]]
+                                          [table["OFFICE_PHONE"]][i][0]]
                 set_value_by_index(
                     table_name, table["OFFICE_PHONE"], i, new_phone)
                 MIT_ID_MAP[id]["OFFICE_PHONE"] = new_phone
@@ -435,6 +437,8 @@ def room_task(source, related, skip=False, hist=False):
             cols = get_column(table_name, table[field])
             if field == "ROOM":
                 for i, room in enumerate(cols):
+                    if not room:
+                        continue
                     if room in ROOM_MAP:
                         set_value_by_index(
                             table_name, table[field], i, ROOM_MAP[room])
@@ -447,6 +451,8 @@ def room_task(source, related, skip=False, hist=False):
             if field == "ROOM_NO_FLOOR":
                 floors = [str(x) for x in get_column(table_name, "FLOOR_KEY")]
                 for i, only_room in enumerate(cols):
+                    if not only_room:
+                        continue
                     room = f"{floors[i]}{only_room}"
                     if room in ROOM_MAP:
                         set_value_by_index(
@@ -460,6 +466,8 @@ def room_task(source, related, skip=False, hist=False):
                         ROOM_MAP[room] = new_room
             if "BUILDING_ROOM" in field:
                 for i, room in enumerate(cols):
+                    if not room:
+                        continue
                     new_building_room = -1
                     building, _, new_room = random_room_consider_floor(room)
                     if not room:
@@ -470,6 +478,8 @@ def room_task(source, related, skip=False, hist=False):
                         table_name, table[field], i, new_building_room)
             if field == "ALL_ROOM":
                 for i, all_room in enumerate(cols):
+                    if not all_room:
+                        continue
                     info = all_room.split("-")
                     room = f"{info[0]}-{'-'.join(info[2:])}"
                     floor = info[1]
@@ -491,16 +501,18 @@ def room_task(source, related, skip=False, hist=False):
 
 
 def admin_task(source):
-    for i, row in enumerate(VMAP[source]):
+    areas = get_column(source, "DEPARTMENT_PHONE_AREA_CODE")
+    numbers = get_column(source, "DEPARTMENT_PHONE_NUMBER")
+    for i, info in enumerate(zip(areas, numbers)):
+        area, number = info
         new_phone = "".join([str(random.randint(0, 9)) for _ in range(10)])
-        area, number = row["DEPARTMENT_PHONE_AREA_CODE"][0], row["DEPARTMENT_PHONE_NUMBER"][0]
         if area + number in PHONE_MAP:
             new_phone = PHONE_MAP[area + number]
         else:
             PHONE_MAP[area + number] = new_phone
         if area:
             set_value_by_index(
-                source, "DEPARTMENT_PHONE_NUMBER", i, new_phone[:3])
+                source, "DEPARTMENT_PHONE_AREA_CODE", i, new_phone[:3])
         if number:
             set_value_by_index(
                 source, "DEPARTMENT_PHONE_NUMBER", i, new_phone[3:])
@@ -511,6 +523,8 @@ def meet_task(related):
     for table_name in related:
         cols.extend(get_column(table_name, "MEET_PLACE"))
     for loc in cols:
+        if not loc:
+            continue
         if loc not in RKEY_MAP:
             building, _, room = random_room_consider_floor(loc)
             if not room:
@@ -525,8 +539,11 @@ def meet_task(related):
 
 
 def session_task(source):
-    for i, row in enumerate(VMAP[source]):
-        location = row["SESSION_LOCATION"][0].lower()
+    locations = get_column(source, "SESSION_LOCATION")
+    for i, loc in enumerate(locations):
+        if not loc:
+            continue
+        location = loc.lower()
         if "virtual" in location:
             set_value_by_index(source, "SESSION_LOCATION", i, "Virtual")
         elif "zoom" in location:
@@ -542,16 +559,19 @@ def session_task(source):
 
 
 def subject_task(source):
-    for i, row in enumerate(VMAP[source]):
+    names = get_column(source, "PERSON_NAME")
+    emails = get_column(source, "PERSON_EMAIL")
+    locations = get_column(source, "PERSON_LOCATION")
+    for i, info in enumerate(zip(names, emails, locations)):
+        name, email, loc = info
         fname, lname = random.choice(FNAMES), random.choice(LNAMES)
         kerb = random_kerb(fname, lname)
         email = f"{kerb}{random.choice(EMAIL_SUFFIX)}"
-        if row["PERSON_NAME"][0]:
+        if name:
             set_value_by_index(source, "PERSON_NAME", i, f"{fname} {lname}")
-        if row["PERSON_EMAIL"][0]:
+        if email:
             set_value_by_index(source, "PERSON_EMAIL", i, email)
-        if row["PERSON_LOCATION"][0]:
-            loc = row["PERSON_LOCATION"][0]
+        if loc:
             if loc in MEET_MAP:
                 set_value_by_index(source, "PERSON_LOCATION", i, MEET_MAP[loc])
             else:
@@ -563,16 +583,16 @@ def subject_task(source):
                     set_value_by_index(source, "PERSON_LOCATION", i, new_loc)
 
             # check weird bug
-            if "[" in VMAP[source][i]["PERSON_LOCATION"][1]:
-                print("ERROR:", VMAP[source][i]["PERSON_LOCATION"][1])
+            if "[" in VMAP[source]["PERSON_LOCATION"][i][1]:
+                print("ERROR:", VMAP[source]["PERSON_LOCATION"][i][1])
 
 
 def library_task(related, name):
+    keys = get_column(name, "LIBRARY_COURSE_INSTRUCTOR_KEY")
     lname_map = {}
-    for i in range(len(VMAP[name])):
+    for i, key in enumerate(keys):
         fname, lname = random.choice(FNAMES), random.choice(LNAMES)
         set_value_by_index(name, "INSTRUCTOR_NAME", i, f"{lname}, {fname}")
-        key = VMAP[name][i]["LIBRARY_COURSE_INSTRUCTOR_KEY"][0]
         if key not in lname_map:
             lname_map[key] = lname.upper()
     cols = []
@@ -597,12 +617,12 @@ def library_task(related, name):
 
 
 def usage_task(source):
-    for i, row in enumerate(VMAP[source]):
-        if row["SPACE_USAGE"][0]:
-            if row["SPACE_USAGE"][0] not in USAGE_MAP:
-                USAGE_MAP[row["SPACE_USAGE"][0]] = random.choice(USAGES)
-            set_value_by_index(source, "SPACE_USAGE", i,
-                               USAGE_MAP[row["SPACE_USAGE"][0]])
+    usages = get_column(source, "SPACE_USAGE")
+    for i, usage in enumerate(usages):
+        if usage:
+            if usage not in USAGE_MAP:
+                USAGE_MAP[usage] = random.choice(USAGES)
+            set_value_by_index(source, "SPACE_USAGE", i, USAGE_MAP[usage])
 
 
 def clamp_task(area, integers):
@@ -616,7 +636,7 @@ def clamp_task(area, integers):
                 set_value_by_index(table_name, column, i, val)
     for table_name, column in integers.items():
         cols = get_column(table_name, column)
-        nums = [int(num) for num in cols if num]
+        nums = [int(num) for num in cols if num and num == num]
         min_num, max_num = min(nums), max(nums)
         for i, num in enumerate(cols):
             if num:
@@ -639,6 +659,27 @@ def title_task(title_cols):
                 new_title = TITLE_MAP[title]
             TITLE_MAP[title] = new_title
             set_value_by_index(table, col, i, new_title)
+
+
+def robust_krb_task(related):
+    for table_name, column_name in related:
+        krb_names = get_column(table_name, column_name)
+        for i, krb in enumerate(krb_names):
+            if not krb:
+                continue
+            is_email = "@" in krb
+            krb = krb.split("@")[0]
+            new_fname, new_lname = random.choice(FNAMES), random.choice(LNAMES)
+            new_krb = random_kerb(new_fname, new_lname)
+            new_email = f"{new_krb}{random.choice(EMAIL_SUFFIX)}"
+            if krb in KERB_MAP:
+                new_krb = KERB_MAP[krb][0]
+                new_email = KERB_MAP[krb][1]
+            KERB_MAP[krb] = [new_krb, new_email]
+            if is_email:
+                set_value_by_index(table_name, column_name, i, new_email)
+            else:
+                set_value_by_index(table_name, column_name, i, new_krb)
 
 
 #########
@@ -815,13 +856,15 @@ print("\n")
 
 if not os.path.exists("redacted"):
     os.makedirs("redacted")
+# turn each table in VMAP into a 2d dataframe, then write it with the headers as a csv file
+
+# turn each array of two elements in VMAP into a just the second element
+VMAP = {table_name: {key: [val[1] for val in VMAP[table_name][key]]
+                     for key in VMAP[table_name]} for table_name in VMAP}
 for table_name in VMAP:
-    with open(f"redacted/{table_name}.csv", "w") as f:
-        writer = csv.writer(f)
-        header = [key for key in VMAP[table_name][0]]
-        writer.writerow(header)
-        for row in VMAP[table_name]:
-            writer.writerow([row[key][1] for key in row])
+    df = pandas.DataFrame(VMAP[table_name])
+    # write df to csv
+    df.to_csv(f"redacted/{table_name}.csv", index=False)
     print("finished writing:", table_name)
 
 VMAP = {}
@@ -975,6 +1018,12 @@ TASKS = [
                 }],
             ]
         },
+        {
+            "func": title_task,
+            "title_cols": [
+                ["HR_FACULTY_ROSTER", "ENDOWED_CHAIR"],
+            ]
+        }
     ],
     [
         "SUBJECT_SUMMARY",
@@ -1064,21 +1113,52 @@ TASKS = [
             "source": "ZPM_ROOMS_LOAD",
         },
     ],
+    [
+        "MOIRA_LIST_DETAIL",
+        {
+            "func": robust_krb_task,
+            "related": [
+                ["MOIRA_LIST_DETAIL", "MOIRA_LIST_MEMBER"],
+            ]
+        }
+    ],
+    [
+        "PERSON_AUTH_AREA",
+        {
+            "func": robust_krb_task,
+            "related": [
+                ["PERSON_AUTH_AREA", "USER_NAME"],
+            ]
+        }
+    ],
+    [
+        "ROLES_FIN_PA",
+        {
+            "func": robust_krb_task,
+            "related": [
+                ["ROLES_FIN_PA", "USERNAME"],
+            ]
+        }
+    ],
+    [
+        "TABLES",
+        {
+            "func": robust_krb_task,
+            "related": [
+                ["TABLES", "BUSINESS_CONTACT_EMAIL"],
+            ]
+        }
+    ],
 ]
 
 print("\nStarting Phase 2\n")
 
 for task_info in TASKS:
     table, tasks = task_info[0], task_info[1:]
-    with open(f"data/{table}.csv") as f:
-        header = [h.strip('"') for h in next(f).strip().split(",")]
-        # limit the amount that we can read for speed purposes
-        # info = list(csv.DictReader(
-        #     itertools.islice(f, 2000), fieldnames=header))
-        # unlimited
-        info = list(csv.DictReader(f, fieldnames=header))
-        VMAP[table] = [{key: [row[key], row[key]]
-                        for key in row} for row in info]
+    info = pandas.read_csv(f"data/{table}.csv", engine="pyarrow")
+    headers = [h.strip('"') for h in info.columns]
+    VMAP[table] = {header: [[x, x] for x in info[header].tolist()]
+                   for header in headers}
 
     print("tasklist starting for table:", table)
     for task in tasks:
@@ -1090,12 +1170,11 @@ for task_info in TASKS:
                 args.append(task[key])
         task["func"](*args)
 
-    with open(f"redacted/{table}.csv", "w") as f:
-        writer = csv.writer(f)
-        header = [key for key in VMAP[table][0]]
-        writer.writerow(header)
-        for row in VMAP[table]:
-            writer.writerow([row[key][1] for key in row])
-    print("finished writing:", table)
+    VMAP = {table_name: {key: [val[1] for val in VMAP[table_name][key]]
+                         for key in VMAP[table_name]} for table_name in VMAP}
+    for table_name in VMAP:
+        df = pandas.DataFrame(VMAP[table_name])
+        df.to_csv(f"redacted/{table_name}.csv", index=False)
+        print("finished writing:", table_name)
 
     VMAP = {}
