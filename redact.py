@@ -280,39 +280,45 @@ def person_task(related):
                     table_name, table["FULL_NAME_FL"], i, new_full_name_fl)
                 MIT_ID_MAP[id]["FULL_NAME_FL"] = new_full_name_fl
 
-            # hacky solution for now to allow multiple full names
-            if "FULL_NAME2" in fill_fields:
-                if "INSTRUCTOR" in table["FULL_NAME2"]:
-                    new_full_name = f"{new_fname[0]}. {new_mname[0]}. {new_lname}"
-                    val = VMAP[table_name][table["FULL_NAME2"]][i][0]
-                    if "staff" in val.lower():
-                        new_full_name = "Staff"
-                original = VMAP[table_name][table["FULL_NAME2"]][i][0]
-                if original in INSTRUCTOR_MAP:
-                    new_full_name = INSTRUCTOR_MAP[original]
-                set_value_by_index(
-                    table_name, table["FULL_NAME2"], i, new_full_name)
-                INSTRUCTOR_MAP[original] = new_full_name
-                MIT_ID_MAP[id]["FULL_NAME2"] = new_full_name
-            if "FULL_NAME3" in fill_fields:
-                if "INSTRUCTOR" in table["FULL_NAME3"]:
-                    new_full_name = f"{new_fname[0]}. {new_mname[0]}. {new_lname}"
-                    val = VMAP[table_name][table["FULL_NAME2"]][i][0]
-                    if "staff" in val.lower():
-                        new_full_name = "Staff"
-                original = VMAP[table_name][table["FULL_NAME3"]][i][0]
-                if original in INSTRUCTOR_MAP:
-                    new_full_name = INSTRUCTOR_MAP[original]
-                set_value_by_index(
-                    table_name, table["FULL_NAME3"], i, new_full_name)
-                INSTRUCTOR_MAP[original] = new_full_name
-                MIT_ID_MAP[id]["FULL_NAME3"] = new_full_name
-
             new_full_name_upper = new_full_name.upper()
             if "FULL_NAME_UPPERCASE" in fill_fields:
                 set_value_by_index(
                     table_name, table["FULL_NAME_UPPERCASE"], i, new_full_name_upper)
                 MIT_ID_MAP[id]["FULL_NAME_UPPERCASE"] = new_full_name_upper
+
+            # hacky solution for now to allow multiple full names
+            if "FULL_NAME2" in fill_fields:
+                new_i_names = []
+                for i_name_raw in VMAP[table_name][table["FULL_NAME2"]][i][0].split(","):
+                    i_name = i_name_raw.strip()
+                    new_full_name = f"{new_fname[0]}. {new_mname[0]}. {new_lname}"
+                    if "staff" in i_name.lower():
+                        new_full_name = "Staff"
+                    if i_name in INSTRUCTOR_MAP:
+                        new_full_name = INSTRUCTOR_MAP[i_name]
+                    INSTRUCTOR_MAP[i_name] = new_full_name
+                    new_i_names.append(new_full_name)
+
+                new_full_name2 = ", ".join(new_i_names)
+                set_value_by_index(
+                    table_name, table["FULL_NAME2"], i, new_full_name2)
+                MIT_ID_MAP[id]["FULL_NAME2"] = new_full_name2
+            if "FULL_NAME3" in fill_fields:
+                new_i_names = []
+                for i_name_raw in VMAP[table_name][table["FULL_NAME3"]][i][0].split(","):
+                    i_name = i_name_raw.strip()
+                    new_full_name = f"{new_fname[0]}. {new_mname[0]}. {new_lname}"
+                    if "staff" in i_name.lower():
+                        new_full_name = "Staff"
+                    if i_name in INSTRUCTOR_MAP:
+                        new_full_name = INSTRUCTOR_MAP[i_name]
+                    INSTRUCTOR_MAP[i_name] = new_full_name
+                    new_i_names.append(new_full_name)
+
+                new_full_name2 = ", ".join(new_i_names)
+                set_value_by_index(
+                    table_name, table["FULL_NAME3"], i, new_full_name2)
+                MIT_ID_MAP[id]["FULL_NAME3"] = new_full_name2
 
             new_directory_full_name = new_full_name_fl
             if "MIDDLE_NAME" in MIT_ID_MAP[id]:
@@ -541,30 +547,39 @@ def meet_task(related):
     cols = []
     for table_name in related:
         cols.extend(get_column(table_name, "MEET_PLACE"))
-    for loc in cols:
-        if not loc:
+    for locs in cols:
+        if not locs:
             continue
-        if loc not in RKEY_MAP:
-            building, _, room = random_room_consider_floor(loc)
-            if not room:
-                RKEY_MAP[loc] = f"{building}"
-            else:
-                RKEY_MAP[loc] = f"{building}-{room}"
+        loc_list = locs.split(",")
+        for loc_raw in loc_list:
+            loc = loc_raw.strip()
+            if loc not in RKEY_MAP:
+                building, _, room = random_room_consider_floor(loc)
+                if not room:
+                    RKEY_MAP[loc] = f"{building}"
+                else:
+                    RKEY_MAP[loc] = f"{building}-{room}"
     for table_name in related:
-        for i, loc in enumerate(get_column(table_name, "MEET_PLACE")):
-            if not loc:
+        for i, locs in enumerate(get_column(table_name, "MEET_PLACE")):
+            if not locs:
                 continue
-            set_value_by_index(table_name, "MEET_PLACE", i, RKEY_MAP[loc])
+            loc_list = locs.split(",")
+            new_locs = []
+            for loc_raw in loc_list:
+                loc = loc_raw.strip()
+                new_locs.append(RKEY_MAP[loc])
+            set_value_by_index(table_name, "MEET_PLACE", i, ",".join(new_locs))
 
 
-def session_task(source):
-    locations = get_column(source, "SESSION_LOCATION")
+def session_task(source, alt=None):
+    colname = "SESSION_LOCATION" if not alt else alt
+    locations = get_column(source, colname)
     for i, loc in enumerate(locations):
         if not loc:
             continue
         location = loc.lower()
         if "virtual" in location:
-            set_value_by_index(source, "SESSION_LOCATION", i, "Virtual")
+            set_value_by_index(source, colname, i, "Virtual")
         elif "zoom" in location:
             loc = "Zoom"
             if any(char.isdigit() for char in location):
@@ -572,9 +587,9 @@ def session_task(source):
                 for char in location:
                     if char.isdigit():
                         loc += str(random.randint(0, 9))
-            set_value_by_index(source, "SESSION_LOCATION", i, loc)
+            set_value_by_index(source, colname, i, loc)
         else:
-            set_value_by_index(source, "SESSION_LOCATION", i, "In-Person")
+            set_value_by_index(source, colname, i, "In-Person")
 
 
 def subject_task(source):
@@ -687,7 +702,7 @@ def title_task(title_cols):
             set_value_by_index(table, col, i, new_title)
 
 
-def robust_krb_task(related):
+def robust_krb_task(related, cap=False):
     for table_name, column_name in related:
         krb_names = get_column(table_name, column_name)
         for i, krb in enumerate(krb_names):
@@ -710,8 +725,12 @@ def robust_krb_task(related):
                 new_email = KERB_MAP[krb][1]
             KERB_MAP[krb] = [new_krb, new_email]
             if is_email:
+                if cap:
+                    new_email = new_email.upper()
                 set_value_by_index(table_name, column_name, i, new_email)
             else:
+                if cap:
+                    new_krb = new_krb.upper()
                 set_value_by_index(table_name, column_name, i, new_krb)
 
 
@@ -943,10 +962,9 @@ TASKS = [
     [
         "SUBJECT_IAP_SCHEDULE",
         {
-            "func": meet_task,
-            "related": [
-                "SUBJECT_IAP_SCHEDULE",
-            ]
+            "func": session_task,
+            "source": "SUBJECT_IAP_SCHEDULE",
+            "alt": "MEET_PLACE",
         },
     ],
     [
@@ -1161,7 +1179,8 @@ TASKS = [
             "func": robust_krb_task,
             "related": [
                 ["PERSON_AUTH_AREA", "USER_NAME"],
-            ]
+            ],
+            "cap": True
         }
     ],
     [
