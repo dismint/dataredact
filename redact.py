@@ -694,13 +694,16 @@ def robust_krb_task(related):
             if not krb:
                 continue
             is_email = "@" in krb
-            krb, domain = krb.split("@")
+            split_ = krb.split("@")
+            krb = split_[0]
+            new_fname, new_lname = random.choice(FNAMES), random.choice(LNAMES)
+            new_krb = random_kerb(new_fname, new_lname)
+            domain = split_[1].lower() if is_email and len(
+                split_) > 1 else "robust"
             new_domain = random.choice(EMAIL_SUFFIX)
             if domain in EMAIL_DOMAIN_MAP:
                 new_domain = EMAIL_DOMAIN_MAP[domain]
             EMAIL_DOMAIN_MAP[domain] = new_domain
-            new_fname, new_lname = random.choice(FNAMES), random.choice(LNAMES)
-            new_krb = random_kerb(new_fname, new_lname)
             new_email = f"{new_krb}{new_domain}"
             if krb in KERB_MAP:
                 new_krb = KERB_MAP[krb][0]
