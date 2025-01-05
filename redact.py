@@ -5,6 +5,8 @@ import random
 import pandas
 import itertools
 
+# seed random for reproducibility
+random.seed(0)
 
 #############
 # LOAD DATA #
@@ -32,6 +34,7 @@ PHONE_POOL = set()
 # QUICKFINDS and MAPS
 BUILD_ROOM_FLOOR_MAP = {}
 BUILDING_ROOM_MAP = {}
+EMAIL_DOMAIN_MAP = {}
 ROOM_FLOOR_MAP = {}
 INSTRUCTOR_MAP = {}
 MIT_ID_MAP = {}
@@ -54,11 +57,10 @@ with open("annotated_split.json") as f:
     more_tables = [t for t in data["REDACT_MORE"]]
 
 for tname in old_tables:
-    # limit the amount that we can read for speed purposes
-    # info = list(csv.DictReader(
-    #     itertools.islice(f, 2000), fieldnames=header))
     # unlimited
     info = pandas.read_csv(f"data/{tname}.csv", engine="pyarrow")
+    # limit the amount that we can read for speed purposes
+    # info = pandas.read_csv(f"data/{tname}.csv", nrows=1000)
     # info = list(csv.DictReader(f, fieldnames=header))
     if len(info) == 0:
         print(f"EMPTY: {tname}")
@@ -216,11 +218,15 @@ def person_task(related):
         ids = get_column(
             table_name, table["MIT_ID"] if "MIT_ID" in table else list(table.values())[0])
         for i, id in enumerate(ids):
-            fill_fields = set(field for field in table)
+            fill_fields = set()
+            for field in table:
+                val = VMAP[table_name][table[field]][i][0]
+                if val:
+                    fill_fields.add(field)
             if id in MIT_ID_MAP:
                 mapping = MIT_ID_MAP[id]
-                for field in table:
-                    assert field in fields, f"{field} not in fields"
+                fill_fields_copy = fill_fields.copy()
+                for field in fill_fields_copy:
                     field_name = table[field]
                     try:
                         set_value_by_index(
@@ -228,12 +234,6 @@ def person_task(related):
                         fill_fields.remove(field)
                     except:
                         pass
-
-            def check_val(field):
-                return field in table and VMAP[table_name][table[field]][i][0] != ""
-
-            def need(field):
-                return field in fill_fields
 
             if id and id not in MIT_ID_MAP:
                 new_id = random_mitid()
@@ -247,19 +247,21 @@ def person_task(related):
                 id = "NOID"
 
             new_fname = random.choice(FNAMES)
-            if "FIRST_NAME" in table and check_val("FIRST_NAME") and need("FIRST_NAME"):
+            if "FIRST_NAME" in fill_fields:
                 set_value_by_index(
                     table_name, table["FIRST_NAME"], i, new_fname)
                 MIT_ID_MAP[id]["FIRST_NAME"] = new_fname
 
             new_lname = random.choice(LNAMES)
-            if "LAST_NAME" in table and check_val("LAST_NAME") and need("LAST_NAME"):
+            if "LAST_NAME" in fill_fields:
                 set_value_by_index(
                     table_name, table["LAST_NAME"], i, new_lname)
                 MIT_ID_MAP[id]["LAST_NAME"] = new_lname
 
             new_mname = random.choice(LNAMES)
-            if "MIDDLE_NAME" in table and check_val("MIDDLE_NAME") and need("MIDDLE_NAME"):
+            if random.randint(0, 1):
+                new_mname = new_mname[0]
+            if "MIDDLE_NAME" in fill_fields:
                 set_value_by_index(
                     table_name, table["MIDDLE_NAME"], i, new_mname)
                 MIT_ID_MAP[id]["MIDDLE_NAME"] = new_mname
@@ -267,21 +269,24 @@ def person_task(related):
             new_full_name = f"{new_lname}, {new_fname}"
             if "MIDDLE_NAME" in MIT_ID_MAP[id]:
                 new_full_name = f"{new_lname}, {new_fname} {new_mname}."
-            if "FULL_NAME" in table and check_val("FULL_NAME") and need("FULL_NAME"):
+            if "FULL_NAME" in fill_fields:
                 set_value_by_index(
                     table_name, table["FULL_NAME"], i, new_full_name)
                 MIT_ID_MAP[id]["FULL_NAME"] = new_full_name
 
             new_full_name_fl = f"{new_lname}, {new_fname}"
-            if "FULL_NAME_FL" in table and check_val("FULL_NAME_FL") and need("FULL_NAME_FL"):
+            if "FULL_NAME_FL" in fill_fields:
                 set_value_by_index(
                     table_name, table["FULL_NAME_FL"], i, new_full_name_fl)
                 MIT_ID_MAP[id]["FULL_NAME_FL"] = new_full_name_fl
 
             # hacky solution for now to allow multiple full names
-            if "FULL_NAME2" in table and check_val("FULL_NAME2") and need("FULL_NAME2"):
+            if "FULL_NAME2" in fill_fields:
                 if "INSTRUCTOR" in table["FULL_NAME2"]:
                     new_full_name = f"{new_fname[0]}. {new_mname[0]}. {new_lname}"
+                    val = VMAP[table_name][table["FULL_NAME2"]][i][0]
+                    if "staff" in val.lower():
+                        new_full_name = "Staff"
                 original = VMAP[table_name][table["FULL_NAME2"]][i][0]
                 if original in INSTRUCTOR_MAP:
                     new_full_name = INSTRUCTOR_MAP[original]
@@ -289,9 +294,12 @@ def person_task(related):
                     table_name, table["FULL_NAME2"], i, new_full_name)
                 INSTRUCTOR_MAP[original] = new_full_name
                 MIT_ID_MAP[id]["FULL_NAME2"] = new_full_name
-            if "FULL_NAME3" in table and check_val("FULL_NAME3") and need("FULL_NAME3"):
+            if "FULL_NAME3" in fill_fields:
                 if "INSTRUCTOR" in table["FULL_NAME3"]:
                     new_full_name = f"{new_fname[0]}. {new_mname[0]}. {new_lname}"
+                    val = VMAP[table_name][table["FULL_NAME2"]][i][0]
+                    if "staff" in val.lower():
+                        new_full_name = "Staff"
                 original = VMAP[table_name][table["FULL_NAME3"]][i][0]
                 if original in INSTRUCTOR_MAP:
                     new_full_name = INSTRUCTOR_MAP[original]
@@ -301,7 +309,7 @@ def person_task(related):
                 MIT_ID_MAP[id]["FULL_NAME3"] = new_full_name
 
             new_full_name_upper = new_full_name.upper()
-            if "FULL_NAME_UPPERCASE" in table and check_val("FULL_NAME_UPPERCASE") and need("FULL_NAME_UPPERCASE"):
+            if "FULL_NAME_UPPERCASE" in fill_fields:
                 set_value_by_index(
                     table_name, table["FULL_NAME_UPPERCASE"], i, new_full_name_upper)
                 MIT_ID_MAP[id]["FULL_NAME_UPPERCASE"] = new_full_name_upper
@@ -309,7 +317,7 @@ def person_task(related):
             new_directory_full_name = new_full_name_fl
             if "MIDDLE_NAME" in MIT_ID_MAP[id]:
                 new_directory_full_name = f"{new_lname}, {new_fname} {new_mname}."
-            if "DIRECTORY_FULL_NAME" in table and check_val("DIRECTORY_FULL_NAME") and need("DIRECTORY_FULL_NAME"):
+            if "DIRECTORY_FULL_NAME" in fill_fields:
                 set_value_by_index(
                     table_name, table["DIRECTORY_FULL_NAME"], i, new_directory_full_name)
                 MIT_ID_MAP[id]["DIRECTORY_FULL_NAME"] = new_directory_full_name
@@ -318,66 +326,77 @@ def person_task(related):
                                       ][i][0] if "KRB_NAME" in table else ""
             kerb = random_kerb(new_fname, new_lname)
             KERB_MAP[o_kerb] = [kerb]
-            if "KRB_NAME" in table and check_val("KRB_NAME") and need("KRB_NAME"):
+            if "KRB_NAME" in fill_fields:
                 set_value_by_index(table_name, table["KRB_NAME"], i, kerb)
                 MIT_ID_MAP[id]["KRB_NAME"] = kerb
 
             kerb_upper = kerb.upper()
-            if "KRB_NAME_UPPERCASE" in table and check_val("KRB_NAME_UPPERCASE") and need("KRB_NAME_UPPERCASE"):
+            if "KRB_NAME_UPPERCASE" in fill_fields:
                 set_value_by_index(
                     table_name, table["KRB_NAME_UPPERCASE"], i, kerb_upper)
                 MIT_ID_MAP[id]["KRB_NAME_UPPERCASE"] = kerb.upper()
 
             email = f"{kerb}{random.choice(EMAIL_SUFFIX)}"
-            KERB_MAP[o_kerb].append(email)
-            if "EMAIL_ADDRESS" in table and check_val("EMAIL_ADDRESS") and need("EMAIL_ADDRESS"):
+            if "EMAIL_ADDRESS" in fill_fields:
+                domain = VMAP[table_name][table["EMAIL_ADDRESS"]
+                                          ][i][0].split("@")[1].lower()
+                new_domain = random.choice(EMAIL_SUFFIX)
+                if domain in EMAIL_DOMAIN_MAP:
+                    new_domain = EMAIL_DOMAIN_MAP[domain]
+                EMAIL_DOMAIN_MAP[domain] = new_domain
+                email = f"{kerb}{new_domain}"
                 set_value_by_index(
                     table_name, table["EMAIL_ADDRESS"], i, email)
                 MIT_ID_MAP[id]["EMAIL_ADDRESS"] = email
+            KERB_MAP[o_kerb].append(email)
 
             email_upper = email.upper()
-            if "EMAIL_ADDRESS_UPPERCASE" in table and check_val("EMAIL_ADDRESS_UPPERCASE") and need("EMAIL_ADDRESS_UPPERCASE"):
+            if "EMAIL_ADDRESS_UPPERCASE" in fill_fields:
                 set_value_by_index(
                     table_name, table["EMAIL_ADDRESS_UPPERCASE"], i, email_upper)
                 MIT_ID_MAP[id]["EMAIL_ADDRESS_UPPERCASE"] = email_upper
 
             personal_url = f"{kerb}{random.choice(URL_SUFFIX)}"
-            if "PERSONAL_URL" in table and check_val("PERSONAL_URL") and need("PERSONAL_URL"):
+            if random.randint(0, 1):
+                personal_url = f"https://www.{personal_url}"
+            else:
+                personal_url = f"http://www.{personal_url}"
+            if "PERSONAL_URL" in fill_fields:
                 set_value_by_index(
                     table_name, table["PERSONAL_URL"], i, personal_url)
                 MIT_ID_MAP[id]["PERSONAL_URL"] = personal_url
 
-            if "NAME_KNOWN_BY" in table and check_val("NAME_KNOWN_BY") and need("NAME_KNOWN_BY"):
+            if "NAME_KNOWN_BY" in fill_fields:
                 set_value_by_index(
                     table_name, table["NAME_KNOWN_BY"], i, new_fname)
                 MIT_ID_MAP[id]["NAME_KNOWN_BY"] = new_fname
 
-            if "PREFERRED_FIRST_NAME" in table and check_val("PREFERRED_FIRST_NAME") and need("PREFERRED_FIRST_NAME"):
+            if "PREFERRED_FIRST_NAME" in fill_fields:
                 set_value_by_index(
                     table_name, table["PREFERRED_FIRST_NAME"], i, new_fname)
                 MIT_ID_MAP[id]["PREFERRED_FIRST_NAME"] = new_fname
 
-            if "PREFERRED_FIRST_NAME_UPPER" in table and check_val("PREFERRED_FIRST_NAME_UPPER") and need("PREFERRED_FIRST_NAME_UPPER"):
+            if "PREFERRED_FIRST_NAME_UPPER" in fill_fields:
                 set_value_by_index(
                     table_name, table["PREFERRED_FIRST_NAME_UPPER"], i, new_fname.upper())
                 MIT_ID_MAP[id]["PREFERRED_FIRST_NAME_UPPER"] = new_fname.upper()
 
-            if "PREFERRED_LAST_NAME" in table and check_val("PREFERRED_LAST_NAME") and need("PREFERRED_LAST_NAME"):
+            if "PREFERRED_LAST_NAME" in fill_fields:
                 set_value_by_index(
                     table_name, table["PREFERRED_LAST_NAME"], i, new_lname)
                 MIT_ID_MAP[id]["PREFERRED_LAST_NAME"] = new_lname
 
-            if "PREFERRED_LAST_NAME_UPPER" in table and check_val("PREFERRED_LAST_NAME_UPPER") and need("PREFERRED_LAST_NAME_UPPER"):
+            if "PREFERRED_LAST_NAME_UPPER" in fill_fields:
                 set_value_by_index(
                     table_name, table["PREFERRED_LAST_NAME_UPPER"], i, new_lname.upper())
                 MIT_ID_MAP[id]["PREFERRED_LAST_NAME_UPPER"] = new_lname.upper()
 
-            if "PREFERRED_MIDDLE_NAME" in table and check_val("PREFERRED_MIDDLE_NAME") and need("PREFERRED_MIDDLE_NAME"):
+            if "PREFERRED_MIDDLE_NAME" in fill_fields:
                 set_value_by_index(
                     table_name, table["PREFERRED_MIDDLE_NAME"], i, new_mname)
                 MIT_ID_MAP[id]["PREFERRED_MIDDLE_NAME"] = new_mname
 
-            if "OFFICE_PHONE" in table and check_val("OFFICE_PHONE") and need("OFFICE_PHONE"):
+            if "OFFICE_PHONE" in fill_fields:
                 new_phone = "".join([str(random.randint(0, 9))
                                     for _ in range(10)])
                 if VMAP[table_name][table["OFFICE_PHONE"]][i][0] in PHONE_MAP:
@@ -470,7 +489,7 @@ def room_task(source, related, skip=False, hist=False):
                         continue
                     new_building_room = -1
                     building, _, new_room = random_room_consider_floor(room)
-                    if not room:
+                    if not new_room:
                         new_building_room = f"{building}"
                     else:
                         new_building_room = f"{building}-{new_room}"
@@ -485,7 +504,7 @@ def room_task(source, related, skip=False, hist=False):
                     floor = info[1]
                     new_building_room = -1
                     building, _, new_room = random_room_consider_floor(room)
-                    if not room:
+                    if not new_room:
                         new_building_room = f"{building}"
                     else:
                         new_building_room = f"{building}-{floor}-{new_room}"
@@ -566,11 +585,16 @@ def subject_task(source):
         name, email, loc = info
         fname, lname = random.choice(FNAMES), random.choice(LNAMES)
         kerb = random_kerb(fname, lname)
-        email = f"{kerb}{random.choice(EMAIL_SUFFIX)}"
         if name:
             set_value_by_index(source, "PERSON_NAME", i, f"{fname} {lname}")
         if email:
-            set_value_by_index(source, "PERSON_EMAIL", i, email)
+            domain = email.split("@")[1].lower()
+            new_domain = random.choice(EMAIL_SUFFIX)
+            if domain in EMAIL_DOMAIN_MAP:
+                new_domain = EMAIL_DOMAIN_MAP[domain]
+            EMAIL_DOMAIN_MAP[domain] = new_domain
+            new_email = f"{kerb}{new_domain}"
+            set_value_by_index(source, "PERSON_EMAIL", i, new_email)
         if loc:
             if loc in MEET_MAP:
                 set_value_by_index(source, "PERSON_LOCATION", i, MEET_MAP[loc])
@@ -592,7 +616,8 @@ def library_task(related, name):
     lname_map = {}
     for i, key in enumerate(keys):
         fname, lname = random.choice(FNAMES), random.choice(LNAMES)
-        set_value_by_index(name, "INSTRUCTOR_NAME", i, f"{lname}, {fname}")
+        new_name = f"{lname}, {fname}"
+        set_value_by_index(name, "INSTRUCTOR_NAME", i, new_name)
         if key not in lname_map:
             lname_map[key] = lname.upper()
     cols = []
@@ -626,25 +651,26 @@ def usage_task(source):
 
 
 def clamp_task(area, integers):
-    for table_name, column in area.items():
-        cols = get_column(table_name, column)
-        for i, num in enumerate(cols):
-            if num:
-                val = random.uniform(float(num) * 0.95, float(num) * 1.05)
-                if type(num) == str:
-                    val = str(val)
-                set_value_by_index(table_name, column, i, val)
-    for table_name, column in integers.items():
-        cols = get_column(table_name, column)
-        nums = [int(num) for num in cols if num and num == num]
-        min_num, max_num = min(nums), max(nums)
-        for i, num in enumerate(cols):
-            if num:
-                val = random.randint(min_num, max_num)
-                val = round(val, -1)  # round to the nearest 10
-                if type(num) == str:
-                    val = str(val)
-                set_value_by_index(table_name, column, i, val)
+    return
+    # for table_name, column in area.items():
+    #     cols = get_column(table_name, column)
+    #     for i, num in enumerate(cols):
+    #         if num:
+    #             val = random.uniform(float(num) * 0.95, float(num) * 1.05)
+    #             if type(num) == str:
+    #                 val = str(val)
+    #             set_value_by_index(table_name, column, i, val)
+    # for table_name, column in integers.items():
+    #     cols = get_column(table_name, column)
+    #     nums = [int(num) for num in cols if num and num == num]
+    #     min_num, max_num = min(nums), max(nums)
+    #     for i, num in enumerate(cols):
+    #         if num:
+    #             val = random.randint(min_num, max_num)
+    #             val = round(val, -1)  # round to the nearest 10
+    #             if type(num) == str:
+    #                 val = str(val)
+    #             set_value_by_index(table_name, column, i, val)
 
 
 def title_task(title_cols):
@@ -668,10 +694,14 @@ def robust_krb_task(related):
             if not krb:
                 continue
             is_email = "@" in krb
-            krb = krb.split("@")[0]
+            krb, domain = krb.split("@")
+            new_domain = random.choice(EMAIL_SUFFIX)
+            if domain in EMAIL_DOMAIN_MAP:
+                new_domain = EMAIL_DOMAIN_MAP[domain]
+            EMAIL_DOMAIN_MAP[domain] = new_domain
             new_fname, new_lname = random.choice(FNAMES), random.choice(LNAMES)
             new_krb = random_kerb(new_fname, new_lname)
-            new_email = f"{new_krb}{random.choice(EMAIL_SUFFIX)}"
+            new_email = f"{new_krb}{new_domain}"
             if krb in KERB_MAP:
                 new_krb = KERB_MAP[krb][0]
                 new_email = KERB_MAP[krb][1]
