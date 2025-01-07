@@ -734,6 +734,29 @@ def robust_krb_task(related, cap=False):
                 set_value_by_index(table_name, column_name, i, new_krb)
 
 
+def responsible_task(infos):
+    for table, id_col, name_col in infos:
+        ids = get_column(table, id_col)
+        for i, id in enumerate(ids):
+            id_list = id.split(",")
+            new_ids = []
+            new_names = []
+            for i, id in enumerate(id_list):
+                if not id:
+                    continue
+                if id not in MIT_ID_MAP:
+                    new_id = random_mitid()
+                    MIT_ID_MAP[id] = {}
+                    MIT_ID_MAP[id]["MIT_ID"] = new_id
+                if "FULL_NAME_FL" not in MIT_ID_MAP[id]:
+                    fname, lname = random.choice(FNAMES), random.choice(LNAMES)
+                    MIT_ID_MAP[id]["FULL_NAME_FL"] = f"{lname}, {fname}"
+                new_ids.append(MIT_ID_MAP[id]["MIT_ID"])
+                new_names.append(MIT_ID_MAP[id]["FULL_NAME_FL"])
+            set_value_by_index(table, id_col, i, ",".join(new_ids))
+            set_value_by_index(table, name_col, i, ",".join(new_names))
+
+
 #########
 # TASKS #
 #########
@@ -772,23 +795,9 @@ TASKS = [
                 "FULL_NAME_UPPERCASE": "FULL_NAME_UPPERCASE",
                 "OFFICE_PHONE": "OFFICE_PHONE",
             }],
-            ["LIBRARY_SUBJECT_OFFERED", {
-                "MIT_ID": "RESPONSIBLE_FACULTY_MIT_ID",
-                "FULL_NAME_FL": "RESPONSIBLE_FACULTY_NAME",
-            }],
             ["COURSE_CATALOG_SUBJECT_OFFERED", {
-                "MIT_ID": "RESPONSIBLE_FACULTY_MIT_ID",
-                "FULL_NAME_FL": "RESPONSIBLE_FACULTY_NAME",
                 "FULL_NAME2": "FALL_INSTRUCTORS",
                 "FULL_NAME3": "SPRING_INSTRUCTORS",
-            }],
-            ["TIP_SUBJECT_OFFERED", {
-                "MIT_ID": "RESPONSIBLE_FACULTY_MIT_ID",
-                "FULL_NAME_FL": "RESPONSIBLE_FACULTY_NAME",
-            }],
-            ["SUBJECT_OFFERED", {
-                "MIT_ID": "RESPONSIBLE_FACULTY_MIT_ID",
-                "FULL_NAME_FL": "RESPONSIBLE_FACULTY_NAME",
             }],
             ["SPACE_SUPERVISOR_USAGE", {
                 "MIT_ID": "MIT_ID",
@@ -893,7 +902,20 @@ TASKS = [
             ["EMPLOYEE_DIRECTORY", "DIRECTORY_TITLE"],
             ["EMPLOYEE_DIRECTORY", "PRIMARY_TITLE"],
         ]
-    }
+    },
+    {
+        "func": responsible_task,
+        "infos": [
+            ["LIBRARY_SUBJECT_OFFERED", "RESPONSIBLE_FACULTY_MIT_ID",
+                "RESPONSIBLE_FACULTY_NAME"],
+            ["COURSE_CATALOG_SUBJECT_OFFERED",
+                "RESPONSIBLE_FACULTY_MIT_ID", "RESPONSIBLE_FACULTY_NAME"],
+            ["TIP_SUBJECT_OFFERED", "RESPONSIBLE_FACULTY_MIT_ID",
+                "RESPONSIBLE_FACULTY_NAME"],
+            ["SUBJECT_OFFERED", "RESPONSIBLE_FACULTY_MIT_ID",
+                "RESPONSIBLE_FACULTY_NAME"],
+        ]
+    },
 ]
 
 for task in TASKS:
@@ -945,11 +967,16 @@ TASKS = [
             "func": person_task,
             "related": [
                 ["DRUPAL_COURSE_CATALOG", {
-                    "MIT_ID": "RESPONSIBLE_FACULTY_MIT_ID",
                     "FULL_NAME2": "FALL_INSTRUCTORS",
-                    "FULL_NAME_FL": "RESPONSIBLE_FACULTY_NAME",
                     "FULL_NAME3": "SPRING_INSTRUCTORS",
                 }],
+            ]
+        },
+        {
+            "func": responsible_task,
+            "infos": [
+                ["DRUPAL_COURSE_CATALOG", "RESPONSIBLE_FACULTY_MIT_ID",
+                    "RESPONSIBLE_FACULTY_NAME"],
             ]
         },
         {
@@ -1090,13 +1117,9 @@ TASKS = [
     [
         "SUBJECT_OFFERED_SUMMARY",
         {
-            "func": person_task,
-            "related": [
-                ["SUBJECT_OFFERED_SUMMARY", {
-                    "MIT_ID": "RESPONSIBLE_FACULTY_MIT_ID",
-                    "FULL_NAME": "RESPONSIBLE_FACULTY_NAME",
-                }],
-            ]
+            "func": responsible_task,
+            "infos": ["SUBJECT_OFFERED_SUMMARY", "RESPONSIBLE_FACULTY_MIT_ID",
+                      "RESPONSIBLE_FACULTY_NAME"],
         },
         {
             "func": clamp_task,
