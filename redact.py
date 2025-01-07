@@ -13,7 +13,8 @@ random.seed(0)
 #############
 
 # ASSETS
-EMAIL_SUFFIX = ["@gmail.com", "@yahoo.com", "@hotmail.com", "@aol.com"]
+EMAIL_SUFFIX = ["@gmail.com", "@yahoo.com", "@hotmail.com", "@aol.com", "@mail.com", "@worker.com",
+                "@learner.net", "@referer.com", "@employee.com", "@gmail.business.com", "@yahoo.ca.com"]
 URL_SUFFIX = [".com", ".org", ".net", ".edu"]
 FNAMES, LNAMES, USAGES, TITLES = [], [], [], []
 with open("assets/names.json") as f:
@@ -42,6 +43,7 @@ TITLE_MAP = {}
 USAGE_MAP = {}
 BROOM_MAP = {}
 PHONE_MAP = {}
+ZOOM_MAP = {}
 KERB_MAP = {}
 ROOM_MAP = {}
 RKEY_MAP = {}
@@ -163,6 +165,35 @@ def random_room_consider_floor(loc, room_mode=False):
     return (building, floor, room)
 
 
+def hide_zoom_id(data, keyword):
+    start = data.lower().find(keyword)
+    if start == -1:
+        return data
+    beginning, end = -1, -1
+    for j, char in enumerate(data[start + len(keyword):]):
+        if j > 20:
+            break
+        if char.isdigit():
+            if beginning == -1:
+                beginning = j
+            end = j
+    if beginning == -1 or end == -1:
+        return data
+    zoom_id = data[start + len(keyword) +
+                   beginning:start + len(keyword) + end + 1]
+    new_zoom_id = ""
+    for char in zoom_id:
+        if char.isdigit():
+            new_zoom_id += random.choice("0123456789")
+        else:
+            new_zoom_id += char
+    if zoom_id in ZOOM_MAP:
+        new_zoom_id = ZOOM_MAP[zoom_id]
+    ZOOM_MAP[zoom_id] = new_zoom_id
+    new_data = data[:start + len(keyword) + beginning] + \
+        new_zoom_id + data[start + len(keyword) + end + 1:]
+    return new_data
+
 ##############
 # TASK FUNCS #
 ##############
@@ -221,7 +252,7 @@ def person_task(related):
             fill_fields = set()
             for field in table:
                 val = VMAP[table_name][table[field]][i][0]
-                if val:
+                if val and val == val:
                     fill_fields.add(field)
             if id in MIT_ID_MAP:
                 mapping = MIT_ID_MAP[id]
@@ -291,7 +322,12 @@ def person_task(related):
                 new_i_names = []
                 for i_name_raw in VMAP[table_name][table["FULL_NAME2"]][i][0].split(","):
                     i_name = i_name_raw.strip()
-                    new_full_name = f"{new_fname[0]}. {new_mname[0]}. {new_lname}"
+                    temp_fname = random.choice(FNAMES)
+                    temp_lname = random.choice(LNAMES)
+                    temp_mname = random.choice(LNAMES)
+                    new_full_name = f"{temp_fname[0]}. {temp_mname[0]}. {temp_lname}"
+                    if random.randint(0, 1):
+                        new_full_name = f"{temp_fname[0]}. {temp_lname}"
                     if "staff" in i_name.lower():
                         new_full_name = "Staff"
                     if i_name in INSTRUCTOR_MAP:
@@ -307,7 +343,12 @@ def person_task(related):
                 new_i_names = []
                 for i_name_raw in VMAP[table_name][table["FULL_NAME3"]][i][0].split(","):
                     i_name = i_name_raw.strip()
-                    new_full_name = f"{new_fname[0]}. {new_mname[0]}. {new_lname}"
+                    temp_fname = random.choice(FNAMES)
+                    temp_lname = random.choice(LNAMES)
+                    temp_mname = random.choice(LNAMES)
+                    new_full_name = f"{temp_fname[0]}. {temp_mname[0]}. {temp_lname}"
+                    if random.randint(0, 1):
+                        new_full_name = f"{temp_fname[0]}. {temp_lname}"
                     if "staff" in i_name.lower():
                         new_full_name = "Staff"
                     if i_name in INSTRUCTOR_MAP:
@@ -577,19 +618,19 @@ def session_task(source, alt=None):
     for i, loc in enumerate(locations):
         if not loc:
             continue
-        location = loc.lower()
-        if "virtual" in location:
-            set_value_by_index(source, colname, i, "Virtual")
-        elif "zoom" in location:
-            loc = "Zoom"
-            if any(char.isdigit() for char in location):
-                loc += " "
-                for char in location:
-                    if char.isdigit():
-                        loc += str(random.randint(0, 9))
-            set_value_by_index(source, colname, i, loc)
-        else:
-            set_value_by_index(source, colname, i, "In-Person")
+        if "zoom" in loc.lower():
+            new_loc = hide_zoom_id(loc, "zoom")
+            set_value_by_index(source, colname, i, new_loc)
+
+
+def zoom_link_task(infos):
+    for table, col_name in infos:
+        datas = get_column(table, col_name)
+        for i, data in enumerate(datas):
+            if not data:
+                continue
+            new_data = hide_zoom_id(data, "mit.zoom.us")
+            set_value_by_index(table, col_name, i, new_data)
 
 
 def subject_task(source):
@@ -737,12 +778,18 @@ def robust_krb_task(related, cap=False):
 def responsible_task(infos):
     for table, id_col, name_col in infos:
         ids = get_column(table, id_col)
-        for i, id in enumerate(ids):
-            id_list = id.split(",")
+        names = get_column(table, name_col)
+        for row_num, id_raw in enumerate(ids):
+            if not names[row_num]:
+                continue
+            id = str(id_raw)
+            if type(id_raw) == float and id_raw == id_raw:
+                id = str(int(float(id)))
+            id_list = [x.strip() for x in id.split(",")]
             new_ids = []
             new_names = []
-            for i, id in enumerate(id_list):
-                if not id:
+            for id in id_list:
+                if not id or id == "nan":
                     continue
                 if id not in MIT_ID_MAP:
                     new_id = random_mitid()
@@ -753,8 +800,8 @@ def responsible_task(infos):
                     MIT_ID_MAP[id]["FULL_NAME_FL"] = f"{lname}, {fname}"
                 new_ids.append(MIT_ID_MAP[id]["MIT_ID"])
                 new_names.append(MIT_ID_MAP[id]["FULL_NAME_FL"])
-            set_value_by_index(table, id_col, i, ",".join(new_ids))
-            set_value_by_index(table, name_col, i, ",".join(new_names))
+            set_value_by_index(table, id_col, row_num, ",".join(new_ids))
+            set_value_by_index(table, name_col, row_num, ",".join(new_names))
 
 
 #########
@@ -844,6 +891,12 @@ TASKS = [
     {
         "func": session_task,
         "source": "IAP_SUBJECT_SESSION",
+    },
+    {
+        "func": zoom_link_task,
+        "infos": [
+            ["IAP_SUBJECT_SESSION", "SESSION_DESCRIPTION"],
+        ]
     },
     {
         "func": subject_task,
@@ -937,7 +990,7 @@ VMAP = {table_name: {key: [val[1] for val in VMAP[table_name][key]]
                      for key in VMAP[table_name]} for table_name in VMAP}
 for table_name in VMAP:
     df = pandas.DataFrame(VMAP[table_name])
-    # write df to csv
+    # write df to csv, make sure that we export with the right dtype, same as the original
     df.to_csv(f"redacted/{table_name}.csv", index=False)
     print("finished writing:", table_name)
 
@@ -993,6 +1046,12 @@ TASKS = [
             "source": "SUBJECT_IAP_SCHEDULE",
             "alt": "MEET_PLACE",
         },
+        {
+            "func": zoom_link_task,
+            "infos": [
+                ["SUBJECT_IAP_SCHEDULE", "REMARKS"],
+            ]
+        }
     ],
     [
         "WAREHOUSE_USERS",
@@ -1118,8 +1177,10 @@ TASKS = [
         "SUBJECT_OFFERED_SUMMARY",
         {
             "func": responsible_task,
-            "infos": ["SUBJECT_OFFERED_SUMMARY", "RESPONSIBLE_FACULTY_MIT_ID",
-                      "RESPONSIBLE_FACULTY_NAME"],
+            "infos": [
+                ["SUBJECT_OFFERED_SUMMARY", "RESPONSIBLE_FACULTY_MIT_ID",
+                    "RESPONSIBLE_FACULTY_NAME"]
+            ],
         },
         {
             "func": clamp_task,
