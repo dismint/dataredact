@@ -1,9 +1,7 @@
 import os
-import csv
 import json
 import random
 import pandas
-import itertools
 
 # seed random for reproducibility
 random.seed(0)
@@ -25,6 +23,49 @@ with open("assets/usages.json") as f:
     USAGES = json.load(f)
 with open("assets/titles.json") as f:
     TITLES = json.load(f)
+WORDS = [
+    "apple", "banana", "cherry", "date", "elderberry", "fig", "grape", "honeydew",
+    "iris", "jasmine", "kiwi", "lemon", "mango", "nectarine", "orange", "peach",
+    "quince", "raspberry", "strawberry", "tangerine", "umbrella", "violet", "watermelon",
+    "xenon", "yarrow", "zebra", "ant", "bear", "cat", "dog", "elephant", "frog",
+    "goose", "horse", "iguana", "jaguar", "kangaroo", "lion", "monkey", "narwhal",
+    "octopus", "panda", "quokka", "rabbit", "snake", "tiger", "urchin", "vulture",
+    "whale", "xerus", "yak", "zebu", "azure", "beacon", "candle", "dancer", "echo",
+    "falcon", "garden", "harbor", "island", "jungle", "keeper", "ladder", "mountain",
+    "notion", "ocean", "parade", "quest", "river", "shelter", "tower", "umbrella",
+    "voyage", "whisper", "xylophone", "yearn", "zephyr", "amber", "blossom", "courage",
+    "destiny", "emerald", "fortune", "glimmer", "harmony", "inspire", "journey",
+    "kindness", "legacy", "meadow", "nectar", "optimism", "prosper", "radiant",
+    "serene", "treasure", "uplift", "vivid"
+]
+
+EMPTY_COLS = {
+    'DRUPAL_EMPLOYEE_DIRECTORY': ['DIRECTORY_TITLE', 'PRIMARY_TITLE'],
+    'EMPLOYEE_DIRECTORY': ['DIRECTORY_TITLE', 'PRIMARY_TITLE'],
+    'HR_FACULTY_ROSTER': ['POSITION_TITLE', 'ADMIN_ORG_UNIT_TITLE', 'ADMIN_POSITION_TITLE', 'ADMIN_JOB_TITLE', 'ENDOWED_CHAIR'],
+    'IAP_SUBJECT_PERSON': ['PERSON_ORGANIZATION', 'PERSON_TITLE'],
+    'SE_PERSON': ['POSITION_TITLE'],
+    'WAREHOUSE_USERS': ['TITLE'],
+    'FAC_ROOMS': ['USE_DESC'],
+    'FCLT_ROOMS': ['USE_DESC'],
+    'FCLT_ROOMS_HIST': ['USE_DESC'],
+    'MOIRA_LIST': ['MOIRA_LIST_DESCRIPTION'],
+}
+REMOVE_COLS = {
+    'STUDENT_ETHNIC_SUBGROUP': 'MIT_PRIORITY'
+}
+
+TRUNCATE_COLS = {
+    "MOIRA_LIST_DETAIL": 100_000,
+    "MOIRA_LIST": 100_000,
+    "LIBRARY_RESERVE_CATALOG": 100_000,
+    "TIP_SUBJECT_OFFERED": 100_000,
+    "COURSE_CATALOG_SUBJECT_OFFERED": 20_000,
+    "FCLT_ROOMS": 20_000,
+}
+
+CRIT_KEY = ""
+
 
 # POOLS
 MIT_ID_POOL = set()
@@ -38,6 +79,8 @@ BUILDING_ROOM_MAP = {}
 EMAIL_DOMAIN_MAP = {}
 ROOM_FLOOR_MAP = {}
 INSTRUCTOR_MAP = {}
+OWNER_KEY_MAP = {}
+LIST_KEY_MAP = {}
 MIT_ID_MAP = {}
 TITLE_MAP = {}
 USAGE_MAP = {}
@@ -52,18 +95,19 @@ MEET_MAP = {}
 # VMAP: original data, except values [old, new] pairs instead
 VMAP = {}
 
-old_tables, more_tables = [], []
+old_tables = []
 with open("annotated_split.json") as f:
     data = json.load(f)
     old_tables = [t for t in data["REDACT"]]
-    more_tables = [t for t in data["REDACT_MORE"]]
+old_tables.append("MOIRA_LIST")
+old_tables.append("MOIRA_LIST_DETAIL")
+old_tables.append("MOIRA_LIST_OWNER")
+
 
 for tname in old_tables:
     # unlimited
-    info = pandas.read_csv(f"data/{tname}.csv", engine="pyarrow")
-    # limit the amount that we can read for speed purposes
-    # info = pandas.read_csv(f"data/{tname}.csv", nrows=1000)
-    # info = list(csv.DictReader(f, fieldnames=header))
+    info = pandas.read_csv(
+        f"data/{tname}.csv", converters={col: lambda x: x for col in range(1000)})
     if len(info) == 0:
         print(f"EMPTY: {tname}")
 
@@ -201,30 +245,6 @@ def hide_zoom_id(data, keyword):
 
 
 def person_task(related):
-    fields = [
-        "MIT_ID",
-        "LAST_NAME",
-        "FIRST_NAME",
-        "MIDDLE_NAME",
-        "FULL_NAME",
-        "FULL_NAME_FL",
-        "FULL_NAME2",
-        "FULL_NAME3",
-        "FULL_NAME_UPPERCASE",
-        "DIRECTORY_FULL_NAME",
-        "KRB_NAME",
-        "KRB_NAME_UPPERCASE",
-        "EMAIL_ADDRESS",
-        "EMAIL_ADDRESS_UPPERCASE",
-        "PERSONAL_URL",
-        "NAME_KNOWN_BY",
-        "PREFERRED_FIRST_NAME_UPPER",
-        "PREFERRED_LAST_NAME_UPPER",
-        "PREFERRED_FIRST_NAME",
-        "PREFERRED_MIDDLE_NAME",
-        "PREFERRED_LAST_NAME",
-        "OFFICE_PHONE",
-    ]
     # add all MIT_ID first
     for table_name, table in related:
         if "MIT_ID" in table:
@@ -233,12 +253,12 @@ def person_task(related):
                 if id:
                     MIT_ID_POOL.add(id)
         if "KRB_NAME" in table:
-            krb_names = get_column(table_name, "KRB_NAME")
+            krb_names = get_column(table_name, table["KRB_NAME"])
             for krb in krb_names:
                 if krb:
                     KERB_POOL.add(krb.lower())
         if "OFFICE_PHONE" in table:
-            phones = get_column(table_name, "OFFICE_PHONE")
+            phones = get_column(table_name, table["OFFICE_PHONE"])
             for phone in phones:
                 if phone:
                     PHONE_POOL.add(phone)
@@ -252,12 +272,14 @@ def person_task(related):
             fill_fields = set()
             for field in table:
                 val = VMAP[table_name][table[field]][i][0]
-                if val and val == val:
+                if val and val == val and val is not None:
                     fill_fields.add(field)
             if id in MIT_ID_MAP:
                 mapping = MIT_ID_MAP[id]
                 fill_fields_copy = fill_fields.copy()
                 for field in fill_fields_copy:
+                    if field in ["FULL_NAME2", "FULL_NAME3"]:
+                        continue
                     field_name = table[field]
                     try:
                         set_value_by_index(
@@ -265,7 +287,6 @@ def person_task(related):
                         fill_fields.remove(field)
                     except:
                         pass
-
             if id and id not in MIT_ID_MAP:
                 new_id = random_mitid()
                 MIT_ID_MAP[id] = {}
@@ -281,13 +302,13 @@ def person_task(related):
             if "FIRST_NAME" in fill_fields:
                 set_value_by_index(
                     table_name, table["FIRST_NAME"], i, new_fname)
-                MIT_ID_MAP[id]["FIRST_NAME"] = new_fname
+            MIT_ID_MAP[id]["FIRST_NAME"] = new_fname
 
             new_lname = random.choice(LNAMES)
             if "LAST_NAME" in fill_fields:
                 set_value_by_index(
                     table_name, table["LAST_NAME"], i, new_lname)
-                MIT_ID_MAP[id]["LAST_NAME"] = new_lname
+            MIT_ID_MAP[id]["LAST_NAME"] = new_lname
 
             new_mname = random.choice(LNAMES)
             if random.randint(0, 1):
@@ -295,27 +316,38 @@ def person_task(related):
             if "MIDDLE_NAME" in fill_fields:
                 set_value_by_index(
                     table_name, table["MIDDLE_NAME"], i, new_mname)
-                MIT_ID_MAP[id]["MIDDLE_NAME"] = new_mname
+            MIT_ID_MAP[id]["MIDDLE_NAME"] = new_mname
 
             new_full_name = f"{new_lname}, {new_fname}"
-            if "MIDDLE_NAME" in MIT_ID_MAP[id]:
+            if "MIDDLE_NAME" in fill_fields:
                 new_full_name = f"{new_lname}, {new_fname} {new_mname}."
+            # if new_full_name == "Chang, Siobhan":
+            #     print(new_full_name)
+            #     print(id)
+            #     print(table_name)
+            #     print()
+            # if id == "919932171":
+            #     print(new_fname, new_lname, new_full_name)
+            #     print(MIT_ID_MAP[id])
+            #     print(table_name)
+            #     print()
+
             if "FULL_NAME" in fill_fields:
                 set_value_by_index(
                     table_name, table["FULL_NAME"], i, new_full_name)
-                MIT_ID_MAP[id]["FULL_NAME"] = new_full_name
+            MIT_ID_MAP[id]["FULL_NAME"] = new_full_name
 
             new_full_name_fl = f"{new_lname}, {new_fname}"
             if "FULL_NAME_FL" in fill_fields:
                 set_value_by_index(
                     table_name, table["FULL_NAME_FL"], i, new_full_name_fl)
-                MIT_ID_MAP[id]["FULL_NAME_FL"] = new_full_name_fl
+            MIT_ID_MAP[id]["FULL_NAME_FL"] = new_full_name_fl
 
             new_full_name_upper = new_full_name.upper()
             if "FULL_NAME_UPPERCASE" in fill_fields:
                 set_value_by_index(
                     table_name, table["FULL_NAME_UPPERCASE"], i, new_full_name_upper)
-                MIT_ID_MAP[id]["FULL_NAME_UPPERCASE"] = new_full_name_upper
+            MIT_ID_MAP[id]["FULL_NAME_UPPERCASE"] = new_full_name_upper
 
             # hacky solution for now to allow multiple full names
             if "FULL_NAME2" in fill_fields:
@@ -362,28 +394,31 @@ def person_task(related):
                 MIT_ID_MAP[id]["FULL_NAME3"] = new_full_name2
 
             new_directory_full_name = new_full_name_fl
-            if "MIDDLE_NAME" in MIT_ID_MAP[id]:
+            if "MIDDLE_NAME" in fill_fields:
                 new_directory_full_name = f"{new_lname}, {new_fname} {new_mname}."
             if "DIRECTORY_FULL_NAME" in fill_fields:
                 set_value_by_index(
                     table_name, table["DIRECTORY_FULL_NAME"], i, new_directory_full_name)
-                MIT_ID_MAP[id]["DIRECTORY_FULL_NAME"] = new_directory_full_name
+            MIT_ID_MAP[id]["DIRECTORY_FULL_NAME"] = new_directory_full_name
 
             o_kerb = VMAP[table_name][table["KRB_NAME"]
                                       ][i][0] if "KRB_NAME" in table else ""
             kerb = random_kerb(new_fname, new_lname)
+            email = f"{kerb}{random.choice(EMAIL_SUFFIX)}"
             KERB_MAP[o_kerb] = [kerb]
             if "KRB_NAME" in fill_fields:
-                set_value_by_index(table_name, table["KRB_NAME"], i, kerb)
-                MIT_ID_MAP[id]["KRB_NAME"] = kerb
+                if table_name == "MOIRA_LIST_DETAIL" and "@" in o_kerb:
+                    set_value_by_index(table_name, table["KRB_NAME"], i, email)
+                else:
+                    set_value_by_index(table_name, table["KRB_NAME"], i, kerb)
+            MIT_ID_MAP[id]["KRB_NAME"] = kerb
 
             kerb_upper = kerb.upper()
             if "KRB_NAME_UPPERCASE" in fill_fields:
                 set_value_by_index(
                     table_name, table["KRB_NAME_UPPERCASE"], i, kerb_upper)
-                MIT_ID_MAP[id]["KRB_NAME_UPPERCASE"] = kerb.upper()
+            MIT_ID_MAP[id]["KRB_NAME_UPPERCASE"] = kerb.upper()
 
-            email = f"{kerb}{random.choice(EMAIL_SUFFIX)}"
             if "EMAIL_ADDRESS" in fill_fields:
                 domain = VMAP[table_name][table["EMAIL_ADDRESS"]
                                           ][i][0].split("@")[1].lower()
@@ -401,7 +436,7 @@ def person_task(related):
             if "EMAIL_ADDRESS_UPPERCASE" in fill_fields:
                 set_value_by_index(
                     table_name, table["EMAIL_ADDRESS_UPPERCASE"], i, email_upper)
-                MIT_ID_MAP[id]["EMAIL_ADDRESS_UPPERCASE"] = email_upper
+            MIT_ID_MAP[id]["EMAIL_ADDRESS_UPPERCASE"] = email_upper
 
             personal_url = f"{kerb}{random.choice(URL_SUFFIX)}"
             if random.randint(0, 1):
@@ -411,41 +446,41 @@ def person_task(related):
             if "PERSONAL_URL" in fill_fields:
                 set_value_by_index(
                     table_name, table["PERSONAL_URL"], i, personal_url)
-                MIT_ID_MAP[id]["PERSONAL_URL"] = personal_url
+            MIT_ID_MAP[id]["PERSONAL_URL"] = personal_url
 
             if "NAME_KNOWN_BY" in fill_fields:
                 set_value_by_index(
                     table_name, table["NAME_KNOWN_BY"], i, new_fname)
-                MIT_ID_MAP[id]["NAME_KNOWN_BY"] = new_fname
+            MIT_ID_MAP[id]["NAME_KNOWN_BY"] = new_fname
 
             if "PREFERRED_FIRST_NAME" in fill_fields:
                 set_value_by_index(
                     table_name, table["PREFERRED_FIRST_NAME"], i, new_fname)
-                MIT_ID_MAP[id]["PREFERRED_FIRST_NAME"] = new_fname
+            MIT_ID_MAP[id]["PREFERRED_FIRST_NAME"] = new_fname
 
             if "PREFERRED_FIRST_NAME_UPPER" in fill_fields:
                 set_value_by_index(
                     table_name, table["PREFERRED_FIRST_NAME_UPPER"], i, new_fname.upper())
-                MIT_ID_MAP[id]["PREFERRED_FIRST_NAME_UPPER"] = new_fname.upper()
+            MIT_ID_MAP[id]["PREFERRED_FIRST_NAME_UPPER"] = new_fname.upper()
 
             if "PREFERRED_LAST_NAME" in fill_fields:
                 set_value_by_index(
                     table_name, table["PREFERRED_LAST_NAME"], i, new_lname)
-                MIT_ID_MAP[id]["PREFERRED_LAST_NAME"] = new_lname
+            MIT_ID_MAP[id]["PREFERRED_LAST_NAME"] = new_lname
 
             if "PREFERRED_LAST_NAME_UPPER" in fill_fields:
                 set_value_by_index(
                     table_name, table["PREFERRED_LAST_NAME_UPPER"], i, new_lname.upper())
-                MIT_ID_MAP[id]["PREFERRED_LAST_NAME_UPPER"] = new_lname.upper()
+            MIT_ID_MAP[id]["PREFERRED_LAST_NAME_UPPER"] = new_lname.upper()
 
             if "PREFERRED_MIDDLE_NAME" in fill_fields:
                 set_value_by_index(
                     table_name, table["PREFERRED_MIDDLE_NAME"], i, new_mname)
-                MIT_ID_MAP[id]["PREFERRED_MIDDLE_NAME"] = new_mname
+            MIT_ID_MAP[id]["PREFERRED_MIDDLE_NAME"] = new_mname
 
             if "OFFICE_PHONE" in fill_fields:
                 new_phone = "".join([str(random.randint(0, 9))
-                                    for _ in range(10)])
+                                     for _ in range(10)])
                 if VMAP[table_name][table["OFFICE_PHONE"]][i][0] in PHONE_MAP:
                     new_phone = PHONE_MAP[VMAP[table_name]
                                           [table["OFFICE_PHONE"]][i][0]]
@@ -804,11 +839,98 @@ def responsible_task(infos):
             set_value_by_index(table, name_col, row_num, ",".join(new_names))
 
 
+def list_key_task():
+    global CRIT_KEY
+
+    keys = get_column("MOIRA_LIST", "MOIRA_LIST_KEY")
+    random_point = random.randint(0, min(len(keys) - 1, 92_457))
+    for i, key in enumerate(keys):
+        if not key:
+            continue
+        if key not in LIST_KEY_MAP:
+            new_key = f"{random.choice(WORDS)}-{random.choice(WORDS)}"
+            if random.randint(0, 1):
+                new_key += f"-{random.choice(WORDS)}"
+            if i == random_point:
+                new_key = f"{random.choice(WORDS)}-duo-users"
+                CRIT_KEY = new_key
+                print(f"Setting {key} to {new_key}")
+            LIST_KEY_MAP[key] = new_key
+        set_value_by_index("MOIRA_LIST", "MOIRA_LIST_KEY",
+                           i, LIST_KEY_MAP[key])
+        set_value_by_index("MOIRA_LIST", "MOIRA_LIST_NAME",
+                           i, LIST_KEY_MAP[key])
+
+    # other related tables
+    keys = get_column("MOIRA_LIST_DETAIL", "MOIRA_LIST_KEY")
+    for i, key in enumerate(keys):
+        if not key:
+            continue
+        if key not in LIST_KEY_MAP:
+            new_key = f"{random.choice(WORDS)}-{random.choice(WORDS)}"
+            if random.randint(0, 1):
+                new_key += f"-{random.choice(WORDS)}"
+            LIST_KEY_MAP[key] = new_key
+        set_value_by_index("MOIRA_LIST_DETAIL", "MOIRA_LIST_KEY",
+                           i, LIST_KEY_MAP[key])
+
+
+def list_owner_key_task():
+    otypes = get_column("MOIRA_LIST_OWNER", "OWNER_TYPE")
+    owner_keys = get_column("MOIRA_LIST_OWNER", "MOIRA_LIST_OWNER_KEY")
+    for i, otype in enumerate(otypes):
+        if not otype or "none" in otype.lower():
+            continue
+        old_key = owner_keys[i]
+        if old_key not in OWNER_KEY_MAP:
+            new_key_base = f"{random.choice(WORDS)}-{random.choice(WORDS)}"
+            if any(char.isdigit() for char in old_key):
+                new_key_base = f"{"".join(str(random.randint(1, 9)) for _ in range(2))}.{"".join(str(random.randint(0, 9)) for _ in range(3))}-" + new_key_base
+            OWNER_KEY_MAP[old_key] = (new_key_base, otype + new_key_base)
+        new_key, new_fkey = OWNER_KEY_MAP[old_key]
+        set_value_by_index("MOIRA_LIST_OWNER",
+                           "MOIRA_LIST_OWNER_KEY", i, new_fkey)
+        set_value_by_index("MOIRA_LIST_OWNER", "OWNER", i, new_key)
+
+    # other related tables
+    okeys = get_column("MOIRA_LIST_DETAIL", "MOIRA_LIST_OWNER_KEY")
+    for i, okey in enumerate(okeys):
+        if not okey:
+            continue
+        if okey not in OWNER_KEY_MAP:
+            new_key_base = f"{random.choice(WORDS)}-{random.choice(WORDS)}"
+            OWNER_KEY_MAP[okey] = (new_key_base, "LIST" + new_key_base)
+        _, new_fkey = OWNER_KEY_MAP[okey]
+        set_value_by_index("MOIRA_LIST_DETAIL",
+                           "MOIRA_LIST_OWNER_KEY", i, new_fkey)
+
+
+def hass_task():
+    updates = get_column("CIS_HASS_ATTRIBUTE", "LAST_UPDATE_USER")
+    for i, update in enumerate(updates):
+        if not update:
+            continue
+        set_value_by_index("CIS_HASS_ATTRIBUTE",
+                           "LAST_UPDATE_USER", i, "PETECHOI")
+
+
 #########
 # TASKS #
 #########
 # every task is set up with the information it needs
 TASKS = [
+    {
+        "func": list_key_task,
+    },
+    {
+        "func": list_owner_key_task,
+    },
+    {
+        "func": robust_krb_task,
+        "related": [
+            ["MOIRA_LIST_DETAIL", "MOIRA_LIST_MEMBER"],
+        ]
+    },
     {
         "func": person_task,
         "related": [
@@ -841,6 +963,11 @@ TASKS = [
                 "EMAIL_ADDRESS": "EMAIL_ADDRESS",
                 "FULL_NAME_UPPERCASE": "FULL_NAME_UPPERCASE",
                 "OFFICE_PHONE": "OFFICE_PHONE",
+            }],
+            ["MOIRA_LIST_DETAIL", {
+                "FULL_NAME": "MOIRA_LIST_MEMBER_FULL_NAME",
+                "MIT_ID": "MOIRA_LIST_MEMBER_MIT_ID",
+                "KRB_NAME": "MOIRA_LIST_MEMBER",
             }],
             ["COURSE_CATALOG_SUBJECT_OFFERED", {
                 "FULL_NAME2": "FALL_INSTRUCTORS",
@@ -988,8 +1115,31 @@ if not os.path.exists("redacted"):
 # turn each array of two elements in VMAP into a just the second element
 VMAP = {table_name: {key: [val[1] for val in VMAP[table_name][key]]
                      for key in VMAP[table_name]} for table_name in VMAP}
+
+# fclt_rooms_processing
+fclt_rooms = pandas.DataFrame(VMAP["FCLT_ROOMS"])
+# select a random 20k rooms
+fclt_rooms = fclt_rooms.sample(n=20_000, random_state=1)
+# get the :q
+
+
 for table_name in VMAP:
     df = pandas.DataFrame(VMAP[table_name])
+    # clamp the length to 100k rows
+    if table_name in TRUNCATE_COLS:
+        if table_name == "MOIRA_LIST":
+            mandatory = df[df["MOIRA_LIST_KEY"] == CRIT_KEY]
+            remaining = df[df["MOIRA_LIST_KEY"] != CRIT_KEY].sample(n=99_999, random_state=1)
+            df = pandas.concat([mandatory, remaining])
+            print("special concat for moira_list", mandatory)
+        else:
+            df = df.sample(n=TRUNCATE_COLS[table_name], random_state=1)
+        print("truncating:", table_name, "to", TRUNCATE_COLS[table_name])
+    if table_name in EMPTY_COLS:
+        for col in EMPTY_COLS[table_name]:
+            df[col] = ["" for _ in range(len(df[col]))]
+    if table_name in REMOVE_COLS:
+        df = df.drop(REMOVE_COLS[table_name], axis=1)
     # write df to csv, make sure that we export with the right dtype, same as the original
     df.to_csv(f"redacted/{table_name}.csv", index=False)
     print("finished writing:", table_name)
@@ -1249,15 +1399,6 @@ TASKS = [
         },
     ],
     [
-        "MOIRA_LIST_DETAIL",
-        {
-            "func": robust_krb_task,
-            "related": [
-                ["MOIRA_LIST_DETAIL", "MOIRA_LIST_MEMBER"],
-            ]
-        }
-    ],
-    [
         "PERSON_AUTH_AREA",
         {
             "func": robust_krb_task,
@@ -1285,6 +1426,15 @@ TASKS = [
             ]
         }
     ],
+    [
+        "CIS_HASS_ATTRIBUTE",
+        {
+            "func": hass_task,
+        }
+    ],
+    [
+        "STUDENT_ETHNIC_SUBGROUP"
+    ]
 ]
 
 print("\nStarting Phase 2\n")
@@ -1310,6 +1460,15 @@ for task_info in TASKS:
                          for key in VMAP[table_name]} for table_name in VMAP}
     for table_name in VMAP:
         df = pandas.DataFrame(VMAP[table_name])
+        # clamp the length to 100k rows
+        if table_name in TRUNCATE_COLS:
+            df = df.sample(n=TRUNCATE_COLS[table_name], random_state=1)
+            print("truncating:", table_name, "to", TRUNCATE_COLS[table_name])
+        if table_name in EMPTY_COLS:
+            for col in EMPTY_COLS[table_name]:
+                df[col] = ["" for _ in range(len(df[col]))]
+        if table_name in REMOVE_COLS:
+            df = df.drop(REMOVE_COLS[table_name], axis=1)
         df.to_csv(f"redacted/{table_name}.csv", index=False)
         print("finished writing:", table_name)
 
